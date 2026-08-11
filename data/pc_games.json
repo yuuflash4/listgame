@@ -1,16 +1,5 @@
 [
   {
-    "title": "Test",
-    "banner_url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Unknown Developer",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "The First Berserker: Khazan",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2680010/header.jpg?t=1776936760",
     "category": "pc",
