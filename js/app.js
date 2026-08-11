@@ -636,7 +636,7 @@ function initApp() {
 
   function buildExportText() {
     const lines = [];
-    lines.push(`*DAFTAR PESANAN GAME - WD GAMES*`);
+    lines.push(`*DAFTAR PESANAN GAME - GRANDIA GAME TAVERN*`);
     lines.push(`Media Storage: *${storagePresets[currentStorageType].label} ${currentCapacityGB} GB*`);
     lines.push(`===============================`);
     lines.push(``);
@@ -665,7 +665,7 @@ function initApp() {
     lines.push(`Sisa Kapasitas: *${remainingGB.toFixed(1)} GB*`);
     lines.push(`Total Biaya: *${formatRupiah(totalPrice)}*`);
     lines.push(``);
-    lines.push(`Mohon kirimkan format ini ke Admin WD Games.`);
+    lines.push(`Mohon kirimkan format ini ke Admin Grandia Game Tavern.`);
 
     return lines.join('\n');
   }
