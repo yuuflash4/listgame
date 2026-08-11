@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Sync Header Height
   function syncHeaderHeight() {
     if (plannerHeader) {
-      document.documentElement.style.setProperty('--header-h', `${plannerHeader.offsetHeight + 10}px`);
+      document.documentElement.style.setProperty('--header-h', `${plannerHeader.offsetHeight}px`);
     }
   }
   syncHeaderHeight();
