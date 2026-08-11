@@ -115,12 +115,15 @@ document.addEventListener('DOMContentLoaded', () => {
   syncHeaderHeight();
   window.addEventListener('resize', syncHeaderHeight);
 
+  const storeControls = document.getElementById('store-controls');
+
   // Tab View Switcher
   tabStoreBtn.addEventListener('click', () => {
     tabStoreBtn.classList.add('active');
     tabAdminBtn.classList.remove('active');
     mainContent.style.display = 'block';
     adminView.style.display = 'none';
+    if (storeControls) storeControls.style.display = 'flex';
     syncHeaderHeight();
   });
 
@@ -129,6 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
     tabStoreBtn.classList.remove('active');
     mainContent.style.display = 'none';
     adminView.style.display = 'block';
+    if (storeControls) storeControls.style.display = 'none';
     syncHeaderHeight();
     renderAdminTable();
   });
