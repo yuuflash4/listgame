@@ -225,10 +225,12 @@ document.addEventListener('DOMContentLoaded', () => {
     updateStorageUI();
   }
 
-  dropdownTrigger.addEventListener('click', (e) => {
-    e.stopPropagation();
-    dropdownListItems.classList.toggle('show');
-  });
+  if (hddDropdown) {
+    hddDropdown.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdownListItems.classList.toggle('show');
+    });
+  }
 
   document.addEventListener('click', () => {
     dropdownListItems.classList.remove('show');
@@ -963,5 +965,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Initial Load
+  renderCapacityDropdown('hdd');
   loadAllCatalogs();
 });
