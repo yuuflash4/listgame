@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+function initApp() {
   // DOM Elements - Navigation & Core View
   const landingScreen = document.getElementById('landing-screen');
   const landingStorageActions = document.getElementById('landing-storage-actions');
@@ -967,4 +967,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initial Load
   renderCapacityDropdown('hdd');
   loadAllCatalogs();
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
