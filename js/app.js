@@ -544,12 +544,16 @@ function initApp() {
   }
 
   let searchTimeout;
-  searchInput.addEventListener('input', () => {
-    clearTimeout(searchTimeout);
-    searchTimeout = setTimeout(applyFilters, 250);
-  });
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(applyFilters, 250);
+    });
+  }
 
-  categoryFilter.addEventListener('change', applyFilters);
+  if (categoryFilter) {
+    categoryFilter.addEventListener('change', applyFilters);
+  }
 
   function openSpecModal(game) {
     modalTitle.textContent = game.title;
@@ -729,19 +733,27 @@ function initApp() {
       waDirectBtn.href = `https://wa.me/${adminWaNumber}?text=${waText}`;
     }
 
-    exportModal.classList.add('active');
+    if (exportModal) exportModal.classList.add('active');
   }
 
-  exportBtn.addEventListener('click', openExportModal);
-  closeExportModalBtn.addEventListener('click', () => {
-    exportModal.classList.remove('active');
-  });
+  if (exportBtn) {
+    exportBtn.addEventListener('click', openExportModal);
+  }
+  
+  if (closeExportModalBtn) {
+    closeExportModalBtn.addEventListener('click', () => {
+      if (exportModal) exportModal.classList.remove('active');
+    });
+  }
 
-  exportModal.addEventListener('click', (e) => {
-    if (e.target === exportModal) exportModal.classList.remove('active');
-  });
+  if (exportModal) {
+    exportModal.addEventListener('click', (e) => {
+      if (e.target === exportModal) exportModal.classList.remove('active');
+    });
+  }
 
-  copyTextBtn.addEventListener('click', async () => {
+  if (copyTextBtn) {
+    copyTextBtn.addEventListener('click', async () => {
     const text = buildExportText();
     try {
       if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -761,7 +773,8 @@ function initApp() {
       console.error(err);
       showToast('Gagal menyalin teks. Silakan salin secara manual.', 'error');
     }
-  });
+    });
+  }
 
   // ==========================================================================
   // ADMIN PANEL LOGIC (KELOLA TOKO)
@@ -862,6 +875,7 @@ function initApp() {
 
   // Render Admin Management Table
   function renderAdminTable() {
+    window.renderAdminTable = renderAdminTable;
     if (!adminTableBody) return;
     adminTableBody.innerHTML = '';
     

@@ -177,8 +177,21 @@
   <div id="game-grid" style="display: none;"></div>
 
   <!-- Catalog Data Scripts & Application Logic -->
-  <script src="data/pc_games.js?v=1.1.0"></script>
-  <script src="data/ps2_games.js?v=1.1.0"></script>
-  <script src="js/app.js?v=1.1.0"></script>
+  <script src="data/pc_games.js?v=1.1.1"></script>
+  <script src="data/ps2_games.js?v=1.1.1"></script>
+  <script src="js/app.js?v=1.1.1"></script>
+  <script>
+    // Bulletproof Auto-Trigger Fallback for Admin Catalog Table
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        var tbody = document.getElementById('admin-table-body');
+        if (tbody && tbody.children.length === 0) {
+          if (typeof window.renderAdminTable === 'function') {
+            window.renderAdminTable();
+          }
+        }
+      }, 150);
+    });
+  </script>
 </body>
 </html>
