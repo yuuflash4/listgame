@@ -12,6 +12,7 @@ function initApp() {
   const selectedCapacityLabel = document.getElementById('selected-capacity-label');
   const dropdownListItems = document.getElementById('dropdown-list-items');
   const dropdownTrigger = document.getElementById('dropdown-selected-text');
+  const hddDropdown = document.getElementById('hdd-dropdown');
   const storageUsedEl = document.getElementById('storage-used');
   const storageTotalEl = document.getElementById('storage-total');
   const storageRemainingEl = document.getElementById('storage-remaining');
