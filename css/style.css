@@ -1770,6 +1770,10 @@ select option,
     flex-shrink: 0;
   }
 
+  #view-grid-btn {
+    display: none !important;
+  }
+
   #category-filter {
     flex: 1;
     min-width: 120px;

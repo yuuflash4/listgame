@@ -29,12 +29,32 @@ function initApp() {
   const viewListBtn = document.getElementById('view-list-btn');
   const viewTitleBtn = document.getElementById('view-title-btn');
   
-  let currentViewMode = localStorage.getItem('game_view_mode') || 'grid';
+  const isMobileViewport = (typeof window !== 'undefined') && (
+    window.innerWidth <= 768 || 
+    (window.screen && window.screen.width <= 768) || 
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+  );
 
-  function setViewMode(mode) {
+  let userSavedMode = localStorage.getItem('game_view_mode');
+  let userManuallySet = localStorage.getItem('user_manually_set_view');
+
+  // If on mobile and user hasn't explicitly clicked a view mode button, default to 'list'
+  if (isMobileViewport && (!userSavedMode || !userManuallySet)) {
+    userSavedMode = 'list';
+  }
+
+  let currentViewMode = userSavedMode || (isMobileViewport ? 'list' : 'grid');
+
+  function setViewMode(mode, isUserAction = false) {
+    if (isMobileViewport && mode === 'grid') {
+      mode = 'list';
+    }
     currentViewMode = mode;
     try {
       localStorage.setItem('game_view_mode', mode);
+      if (isUserAction) {
+        localStorage.setItem('user_manually_set_view', 'true');
+      }
     } catch (e) {}
 
     [viewGridBtn, viewListBtn, viewTitleBtn].forEach(btn => {
@@ -57,9 +77,9 @@ function initApp() {
     }
   }
 
-  if (viewGridBtn) viewGridBtn.addEventListener('click', () => setViewMode('grid'));
-  if (viewListBtn) viewListBtn.addEventListener('click', () => setViewMode('list'));
-  if (viewTitleBtn) viewTitleBtn.addEventListener('click', () => setViewMode('title-only'));
+  if (viewGridBtn) viewGridBtn.addEventListener('click', () => setViewMode('grid', true));
+  if (viewListBtn) viewListBtn.addEventListener('click', () => setViewMode('list', true));
+  if (viewTitleBtn) viewTitleBtn.addEventListener('click', () => setViewMode('title-only', true));
   
   setViewMode(currentViewMode);
   
