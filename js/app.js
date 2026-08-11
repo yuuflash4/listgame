@@ -1207,7 +1207,7 @@ function initApp() {
       reports.push(isLocal ? '✅ Local Server (localhost:8999): Aktif & Terhubung' : '⚠️ Local Server (localhost:8999): Off (Menggunakan Cloud Sync)');
 
       // 2. GitHub Token Check
-      const token = localStorage.getItem('admin_github_token');
+      const token = (adminGithubTokenInput && adminGithubTokenInput.value.trim()) || localStorage.getItem('admin_github_token') || adminGithubToken;
       reports.push(token ? '✅ GitHub Auto-Sync: Token terkonfigurasi (Netlify Cloud)' : '⚠️ GitHub Auto-Sync: Token belum diisi (Opsional)');
 
       // 3. Google Apps Script WebApp URL Check
