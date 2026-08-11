@@ -377,6 +377,7 @@ function initApp() {
       }
 
       applyFilters();
+      if (adminTableBody) renderAdminTable();
     } catch (err) {
       console.error('Error loading game catalog:', err);
       gameGrid.innerHTML = `<div class="empty-state">Gagal memuat katalog game. Silakan periksa koneksi.</div>`;
@@ -384,8 +385,8 @@ function initApp() {
   }
 
   function applyFilters() {
-    const searchQuery = searchInput.value.toLowerCase().trim();
-    const selectedCategory = categoryFilter.value;
+    const searchQuery = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    const selectedCategory = categoryFilter ? categoryFilter.value : 'all';
 
     displayedGames = allGames.filter(game => {
       const matchesSearch = !searchQuery || game.title.toLowerCase().includes(searchQuery) ||

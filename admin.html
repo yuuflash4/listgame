@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel - GRANDIA GAME TAVERN</title>
+  <meta name="description" content="Halaman khusus Admin untuk mengelola katalog game, pengaturan WhatsApp, dan backup data Grandia Game Tavern." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Russo+One&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=1.0.6" />
+</head>
+<body class="admin-page">
+
+  <!-- 1. STICKY ADMIN HEADER -->
+  <header class="planner-header">
+    <div class="planner-container">
+      <div class="planner-top">
+        <a href="index.html" class="logo" title="Grandia Game Tavern">
+          <img src="assets/logo.jpg" alt="Grandia Game Tavern Logo" class="logo-img" />
+          <h1 class="logo-text">
+            <span class="logo-grandia">GRANDIA</span>
+            <span class="logo-tavern">GAME TAVERN</span>
+            <span style="font-size: 0.72rem; background: var(--accent-gradient); color: #000; padding: 2px 8px; border-radius: 4px; font-weight: 800; text-transform: uppercase; margin-left: 8px;">ADMIN PANEL</span>
+          </h1>
+        </a>
+
+        <!-- Header Nav Tabs -->
+        <div class="nav-tabs">
+          <a href="index.html" class="nav-tab-btn" type="button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            Kembali ke Katalog Store
+          </a>
+          <button id="tab-admin-btn" class="nav-tab-btn active" type="button" style="pointer-events: none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            Kelola Toko
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. ADMIN VIEW PANEL (KELOLA TOKO) -->
+  <main class="main-content" style="padding-top: 16px;">
+    <section id="admin-view" class="admin-container">
+      <div class="admin-grid">
+        <!-- Admin Card 1: Tambah / Edit Game -->
+        <div class="admin-card">
+          <h2 class="admin-card-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"></path></svg>
+            <span id="admin-form-title">Tambah Game Baru</span>
+          </h2>
+          <form id="admin-game-form">
+            <input type="hidden" id="admin-game-id" value="" />
+            <div class="form-group">
+              <label class="form-label" for="admin-title">Judul Game</label>
+              <input type="text" id="admin-title" class="form-control" placeholder="Contoh: GTA VI: Special Edition" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="admin-category">Kategori</label>
+                <select id="admin-category" class="form-control">
+                  <option value="pc">Game PC</option>
+                  <option value="ps2">Game PS2</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="admin-size">Ukuran File (GB)</label>
+                <input type="number" step="0.1" id="admin-size" class="form-control" placeholder="45.5" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="admin-cover">URL Gambar Cover / Banner</label>
+              <input type="url" id="admin-cover" class="form-control" placeholder="https://..." />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="admin-genre">Genre</label>
+                <input type="text" id="admin-genre" class="form-control" placeholder="Action, Adventure" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="admin-developer">Developer</label>
+                <input type="text" id="admin-developer" class="form-control" placeholder="Rockstar Games" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="admin-reqs">Spesifikasi Minimum (Pisahkan dengan koma atau baris baru)</label>
+              <textarea id="admin-reqs" class="form-control" placeholder="Windows 10, Intel i5, RAM 16GB, GPU GTX 1060"></textarea>
+            </div>
+
+            <div style="display: flex; gap: 10px; margin-top: 10px;">
+              <button type="submit" id="admin-save-btn" class="admin-btn">Simpan Game</button>
+              <button type="button" id="admin-reset-form-btn" class="admin-btn admin-btn-secondary" style="display: none;">Batal Edit</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Admin Card 2: Pengaturan Kontak & Tools Backup -->
+        <div class="admin-card">
+          <h2 class="admin-card-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Pengaturan Toko & WhatsApp</span>
+          </h2>
+          <form id="admin-settings-form">
+            <div class="form-group">
+              <label class="form-label" for="admin-wa-number">Nomor WhatsApp Admin (Kode Negara 62)</label>
+              <input type="text" id="admin-wa-number" class="form-control" placeholder="628123456789" value="628123456789" />
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Nomor ini akan menjadi tujuan tombol "Kirim ke WhatsApp Admin".</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="admin-buffer-percentage">Safety Buffer Overhead Kapasitas (%)</label>
+              <input type="number" id="admin-buffer-percentage" class="form-control" min="0" max="20" value="5" />
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Persentase toleransi ruang terpakai (default 5%).</span>
+            </div>
+
+            <button type="submit" class="admin-btn" style="width: 100%; margin-bottom: 20px;">Simpan Pengaturan</button>
+          </form>
+
+          <hr style="border: none; border-top: 1px solid var(--border-color); margin: 20px 0;" />
+
+          <h3 style="font-size: 1rem; color: var(--accent); margin-bottom: 12px;">Backup & Database Tools</h3>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <button type="button" id="admin-backup-btn" class="admin-btn admin-btn-secondary" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Unduh Backup Data JSON
+            </button>
+            <button type="button" id="admin-reset-catalog-btn" class="admin-btn admin-btn-danger" style="width: 100%;">
+              Reset Data Custom ke Bawaan
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admin Card 3: Daftar & Kelola Katalog Game -->
+      <div class="admin-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+          <h2 class="admin-card-title" style="margin-bottom: 0;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+            <span>Kelola Katalog Game (<span id="admin-total-count">0</span> Game)</span>
+          </h2>
+          <div style="max-width: 300px; width: 100%;">
+            <input type="text" id="admin-search-input" class="form-control" placeholder="Cari di katalog admin..." />
+          </div>
+        </div>
+
+        <div class="admin-table-container">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th width="5%">No</th>
+                <th width="10%">Cover</th>
+                <th width="45%">Judul Game</th>
+                <th width="15%">Kategori</th>
+                <th width="12%">Ukuran</th>
+                <th width="13%">Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="admin-table-body">
+              <!-- Dynamically populated via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dummy Hidden Grid Element for JS App compatibility -->
+  <div id="game-grid" style="display: none;"></div>
+
+  <!-- Application Logic Script -->
+  <script src="js/app.js?v=1.0.6"></script>
+</body>
+</html>
