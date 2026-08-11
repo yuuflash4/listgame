@@ -115,7 +115,8 @@ function initApp() {
       capacities: [
         { text: '320 GB', value: 288 },
         { text: '500 GB', value: 455 },
-        { text: '1 TB', value: 920 }
+        { text: '1 TB', value: 920 },
+        { text: '2 TB', value: 1800 }
       ]
     }
   };
