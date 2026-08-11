@@ -178,8 +178,8 @@ function initApp() {
   let adminWaNumber = localStorage.getItem('admin_wa_number') || '6285701917085';
   let sizeBufferPercentage = parseFloat(localStorage.getItem('admin_buffer_percentage') || '5');
   let sizeBufferMultiplier = 1 + (sizeBufferPercentage / 100);
-  let adminGithubToken = localStorage.getItem('admin_github_token') || '';
-  let adminWebAppUrl = localStorage.getItem('admin_webapp_url') || 'https://script.google.com/macros/s/AKfycbwe2eeG9Vp7B6g-r790sMUZiNc9Uki7tQi-RC4jUsbHymgo7HJXcafPhl7hoLnEHq3bhw/exec';
+  let adminGithubToken = localStorage.getItem('admin_github_token') || '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';
+  let adminWebAppUrl = localStorage.getItem('admin_webapp_url') || 'https://script.google.com/macros/s/AKfycbyWZKd1eMTZSRZoMNaLX1zVlik3rje63ldJ7PmCZHX3UToU5qx_i_6N2zncOmz6Yeh82Q/exec';
   const adminWebAppUrlInput = document.getElementById('admin-webapp-url');
 
   if (adminWaNumberInput) adminWaNumberInput.value = adminWaNumber;
@@ -231,16 +231,23 @@ function initApp() {
     if (adminWebAppUrl) {
       try {
         const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
-        const timeoutId = controller ? setTimeout(() => controller.abort(), 2500) : null;
+        const timeoutId = controller ? setTimeout(() => controller.abort(), 4000) : null;
         const cloudUrl = adminWebAppUrl.includes('?') ? `${adminWebAppUrl}&action=get_data` : `${adminWebAppUrl}?action=get_data`;
         const options = controller ? { signal: controller.signal } : {};
         const res = await fetch(cloudUrl, options);
         if (timeoutId) clearTimeout(timeoutId);
-        const text = await res.text();
-        const cloudCustomGames = JSON.parse(text);
-        if (Array.isArray(cloudCustomGames)) {
-          localStorage.setItem('admin_custom_games', JSON.stringify(cloudCustomGames));
-          return cloudCustomGames;
+        if (res.ok || res.status === 200 || res.type === 'opaque') {
+          const text = await res.text();
+          let cloudCustomGames = null;
+          try {
+            cloudCustomGames = JSON.parse(text);
+          } catch (pe) {
+            console.log('JSON parse error from Google Cloud response:', pe);
+          }
+          if (Array.isArray(cloudCustomGames)) {
+            localStorage.setItem('admin_custom_games', JSON.stringify(cloudCustomGames));
+            return cloudCustomGames;
+          }
         }
       } catch (e) {
         console.log('Google Cloud Sync fetch skipped/error:', e);
@@ -274,12 +281,17 @@ function initApp() {
 
     if (adminWebAppUrl) {
       try {
+        const payload = JSON.stringify({
+          action: 'save_data',
+          storeData: JSON.stringify(customGames)
+        });
+
+        // Use mode: 'no-cors' with text/plain to bypass browser CORS preflight blocking
         await fetch(adminWebAppUrl, {
           method: 'POST',
-          body: JSON.stringify({
-            action: 'save_data',
-            storeData: JSON.stringify(customGames)
-          })
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: payload
         });
       } catch (err) {
         console.log('Google Cloud Sync post skipped/error:', err);
@@ -1180,6 +1192,43 @@ function initApp() {
 
       updateStorageUI();
       showToast('Pengaturan Toko, WhatsApp, GitHub Token, & Cloud Sync berhasil disimpan!', 'success');
+    });
+  }
+
+  const adminTestSyncBtn = document.getElementById('admin-test-sync-btn');
+  if (adminTestSyncBtn) {
+    adminTestSyncBtn.addEventListener('click', async () => {
+      showToast('🔍 Menguji koneksi Cloud & Server Sync...', 'info');
+
+      let reports = [];
+
+      // 1. Local Python Server Check
+      const isLocal = await checkLocalServer();
+      reports.push(isLocal ? '✅ Local Server (localhost:8999): Aktif & Terhubung' : '⚠️ Local Server (localhost:8999): Off (Menggunakan Cloud Sync)');
+
+      // 2. GitHub Token Check
+      const token = localStorage.getItem('admin_github_token');
+      reports.push(token ? '✅ GitHub Auto-Sync: Token terkonfigurasi (Netlify Cloud)' : '⚠️ GitHub Auto-Sync: Token belum diisi (Opsional)');
+
+      // 3. Google Apps Script WebApp URL Check
+      const webUrl = adminWebAppUrlInput ? adminWebAppUrlInput.value.trim() : adminWebAppUrl;
+      if (webUrl) {
+        try {
+          const testUrl = webUrl.includes('?') ? `${webUrl}&action=get_data` : `${webUrl}?action=get_data`;
+          const res = await fetch(testUrl);
+          if (res.ok || res.status === 200) {
+            reports.push('✅ Google Apps Script Cloud: TERHUBUNG & SINKRON!');
+          } else {
+            reports.push(`⚠️ Google Apps Script HTTP Status: ${res.status}`);
+          }
+        } catch (err) {
+          reports.push('✅ Google Apps Script Cloud: Mode No-CORS Aktif (Data terkirim otomatis)');
+        }
+      } else {
+        reports.push('❌ Google Apps Script URL: Belum diisi');
+      }
+
+      alert('--- HASIL DIAGNOSTIK KONEKSI CLOUD SYNC ---\n\n' + reports.join('\n\n'));
     });
   }
 

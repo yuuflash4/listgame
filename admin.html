@@ -138,7 +138,12 @@
               <span style="font-size: 0.78rem; color: var(--text-muted);">Tautan Google Apps Script untuk sinkronisasi otomatis ke Google Drive & Cloud tanpa server lokal!</span>
             </div>
 
-            <button type="submit" class="admin-btn" style="width: 100%; margin-bottom: 20px;">Simpan Pengaturan</button>
+            <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+              <button type="submit" class="admin-btn" style="flex: 1;">Simpan Pengaturan</button>
+              <button type="button" id="admin-test-sync-btn" class="admin-btn admin-btn-secondary" style="flex: 1;">
+                🔍 Tes Koneksi Cloud
+              </button>
+            </div>
           </form>
 
           <hr style="border: none; border-top: 1px solid var(--border-color); margin: 20px 0;" />
