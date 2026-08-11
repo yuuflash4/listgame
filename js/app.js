@@ -83,26 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
         { text: '500 GB', value: 455 },
         { text: '1 TB', value: 920 }
       ]
-    },
-    flashdisk: {
-      label: 'FLASHDISK',
-      category: 'ps2',
-      defaultCapacity: 58,
-      capacities: [
-        { text: '32 GB', value: 29 },
-        { text: '64 GB', value: 58 },
-        { text: '128 GB', value: 116 }
-      ]
-    },
-    ssd: {
-      label: 'SSD',
-      category: 'all',
-      defaultCapacity: 476,
-      capacities: [
-        { text: '256 GB', value: 238 },
-        { text: '512 GB', value: 476 },
-        { text: '1 TB', value: 953 }
-      ]
     }
   };
 

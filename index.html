@@ -14,40 +14,7 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="landing-active">
-
-  <!-- 1. LANDING SCREEN MODAL (PEMILIHAN STORAGE) -->
-  <div id="landing-screen" class="landing-screen" role="dialog" aria-modal="true" aria-label="Halaman awal WD Games">
-    <div class="landing-backdrop"></div>
-    <section class="landing-card">
-      <p class="landing-eyebrow">WD GAMES STORE</p>
-      <h2 class="landing-title">Pilih Media Penyimpanan</h2>
-      <p class="landing-subtitle">Silakan pilih jenis media penyimpanan yang ingin Anda isi game:</p>
-
-      <div id="landing-storage-actions" class="landing-storage-grid">
-        <button class="landing-choice-card" type="button" data-storage="hdd" aria-label="Pilih HDD">
-          <div class="landing-choice-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><line x1="6" y1="12" x2="6.01" y2="12"></line><line x1="10" y1="12" x2="18" y2="12"></line></svg>
-          </div>
-          <span class="landing-choice-label">HARDDISK (HDD)</span>
-        </button>
-
-        <button class="landing-choice-card" type="button" data-storage="flashdisk" aria-label="Pilih Flashdisk">
-          <div class="landing-choice-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h12v6H6z"></path><path d="M4 8h16v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8z"></path><line x1="10" y1="12" x2="10" y2="15"></line><line x1="14" y1="12" x2="14" y2="15"></line></svg>
-          </div>
-          <span class="landing-choice-label">FLASHDISK</span>
-        </button>
-
-        <button class="landing-choice-card" type="button" data-storage="ssd" aria-label="Pilih SSD">
-          <div class="landing-choice-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><line x1="6" y1="8" x2="10" y2="8"></line><line x1="6" y1="12" x2="14" y2="12"></line><line x1="6" y1="16" x2="18" y2="16"></line></svg>
-          </div>
-          <span class="landing-choice-label">SOLID STATE (SSD)</span>
-        </button>
-      </div>
-    </section>
-  </div>
+<body class="">
 
   <!-- 2. STICKY HEADER & STORAGE PLANNER -->
   <header class="planner-header">
@@ -75,8 +42,6 @@
         <div class="planner-storage-controls">
           <select id="storage-type-select" class="custom-select storage-type-select" aria-label="Pilih media penyimpanan">
             <option value="hdd" selected>HDD</option>
-            <option value="flashdisk">Flashdisk</option>
-            <option value="ssd">SSD</option>
           </select>
 
           <!-- Custom Dropdown Preset Capacity -->
