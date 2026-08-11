@@ -81,6 +81,19 @@
         </div>
 
         <div class="controls-right">
+          <!-- View Mode Switcher Buttons -->
+          <div class="view-mode-toggle" id="view-mode-toggle">
+            <button id="view-grid-btn" class="view-btn active" type="button" title="Tampilan Grid (Gambar)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            </button>
+            <button id="view-list-btn" class="view-btn" type="button" title="Tampilan List (Thumbnail)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+            </button>
+            <button id="view-title-btn" class="view-btn" type="button" title="Tampilan Judul Saja (Ringkas)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+            </button>
+          </div>
+
           <select id="category-filter" class="custom-select" aria-label="Filter kategori game">
             <option value="all" selected>Semua Kategori</option>
             <option value="pc">Game PC</option>

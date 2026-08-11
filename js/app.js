@@ -18,12 +18,45 @@ document.addEventListener('DOMContentLoaded', () => {
   const storageTypeLabelEl = document.getElementById('storage-type-label');
   const progressBar = document.getElementById('progress-bar');
   
-  // Store Catalog Elements
+  // Store Catalog Elements & View Mode Switcher
   const searchInput = document.getElementById('search-input');
   const categoryFilter = document.getElementById('category-filter');
   const selectedCountEl = document.getElementById('selected-count');
   const gameGrid = document.getElementById('game-grid');
   const loadMoreBtn = document.getElementById('load-more-btn');
+  const viewGridBtn = document.getElementById('view-grid-btn');
+  const viewListBtn = document.getElementById('view-list-btn');
+  const viewTitleBtn = document.getElementById('view-title-btn');
+  
+  let currentViewMode = localStorage.getItem('game_view_mode') || 'grid';
+
+  function setViewMode(mode) {
+    currentViewMode = mode;
+    localStorage.setItem('game_view_mode', mode);
+
+    [viewGridBtn, viewListBtn, viewTitleBtn].forEach(btn => {
+      if (btn) btn.classList.remove('active');
+    });
+
+    gameGrid.classList.remove('view-grid', 'view-list', 'view-title-only');
+
+    if (mode === 'list') {
+      if (viewListBtn) viewListBtn.classList.add('active');
+      gameGrid.classList.add('view-list');
+    } else if (mode === 'title-only') {
+      if (viewTitleBtn) viewTitleBtn.classList.add('active');
+      gameGrid.classList.add('view-title-only');
+    } else {
+      if (viewGridBtn) viewGridBtn.classList.add('active');
+      gameGrid.classList.add('view-grid');
+    }
+  }
+
+  if (viewGridBtn) viewGridBtn.addEventListener('click', () => setViewMode('grid'));
+  if (viewListBtn) viewListBtn.addEventListener('click', () => setViewMode('list'));
+  if (viewTitleBtn) viewTitleBtn.addEventListener('click', () => setViewMode('title-only'));
+  
+  setViewMode(currentViewMode);
   
   // Spec Modal Elements
   const infoModal = document.getElementById('info-modal');
