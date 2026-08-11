@@ -59,7 +59,7 @@
         <!-- Promo Banner Bar -->
         <div class="promo-banner-bar">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
-          <span>🎁 <strong>PROMO SPESIAL:</strong> Setiap Beli 3 Game, Potongan Langsung <strong>Rp 10.000</strong> (Kelipatan Berlaku)!</span>
+          <span>🎁 <strong>PROMO SPESIAL:</strong> Diskon <strong>Rp 10.000</strong> (Setiap Beli 3 Game > Rp 10rb) & <strong>GRATIS ONGKIR Teknisi</strong> (Belanja Rp 50rb+)!</span>
         </div>
 
         <!-- Sticky Controls (Search & Filter) -->
@@ -270,6 +270,36 @@
         <button id="close-export-modal" class="close-btn">&times;</button>
       </div>
       <div class="modal-body">
+        <!-- Delivery Service Selection (Store Catalog Only) -->
+        <div class="delivery-section">
+          <label class="delivery-section-label">Pilih Metode Layanan / Pengiriman:</label>
+          <div class="delivery-options-grid">
+            <label class="delivery-card active" id="delivery-store-card">
+              <input type="radio" name="delivery_method" value="store_visit" checked class="delivery-radio" />
+              <div class="delivery-card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              </div>
+              <div class="delivery-card-content">
+                <div class="delivery-card-title">Saya Akan Datang ke Toko</div>
+                <div class="delivery-card-sub">Isi langsung di tempat</div>
+              </div>
+              <span class="delivery-badge free">Gratis</span>
+            </label>
+
+            <label class="delivery-card" id="delivery-tech-card">
+              <input type="radio" name="delivery_method" value="home_tech" class="delivery-radio" />
+              <div class="delivery-card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <div class="delivery-card-content">
+                <div class="delivery-card-title">Panggil Teknisi ke Rumah</div>
+                <div class="delivery-card-sub">Layanan kunjungan lokasi</div>
+              </div>
+              <span class="delivery-badge fee">+Rp 10.000</span>
+            </label>
+          </div>
+        </div>
+
         <div class="checkout-actions-container single-action">
           <a id="wa-direct-btn" href="#" target="_blank" class="action-card action-wa">
             <div class="action-card-icon">

@@ -391,15 +391,27 @@ function initApp() {
     if (size <= 10) return 10000;
     if (size <= 50) return 20000;
     if (size <= 100) return 30000;
-    return 40000;
+    if (size <= 150) return 40000;
+    return 50000;
   }
 
   function formatRupiah(amount) {
     return 'Rp ' + Math.round(amount || 0).toLocaleString('id-ID');
   }
 
-  function calculatePromoDiscount(count) {
-    const setsOfThree = Math.floor(count / 3);
+  function calculatePromoDiscount() {
+    let eligibleCount = 0;
+    selectedGames.forEach(title => {
+      const game = gamesByTitle.get(title);
+      if (game) {
+        const price = calculateGamePrice(game.sizeGB);
+        if (price > 10000) {
+          eligibleCount++;
+        }
+      }
+    });
+
+    const setsOfThree = Math.floor(eligibleCount / 3);
     return setsOfThree * 10000;
   }
 
@@ -415,7 +427,7 @@ function initApp() {
       }
     });
 
-    const discountAmount = calculatePromoDiscount(selectedGames.size);
+    const discountAmount = calculatePromoDiscount();
     const finalPrice = Math.max(0, rawTotalPrice - discountAmount);
 
     if (storageUsedEl) storageUsedEl.textContent = `${totalUsedGB.toFixed(1)} GB`;
@@ -866,6 +878,8 @@ function initApp() {
     });
   }
 
+  let selectedDeliveryMethod = 'store_visit';
+
   function buildExportText() {
     const lines = [];
     if (isNoPriceMode) {
@@ -897,7 +911,6 @@ function initApp() {
       lines.push(`Hasil simulasi kapasitas penyimpanan Grandia Game Tavern.`);
     } else {
       lines.push(`*DAFTAR PESANAN GAME - GRANDIA GAME TAVERN*`);
-      lines.push(`Media Storage: *${storagePresets[currentStorageType].label} ${currentCapacityGB} GB*`);
       lines.push(`===============================`);
       lines.push(``);
 
@@ -917,28 +930,127 @@ function initApp() {
         counter++;
       });
 
-      const discountAmount = calculatePromoDiscount(selectedGames.size);
-      const finalPrice = Math.max(0, totalPrice - discountAmount);
+      const discountAmount = calculatePromoDiscount();
+      const isFreeShippingPromo = totalPrice >= 50000;
+      const deliveryFee = (selectedDeliveryMethod === 'home_tech' && !isFreeShippingPromo) ? 10000 : 0;
+      const finalPrice = Math.max(0, totalPrice - discountAmount + deliveryFee);
 
-      const remainingGB = currentCapacityGB - totalSizeGB;
       lines.push(``);
       lines.push(`===============================`);
       lines.push(`Total Game: *${selectedGames.size} Judul*`);
       lines.push(`Total Ukuran: *${totalSizeGB.toFixed(1)} GB*`);
-      lines.push(`Subtotal Biaya: *${formatRupiah(totalPrice)}*`);
+      lines.push(`Subtotal Game: *${formatRupiah(totalPrice)}*`);
       if (discountAmount > 0) {
         lines.push(`Diskon Promo (Beli 3): *- ${formatRupiah(discountAmount)}* 🎉`);
       }
+      let deliveryText = '';
+      if (selectedDeliveryMethod === 'home_tech') {
+        deliveryText = isFreeShippingPromo 
+          ? `Panggil Teknisi ke Rumah (GRATIS ONGKIR Promo Rp 50rb+) 🎉` 
+          : `Panggil Teknisi ke Rumah (+Rp 10.000)`;
+      } else {
+        deliveryText = `Datang Langsung ke Toko (Gratis)`;
+      }
+      lines.push(`Metode Layanan: *${deliveryText}*`);
       lines.push(`-------------------------------`);
       lines.push(`TOTAL BIAYA AKHIR: *${formatRupiah(finalPrice)}*`);
       lines.push(``);
       if (discountAmount > 0) {
         lines.push(`🎉 Selamat! Anda mendapat potongan ${formatRupiah(discountAmount)} dari Promo Beli 3 Game!`);
       }
+      if (isFreeShippingPromo && selectedDeliveryMethod === 'home_tech') {
+        lines.push(`🎉 Selamat! Anda mendapat BEBAS ONGKIR Teknisi (Promo Belanja Rp 50.000+)!`);
+      }
       lines.push(`Mohon kirimkan format ini ke Admin Grandia Game Tavern.`);
     }
 
     return lines.join('\n');
+  }
+
+  function updateExportTotals() {
+    let totalSizeGB = 0;
+    let totalPrice = 0;
+
+    selectedGames.forEach(title => {
+      const game = gamesByTitle.get(title);
+      if (!game) return;
+      totalSizeGB += (game.sizeGB * sizeBufferMultiplier);
+      totalPrice += calculateGamePrice(game.sizeGB);
+    });
+
+    if (exportTotalSize) exportTotalSize.textContent = `${totalSizeGB.toFixed(1)} GB`;
+
+    const discountAmount = calculatePromoDiscount();
+    const isFreeShippingPromo = totalPrice >= 50000;
+    const deliveryFee = (!isNoPriceMode && selectedDeliveryMethod === 'home_tech' && !isFreeShippingPromo) ? 10000 : 0;
+    const finalPrice = Math.max(0, totalPrice - discountAmount + deliveryFee);
+
+    // Dynamic Card Badge Update
+    if (deliveryTechCard) {
+      const badge = deliveryTechCard.querySelector('.delivery-badge');
+      const sub = deliveryTechCard.querySelector('.delivery-card-sub');
+      if (badge && sub) {
+        if (isFreeShippingPromo) {
+          badge.className = 'delivery-badge promo-free';
+          badge.textContent = 'GRATIS ONGKIR 🎉';
+          sub.textContent = 'Bebas Ongkir (Promo Belanja Rp 50rb+)';
+        } else {
+          badge.className = 'delivery-badge fee';
+          badge.textContent = '+Rp 10.000';
+          sub.textContent = 'Layanan kunjungan lokasi';
+        }
+      }
+    }
+
+    const exportTotalPriceEl = document.getElementById('export-total-price');
+    if (exportTotalPriceEl) {
+      if (discountAmount > 0 || deliveryFee > 0 || (isFreeShippingPromo && selectedDeliveryMethod === 'home_tech')) {
+        let ongkirText = '';
+        if (selectedDeliveryMethod === 'home_tech') {
+          ongkirText = isFreeShippingPromo ? ' | Ongkir: GRATIS (Promo Rp 50rb+) 🎉' : ' | Ongkir: +Rp 10.000';
+        } else {
+          ongkirText = ' | Ongkir: Rp 0 (Toko)';
+        }
+
+        exportTotalPriceEl.innerHTML = `
+          <strong style="color: var(--success); font-size: 1.05rem;">${formatRupiah(finalPrice)}</strong>
+          <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; font-weight: 600;">
+            Subtotal: ${formatRupiah(totalPrice)}
+            ${discountAmount > 0 ? ` | Promo: -${formatRupiah(discountAmount)}` : ''}
+            ${ongkirText}
+          </div>
+        `;
+      } else {
+        exportTotalPriceEl.textContent = formatRupiah(finalPrice);
+      }
+    }
+
+    if (waDirectBtn) {
+      const waText = encodeURIComponent(buildExportText());
+      waDirectBtn.href = `https://wa.me/${adminWaNumber}?text=${waText}`;
+    }
+  }
+
+  const deliveryStoreCard = document.getElementById('delivery-store-card');
+  const deliveryTechCard = document.getElementById('delivery-tech-card');
+  const deliveryRadios = document.querySelectorAll('input[name="delivery_method"]');
+
+  if (deliveryRadios.length > 0) {
+    deliveryRadios.forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        selectedDeliveryMethod = e.target.value;
+        if (deliveryStoreCard && deliveryTechCard) {
+          if (selectedDeliveryMethod === 'home_tech') {
+            deliveryTechCard.classList.add('active');
+            deliveryStoreCard.classList.remove('active');
+          } else {
+            deliveryStoreCard.classList.add('active');
+            deliveryTechCard.classList.remove('active');
+          }
+        }
+        updateExportTotals();
+      });
+    });
   }
 
   function openExportModal() {
@@ -949,8 +1061,6 @@ function initApp() {
 
     exportTableBody.innerHTML = '';
     let counter = 1;
-    let totalSizeGB = 0;
-    let totalPrice = 0;
 
     selectedGames.forEach(title => {
       const game = gamesByTitle.get(title);
@@ -965,34 +1075,10 @@ function initApp() {
         ${isNoPriceMode ? '' : `<td style="color: var(--success); font-weight: 700;">${formatRupiah(price)}</td>`}
       `;
       exportTableBody.appendChild(tr);
-
-      totalSizeGB += (game.sizeGB * sizeBufferMultiplier);
-      totalPrice += price;
       counter++;
     });
 
-    exportTotalSize.textContent = `${totalSizeGB.toFixed(1)} GB`;
-    const discountAmount = calculatePromoDiscount(selectedGames.size);
-    const finalPrice = Math.max(0, totalPrice - discountAmount);
-
-    const exportTotalPriceEl = document.getElementById('export-total-price');
-    if (exportTotalPriceEl) {
-      if (discountAmount > 0) {
-        exportTotalPriceEl.innerHTML = `
-          <span style="text-decoration: line-through; opacity: 0.6; font-size: 0.85rem; margin-right: 6px;">${formatRupiah(totalPrice)}</span>
-          <strong style="color: var(--success); font-size: 1.05rem;">${formatRupiah(finalPrice)}</strong>
-          <span class="promo-badge-text">Diskon Promo (Beli 3): -${formatRupiah(discountAmount)} 🎉</span>
-        `;
-      } else {
-        exportTotalPriceEl.textContent = formatRupiah(finalPrice);
-      }
-    }
-    
-    // Update Direct WA Link
-    if (waDirectBtn) {
-      const waText = encodeURIComponent(buildExportText());
-      waDirectBtn.href = `https://wa.me/${adminWaNumber}?text=${waText}`;
-    }
+    updateExportTotals();
 
     if (exportModal) exportModal.classList.add('active');
   }
