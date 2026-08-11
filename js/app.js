@@ -327,15 +327,27 @@ function initApp() {
   // Load All Catalogs + LocalStorage Custom Admin Edits
   async function loadAllCatalogs() {
     try {
-      gameGrid.innerHTML = `<div class="loading-state">Memuat katalog lengkap (7,700+ game)...</div>`;
+      if (gameGrid) gameGrid.innerHTML = `<div class="loading-state">Memuat katalog lengkap (7,700+ game)...</div>`;
       
-      const [pcRes, ps2Res] = await Promise.all([
-        fetch('data/pc_games.json'),
-        fetch('data/ps2_games.json')
-      ]);
+      let pcRaw = window.PC_GAMES_DATA || null;
+      let ps2Raw = window.PS2_GAMES_DATA || null;
 
-      const pcRaw = await pcRes.json();
-      const ps2Raw = await ps2Res.json();
+      if (!pcRaw || !ps2Raw) {
+        try {
+          const [pcRes, ps2Res] = await Promise.all([
+            fetch('data/pc_games.json'),
+            fetch('data/ps2_games.json')
+          ]);
+          if (!pcRaw) pcRaw = await pcRes.json();
+          if (!ps2Raw) ps2Raw = await ps2Res.json();
+        } catch (fetchErr) {
+          console.warn('Fetch JSON failed or blocked, attempting fallback:', fetchErr);
+        }
+      }
+
+      if (!pcRaw || !ps2Raw) {
+        throw new Error('Gagal mengambil file katalog game.');
+      }
 
       allGames = [];
       gamesByTitle.clear();
@@ -386,7 +398,10 @@ function initApp() {
       if (adminTableBody) renderAdminTable();
     } catch (err) {
       console.error('Error loading game catalog:', err);
-      gameGrid.innerHTML = `<div class="empty-state">Gagal memuat katalog game. Silakan periksa koneksi.</div>`;
+      if (gameGrid) gameGrid.innerHTML = `<div class="empty-state">Gagal memuat katalog game: ${err.message}</div>`;
+      if (adminTableBody) {
+        adminTableBody.innerHTML = `<tr><td colspan="6" style="text-align: center; color: var(--danger); padding: 20px;">Gagal memuat data katalog: ${err.message}</td></tr>`;
+      }
     }
   }
 
