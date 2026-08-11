@@ -129,7 +129,7 @@ function initApp() {
   let gamesByTitle = new Map();
   
   // Admin State from LocalStorage
-  let adminWaNumber = localStorage.getItem('admin_wa_number') || '628123456789';
+  let adminWaNumber = localStorage.getItem('admin_wa_number') || '6285701917085';
   let sizeBufferPercentage = parseFloat(localStorage.getItem('admin_buffer_percentage') || '5');
   let sizeBufferMultiplier = 1 + (sizeBufferPercentage / 100);
 
