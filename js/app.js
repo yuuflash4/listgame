@@ -151,25 +151,13 @@ function initApp() {
 
   const storeControls = document.getElementById('store-controls');
 
-  // Tab View Switcher
-  tabStoreBtn.addEventListener('click', () => {
+  // Navigation Header Link Active State
+  if (tabStoreBtn && window.location.pathname.includes('index.html')) {
     tabStoreBtn.classList.add('active');
-    tabAdminBtn.classList.remove('active');
-    mainContent.style.display = 'block';
-    adminView.style.display = 'none';
-    if (storeControls) storeControls.style.display = 'flex';
-    syncHeaderHeight();
-  });
-
-  tabAdminBtn.addEventListener('click', () => {
+  }
+  if (tabAdminBtn && window.location.pathname.includes('admin.html')) {
     tabAdminBtn.classList.add('active');
-    tabStoreBtn.classList.remove('active');
-    mainContent.style.display = 'none';
-    adminView.style.display = 'block';
-    if (storeControls) storeControls.style.display = 'none';
-    syncHeaderHeight();
-    renderAdminTable();
-  });
+  }
 
   // Size Parser
   function parseSizeToGB(sizeVal) {
@@ -877,8 +865,11 @@ function initApp() {
     if (!adminTableBody) return;
     adminTableBody.innerHTML = '';
     
-    const query = adminSearchInput ? adminSearchInput.value.toLowerCase().trim() : '';
-    const filtered = allGames.filter(g => !query || g.title.toLowerCase().includes(query));
+    const query = adminSearchInput ? (adminSearchInput.value || '').toLowerCase().trim() : '';
+    const filtered = allGames.filter(g => {
+      if (!g || !g.title) return false;
+      return !query || g.title.toLowerCase().includes(query);
+    });
 
     if (adminTotalCountEl) adminTotalCountEl.textContent = filtered.length;
 
@@ -891,13 +882,18 @@ function initApp() {
     const slice = filtered.slice(0, 100);
 
     slice.forEach((game, idx) => {
+      const categoryStr = (game.category || 'pc').toUpperCase();
+      const sizeNum = typeof game.sizeGB === 'number' && !isNaN(game.sizeGB) ? game.sizeGB : parseFloat(game.sizeGB) || 0;
+      const titleStr = game.title || 'Untitled Game';
+      const coverUrl = game.cover || 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop';
+
       const tr = document.createElement('tr');
       tr.innerHTML = `
         <td>${idx + 1}</td>
-        <td><img src="${game.cover}" width="36" height="48" style="object-fit: cover; border-radius: 4px;" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" /></td>
-        <td style="font-weight: 700; color: var(--text-primary);">${game.title}</td>
-        <td><span class="game-badge ${game.category}" style="position: static;">${game.category.toUpperCase()}</span></td>
-        <td style="color: var(--accent); font-weight: 700;">${game.sizeGB.toFixed(1)} GB</td>
+        <td><img src="${coverUrl}" width="36" height="48" style="object-fit: cover; border-radius: 4px;" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" /></td>
+        <td style="font-weight: 700; color: var(--text-primary);">${titleStr}</td>
+        <td><span class="game-badge ${(game.category || 'pc').toLowerCase()}" style="position: static;">${categoryStr}</span></td>
+        <td style="color: var(--accent); font-weight: 700;">${sizeNum.toFixed(1)} GB</td>
         <td>
           <button class="btn-action-sm btn-edit" type="button">Edit</button>
           <button class="btn-action-sm btn-delete" type="button">Hapus</button>
@@ -905,38 +901,44 @@ function initApp() {
       `;
 
       // Edit Action
-      tr.querySelector('.btn-edit').addEventListener('click', () => {
-        if (adminGameId) adminGameId.value = game.id;
-        if (adminTitle) adminTitle.value = game.title;
-        if (adminCategory) adminCategory.value = game.category;
-        if (adminSize) adminSize.value = game.sizeGB;
-        if (adminCover) adminCover.value = game.cover;
-        if (adminGenre) adminGenre.value = game.game_info ? (game.game_info.Genre || '') : '';
-        if (adminDeveloper) adminDeveloper.value = game.game_info ? (game.game_info.Developer || '') : '';
-        if (adminReqs) adminReqs.value = Array.isArray(game.requirements) ? game.requirements.join('\n') : '';
+      const btnEdit = tr.querySelector('.btn-edit');
+      if (btnEdit) {
+        btnEdit.addEventListener('click', () => {
+          if (adminGameId) adminGameId.value = game.id || '';
+          if (adminTitle) adminTitle.value = game.title || '';
+          if (adminCategory) adminCategory.value = game.category || 'pc';
+          if (adminSize) adminSize.value = sizeNum;
+          if (adminCover) adminCover.value = game.cover || '';
+          if (adminGenre) adminGenre.value = game.game_info ? (game.game_info.Genre || '') : '';
+          if (adminDeveloper) adminDeveloper.value = game.game_info ? (game.game_info.Developer || '') : '';
+          if (adminReqs) adminReqs.value = Array.isArray(game.requirements) ? game.requirements.join('\n') : '';
 
-        if (adminFormTitle) adminFormTitle.textContent = `Edit Game: ${game.title}`;
-        if (adminResetFormBtn) adminResetFormBtn.style.display = 'inline-block';
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
+          if (adminFormTitle) adminFormTitle.textContent = `Edit Game: ${titleStr}`;
+          if (adminResetFormBtn) adminResetFormBtn.style.display = 'inline-block';
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
 
       // Delete Action
-      tr.querySelector('.btn-delete').addEventListener('click', () => {
-        if (confirm(`Apakah Anda yakin ingin menghapus "${game.title}"?`)) {
-          allGames = allGames.filter(g => g.id !== game.id && g.title !== game.title);
-          gamesByTitle.delete(game.title);
-          selectedGames.delete(game.title);
+      const btnDelete = tr.querySelector('.btn-delete');
+      if (btnDelete) {
+        btnDelete.addEventListener('click', () => {
+          if (confirm(`Apakah Anda yakin ingin menghapus "${titleStr}"?`)) {
+            allGames = allGames.filter(g => g.id !== game.id && g.title !== game.title);
+            gamesByTitle.delete(game.title);
+            selectedGames.delete(game.title);
 
-          let customGames = JSON.parse(localStorage.getItem('admin_custom_games') || '[]');
-          customGames = customGames.filter(g => g.id !== game.id && g.title !== game.title);
-          localStorage.setItem('admin_custom_games', JSON.stringify(customGames));
+            let customGames = JSON.parse(localStorage.getItem('admin_custom_games') || '[]');
+            customGames = customGames.filter(g => g.id !== game.id && g.title !== game.title);
+            localStorage.setItem('admin_custom_games', JSON.stringify(customGames));
 
-          showToast(`Game "${game.title}" telah dihapus!`, 'success');
-          applyFilters();
-          renderAdminTable();
-          updateStorageUI();
-        }
-      });
+            showToast(`Game "${titleStr}" telah dihapus!`, 'success');
+            applyFilters();
+            renderAdminTable();
+            updateStorageUI();
+          }
+        });
+      }
 
       adminTableBody.appendChild(tr);
     });
