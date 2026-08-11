@@ -318,21 +318,25 @@ function initApp() {
     try {
       if (gameGrid) gameGrid.innerHTML = `<div class="loading-state">Memuat katalog lengkap (7,700+ game)...</div>`;
       
-      let pcRaw = window.PC_GAMES_DATA || null;
-      let ps2Raw = window.PS2_GAMES_DATA || null;
+      let pcRaw = null;
+      let ps2Raw = null;
 
-      if (!pcRaw || !ps2Raw) {
-        try {
-          const [pcRes, ps2Res] = await Promise.all([
-            fetch('data/pc_games.json'),
-            fetch('data/ps2_games.json')
-          ]);
-          if (!pcRaw) pcRaw = await pcRes.json();
-          if (!ps2Raw) ps2Raw = await ps2Res.json();
-        } catch (fetchErr) {
-          console.warn('Fetch JSON failed or blocked, attempting fallback:', fetchErr);
-        }
+      // 1. Try Live JSON Fetch First
+      try {
+        const timestamp = Date.now();
+        const [pcRes, ps2Res] = await Promise.all([
+          fetch(`data/pc_games.json?t=${timestamp}`),
+          fetch(`data/ps2_games.json?t=${timestamp}`)
+        ]);
+        if (pcRes.ok) pcRaw = await pcRes.json();
+        if (ps2Res.ok) ps2Raw = await ps2Res.json();
+      } catch (fetchErr) {
+        console.warn('Fetch JSON failed or blocked, checking fallback script data:', fetchErr);
       }
+
+      // 2. Fallback to embedded window object if fetch failed
+      if (!pcRaw) pcRaw = window.PC_GAMES_DATA || null;
+      if (!ps2Raw) ps2Raw = window.PS2_GAMES_DATA || null;
 
       if (!pcRaw || !ps2Raw) {
         throw new Error('Gagal mengambil file katalog game.');
