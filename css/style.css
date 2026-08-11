@@ -1174,10 +1174,12 @@ body.landing-active .selected-games-container {
   .planner-top {
     flex-direction: column;
     align-items: stretch;
+    gap: 10px;
   }
 
   .planner-storage-controls {
     justify-content: space-between;
+    width: 100%;
   }
 
   .storage-type-select, .capacity-dropdown {
@@ -1187,14 +1189,49 @@ body.landing-active .selected-games-container {
   .controls {
     flex-direction: column;
     align-items: stretch;
+    gap: 10px;
+    padding: 10px 12px;
   }
 
   .search-input-wrap {
     max-width: 100%;
+    width: 100%;
   }
 
   .controls-right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .view-mode-toggle {
+    flex-shrink: 0;
+  }
+
+  #category-filter {
+    flex: 1;
+    min-width: 120px;
+  }
+
+  .stats {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 8px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.12);
+  }
+
+  .export-btn {
+    flex: 1;
+    justify-content: center;
+    padding: 9px 14px;
+    font-size: 0.85rem;
+    white-space: nowrap;
   }
 
   .landing-storage-grid {
@@ -1202,8 +1239,23 @@ body.landing-active .selected-games-container {
   }
 
   .game-grid {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo-text {
+    font-size: 1.15rem;
+  }
+  
+  .logo-img {
+    height: 34px;
+  }
+
+  .export-btn {
+    font-size: 0.8rem;
+    padding: 8px 10px;
   }
 }
 
