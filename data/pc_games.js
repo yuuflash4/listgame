@@ -1,7 +1,7 @@
 window.PC_GAMES_DATA = [
   {
     "title": "The First Berserker: Khazan",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2680010/header.jpg?t=1776936760",
+    "banner_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8roc.webp",
     "category": "pc",
     "game_info": {
       "Genre": "Action, RPG",
@@ -15,7 +15,8 @@ window.PC_GAMES_DATA = [
       "Grafis: GeForce GTX 970 or Radeon RX 580 or Arc A580",
       "DirectX: Versi 11",
       "Penyimpanan: 70 GB ruang tersedia",
-      "Catatan Tambahan: Requires SSD, 1080p resolution 30fps with low graphics options"
+      "Catatan Tambahan: Requires SSD",
+      "1080p resolution 30fps with low graphics options"
     ]
   },
   {
