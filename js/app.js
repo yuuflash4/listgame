@@ -750,21 +750,24 @@ function initApp() {
   // ==========================================================================
 
   // Admin Settings Form Submit
-  adminSettingsForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    adminWaNumber = adminWaNumberInput.value.trim().replace(/[^0-9]/g, '');
-    sizeBufferPercentage = parseFloat(adminBufferPercentageInput.value) || 5;
-    sizeBufferMultiplier = 1 + (sizeBufferPercentage / 100);
+  if (adminSettingsForm) {
+    adminSettingsForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      adminWaNumber = adminWaNumberInput.value.trim().replace(/[^0-9]/g, '');
+      sizeBufferPercentage = parseFloat(adminBufferPercentageInput.value) || 5;
+      sizeBufferMultiplier = 1 + (sizeBufferPercentage / 100);
 
-    localStorage.setItem('admin_wa_number', adminWaNumber);
-    localStorage.setItem('admin_buffer_percentage', sizeBufferPercentage);
+      localStorage.setItem('admin_wa_number', adminWaNumber);
+      localStorage.setItem('admin_buffer_percentage', sizeBufferPercentage);
 
-    updateStorageUI();
-    showToast('Pengaturan Toko & WhatsApp berhasil disimpan!', 'success');
-  });
+      updateStorageUI();
+      showToast('Pengaturan Toko & WhatsApp berhasil disimpan!', 'success');
+    });
+  }
 
   // Save Game Form (Add / Edit)
-  adminGameForm.addEventListener('submit', (e) => {
+  if (adminGameForm) {
+    adminGameForm.addEventListener('submit', (e) => {
     e.preventDefault();
     
     const editId = adminGameId.value;
@@ -821,32 +824,33 @@ function initApp() {
     resetAdminGameForm();
     applyFilters();
     renderAdminTable();
-  });
+    });
+  }
 
   // Reset Admin Game Form
   function resetAdminGameForm() {
-    adminGameId.value = '';
-    adminTitle.value = '';
-    adminSize.value = '';
-    adminCover.value = '';
-    adminGenre.value = '';
-    adminDeveloper.value = '';
-    adminReqs.value = '';
-    adminFormTitle.textContent = 'Tambah Game Baru';
-    adminResetFormBtn.style.display = 'none';
+    if (adminGameId) adminGameId.value = '';
+    if (adminTitle) adminTitle.value = '';
+    if (adminSize) adminSize.value = '';
+    if (adminCover) adminCover.value = '';
+    if (adminGenre) adminGenre.value = '';
+    if (adminDeveloper) adminDeveloper.value = '';
+    if (adminReqs) adminReqs.value = '';
+    if (adminFormTitle) adminFormTitle.textContent = 'Tambah Game Baru';
+    if (adminResetFormBtn) adminResetFormBtn.style.display = 'none';
   }
 
-  adminResetFormBtn.addEventListener('click', resetAdminGameForm);
+  if (adminResetFormBtn) adminResetFormBtn.addEventListener('click', resetAdminGameForm);
 
   // Render Admin Management Table
   function renderAdminTable() {
     if (!adminTableBody) return;
     adminTableBody.innerHTML = '';
     
-    const query = adminSearchInput.value.toLowerCase().trim();
+    const query = adminSearchInput ? adminSearchInput.value.toLowerCase().trim() : '';
     const filtered = allGames.filter(g => !query || g.title.toLowerCase().includes(query));
 
-    adminTotalCountEl.textContent = filtered.length;
+    if (adminTotalCountEl) adminTotalCountEl.textContent = filtered.length;
 
     if (filtered.length === 0) {
       adminTableBody.innerHTML = `<tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 20px;">Tidak ada game ditemukan.</td></tr>`;
@@ -872,18 +876,18 @@ function initApp() {
 
       // Edit Action
       tr.querySelector('.btn-edit').addEventListener('click', () => {
-        adminGameId.value = game.id;
-        adminTitle.value = game.title;
-        adminCategory.value = game.category;
-        adminSize.value = game.sizeGB;
-        adminCover.value = game.cover;
-        adminGenre.value = game.game_info ? (game.game_info.Genre || '') : '';
-        adminDeveloper.value = game.game_info ? (game.game_info.Developer || '') : '';
-        adminReqs.value = Array.isArray(game.requirements) ? game.requirements.join('\n') : '';
+        if (adminGameId) adminGameId.value = game.id;
+        if (adminTitle) adminTitle.value = game.title;
+        if (adminCategory) adminCategory.value = game.category;
+        if (adminSize) adminSize.value = game.sizeGB;
+        if (adminCover) adminCover.value = game.cover;
+        if (adminGenre) adminGenre.value = game.game_info ? (game.game_info.Genre || '') : '';
+        if (adminDeveloper) adminDeveloper.value = game.game_info ? (game.game_info.Developer || '') : '';
+        if (adminReqs) adminReqs.value = Array.isArray(game.requirements) ? game.requirements.join('\n') : '';
 
-        adminFormTitle.textContent = `Edit Game: ${game.title}`;
-        adminResetFormBtn.style.display = 'inline-block';
-        window.scrollTo({ top: adminView.offsetTop, behavior: 'smooth' });
+        if (adminFormTitle) adminFormTitle.textContent = `Edit Game: ${game.title}`;
+        if (adminResetFormBtn) adminResetFormBtn.style.display = 'inline-block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
 
       // Delete Action
@@ -909,44 +913,50 @@ function initApp() {
   }
 
   let adminSearchTimeout;
-  adminSearchInput.addEventListener('input', () => {
-    clearTimeout(adminSearchTimeout);
-    adminSearchTimeout = setTimeout(renderAdminTable, 250);
-  });
+  if (adminSearchInput) {
+    adminSearchInput.addEventListener('input', () => {
+      clearTimeout(adminSearchTimeout);
+      adminSearchTimeout = setTimeout(renderAdminTable, 250);
+    });
+  }
 
   // Download Backup JSON
-  adminBackupBtn.addEventListener('click', () => {
-    const backupData = allGames.map(g => ({
-      title: g.title,
-      banner_url: g.cover,
-      category: g.category,
-      game_info: {
-        Genre: g.game_info ? g.game_info.Genre : '',
-        Developer: g.game_info ? g.game_info.Developer : '',
-        'Game Size': `${g.sizeGB.toFixed(1)} GB`
-      },
-      system_requirements: g.requirements
-    }));
+  if (adminBackupBtn) {
+    adminBackupBtn.addEventListener('click', () => {
+      const backupData = allGames.map(g => ({
+        title: g.title,
+        banner_url: g.cover,
+        category: g.category,
+        game_info: {
+          Genre: g.game_info ? g.game_info.Genre : '',
+          Developer: g.game_info ? g.game_info.Developer : '',
+          'Game Size': `${g.sizeGB.toFixed(1)} GB`
+        },
+        system_requirements: g.requirements
+      }));
 
-    const blob = new Blob([JSON.stringify(backupData, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `backup_katalog_game_${new Date().toISOString().slice(0, 10)}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
+      const blob = new Blob([JSON.stringify(backupData, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `backup_katalog_game_${new Date().toISOString().slice(0, 10)}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
 
-    showToast('File backup database JSON berhasil diunduh!', 'success');
-  });
+      showToast('File backup database JSON berhasil diunduh!', 'success');
+    });
+  }
 
   // Reset Custom Catalog
-  adminResetCatalogBtn.addEventListener('click', () => {
-    if (confirm('Apakah Anda yakin ingin menghapus seluruh game custom dan mengembalikan katalog ke bawaan awal?')) {
-      localStorage.removeItem('admin_custom_games');
-      loadAllCatalogs();
-      showToast('Katalog berhasil di-reset ke bawaan awal!', 'success');
-    }
-  });
+  if (adminResetCatalogBtn) {
+    adminResetCatalogBtn.addEventListener('click', () => {
+      if (confirm('Apakah Anda yakin ingin menghapus seluruh game custom dan mengembalikan katalog ke bawaan awal?')) {
+        localStorage.removeItem('admin_custom_games');
+        loadAllCatalogs();
+        showToast('Katalog berhasil di-reset ke bawaan awal!', 'success');
+      }
+    });
+  }
 
   // Toast Notification Generator
   function showToast(message, type = 'error') {
