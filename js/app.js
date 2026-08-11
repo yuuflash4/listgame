@@ -87,6 +87,26 @@ function initApp() {
   const selectedWidgetList = document.getElementById('selected-widget-list');
   const plannerHeader = document.querySelector('.planner-header');
 
+  // Smart Auto-Hide Header on Scroll Down & Show on Scroll Up
+  if (plannerHeader) {
+    let lastScrollTop = 0;
+    const delta = 10;
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (Math.abs(lastScrollTop - scrollTop) <= delta) return;
+
+      if (scrollTop > lastScrollTop && scrollTop > 80) {
+        plannerHeader.classList.add('header-hidden');
+      } else {
+        plannerHeader.classList.remove('header-hidden');
+      }
+
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    }, { passive: true });
+  }
+
   // Admin Panel Form Elements
   const adminGameForm = document.getElementById('admin-game-form');
   const adminFormTitle = document.getElementById('admin-form-title');
@@ -578,6 +598,16 @@ function initApp() {
     renderGameGrid(false);
   }
 
+  function getAddBtnHTML(isSelected) {
+    if (isSelected) {
+      return `<span class="btn-label-text">Batal</span>`;
+    }
+    return `
+      <span class="btn-label-full">+ Keranjang</span>
+      <span class="btn-label-compact">+ <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></span>
+    `;
+  }
+
   function renderGameGrid(append = false) {
     if (!gameGrid) return;
 
@@ -614,17 +644,19 @@ function initApp() {
         </div>
         <div class="game-info-wrap">
           <h3 class="game-title" title="${game.title}">${game.title}</h3>
-          <div class="game-meta">
-            <span class="game-size">${game.sizeGB.toFixed(1)} GB</span>
-            ${isNoPriceMode ? '' : `<span class="game-price">${priceStr}</span>`}
-          </div>
-          <div class="game-actions">
-            <button class="btn-toggle-select" type="button">
-              ${isSelected ? 'Batal' : '+ Keranjang'}
-            </button>
-            <button class="btn-info" type="button" title="Spesifikasi Game">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-            </button>
+          <div class="game-details-row">
+            <div class="game-meta">
+              <span class="game-size">${game.sizeGB.toFixed(1)} GB</span>
+              ${isNoPriceMode ? '' : `<span class="game-price">${priceStr}</span>`}
+            </div>
+            <div class="game-actions">
+              <button class="btn-toggle-select" type="button">
+                ${getAddBtnHTML(isSelected)}
+              </button>
+              <button class="btn-info" type="button" title="Spesifikasi Game">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              </button>
+            </div>
           </div>
         </div>
       `;
@@ -691,7 +723,7 @@ function initApp() {
       selectedGames.delete(gameTitle);
       if (cardEl) {
         cardEl.classList.remove('selected');
-        cardEl.querySelector('.btn-toggle-select').textContent = '+ Keranjang';
+        cardEl.querySelector('.btn-toggle-select').innerHTML = getAddBtnHTML(false);
       }
     } else {
       let currentUsedGB = 0;
@@ -713,7 +745,7 @@ function initApp() {
       selectedGames.add(gameTitle);
       if (cardEl) {
         cardEl.classList.add('selected');
-        cardEl.querySelector('.btn-toggle-select').textContent = 'Batal';
+        cardEl.querySelector('.btn-toggle-select').innerHTML = getAddBtnHTML(true);
       }
     }
 
@@ -968,6 +1000,14 @@ function initApp() {
   if (exportBtn) {
     exportBtn.addEventListener('click', openExportModal);
   }
+
+  const widgetCheckoutBtn = document.getElementById('widget-checkout-btn');
+  if (widgetCheckoutBtn) {
+    widgetCheckoutBtn.addEventListener('click', () => {
+      if (selectedWidgetPanel) selectedWidgetPanel.classList.remove('show');
+      openExportModal();
+    });
+  }
   
   if (closeExportModalBtn) {
     closeExportModalBtn.addEventListener('click', () => {
@@ -997,7 +1037,7 @@ function initApp() {
         document.execCommand('copy');
         document.body.removeChild(textarea);
       }
-      showToast('Teks daftar game berhasil di-copy! Silakan paste ke chat WhatsApp Admin.', 'success');
+      showToast('📋 Teks daftar pesanan game berhasil disalin! Silakan paste ke chat Admin Marketplace.', 'success', 'Teks Berhasil Disalin');
     } catch (err) {
       console.error(err);
       showToast('Gagal menyalin teks. Silakan salin secara manual.', 'error');
@@ -1405,22 +1445,55 @@ function initApp() {
     });
   }
 
-  // Toast Notification Generator
-  function showToast(message, type = 'error') {
+  // Toast Notification Generator (Modern Top Glass Card)
+  function showToast(message, type = 'error', title = null) {
     const existing = document.querySelectorAll('.toast-notification');
-    existing.forEach(t => t.remove());
+    existing.forEach(t => {
+      t.classList.remove('show');
+      setTimeout(() => t.remove(), 250);
+    });
+
+    let defaultTitle = 'Pemberitahuan';
+    let iconSvg = '';
+
+    if (type === 'error' || type === 'warning') {
+      defaultTitle = title || 'Kapasitas Penuh / Peringatan';
+      iconSvg = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>`;
+    } else if (type === 'success') {
+      defaultTitle = title || 'Berhasil';
+      iconSvg = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>`;
+    } else {
+      defaultTitle = title || 'Informasi';
+      iconSvg = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>`;
+    }
 
     const toast = document.createElement('div');
     toast.className = `toast-notification toast-${type}`;
-    toast.innerHTML = `<span>${message}</span>`;
+    toast.innerHTML = `
+      <div class="toast-icon-wrap">${iconSvg}</div>
+      <div class="toast-content">
+        <div class="toast-title">${defaultTitle}</div>
+        <div class="toast-message">${message}</div>
+      </div>
+      <button type="button" class="toast-close-btn" aria-label="Tutup">&times;</button>
+      <div class="toast-progress"></div>
+    `;
+
+    const closeBtn = toast.querySelector('.toast-close-btn');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 250);
+      });
+    }
 
     document.body.appendChild(toast);
-    setTimeout(() => toast.classList.add('show'), 10);
+    setTimeout(() => toast.classList.add('show'), 20);
 
     setTimeout(() => {
       toast.classList.remove('show');
-      setTimeout(() => toast.remove(), 300);
-    }, 4000);
+      setTimeout(() => toast.remove(), 250);
+    }, 4200);
   }
 
   // Initial Load
