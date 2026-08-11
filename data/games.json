@@ -1,0 +1,424 @@
+[
+  {
+    "id": "pc-01",
+    "title": "Grand Theft Auto V: Enhanced Edition",
+    "category": "pc",
+    "sizeGB": 108.5,
+    "platform": "PC (Windows)",
+    "releaseYear": 2024,
+    "rating": 4.9,
+    "cover": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Action / Open World",
+      "Developer": "Rockstar Games",
+      "Language": "English, Multilingual"
+    },
+    "requirements": [
+      "OS: Windows 10 / 11 (64-bit)",
+      "Processor: Intel Core i5-6600K / AMD Ryzen 5 1600",
+      "Memory: 16 GB RAM",
+      "Graphics: NVIDIA GeForce GTX 1060 (6GB) / AMD Radeon RX 580",
+      "DirectX: Version 12",
+      "Storage: 110 GB SSD / HDD space"
+    ]
+  },
+  {
+    "id": "pc-02",
+    "title": "Cyberpunk 2077: Phantom Liberty",
+    "category": "pc",
+    "sizeGB": 85.0,
+    "platform": "PC (Windows)",
+    "releaseYear": 2023,
+    "rating": 4.8,
+    "cover": "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "RPG / Sci-Fi",
+      "Developer": "CD Projekt Red",
+      "Language": "English, Indonesian Subtitle"
+    },
+    "requirements": [
+      "OS: Windows 10 64-bit",
+      "Processor: Core i7-6700 / Ryzen 5 1600",
+      "Memory: 12 GB RAM",
+      "Graphics: GeForce GTX 1060 6GB / Radeon RX 580",
+      "DirectX: Version 12",
+      "Storage: 90 GB SSD Space"
+    ]
+  },
+  {
+    "id": "pc-03",
+    "title": "Red Dead Redemption 2",
+    "category": "pc",
+    "sizeGB": 119.2,
+    "platform": "PC (Windows)",
+    "releaseYear": 2019,
+    "rating": 4.95,
+    "cover": "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Action / Adventure / Open World",
+      "Developer": "Rockstar Games",
+      "Language": "English"
+    },
+    "requirements": [
+      "OS: Windows 10 - April 2018 Update",
+      "Processor: Intel Core i7-4770K / AMD Ryzen 5 1500X",
+      "Memory: 12 GB RAM",
+      "Graphics: Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB",
+      "Storage: 120 GB Available Space"
+    ]
+  },
+  {
+    "id": "pc-04",
+    "title": "God of War Ragnarök",
+    "category": "pc",
+    "sizeGB": 98.4,
+    "platform": "PC (Windows)",
+    "releaseYear": 2024,
+    "rating": 4.9,
+    "cover": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Action / Mythology",
+      "Developer": "Santa Monica Studio / Nixxes",
+      "Language": "English, Multi"
+    },
+    "requirements": [
+      "OS: Windows 10 64-bit",
+      "Processor: Intel i5-8600 / AMD Ryzen 5 3600",
+      "Memory: 16 GB RAM",
+      "Graphics: NVIDIA RTX 2060 / AMD RX 5700",
+      "Storage: 100 GB SSD"
+    ]
+  },
+  {
+    "id": "pc-05",
+    "title": "Elden Ring: Shadow of the Erdtree",
+    "category": "pc",
+    "sizeGB": 64.2,
+    "platform": "PC (Windows)",
+    "releaseYear": 2024,
+    "rating": 4.9,
+    "cover": "https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Souls-like / Action RPG",
+      "Developer": "FromSoftware Inc.",
+      "Language": "English"
+    },
+    "requirements": [
+      "OS: Windows 10 / 11",
+      "Processor: INTEL CORE I7-8700K / AMD RYZEN 5 3600X",
+      "Memory: 16 GB RAM",
+      "Graphics: NVIDIA GEFORCE GTX 1070 8 GB / AMD RADEON RX VEGA 56 8 GB",
+      "Storage: 65 GB available space"
+    ]
+  },
+  {
+    "id": "pc-06",
+    "title": "Black Myth: Wukong",
+    "category": "pc",
+    "sizeGB": 130.0,
+    "platform": "PC (Windows)",
+    "releaseYear": 2024,
+    "rating": 4.88,
+    "cover": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Action RPG / Fantasy",
+      "Developer": "Game Science",
+      "Language": "Chinese, English"
+    },
+    "requirements": [
+      "OS: Windows 10 64-bit",
+      "Processor: Intel Core i7-9700 / AMD Ryzen 5 5500",
+      "Memory: 16 GB RAM",
+      "Graphics: NVIDIA GeForce RTX 2060 / AMD Radeon RX 5700 XT",
+      "Storage: 130 GB SSD"
+    ]
+  },
+  {
+    "id": "pc-07",
+    "title": "EA SPORTS FC 25",
+    "category": "pc",
+    "sizeGB": 52.8,
+    "platform": "PC (Windows)",
+    "releaseYear": 2024,
+    "rating": 4.6,
+    "cover": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Sports / Football",
+      "Developer": "EA Canada",
+      "Language": "English, Multilingual"
+    },
+    "requirements": [
+      "OS: Windows 10 - 64-Bit",
+      "Processor: Intel Core i7-6700 @ 3.40GHz / AMD Ryzen 7 2700X",
+      "Memory: 12 GB RAM",
+      "Graphics: NVIDIA GeForce GTX 1660 / AMD Radeon RX 5600 XT",
+      "Storage: 100 GB available space"
+    ]
+  },
+  {
+    "id": "pc-08",
+    "title": "Forza Horizon 5: Premium Edition",
+    "category": "pc",
+    "sizeGB": 115.4,
+    "platform": "PC (Windows)",
+    "releaseYear": 2021,
+    "rating": 4.85,
+    "cover": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Racing / Open World",
+      "Developer": "Playground Games",
+      "Language": "English"
+    },
+    "requirements": [
+      "OS: Windows 10 version 1909 or higher",
+      "Processor: Intel i5-8400 / AMD Ryzen 5 1500X",
+      "Memory: 16 GB RAM",
+      "Graphics: NVidia GTX 1070 / AMD RX 590",
+      "Storage: 120 GB space"
+    ]
+  },
+  {
+    "id": "pc-09",
+    "title": "The Witcher 3: Wild Hunt - Complete Edition",
+    "category": "pc",
+    "sizeGB": 55.0,
+    "platform": "PC (Windows)",
+    "releaseYear": 2022,
+    "rating": 4.98,
+    "cover": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "RPG / Fantasy",
+      "Developer": "CD Projekt Red",
+      "Language": "English, Multi"
+    },
+    "requirements": [
+      "OS: 64-bit Windows 10/11",
+      "Processor: Intel Core i5-7400 / Ryzen 5 1600",
+      "Memory: 8 GB RAM",
+      "Graphics: Nvidia GTX 1060 / Radeon RX 580",
+      "Storage: 60 GB SSD"
+    ]
+  },
+  {
+    "id": "pc-10",
+    "title": "Resident Evil 4 Remake: Gold Edition",
+    "category": "pc",
+    "sizeGB": 67.5,
+    "platform": "PC (Windows)",
+    "releaseYear": 2024,
+    "rating": 4.9,
+    "cover": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Survival Horror / Action",
+      "Developer": "Capcom",
+      "Language": "English"
+    },
+    "requirements": [
+      "OS: Windows 10 64-bit",
+      "Processor: Intel Core i7-8700 / AMD Ryzen 5 3600",
+      "Memory: 16 GB RAM",
+      "Graphics: NVIDIA GeForce GTX 1070 / AMD Radeon RX 5700",
+      "Storage: 70 GB space"
+    ]
+  },
+  {
+    "id": "ps2-01",
+    "title": "Grand Theft Auto: San Andreas (PS2)",
+    "category": "ps2",
+    "sizeGB": 4.2,
+    "platform": "PS2 ISO / PCSX2 / OPL",
+    "releaseYear": 2004,
+    "rating": 4.95,
+    "cover": "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Action / Open World",
+      "Developer": "Rockstar North",
+      "Language": "English"
+    },
+    "requirements": [
+      "Format: PS2 ISO / USB OPL Ready",
+      "Platform: Konsol PS2 (Hardisk/Flashdisk) & Emulator PCSX2",
+      "Kapasitas File: 4.2 GB"
+    ]
+  },
+  {
+    "id": "ps2-02",
+    "title": "God of War II (PS2)",
+    "category": "ps2",
+    "sizeGB": 7.9,
+    "platform": "PS2 ISO / PCSX2 / OPL",
+    "releaseYear": 2007,
+    "rating": 4.9,
+    "cover": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Hack and Slash / Action",
+      "Developer": "Santa Monica Studio",
+      "Language": "English"
+    },
+    "requirements": [
+      "Format: PS2 Dual Layer ISO / OPL",
+      "Platform: PS2 Console & PC Emulator",
+      "Kapasitas File: 7.9 GB"
+    ]
+  },
+  {
+    "id": "ps2-03",
+    "title": "Bully: Anniversary Edition (PS2)",
+    "category": "ps2",
+    "sizeGB": 4.1,
+    "platform": "PS2 ISO / PCSX2 / OPL",
+    "releaseYear": 2006,
+    "rating": 4.88,
+    "cover": "https://images.unsplash.com/photo-1560253023-3ec5d502959f?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Action-Adventure",
+      "Developer": "Rockstar Vancouver",
+      "Language": "English"
+    },
+    "requirements": [
+      "Format: PS2 ISO File",
+      "Platform: PS2 Matrix / OPL & Emulator PCSX2",
+      "Kapasitas File: 4.1 GB"
+    ]
+  },
+  {
+    "id": "ps2-04",
+    "title": "Need for Speed: Most Wanted Black Edition (PS2)",
+    "category": "ps2",
+    "sizeGB": 3.8,
+    "platform": "PS2 ISO / PCSX2 / OPL",
+    "releaseYear": 2005,
+    "rating": 4.92,
+    "cover": "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Racing / Street Car",
+      "Developer": "EA Black Box",
+      "Language": "English"
+    },
+    "requirements": [
+      "Format: PS2 ISO / OPL USB ready",
+      "Platform: PS2 Console & PC PCSX2",
+      "Kapasitas File: 3.8 GB"
+    ]
+  },
+  {
+    "id": "ps2-05",
+    "title": "Downhill Domination (PS2)",
+    "category": "ps2",
+    "sizeGB": 2.6,
+    "platform": "PS2 ISO / PCSX2 / OPL",
+    "releaseYear": 2003,
+    "rating": 4.87,
+    "cover": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Bicycle Racing / Extreme",
+      "Developer": "Incognito Entertainment",
+      "Language": "English"
+    },
+    "requirements": [
+      "Format: PS2 ISO",
+      "Platform: PS2 OPL / Matrix",
+      "Kapasitas File: 2.6 GB"
+    ]
+  },
+  {
+    "id": "ps2-06",
+    "title": "Resident Evil 4: Premium Edition (PS2)",
+    "category": "ps2",
+    "sizeGB": 4.3,
+    "platform": "PS2 ISO / PCSX2 / OPL",
+    "releaseYear": 2005,
+    "rating": 4.93,
+    "cover": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Survival Horror",
+      "Developer": "Capcom Production Studio 4",
+      "Language": "English"
+    },
+    "requirements": [
+      "Format: PS2 ISO File",
+      "Platform: PS2 & PCSX2 Emulator",
+      "Kapasitas File: 4.3 GB"
+    ]
+  },
+  {
+    "id": "ps2-07",
+    "title": "Tekken 5 (PS2)",
+    "category": "ps2",
+    "sizeGB": 4.1,
+    "platform": "PS2 ISO / PCSX2 / OPL",
+    "releaseYear": 2005,
+    "rating": 4.89,
+    "cover": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Fighting 3D",
+      "Developer": "Namco",
+      "Language": "English"
+    },
+    "requirements": [
+      "Format: PS2 ISO File",
+      "Platform: PS2 Console & PCSX2",
+      "Kapasitas File: 4.1 GB"
+    ]
+  },
+  {
+    "id": "ps2-08",
+    "title": "Naruto Shippuden: Ultimate Ninja 5 (PS2)",
+    "category": "ps2",
+    "sizeGB": 4.4,
+    "platform": "PS2 ISO / PCSX2 / OPL",
+    "releaseYear": 2007,
+    "rating": 4.91,
+    "cover": "https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Anime Fighting",
+      "Developer": "CyberConnect2",
+      "Language": "English / Japanese Voice"
+    },
+    "requirements": [
+      "Format: PS2 ISO",
+      "Platform: PS2 Hardisk & Emulator",
+      "Kapasitas File: 4.4 GB"
+    ]
+  },
+  {
+    "id": "ps2-09",
+    "title": "PES 2025 Update Transfer (PS2)",
+    "category": "ps2",
+    "sizeGB": 3.9,
+    "platform": "PS2 ISO / PCSX2 / OPL",
+    "releaseYear": 2024,
+    "rating": 4.85,
+    "cover": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Sports / Football",
+      "Developer": "Konami / Mod Patch",
+      "Language": "Indonesian / English"
+    },
+    "requirements": [
+      "Format: PS2 ISO Mod 2025",
+      "Platform: PS2 Hardisk / Flashdisk / PCSX2",
+      "Kapasitas File: 3.9 GB"
+    ]
+  },
+  {
+    "id": "ps2-10",
+    "title": "Def Jam: Fight for NY (PS2)",
+    "category": "ps2",
+    "sizeGB": 2.9,
+    "platform": "PS2 ISO / PCSX2 / OPL",
+    "releaseYear": 2004,
+    "rating": 4.94,
+    "cover": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop",
+    "game_info": {
+      "Genre": "Fighting / Hip-Hop",
+      "Developer": "AKI Corporation / EA",
+      "Language": "English"
+    },
+    "requirements": [
+      "Format: PS2 ISO File",
+      "Platform: PS2 Console & PCSX2 Emulator",
+      "Kapasitas File: 2.9 GB"
+    ]
+  }
+]
