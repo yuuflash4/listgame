@@ -189,7 +189,7 @@ function initApp() {
     const config = storagePresets[storageKey];
     if (!config) return;
 
-    dropdownListItems.innerHTML = '';
+    if (dropdownListItems) dropdownListItems.innerHTML = '';
     config.capacities.forEach((cap) => {
       const li = document.createElement('li');
       li.className = `dropdown-item ${cap.value === currentCapacityGB ? 'active' : ''}`;
@@ -200,22 +200,22 @@ function initApp() {
       li.addEventListener('click', (e) => {
         e.stopPropagation();
         currentCapacityGB = parseInt(cap.value, 10);
-        selectedCapacityLabel.textContent = cap.text;
+        if (selectedCapacityLabel) selectedCapacityLabel.textContent = cap.text;
         
         document.querySelectorAll('.dropdown-item').forEach(item => item.classList.remove('active'));
         li.classList.add('active');
-        dropdownListItems.classList.remove('show');
+        if (dropdownListItems) dropdownListItems.classList.remove('show');
         
         updateStorageUI();
       });
 
-      dropdownListItems.appendChild(li);
+      if (dropdownListItems) dropdownListItems.appendChild(li);
     });
 
     const activeCap = config.capacities.find(c => c.value === currentCapacityGB) || config.capacities[1] || config.capacities[0];
     currentCapacityGB = activeCap.value;
-    selectedCapacityLabel.textContent = activeCap.text;
-    storageTypeLabelEl.textContent = config.label;
+    if (selectedCapacityLabel) selectedCapacityLabel.textContent = activeCap.text;
+    if (storageTypeLabelEl) storageTypeLabelEl.textContent = config.label;
     
     if (storageKey === 'flashdisk' && categoryFilter) {
       categoryFilter.value = 'ps2';
@@ -229,24 +229,26 @@ function initApp() {
   if (hddDropdown) {
     hddDropdown.addEventListener('click', (e) => {
       e.stopPropagation();
-      dropdownListItems.classList.toggle('show');
+      if (dropdownListItems) dropdownListItems.classList.toggle('show');
     });
   }
 
   document.addEventListener('click', () => {
-    dropdownListItems.classList.remove('show');
+    if (dropdownListItems) dropdownListItems.classList.remove('show');
   });
 
   function switchStorageType(storageKey) {
     currentStorageType = storageKey;
-    storageTypeSelect.value = storageKey;
+    if (storageTypeSelect) storageTypeSelect.value = storageKey;
     renderCapacityDropdown(storageKey);
     applyFilters();
   }
 
-  storageTypeSelect.addEventListener('change', (e) => {
-    switchStorageType(e.target.value);
-  });
+  if (storageTypeSelect) {
+    storageTypeSelect.addEventListener('change', (e) => {
+      switchStorageType(e.target.value);
+    });
+  }
 
   if (landingStorageActions) {
     landingStorageActions.addEventListener('click', (e) => {
@@ -290,30 +292,34 @@ function initApp() {
     const remainingGB = currentCapacityGB - totalUsedGB;
     const usedPercentage = Math.min(100, Math.max(0, (totalUsedGB / currentCapacityGB) * 100));
 
-    storageUsedEl.textContent = `${totalUsedGB.toFixed(1)} GB`;
-    storageTotalEl.textContent = `${currentCapacityGB} GB`;
+    if (storageUsedEl) storageUsedEl.textContent = `${totalUsedGB.toFixed(1)} GB`;
+    if (storageTotalEl) storageTotalEl.textContent = `${currentCapacityGB} GB`;
 
     const storagePriceTotalEl = document.getElementById('storage-price-total');
     if (storagePriceTotalEl) storagePriceTotalEl.textContent = formatRupiah(totalPrice);
     
-    if (remainingGB < 0) {
-      storageRemainingEl.textContent = `${Math.abs(remainingGB).toFixed(1)} GB (Kapasitas Penuh!)`;
-      storageRemainingEl.className = 'text-danger';
-    } else {
-      storageRemainingEl.textContent = `${remainingGB.toFixed(1)} GB`;
-      storageRemainingEl.className = 'text-accent';
+    if (storageRemainingEl) {
+      if (remainingGB < 0) {
+        storageRemainingEl.textContent = `${Math.abs(remainingGB).toFixed(1)} GB (Kapasitas Penuh!)`;
+        storageRemainingEl.className = 'text-danger';
+      } else {
+        storageRemainingEl.textContent = `${remainingGB.toFixed(1)} GB`;
+        storageRemainingEl.className = 'text-accent';
+      }
     }
 
-    progressBar.style.width = `${usedPercentage}%`;
-    progressBar.classList.remove('warning', 'full');
-    if (usedPercentage >= 100) {
-      progressBar.classList.add('full');
-    } else if (usedPercentage >= 85) {
-      progressBar.classList.add('warning');
+    if (progressBar) {
+      progressBar.style.width = `${usedPercentage}%`;
+      progressBar.classList.remove('warning', 'full');
+      if (usedPercentage >= 100) {
+        progressBar.classList.add('full');
+      } else if (usedPercentage >= 85) {
+        progressBar.classList.add('warning');
+      }
     }
 
-    selectedCountEl.textContent = selectedGames.size;
-    selectedWidgetCount.textContent = selectedGames.size;
+    if (selectedCountEl) selectedCountEl.textContent = selectedGames.size;
+    if (selectedWidgetCount) selectedWidgetCount.textContent = selectedGames.size;
 
     renderSelectedWidgetList();
   }
@@ -579,23 +585,32 @@ function initApp() {
     infoModal.classList.add('active');
   }
 
-  closeModalBtn.addEventListener('click', () => {
-    infoModal.classList.remove('active');
-  });
+  if (closeModalBtn) {
+    closeModalBtn.addEventListener('click', () => {
+      if (infoModal) infoModal.classList.remove('active');
+    });
+  }
 
-  infoModal.addEventListener('click', (e) => {
-    if (e.target === infoModal) infoModal.classList.remove('active');
-  });
+  if (infoModal) {
+    infoModal.addEventListener('click', (e) => {
+      if (e.target === infoModal) infoModal.classList.remove('active');
+    });
+  }
 
-  selectedWidgetBtn.addEventListener('click', () => {
-    selectedWidgetPanel.classList.toggle('show');
-  });
+  if (selectedWidgetBtn) {
+    selectedWidgetBtn.addEventListener('click', () => {
+      if (selectedWidgetPanel) selectedWidgetPanel.classList.toggle('show');
+    });
+  }
 
-  selectedWidgetClose.addEventListener('click', () => {
-    selectedWidgetPanel.classList.remove('show');
-  });
+  if (selectedWidgetClose) {
+    selectedWidgetClose.addEventListener('click', () => {
+      if (selectedWidgetPanel) selectedWidgetPanel.classList.remove('show');
+    });
+  }
 
   function renderSelectedWidgetList() {
+    if (!selectedWidgetList) return;
     selectedWidgetList.innerHTML = '';
     if (selectedGames.size === 0) {
       selectedWidgetList.innerHTML = `<div style="text-align: center; padding: 15px; color: var(--text-muted); font-size: 0.85rem;">Belum ada game dipilih</div>`;
