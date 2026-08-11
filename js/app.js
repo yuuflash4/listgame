@@ -263,6 +263,13 @@ function initApp() {
     }, 400);
   }
 
+  const isLocalHost = typeof window !== 'undefined' && (
+    window.location.hostname === 'localhost' ||
+    window.location.hostname === '127.0.0.1' ||
+    window.location.hostname === '::1' ||
+    window.location.protocol === 'file:'
+  );
+
   async function syncToServer() {
     const customGames = JSON.parse(localStorage.getItem('admin_custom_games') || '[]');
 
@@ -277,6 +284,11 @@ function initApp() {
       } catch (e) {
         _localServerAvailable = false;
       }
+    }
+
+    // Skip Google Cloud Sync when running on Localhost for testing
+    if (isLocalHost) {
+      return;
     }
 
     if (adminWebAppUrl) {
@@ -1313,7 +1325,12 @@ function initApp() {
 
   // GitHub API Auto-Sync to Netlify Cloud
   async function syncCatalogToGitHub(category) {
-    const token = localStorage.getItem('admin_github_token');
+    if (isLocalHost) {
+      showToast('💻 Mode Testing Lokal: Perubahan tersimpan di server lokal saja (tidak mempengaruhi Netlify online).', 'info');
+      return;
+    }
+
+    const token = localStorage.getItem('admin_github_token') || adminGithubToken;
     if (!token) {
       showToast('Game tersimpan lokal. Isi GitHub Personal Access Token di Pengaturan Toko untuk Auto-Sync ke Netlify Cloud!', 'info');
       return;
@@ -1490,13 +1507,14 @@ function initApp() {
   if (adminBackupBtn) {
     adminBackupBtn.addEventListener('click', () => {
       const backupData = allGames.map(g => ({
+        id: g.id,
         title: g.title,
         banner_url: g.cover,
         category: g.category,
         game_info: {
           Genre: g.game_info ? g.game_info.Genre : '',
           Developer: g.game_info ? g.game_info.Developer : '',
-          'Game Size': `${g.sizeGB.toFixed(1)} GB`
+          'Game Size': `${(g.sizeGB || 0).toFixed(1)} GB`
         },
         system_requirements: g.requirements
       }));
@@ -1535,18 +1553,17 @@ function initApp() {
           }
 
           let restoredCount = 0;
-          let pcUpdated = false;
-          let ps2Updated = false;
+          let newCustomGames = [];
 
           rawData.forEach((game, idx) => {
             if (!game || !game.title) return;
             const category = (game.category || 'pc').toLowerCase();
-            if (category === 'pc') pcUpdated = true;
-            if (category === 'ps2') ps2Updated = true;
 
             const sizeGB = parseSizeToGB(game.game_info ? game.game_info['Game Size'] : game.sizeGB);
+            const isCustom = String(game.id || '').startsWith('custom-');
+
             const gameObject = {
-              id: game.id || `restore-${Date.now()}-${idx}`,
+              id: game.id || (isCustom ? `custom-${Date.now()}-${idx}` : `stock-${idx}`),
               title: game.title,
               category: category,
               sizeGB: sizeGB,
@@ -1561,12 +1578,14 @@ function initApp() {
               allGames[existingIdx] = gameObject;
             } else {
               allGames.unshift(gameObject);
+              if (isCustom) newCustomGames.push(gameObject);
             }
             gamesByTitle.set(gameObject.title, gameObject);
+            if (isCustom) newCustomGames.push(gameObject);
             restoredCount++;
           });
 
-          localStorage.setItem('admin_custom_games', JSON.stringify(allGames.filter(g => String(g.id).includes('custom') || String(g.id).includes('restore'))));
+          localStorage.setItem('admin_custom_games', JSON.stringify(newCustomGames));
           debouncedSyncToServer();
 
           applyFilters();
@@ -1574,9 +1593,6 @@ function initApp() {
           updateStorageUI();
 
           showToast(`🎉 Berhasil mengimpor ${restoredCount} game dari file JSON!`, 'success');
-
-          if (pcUpdated) syncCatalogToGitHub('pc');
-          if (ps2Updated) syncCatalogToGitHub('ps2');
         } catch (err) {
           console.error('Error restoring JSON file:', err);
           showToast(`Gagal membaca file JSON: ${err.message}`, 'error');
@@ -1588,14 +1604,38 @@ function initApp() {
     });
   }
 
-  // Reset Custom Catalog
+  // Reset Custom Catalog (Thorough Reset on Local & Cloud)
   if (adminResetCatalogBtn) {
-    adminResetCatalogBtn.addEventListener('click', () => {
+    adminResetCatalogBtn.addEventListener('click', async () => {
       if (confirm('Apakah Anda yakin ingin menghapus seluruh game custom dan mengembalikan katalog ke bawaan awal?')) {
         localStorage.removeItem('admin_custom_games');
-        debouncedSyncToServer();
+        localStorage.setItem('admin_custom_games', '[]');
+
+        // Wipe Local Server custom_games.json
+        if (_localServerAvailable !== false) {
+          try {
+            await fetch('/api/data', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: '[]'
+            });
+          } catch (e) {}
+        }
+
+        // Wipe Google Apps Script Cloud
+        if (adminWebAppUrl) {
+          try {
+            await fetch(adminWebAppUrl, {
+              method: 'POST',
+              mode: 'no-cors',
+              headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+              body: JSON.stringify({ action: 'save_data', storeData: '[]' })
+            });
+          } catch (e) {}
+        }
+
         loadAllCatalogs();
-        showToast('Katalog berhasil di-reset ke bawaan awal!', 'success');
+        showToast('Katalog berhasil di-reset ke bawaan awal (100% bersih)!', 'success');
       }
     });
   }
