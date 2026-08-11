@@ -139,6 +139,13 @@
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
               Unduh Backup Data JSON
             </button>
+
+            <input type="file" id="admin-restore-file-input" accept=".json" style="display: none;" />
+            <button type="button" id="admin-restore-btn" class="admin-btn admin-btn-secondary" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+              Restore / Impor Data dari File JSON
+            </button>
+
             <button type="button" id="admin-reset-catalog-btn" class="admin-btn admin-btn-danger" style="width: 100%;">
               Reset Data Custom ke Bawaan
             </button>
@@ -183,9 +190,9 @@
   <div id="game-grid" style="display: none;"></div>
 
   <!-- Catalog Data Scripts & Application Logic -->
-  <script src="data/pc_games.js?v=1.2.0"></script>
-  <script src="data/ps2_games.js?v=1.2.0"></script>
-  <script src="js/app.js?v=1.2.0"></script>
+  <script src="data/pc_games.js?v=1.3.0"></script>
+  <script src="data/ps2_games.js?v=1.3.0"></script>
+  <script src="js/app.js?v=1.3.0"></script>
   <script>
     // Bulletproof Auto-Trigger Fallback for Admin Catalog Table
     window.addEventListener('load', function() {

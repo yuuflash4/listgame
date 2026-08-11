@@ -1085,6 +1085,80 @@ function initApp() {
     });
   }
 
+  // Restore JSON File Handler
+  const adminRestoreBtn = document.getElementById('admin-restore-btn');
+  const adminRestoreFileInput = document.getElementById('admin-restore-file-input');
+
+  if (adminRestoreBtn && adminRestoreFileInput) {
+    adminRestoreBtn.addEventListener('click', () => {
+      adminRestoreFileInput.click();
+    });
+
+    adminRestoreFileInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        try {
+          const rawData = JSON.parse(event.target.result);
+          if (!Array.isArray(rawData)) {
+            throw new Error('Format file JSON harus berupa array daftar game.');
+          }
+
+          let restoredCount = 0;
+          let pcUpdated = false;
+          let ps2Updated = false;
+
+          rawData.forEach((game, idx) => {
+            if (!game || !game.title) return;
+            const category = (game.category || 'pc').toLowerCase();
+            if (category === 'pc') pcUpdated = true;
+            if (category === 'ps2') ps2Updated = true;
+
+            const sizeGB = parseSizeToGB(game.game_info ? game.game_info['Game Size'] : game.sizeGB);
+            const gameObject = {
+              id: game.id || `restore-${Date.now()}-${idx}`,
+              title: game.title,
+              category: category,
+              sizeGB: sizeGB,
+              platform: category === 'ps2' ? 'PS2 ISO / OPL' : 'PC (Windows)',
+              cover: game.banner_url || game.cover || (category === 'ps2' ? 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop'),
+              game_info: game.game_info || {},
+              requirements: game.system_requirements || []
+            };
+
+            const existingIdx = allGames.findIndex(g => g.title === gameObject.title);
+            if (existingIdx !== -1) {
+              allGames[existingIdx] = gameObject;
+            } else {
+              allGames.unshift(gameObject);
+            }
+            gamesByTitle.set(gameObject.title, gameObject);
+            restoredCount++;
+          });
+
+          localStorage.setItem('admin_custom_games', JSON.stringify(allGames.filter(g => String(g.id).includes('custom') || String(g.id).includes('restore'))));
+
+          applyFilters();
+          renderAdminTable();
+          updateStorageUI();
+
+          showToast(`🎉 Berhasil mengimpor ${restoredCount} game dari file JSON!`, 'success');
+
+          if (pcUpdated) syncCatalogToGitHub('pc');
+          if (ps2Updated) syncCatalogToGitHub('ps2');
+        } catch (err) {
+          console.error('Error restoring JSON file:', err);
+          showToast(`Gagal membaca file JSON: ${err.message}`, 'error');
+        } finally {
+          adminRestoreFileInput.value = '';
+        }
+      };
+      reader.readAsText(file);
+    });
+  }
+
   // Reset Custom Catalog
   if (adminResetCatalogBtn) {
     adminResetCatalogBtn.addEventListener('click', () => {
