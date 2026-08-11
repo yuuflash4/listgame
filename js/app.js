@@ -134,7 +134,7 @@ function initApp() {
   let adminWaNumber = localStorage.getItem('admin_wa_number') || '6285701917085';
   let sizeBufferPercentage = parseFloat(localStorage.getItem('admin_buffer_percentage') || '5');
   let sizeBufferMultiplier = 1 + (sizeBufferPercentage / 100);
-  let adminGithubToken = localStorage.getItem('admin_github_token') || '';
+  let adminGithubToken = localStorage.getItem('admin_github_token') || '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';
 
   if (adminWaNumberInput) adminWaNumberInput.value = adminWaNumber;
   if (adminBufferPercentageInput) adminBufferPercentageInput.value = sizeBufferPercentage;
