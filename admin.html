@@ -33,7 +33,11 @@
         <div class="nav-tabs">
           <a href="index.html" class="nav-tab-btn" type="button">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-            Kembali ke Katalog Store
+            Katalog Store
+          </a>
+          <a href="kalkulator.html" class="nav-tab-btn" type="button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+            Kalkulator Storage
           </a>
           <button id="tab-admin-btn" class="nav-tab-btn active" type="button" style="pointer-events: none;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
@@ -124,8 +128,14 @@
 
             <div class="form-group">
               <label class="form-label" for="admin-github-token">GitHub Personal Access Token (Auto-Sync Netlify Cloud)</label>
-              <input type="password" id="admin-github-token" class="form-control" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" value="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" autocomplete="off" />
-              <span style="font-size: 0.78rem; color: var(--text-muted);">Token terhubung! Setiap kali klik "Simpan Game" / "Hapus" akan otomatis di-sync ke Netlify dalam ~15 detik!</span>
+              <input type="password" id="admin-github-token" class="form-control" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" value="" autocomplete="off" />
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Token GitHub (Opsional, khusus jika ingin auto-commit ke repo GitHub).</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="admin-webapp-url">Google Apps Script Web App URL (Cloud Sync / Google Drive)</label>
+              <input type="url" id="admin-webapp-url" class="form-control" placeholder="https://script.google.com/macros/s/.../exec" autocomplete="off" />
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Tautan Google Apps Script untuk sinkronisasi otomatis ke Google Drive & Cloud tanpa server lokal!</span>
             </div>
 
             <button type="submit" class="admin-btn" style="width: 100%; margin-bottom: 20px;">Simpan Pengaturan</button>
@@ -190,9 +200,9 @@
   <div id="game-grid" style="display: none;"></div>
 
   <!-- Catalog Data Scripts & Application Logic -->
-  <script src="data/pc_games.js?v=1.5.0"></script>
-  <script src="data/ps2_games.js?v=1.5.0"></script>
-  <script src="js/app.js?v=1.5.0"></script>
+  <script src="data/pc_games.js?v=1.8.0"></script>
+  <script src="data/ps2_games.js?v=1.8.0"></script>
+  <script src="js/app.js?v=1.8.0"></script>
   <script>
     // Bulletproof Auto-Trigger Fallback for Admin Catalog Table
     window.addEventListener('load', function() {

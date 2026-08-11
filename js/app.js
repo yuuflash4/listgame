@@ -33,23 +33,27 @@ function initApp() {
 
   function setViewMode(mode) {
     currentViewMode = mode;
-    localStorage.setItem('game_view_mode', mode);
+    try {
+      localStorage.setItem('game_view_mode', mode);
+    } catch (e) {}
 
     [viewGridBtn, viewListBtn, viewTitleBtn].forEach(btn => {
       if (btn) btn.classList.remove('active');
     });
 
-    gameGrid.classList.remove('view-grid', 'view-list', 'view-title-only');
+    if (gameGrid) {
+      gameGrid.classList.remove('view-grid', 'view-list', 'view-title-only');
 
-    if (mode === 'list') {
-      if (viewListBtn) viewListBtn.classList.add('active');
-      gameGrid.classList.add('view-list');
-    } else if (mode === 'title-only') {
-      if (viewTitleBtn) viewTitleBtn.classList.add('active');
-      gameGrid.classList.add('view-title-only');
-    } else {
-      if (viewGridBtn) viewGridBtn.classList.add('active');
-      gameGrid.classList.add('view-grid');
+      if (mode === 'list') {
+        if (viewListBtn) viewListBtn.classList.add('active');
+        gameGrid.classList.add('view-list');
+      } else if (mode === 'title-only') {
+        if (viewTitleBtn) viewTitleBtn.classList.add('active');
+        gameGrid.classList.add('view-title-only');
+      } else {
+        if (viewGridBtn) viewGridBtn.classList.add('active');
+        gameGrid.classList.add('view-grid');
+      }
     }
   }
 
@@ -134,11 +138,114 @@ function initApp() {
   let adminWaNumber = localStorage.getItem('admin_wa_number') || '6285701917085';
   let sizeBufferPercentage = parseFloat(localStorage.getItem('admin_buffer_percentage') || '5');
   let sizeBufferMultiplier = 1 + (sizeBufferPercentage / 100);
-  let adminGithubToken = localStorage.getItem('admin_github_token') || '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';
+  let adminGithubToken = localStorage.getItem('admin_github_token') || '';
+  let adminWebAppUrl = localStorage.getItem('admin_webapp_url') || 'https://script.google.com/macros/s/AKfycbwe2eeG9Vp7B6g-r790sMUZiNc9Uki7tQi-RC4jUsbHymgo7HJXcafPhl7hoLnEHq3bhw/exec';
+  const adminWebAppUrlInput = document.getElementById('admin-webapp-url');
 
   if (adminWaNumberInput) adminWaNumberInput.value = adminWaNumber;
   if (adminBufferPercentageInput) adminBufferPercentageInput.value = sizeBufferPercentage;
   if (adminGithubTokenInput) adminGithubTokenInput.value = adminGithubToken;
+  if (adminWebAppUrlInput) adminWebAppUrlInput.value = adminWebAppUrl;
+
+  // Cloud Auto-Sync Engine
+  let _localServerAvailable = null;
+  let _syncTimer = null;
+
+  async function checkLocalServer() {
+    if (_localServerAvailable !== null) return _localServerAvailable;
+    try {
+      const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+      const timeoutId = controller ? setTimeout(() => controller.abort(), 2000) : null;
+      const options = { method: 'HEAD' };
+      if (controller) options.signal = controller.signal;
+      const res = await fetch('/api/data', options);
+      if (timeoutId) clearTimeout(timeoutId);
+      _localServerAvailable = res.ok;
+    } catch (e) {
+      _localServerAvailable = false;
+    }
+    return _localServerAvailable;
+  }
+
+  async function syncFromServer() {
+    const isLocal = await checkLocalServer();
+    if (isLocal) {
+      try {
+        const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+        const timeoutId = controller ? setTimeout(() => controller.abort(), 2500) : null;
+        const options = controller ? { signal: controller.signal } : {};
+        const res = await fetch('/api/data', options);
+        if (timeoutId) clearTimeout(timeoutId);
+        if (res.ok) {
+          const cloudCustomGames = await res.json();
+          if (Array.isArray(cloudCustomGames) && cloudCustomGames.length > 0) {
+            localStorage.setItem('admin_custom_games', JSON.stringify(cloudCustomGames));
+            return cloudCustomGames;
+          }
+        }
+      } catch (e) {
+        _localServerAvailable = false;
+      }
+    }
+
+    if (adminWebAppUrl) {
+      try {
+        const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+        const timeoutId = controller ? setTimeout(() => controller.abort(), 2500) : null;
+        const cloudUrl = adminWebAppUrl.includes('?') ? `${adminWebAppUrl}&action=get_data` : `${adminWebAppUrl}?action=get_data`;
+        const options = controller ? { signal: controller.signal } : {};
+        const res = await fetch(cloudUrl, options);
+        if (timeoutId) clearTimeout(timeoutId);
+        const text = await res.text();
+        const cloudCustomGames = JSON.parse(text);
+        if (Array.isArray(cloudCustomGames)) {
+          localStorage.setItem('admin_custom_games', JSON.stringify(cloudCustomGames));
+          return cloudCustomGames;
+        }
+      } catch (e) {
+        console.log('Google Cloud Sync fetch skipped/error:', e);
+      }
+    }
+    return null;
+  }
+
+  function debouncedSyncToServer() {
+    if (_syncTimer) clearTimeout(_syncTimer);
+    _syncTimer = setTimeout(() => {
+      syncToServer();
+    }, 400);
+  }
+
+  async function syncToServer() {
+    const customGames = JSON.parse(localStorage.getItem('admin_custom_games') || '[]');
+
+    if (_localServerAvailable !== false) {
+      try {
+        const res = await fetch('/api/data', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(customGames)
+        });
+        if (res.ok) _localServerAvailable = true;
+      } catch (e) {
+        _localServerAvailable = false;
+      }
+    }
+
+    if (adminWebAppUrl) {
+      try {
+        await fetch(adminWebAppUrl, {
+          method: 'POST',
+          body: JSON.stringify({
+            action: 'save_data',
+            storeData: JSON.stringify(customGames)
+          })
+        });
+      } catch (err) {
+        console.log('Google Cloud Sync post skipped/error:', err);
+      }
+    }
+  }
 
   // Pagination parameters
   const itemsPerPage = 48;
@@ -155,8 +262,10 @@ function initApp() {
 
   const storeControls = document.getElementById('store-controls');
 
+  const isNoPriceMode = document.body.classList.contains('no-price-mode') || window.location.pathname.includes('kalkulator');
+
   // Navigation Header Link Active State
-  if (tabStoreBtn && window.location.pathname.includes('index.html')) {
+  if (tabStoreBtn && (window.location.pathname.includes('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/'))) {
     tabStoreBtn.classList.add('active');
   }
   if (tabAdminBtn && window.location.pathname.includes('admin.html')) {
@@ -266,31 +375,45 @@ function initApp() {
   }
 
   function formatRupiah(amount) {
-    return 'Rp ' + Math.round(amount).toLocaleString('id-ID');
+    return 'Rp ' + Math.round(amount || 0).toLocaleString('id-ID');
+  }
+
+  function calculatePromoDiscount(count) {
+    const setsOfThree = Math.floor(count / 3);
+    return setsOfThree * 10000;
   }
 
   function updateStorageUI() {
     let totalUsedGB = 0;
-    let totalPrice = 0;
+    let rawTotalPrice = 0;
 
     selectedGames.forEach(title => {
       const game = gamesByTitle.get(title);
       if (game) {
         totalUsedGB += (game.sizeGB * sizeBufferMultiplier);
-        totalPrice += calculateGamePrice(game.sizeGB);
+        rawTotalPrice += calculateGamePrice(game.sizeGB);
       }
     });
 
-    const remainingGB = currentCapacityGB - totalUsedGB;
-    const usedPercentage = Math.min(100, Math.max(0, (totalUsedGB / currentCapacityGB) * 100));
+    const discountAmount = calculatePromoDiscount(selectedGames.size);
+    const finalPrice = Math.max(0, rawTotalPrice - discountAmount);
 
     if (storageUsedEl) storageUsedEl.textContent = `${totalUsedGB.toFixed(1)} GB`;
     if (storageTotalEl) storageTotalEl.textContent = `${currentCapacityGB} GB`;
 
     const storagePriceTotalEl = document.getElementById('storage-price-total');
-    if (storagePriceTotalEl) storagePriceTotalEl.textContent = formatRupiah(totalPrice);
+    if (storagePriceTotalEl) {
+      if (discountAmount > 0) {
+        storagePriceTotalEl.innerHTML = `${formatRupiah(finalPrice)} <span class="promo-badge-text">Hemat ${formatRupiah(discountAmount)} 🎉</span>`;
+      } else {
+        storagePriceTotalEl.textContent = formatRupiah(finalPrice);
+      }
+    }
     
+    let usedPercentage = 0;
     if (storageRemainingEl) {
+      const remainingGB = currentCapacityGB - totalUsedGB;
+      usedPercentage = Math.min(100, Math.max(0, (totalUsedGB / currentCapacityGB) * 100));
       if (remainingGB < 0) {
         storageRemainingEl.textContent = `${Math.abs(remainingGB).toFixed(1)} GB (Kapasitas Penuh!)`;
         storageRemainingEl.className = 'text-danger';
@@ -298,6 +421,9 @@ function initApp() {
         storageRemainingEl.textContent = `${remainingGB.toFixed(1)} GB`;
         storageRemainingEl.className = 'text-accent';
       }
+    } else {
+      // Progress bar on catalog store (indicates size meter up to 500GB scale)
+      usedPercentage = Math.min(100, (totalUsedGB / 500) * 100);
     }
 
     if (progressBar) {
@@ -316,33 +442,49 @@ function initApp() {
     renderSelectedWidgetList();
   }
 
+  async function waitForWindowData() {
+    for (let i = 0; i < 20; i++) {
+      if (window.PC_GAMES_DATA && window.PS2_GAMES_DATA) return true;
+      await new Promise(r => setTimeout(r, 25));
+    }
+    return false;
+  }
+
   // Load All Catalogs + LocalStorage Custom Admin Edits
   async function loadAllCatalogs() {
     try {
-      if (gameGrid) gameGrid.innerHTML = `<div class="loading-state">Memuat katalog lengkap (7,700+ game)...</div>`;
+      if (gameGrid) gameGrid.innerHTML = `<div class="loading-state">Memuat katalog game...</div>`;
       
-      let pcRaw = null;
-      let ps2Raw = null;
+      await waitForWindowData();
 
-      // 1. Try Live JSON Fetch First
-      try {
-        const timestamp = Date.now();
-        const [pcRes, ps2Res] = await Promise.all([
-          fetch(`data/pc_games.json?t=${timestamp}`),
-          fetch(`data/ps2_games.json?t=${timestamp}`)
-        ]);
-        if (pcRes.ok) pcRaw = await pcRes.json();
-        if (ps2Res.ok) ps2Raw = await ps2Res.json();
-      } catch (fetchErr) {
-        console.warn('Fetch JSON failed or blocked, checking fallback script data:', fetchErr);
+      let pcRaw = window.PC_GAMES_DATA || null;
+      let ps2Raw = window.PS2_GAMES_DATA || null;
+
+      // 1. Fallback to Live JSON Fetch if embedded script data is not available
+      if (!pcRaw || !ps2Raw) {
+        try {
+          const timestamp = Date.now();
+          const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+          const timeoutId = controller ? setTimeout(() => controller.abort(), 2000) : null;
+          const options = controller ? { signal: controller.signal } : {};
+
+          const [pcRes, ps2Res] = await Promise.all([
+            fetch(`data/pc_games.json?t=${timestamp}`, options),
+            fetch(`data/ps2_games.json?t=${timestamp}`, options)
+          ]);
+          if (timeoutId) clearTimeout(timeoutId);
+          if (pcRes.ok && !pcRaw) pcRaw = await pcRes.json();
+          if (ps2Res.ok && !ps2Raw) ps2Raw = await ps2Res.json();
+        } catch (fetchErr) {
+          console.warn('Fetch JSON failed or blocked, checking fallback script data:', fetchErr);
+        }
       }
 
-      // 2. Fallback to embedded window object if fetch failed
-      if (!pcRaw) pcRaw = window.PC_GAMES_DATA || null;
-      if (!ps2Raw) ps2Raw = window.PS2_GAMES_DATA || null;
+      pcRaw = pcRaw || window.PC_GAMES_DATA || [];
+      ps2Raw = ps2Raw || window.PS2_GAMES_DATA || [];
 
-      if (!pcRaw || !ps2Raw) {
-        throw new Error('Gagal mengambil file katalog game.');
+      if (!Array.isArray(pcRaw) || !Array.isArray(ps2Raw)) {
+        throw new Error('Format data katalog game tidak valid.');
       }
 
       allGames = [];
@@ -383,15 +525,35 @@ function initApp() {
       // Merge Custom LocalStorage Games Added by Admin
       const customGamesJSON = localStorage.getItem('admin_custom_games');
       if (customGamesJSON) {
-        const customGames = JSON.parse(customGamesJSON);
-        customGames.forEach(cg => {
-          allGames.unshift(cg); // Place admin custom games on top
-          gamesByTitle.set(cg.title, cg);
-        });
+        try {
+          const customGames = JSON.parse(customGamesJSON);
+          if (Array.isArray(customGames)) {
+            customGames.forEach(cg => {
+              allGames.unshift(cg); // Place admin custom games on top
+              gamesByTitle.set(cg.title, cg);
+            });
+          }
+        } catch (e) {}
       }
 
+      // RENDER CATALOG IMMEDIATELY! (0ms delay)
       applyFilters();
       if (adminTableBody) renderAdminTable();
+
+      // Sync latest custom games in background without blocking catalog display
+      syncFromServer().then(cloudCustomGames => {
+        if (cloudCustomGames && Array.isArray(cloudCustomGames)) {
+          cloudCustomGames.forEach(cg => {
+            if (cg && cg.title && !gamesByTitle.has(cg.title)) {
+              allGames.unshift(cg);
+              gamesByTitle.set(cg.title, cg);
+            }
+          });
+          applyFilters();
+          if (adminTableBody) renderAdminTable();
+        }
+      }).catch(() => {});
+
     } catch (err) {
       console.error('Error loading game catalog:', err);
       if (gameGrid) gameGrid.innerHTML = `<div class="empty-state">Gagal memuat katalog game: ${err.message}</div>`;
@@ -417,6 +579,8 @@ function initApp() {
   }
 
   function renderGameGrid(append = false) {
+    if (!gameGrid) return;
+
     if (!append) {
       gameGrid.innerHTML = '';
     }
@@ -446,17 +610,17 @@ function initApp() {
         <div class="game-cover-wrap">
           <img src="${game.cover}" alt="${game.title}" class="game-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
           <span class="game-badge ${game.category}">${game.category === 'ps2' ? 'PS2 Emu' : 'Game PC'}</span>
-          <span class="price-tag-card">${priceStr}</span>
+          ${isNoPriceMode ? '' : `<span class="price-tag-card">${priceStr}</span>`}
         </div>
         <div class="game-info-wrap">
           <h3 class="game-title" title="${game.title}">${game.title}</h3>
           <div class="game-meta">
             <span class="game-size">${game.sizeGB.toFixed(1)} GB</span>
-            <span class="game-price">${priceStr}</span>
+            ${isNoPriceMode ? '' : `<span class="game-price">${priceStr}</span>`}
           </div>
           <div class="game-actions">
             <button class="btn-toggle-select" type="button">
-              ${isSelected ? 'Batal' : 'Pilih'}
+              ${isSelected ? 'Batal' : '+ Keranjang'}
             </button>
             <button class="btn-info" type="button" title="Spesifikasi Game">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
@@ -527,18 +691,23 @@ function initApp() {
       selectedGames.delete(gameTitle);
       if (cardEl) {
         cardEl.classList.remove('selected');
-        cardEl.querySelector('.btn-toggle-select').textContent = 'Pilih';
+        cardEl.querySelector('.btn-toggle-select').textContent = '+ Keranjang';
       }
     } else {
-      let totalUsedGB = 0;
+      let currentUsedGB = 0;
       selectedGames.forEach(t => {
         const g = gamesByTitle.get(t);
-        if (g) totalUsedGB += (g.sizeGB * sizeBufferMultiplier);
+        if (g) currentUsedGB += (g.sizeGB * sizeBufferMultiplier);
       });
-      totalUsedGB += (game.sizeGB * sizeBufferMultiplier);
 
-      if (totalUsedGB > currentCapacityGB) {
-        showToast(`Kapasitas storage (${currentCapacityGB} GB) tidak mencukupi untuk menambah ${game.title}!`, 'error');
+      const gameNeededGB = game.sizeGB * sizeBufferMultiplier;
+      const totalUsedGB = currentUsedGB + gameNeededGB;
+
+      const isCapacityLimitedMode = !!storageRemainingEl || isNoPriceMode;
+      if (isCapacityLimitedMode && totalUsedGB > currentCapacityGB) {
+        const remainingSpace = Math.max(0, currentCapacityGB - currentUsedGB).toFixed(1);
+        showToast(`⚠️ Kapasitas HDD tidak cukup! Sisa ruang: ${remainingSpace} GB, tetapi "${game.title}" membutuhkan ${gameNeededGB.toFixed(1)} GB.`, 'error');
+        return;
       }
 
       selectedGames.add(gameTitle);
@@ -568,7 +737,7 @@ function initApp() {
     const price = calculateGamePrice(game.sizeGB);
     
     modalInfo.innerHTML = `
-      <li class="spec-item"><strong>Harga Game:</strong> <span style="color: var(--success); font-weight: 800;">${formatRupiah(price)}</span></li>
+      ${isNoPriceMode ? '' : `<li class="spec-item spec-price-row"><strong>Harga Game:</strong> <span style="color: var(--success); font-weight: 800;">${formatRupiah(price)}</span></li>`}
       <li class="spec-item"><strong>Platform:</strong> ${game.platform}</li>
       <li class="spec-item"><strong>Ukuran File:</strong> ${game.sizeGB.toFixed(1)} GB</li>
       <li class="spec-item"><strong>Genre:</strong> ${game.game_info ? (game.game_info.Genre || '-') : '-'}</li>
@@ -628,7 +797,7 @@ function initApp() {
     if (!selectedWidgetList) return;
     selectedWidgetList.innerHTML = '';
     if (selectedGames.size === 0) {
-      selectedWidgetList.innerHTML = `<div style="text-align: center; padding: 15px; color: var(--text-muted); font-size: 0.85rem;">Belum ada game dipilih</div>`;
+      selectedWidgetList.innerHTML = `<div style="text-align: center; padding: 15px; color: var(--text-muted); font-size: 0.85rem;">Keranjang masih kosong</div>`;
       return;
     }
 
@@ -643,7 +812,7 @@ function initApp() {
         <span class="assistive-item-title" title="${game.title}">${game.title}</span>
         <div style="display: flex; align-items: center; gap: 8px;">
           <span style="color: var(--accent); font-weight: 700;">${game.sizeGB.toFixed(1)} GB</span>
-          <span style="color: var(--success); font-weight: 700; font-size: 0.8rem;">${formatRupiah(price)}</span>
+          ${isNoPriceMode ? '' : `<span style="color: var(--success); font-weight: 700; font-size: 0.8rem;">${formatRupiah(price)}</span>`}
           <button class="remove-item-btn" type="button">&times;</button>
         </div>
       `;
@@ -655,7 +824,7 @@ function initApp() {
         if (card) {
           card.classList.remove('selected');
           const btn = card.querySelector('.btn-toggle-select');
-          if (btn) btn.textContent = 'Pilih';
+          if (btn) btn.textContent = '+ Keranjang';
         }
         
         updateStorageUI();
@@ -667,43 +836,82 @@ function initApp() {
 
   function buildExportText() {
     const lines = [];
-    lines.push(`*DAFTAR PESANAN GAME - GRANDIA GAME TAVERN*`);
-    lines.push(`Media Storage: *${storagePresets[currentStorageType].label} ${currentCapacityGB} GB*`);
-    lines.push(`===============================`);
-    lines.push(``);
+    if (isNoPriceMode) {
+      lines.push(`*DAFTAR SIMULASI GAME - GRANDIA GAME TAVERN*`);
+      lines.push(`Media Storage: *${storagePresets[currentStorageType].label} ${currentCapacityGB} GB*`);
+      lines.push(`===============================`);
+      lines.push(``);
 
-    let counter = 1;
-    let totalSizeGB = 0;
-    let totalPrice = 0;
+      let counter = 1;
+      let totalSizeGB = 0;
 
-    selectedGames.forEach(title => {
-      const game = gamesByTitle.get(title);
-      if (!game) return;
+      selectedGames.forEach(title => {
+        const game = gamesByTitle.get(title);
+        if (!game) return;
 
-      const price = calculateGamePrice(game.sizeGB);
-      const categoryTag = game.category === 'ps2' ? ' (PS2)' : '';
-      lines.push(`${counter}. ${game.title}${categoryTag} [${game.sizeGB.toFixed(1)} GB] - ${formatRupiah(price)}`);
-      totalSizeGB += (game.sizeGB * sizeBufferMultiplier);
-      totalPrice += price;
-      counter++;
-    });
+        const categoryTag = game.category === 'ps2' ? ' (PS2)' : '';
+        lines.push(`${counter}. ${game.title}${categoryTag} [${game.sizeGB.toFixed(1)} GB]`);
+        totalSizeGB += (game.sizeGB * sizeBufferMultiplier);
+        counter++;
+      });
 
-    const remainingGB = currentCapacityGB - totalSizeGB;
-    lines.push(``);
-    lines.push(`===============================`);
-    lines.push(`Total Game: *${selectedGames.size} Judul*`);
-    lines.push(`Total Ukuran: *${totalSizeGB.toFixed(1)} GB*`);
-    lines.push(`Sisa Kapasitas: *${remainingGB.toFixed(1)} GB*`);
-    lines.push(`Total Biaya: *${formatRupiah(totalPrice)}*`);
-    lines.push(``);
-    lines.push(`Mohon kirimkan format ini ke Admin Grandia Game Tavern.`);
+      const remainingGB = currentCapacityGB - totalSizeGB;
+      lines.push(``);
+      lines.push(`===============================`);
+      lines.push(`Total Game: *${selectedGames.size} Judul*`);
+      lines.push(`Total Ukuran: *${totalSizeGB.toFixed(1)} GB*`);
+      lines.push(`Sisa Kapasitas: *${remainingGB.toFixed(1)} GB*`);
+      lines.push(``);
+      lines.push(`Hasil simulasi kapasitas penyimpanan Grandia Game Tavern.`);
+    } else {
+      lines.push(`*DAFTAR PESANAN GAME - GRANDIA GAME TAVERN*`);
+      lines.push(`Media Storage: *${storagePresets[currentStorageType].label} ${currentCapacityGB} GB*`);
+      lines.push(`===============================`);
+      lines.push(``);
+
+      let counter = 1;
+      let totalSizeGB = 0;
+      let totalPrice = 0;
+
+      selectedGames.forEach(title => {
+        const game = gamesByTitle.get(title);
+        if (!game) return;
+
+        const price = calculateGamePrice(game.sizeGB);
+        const categoryTag = game.category === 'ps2' ? ' (PS2)' : '';
+        lines.push(`${counter}. ${game.title}${categoryTag} [${game.sizeGB.toFixed(1)} GB] - ${formatRupiah(price)}`);
+        totalSizeGB += (game.sizeGB * sizeBufferMultiplier);
+        totalPrice += price;
+        counter++;
+      });
+
+      const discountAmount = calculatePromoDiscount(selectedGames.size);
+      const finalPrice = Math.max(0, totalPrice - discountAmount);
+
+      const remainingGB = currentCapacityGB - totalSizeGB;
+      lines.push(``);
+      lines.push(`===============================`);
+      lines.push(`Total Game: *${selectedGames.size} Judul*`);
+      lines.push(`Total Ukuran: *${totalSizeGB.toFixed(1)} GB*`);
+      lines.push(`Subtotal Biaya: *${formatRupiah(totalPrice)}*`);
+      if (discountAmount > 0) {
+        lines.push(`Diskon Promo (Beli 3): *- ${formatRupiah(discountAmount)}* 🎉`);
+      }
+      lines.push(`-------------------------------`);
+      lines.push(`TOTAL BIAYA AKHIR: *${formatRupiah(finalPrice)}*`);
+      lines.push(``);
+      if (discountAmount > 0) {
+        lines.push(`🎉 Selamat! Anda mendapat potongan ${formatRupiah(discountAmount)} dari Promo Beli 3 Game!`);
+      }
+      lines.push(`Mohon kirimkan format ini ke Admin Grandia Game Tavern.`);
+    }
 
     return lines.join('\n');
   }
 
   function openExportModal() {
     if (selectedGames.size === 0) {
-      showToast('Silakan pilih minimal 1 game terlebih dahulu!', 'error');
+      showToast('Keranjang Anda masih kosong. Masukkan minimal 1 game terlebih dahulu!', 'error');
       return;
     }
 
@@ -722,7 +930,7 @@ function initApp() {
         <td>${counter}</td>
         <td>${game.title}</td>
         <td style="color: var(--accent); font-weight: 700;">${game.sizeGB.toFixed(1)} GB</td>
-        <td style="color: var(--success); font-weight: 700;">${formatRupiah(price)}</td>
+        ${isNoPriceMode ? '' : `<td style="color: var(--success); font-weight: 700;">${formatRupiah(price)}</td>`}
       `;
       exportTableBody.appendChild(tr);
 
@@ -732,8 +940,21 @@ function initApp() {
     });
 
     exportTotalSize.textContent = `${totalSizeGB.toFixed(1)} GB`;
+    const discountAmount = calculatePromoDiscount(selectedGames.size);
+    const finalPrice = Math.max(0, totalPrice - discountAmount);
+
     const exportTotalPriceEl = document.getElementById('export-total-price');
-    if (exportTotalPriceEl) exportTotalPriceEl.textContent = formatRupiah(totalPrice);
+    if (exportTotalPriceEl) {
+      if (discountAmount > 0) {
+        exportTotalPriceEl.innerHTML = `
+          <span style="text-decoration: line-through; opacity: 0.6; font-size: 0.85rem; margin-right: 6px;">${formatRupiah(totalPrice)}</span>
+          <strong style="color: var(--success); font-size: 1.05rem;">${formatRupiah(finalPrice)}</strong>
+          <span class="promo-badge-text">Diskon Promo (Beli 3): -${formatRupiah(discountAmount)} 🎉</span>
+        `;
+      } else {
+        exportTotalPriceEl.textContent = formatRupiah(finalPrice);
+      }
+    }
     
     // Update Direct WA Link
     if (waDirectBtn) {
@@ -800,9 +1021,19 @@ function initApp() {
       localStorage.setItem('admin_wa_number', adminWaNumber);
       localStorage.setItem('admin_buffer_percentage', sizeBufferPercentage);
       localStorage.setItem('admin_github_token', adminGithubToken);
+      if (adminWebAppUrlInput) adminWebAppUrl = adminWebAppUrlInput.value.trim();
+      localStorage.setItem('admin_webapp_url', adminWebAppUrl);
+
+      if (_localServerAvailable) {
+        fetch('/api/drive_config', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ web_app_url: adminWebAppUrl })
+        }).catch(() => {});
+      }
 
       updateStorageUI();
-      showToast('Pengaturan Toko, WhatsApp, & GitHub Token berhasil disimpan!', 'success');
+      showToast('Pengaturan Toko, WhatsApp, GitHub Token, & Cloud Sync berhasil disimpan!', 'success');
     });
   }
 
@@ -862,6 +1093,7 @@ function initApp() {
     localStorage.setItem('admin_custom_games', JSON.stringify(customGames));
     gamesByTitle.set(gameObject.title, gameObject);
 
+    debouncedSyncToServer();
     resetAdminGameForm();
     applyFilters();
     renderAdminTable();
@@ -1037,6 +1269,7 @@ function initApp() {
             customGames = customGames.filter(g => g.id !== game.id && g.title !== game.title);
             localStorage.setItem('admin_custom_games', JSON.stringify(customGames));
 
+            debouncedSyncToServer();
             showToast(`Game "${titleStr}" telah dihapus!`, 'success');
             applyFilters();
             renderAdminTable();
@@ -1139,6 +1372,7 @@ function initApp() {
           });
 
           localStorage.setItem('admin_custom_games', JSON.stringify(allGames.filter(g => String(g.id).includes('custom') || String(g.id).includes('restore'))));
+          debouncedSyncToServer();
 
           applyFilters();
           renderAdminTable();
@@ -1164,6 +1398,7 @@ function initApp() {
     adminResetCatalogBtn.addEventListener('click', () => {
       if (confirm('Apakah Anda yakin ingin menghapus seluruh game custom dan mengembalikan katalog ke bawaan awal?')) {
         localStorage.removeItem('admin_custom_games');
+        debouncedSyncToServer();
         loadAllCatalogs();
         showToast('Katalog berhasil di-reset ke bawaan awal!', 'success');
       }
