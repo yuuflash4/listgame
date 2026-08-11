@@ -122,6 +122,12 @@
               <span style="font-size: 0.78rem; color: var(--text-muted);">Persentase toleransi ruang terpakai (default 5%).</span>
             </div>
 
+            <div class="form-group">
+              <label class="form-label" for="admin-github-token">GitHub Personal Access Token (Auto-Sync Netlify Cloud)</label>
+              <input type="password" id="admin-github-token" class="form-control" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" autocomplete="off" />
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Isi Token GitHub (akses `repo`). Setiap kali klik "Simpan Game" akan otomatis di-sync ke Netlify dalam ~15 detik!</span>
+            </div>
+
             <button type="submit" class="admin-btn" style="width: 100%; margin-bottom: 20px;">Simpan Pengaturan</button>
           </form>
 
@@ -177,9 +183,9 @@
   <div id="game-grid" style="display: none;"></div>
 
   <!-- Catalog Data Scripts & Application Logic -->
-  <script src="data/pc_games.js?v=1.1.5"></script>
-  <script src="data/ps2_games.js?v=1.1.5"></script>
-  <script src="js/app.js?v=1.1.5"></script>
+  <script src="data/pc_games.js?v=1.2.0"></script>
+  <script src="data/ps2_games.js?v=1.2.0"></script>
+  <script src="js/app.js?v=1.2.0"></script>
   <script>
     // Bulletproof Auto-Trigger Fallback for Admin Catalog Table
     window.addEventListener('load', function() {

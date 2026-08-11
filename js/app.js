@@ -99,6 +99,7 @@ function initApp() {
   const adminSettingsForm = document.getElementById('admin-settings-form');
   const adminWaNumberInput = document.getElementById('admin-wa-number');
   const adminBufferPercentageInput = document.getElementById('admin-buffer-percentage');
+  const adminGithubTokenInput = document.getElementById('admin-github-token');
   const adminBackupBtn = document.getElementById('admin-backup-btn');
   const adminResetCatalogBtn = document.getElementById('admin-reset-catalog-btn');
   
@@ -133,9 +134,11 @@ function initApp() {
   let adminWaNumber = localStorage.getItem('admin_wa_number') || '6285701917085';
   let sizeBufferPercentage = parseFloat(localStorage.getItem('admin_buffer_percentage') || '5');
   let sizeBufferMultiplier = 1 + (sizeBufferPercentage / 100);
+  let adminGithubToken = localStorage.getItem('admin_github_token') || '';
 
   if (adminWaNumberInput) adminWaNumberInput.value = adminWaNumber;
   if (adminBufferPercentageInput) adminBufferPercentageInput.value = sizeBufferPercentage;
+  if (adminGithubTokenInput) adminGithubTokenInput.value = adminGithubToken;
 
   // Pagination parameters
   const itemsPerPage = 48;
@@ -792,12 +795,14 @@ function initApp() {
       adminWaNumber = adminWaNumberInput.value.trim().replace(/[^0-9]/g, '');
       sizeBufferPercentage = parseFloat(adminBufferPercentageInput.value) || 5;
       sizeBufferMultiplier = 1 + (sizeBufferPercentage / 100);
+      if (adminGithubTokenInput) adminGithubToken = adminGithubTokenInput.value.trim();
 
       localStorage.setItem('admin_wa_number', adminWaNumber);
       localStorage.setItem('admin_buffer_percentage', sizeBufferPercentage);
+      localStorage.setItem('admin_github_token', adminGithubToken);
 
       updateStorageUI();
-      showToast('Pengaturan Toko & WhatsApp berhasil disimpan!', 'success');
+      showToast('Pengaturan Toko, WhatsApp, & GitHub Token berhasil disimpan!', 'success');
     });
   }
 
@@ -860,6 +865,7 @@ function initApp() {
     resetAdminGameForm();
     applyFilters();
     renderAdminTable();
+    syncCatalogToGitHub(category);
     });
   }
 
@@ -877,6 +883,86 @@ function initApp() {
   }
 
   if (adminResetFormBtn) adminResetFormBtn.addEventListener('click', resetAdminGameForm);
+
+  // GitHub API Auto-Sync to Netlify Cloud
+  async function syncCatalogToGitHub(category) {
+    const token = localStorage.getItem('admin_github_token');
+    if (!token) {
+      showToast('Game tersimpan lokal. Isi GitHub Personal Access Token di Pengaturan Toko untuk Auto-Sync ke Netlify Cloud!', 'info');
+      return;
+    }
+
+    const repoOwner = 'yuuflash4';
+    const repoName = 'listgame';
+    const targetFile = `data/${category}_games.json`;
+    const targetJsFile = `data/${category}_games.js`;
+
+    showToast('🚀 Mengirim pembaruan katalog ke Netlify Cloud...', 'info');
+
+    try {
+      const categoryGames = allGames
+        .filter(g => g.category === category)
+        .map(g => ({
+          title: g.title,
+          banner_url: g.cover,
+          category: g.category,
+          game_info: {
+            Genre: g.game_info ? (g.game_info.Genre || '') : '',
+            Developer: g.game_info ? (g.game_info.Developer || '') : '',
+            'Game Size': `${(g.sizeGB || 0).toFixed(1)} GB`
+          },
+          system_requirements: Array.isArray(g.requirements) ? g.requirements : []
+        }));
+
+      const jsonStr = JSON.stringify(categoryGames, null, 2);
+      const jsStr = `window.${category.toUpperCase()}_GAMES_DATA = ${jsonStr};\n`;
+
+      async function updateGitHubFile(path, contentStr, commitMsg) {
+        const getUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${path}`;
+        const getRes = await fetch(getUrl, {
+          headers: {
+            Authorization: `token ${token}`,
+            Accept: 'application/vnd.github.v3+json'
+          }
+        });
+        
+        let sha = '';
+        if (getRes.ok) {
+          const fileData = await getRes.json();
+          sha = fileData.sha;
+        }
+
+        const base64Content = btoa(unescape(encodeURIComponent(contentStr)));
+
+        const putRes = await fetch(getUrl, {
+          method: 'PUT',
+          headers: {
+            Authorization: `token ${token}`,
+            'Content-Type': 'application/json',
+            Accept: 'application/vnd.github.v3+json'
+          },
+          body: JSON.stringify({
+            message: commitMsg,
+            content: base64Content,
+            sha: sha || undefined
+          })
+        });
+
+        if (!putRes.ok) {
+          const errData = await putRes.json();
+          throw new Error(errData.message || 'Gagal update file di GitHub');
+        }
+      }
+
+      await updateGitHubFile(targetFile, jsonStr, `feat(catalog): Auto-update ${targetFile} from Admin Panel`);
+      await updateGitHubFile(targetJsFile, jsStr, `feat(catalog): Auto-update ${targetJsFile} from Admin Panel`);
+
+      showToast('🎉 SUCCESS! Katalog tersimpan di Cloud Netlify! Web online di-update dalam ~15 detik.', 'success');
+    } catch (err) {
+      console.error('GitHub Sync Error:', err);
+      showToast(`Gagal sync ke GitHub Cloud: ${err.message}. Periksa Personal Access Token Anda.`, 'error');
+    }
+  }
 
   // Render Admin Management Table
   function renderAdminTable() {
@@ -955,6 +1041,7 @@ function initApp() {
             applyFilters();
             renderAdminTable();
             updateStorageUI();
+            syncCatalogToGitHub(game.category || 'pc');
           }
         });
       }
