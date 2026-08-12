@@ -47,9 +47,18 @@ window.PC_GAMES_DATA = [
     "game_info": {
       "Genre": "Action, RPG",
       "Developer": "Game Science",
-      "Game Size": "90.0 GB"
+      "Game Size": "141.0 GB"
     },
-    "system_requirements": []
+    "system_requirements": [
+      "Minimum:",
+      "Prosesor 64-bit dan OS diperlukan",
+      "OS: Windows 10 64-bit",
+      "Prosesor: Ryzen 5 2600X / i5-8500",
+      "Memori: 16 GB RAM",
+      "Grafis: RX 5500 XT / GTX 1060",
+      "DirectX: Versi 12",
+      "Penyimpanan: 150 GB ruang tersedia"
+    ]
   },
   {
     "title": "Avatar: Frontiers of Pandora",
