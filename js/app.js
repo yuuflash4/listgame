@@ -597,7 +597,10 @@ function initApp() {
       allGames = [];
       gamesByTitle.clear();
 
+      const deletedTitles = JSON.parse(localStorage.getItem('admin_deleted_titles') || '[]');
+
       pcRaw.forEach((game, idx) => {
+        if (deletedTitles.includes(game.title)) return;
         const sizeGB = parseSizeToGB(game.game_info ? game.game_info['Game Size'] : 0);
         const item = {
           id: `pc-${idx}`,
@@ -614,6 +617,7 @@ function initApp() {
       });
 
       ps2Raw.forEach((game, idx) => {
+        if (deletedTitles.includes(game.title)) return;
         const sizeGB = parseSizeToGB(game.game_info ? game.game_info['Game Size'] : game.sizeGB);
         const item = {
           id: `ps2-${idx}`,
@@ -636,7 +640,7 @@ function initApp() {
           const customGames = JSON.parse(customGamesJSON);
           if (Array.isArray(customGames)) {
             customGames.forEach(cg => {
-              if (!cg || !cg.title) return;
+              if (!cg || !cg.title || deletedTitles.includes(cg.title)) return;
               const existingIdx = allGames.findIndex(g => (cg.id && g.id === cg.id) || g.title === cg.title);
               if (existingIdx !== -1) {
                 allGames[existingIdx] = cg;
@@ -1338,6 +1342,12 @@ function initApp() {
       showToast(`Game baru "${title}" berhasil ditambahkan!`, 'success');
     }
 
+    let deletedTitles = JSON.parse(localStorage.getItem('admin_deleted_titles') || '[]');
+    if (deletedTitles.includes(title)) {
+      deletedTitles = deletedTitles.filter(t => t !== title);
+      localStorage.setItem('admin_deleted_titles', JSON.stringify(deletedTitles));
+    }
+
     localStorage.setItem('admin_custom_games', JSON.stringify(customGames));
     gamesByTitle.set(gameObject.title, gameObject);
 
@@ -1537,6 +1547,12 @@ function initApp() {
             customGames = customGames.filter(g => g.id !== game.id && g.title !== game.title);
             localStorage.setItem('admin_custom_games', JSON.stringify(customGames));
 
+            let deletedTitles = JSON.parse(localStorage.getItem('admin_deleted_titles') || '[]');
+            if (!deletedTitles.includes(game.title)) {
+              deletedTitles.push(game.title);
+              localStorage.setItem('admin_deleted_titles', JSON.stringify(deletedTitles));
+            }
+
             debouncedSyncToServer();
             showToast(`Game "${titleStr}" telah dihapus!`, 'success');
             applyFilters();
@@ -1666,6 +1682,8 @@ function initApp() {
       if (confirm('Apakah Anda yakin ingin menghapus seluruh game custom dan mengembalikan katalog ke bawaan awal?')) {
         localStorage.removeItem('admin_custom_games');
         localStorage.setItem('admin_custom_games', '[]');
+        localStorage.removeItem('admin_deleted_titles');
+        localStorage.setItem('admin_deleted_titles', '[]');
 
         // Wipe Local Server custom_games.json
         if (_localServerAvailable !== false) {
