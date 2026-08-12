@@ -41,26 +41,6 @@ window.PC_GAMES_DATA = [
     ]
   },
   {
-    "title": "Crimson Desert",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3321460/0ea942465fd1dff8a7fbc11cc9fca8c476c5e5ae/library_capsule.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "Game Science",
-      "Game Size": "141.0 GB"
-    },
-    "system_requirements": [
-      "Minimum:",
-      "Prosesor 64-bit dan OS diperlukan",
-      "OS: Windows 10 64-bit",
-      "Prosesor: Ryzen 5 2600X / i5-8500",
-      "Memori: 16 GB RAM",
-      "Grafis: RX 5500 XT / GTX 1060",
-      "DirectX: Versi 12",
-      "Penyimpanan: 150 GB ruang tersedia"
-    ]
-  },
-  {
     "title": "Avatar: Frontiers of Pandora",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2840770/library_600x900.jpg",
     "category": "pc",
