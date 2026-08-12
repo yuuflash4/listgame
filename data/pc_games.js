@@ -53,6 +53,17 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
+    "title": "007 First Light",
+    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/1159a696d257cbeb3f4479be3466cfba2ae938a0/library_600x900_2x.jpg?t=1780990824",
+    "category": "pc",
+    "game_info": {
+      "Genre": "Action, RPG",
+      "Developer": "Game Science",
+      "Game Size": "54.0 GB"
+    },
+    "system_requirements": []
+  },
+  {
     "title": "STAR WARS™ Battlefront™ II",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1237950/library_600x900_2x.jpg?t=1777393714",
     "category": "pc",
@@ -235,7 +246,7 @@ window.PC_GAMES_DATA = [
     "game_info": {
       "Genre": "Action, Adventure, Racing, Simulation, Sports",
       "Developer": "Playground Games",
-      "Game Size": "171.0 GB"
+      "Game Size": "176.0 GB"
     },
     "system_requirements": []
   },
