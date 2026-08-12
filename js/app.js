@@ -759,10 +759,6 @@ function initApp() {
           return popB - popA;
         case 'popular-asc':
           return popA - popB;
-        case 'release-desc':
-          return relB - relA;
-        case 'release-asc':
-          return relA - relB;
         case 'added-asc':
           return idxB - idxA;
         case 'added-desc':
