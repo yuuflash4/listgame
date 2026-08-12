@@ -1,5 +1,26 @@
 window.PC_GAMES_DATA = [
   {
+    "title": "Forza Horizon 5 Premium Edition (v1.688.044.0)",
+    "banner_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfq8E6A7f1-1pNr2vxCAIo8__4WW_rv9ZsEVUqWokFfA&s=10",
+    "category": "pc",
+    "game_info": {
+      "Genre": "Action, Adventure, Racing, Simulation, Sports",
+      "Developer": "Playground Games",
+      "Game Size": "176.0 GB"
+    },
+    "system_requirements": [
+      "Minimum:",
+      "Prosesor 64-bit dan OS diperlukan",
+      "OS: Windows 10 version 18362.0 or higher",
+      "Prosesor: Intel i5-4460 or AMD Ryzen 3 1200",
+      "Memori: 8 GB RAM",
+      "Grafis: NVidia GTX 970",
+      "AMD RX 470",
+      "OR Intel Arc A380",
+      "DirectX: Versi 12"
+    ]
+  },
+  {
     "title": "The First Berserker: Khazan",
     "banner_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8roc.webp",
     "category": "pc",
@@ -26,7 +47,7 @@ window.PC_GAMES_DATA = [
     "game_info": {
       "Genre": "Action, RPG",
       "Developer": "Game Science",
-      "Game Size": "90.0 GB"
+      "Game Size": "141.0 GB"
     },
     "system_requirements": []
   },
@@ -48,18 +69,7 @@ window.PC_GAMES_DATA = [
     "game_info": {
       "Genre": "Action, RPG",
       "Developer": "Game Science",
-      "Game Size": "148.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "007 First Light",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/1159a696d257cbeb3f4479be3466cfba2ae938a0/library_600x900_2x.jpg?t=1780990824",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "Game Science",
-      "Game Size": "49.2 GB"
+      "Game Size": "176.0 GB"
     },
     "system_requirements": []
   },
@@ -236,17 +246,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Racing, Simulation, Early Access",
       "Developer": "BeamNG",
       "Game Size": "48.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Forza Horizon 5 Premium Edition (v1.688.044.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551360/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Racing, Simulation, Sports",
-      "Developer": "Playground Games",
-      "Game Size": "171.0 GB"
     },
     "system_requirements": []
   },
