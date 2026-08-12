@@ -109,6 +109,17 @@
               <option value="ps2">Game PS2</option>
             </select>
 
+            <select id="sort-filter" class="custom-select" aria-label="Urutkan katalog game">
+              <option value="added-desc" selected>🆕 Paling Baru Ditambahkan</option>
+              <option value="added-asc">⏳ Terlama Ditambahkan</option>
+              <option value="size-desc">💾 Ukuran Terbesar ➔ Terkecil</option>
+              <option value="size-asc">💾 Ukuran Terkecil ➔ Terbesar</option>
+              <option value="popular-desc">🔥 Paling Populer</option>
+              <option value="popular-asc">❄️ Kurang Populer</option>
+              <option value="release-desc">📅 Rilisan Terbaru</option>
+              <option value="release-asc">📅 Rilisan Lama</option>
+            </select>
+
             <div class="stats">
               <span>Keranjang: <strong id="selected-count" class="text-accent">0</strong></span>
               <button id="export-btn" class="export-btn checkout-btn">

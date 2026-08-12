@@ -22,6 +22,7 @@ function initApp() {
   // Store Catalog Elements & View Mode Switcher
   const searchInput = document.getElementById('search-input');
   const categoryFilter = document.getElementById('category-filter');
+  const sortFilter = document.getElementById('sort-filter');
   const selectedCountEl = document.getElementById('selected-count');
   const gameGrid = document.getElementById('game-grid');
   const loadMoreBtn = document.getElementById('load-more-btn');
@@ -700,15 +701,74 @@ function initApp() {
     }
   }
 
+  function getReleaseYear(game) {
+    if (!game) return 0;
+    const info = game.game_info || {};
+    const str = info['Release Date'] || info.Year || info.release_date || game.title || '';
+    const matches = String(str).match(/\b(19\d\d|20\d\d)\b/g);
+    if (matches && matches.length > 0) {
+      return parseInt(matches[matches.length - 1], 10);
+    }
+    return 2000;
+  }
+
+  function getPopularityScore(game, indexInCatalog) {
+    if (!game) return 0;
+    if (typeof game.popularity === 'number') return game.popularity;
+    if (game.rating) return parseFloat(game.rating) * 10;
+    const titleLower = (game.title || '').toLowerCase();
+    let score = 50;
+    if (titleLower.includes('gta') || titleLower.includes('grand theft auto')) score += 50;
+    if (titleLower.includes('god of war')) score += 40;
+    if (titleLower.includes('resident evil')) score += 35;
+    if (titleLower.includes('fifa') || titleLower.includes('pes') || titleLower.includes('football')) score += 35;
+    if (titleLower.includes('call of duty')) score += 35;
+    if (titleLower.includes('cyberpunk') || titleLower.includes('elden ring') || titleLower.includes('wukong')) score += 30;
+    score += Math.min(30, (game.sizeGB || 0) / 5);
+    return score;
+  }
+
   function applyFilters() {
     const searchQuery = searchInput ? searchInput.value.toLowerCase().trim() : '';
     const selectedCategory = categoryFilter ? categoryFilter.value : 'all';
+    const selectedSort = sortFilter ? sortFilter.value : 'added-desc';
 
     displayedGames = allGames.filter(game => {
       const matchesSearch = !searchQuery || game.title.toLowerCase().includes(searchQuery) ||
                             (game.game_info && game.game_info.Genre && String(game.game_info.Genre).toLowerCase().includes(searchQuery));
       const matchesCategory = selectedCategory === 'all' || game.category === selectedCategory;
       return matchesSearch && matchesCategory;
+    });
+
+    displayedGames.sort((a, b) => {
+      const sizeA = typeof a.sizeGB === 'number' ? a.sizeGB : parseFloat(a.sizeGB) || 0;
+      const sizeB = typeof b.sizeGB === 'number' ? b.sizeGB : parseFloat(b.sizeGB) || 0;
+      const popA = getPopularityScore(a, allGames.indexOf(a));
+      const popB = getPopularityScore(b, allGames.indexOf(b));
+      const relA = getReleaseYear(a);
+      const relB = getReleaseYear(b);
+      const idxA = allGames.indexOf(a);
+      const idxB = allGames.indexOf(b);
+
+      switch (selectedSort) {
+        case 'size-desc':
+          return sizeB - sizeA;
+        case 'size-asc':
+          return sizeA - sizeB;
+        case 'popular-desc':
+          return popB - popA;
+        case 'popular-asc':
+          return popA - popB;
+        case 'release-desc':
+          return relB - relA;
+        case 'release-asc':
+          return relA - relB;
+        case 'added-asc':
+          return idxB - idxA;
+        case 'added-desc':
+        default:
+          return idxA - idxB;
+      }
     });
 
     currentPage = 1;
@@ -879,6 +939,10 @@ function initApp() {
 
   if (categoryFilter) {
     categoryFilter.addEventListener('change', applyFilters);
+  }
+
+  if (sortFilter) {
+    sortFilter.addEventListener('change', applyFilters);
   }
 
   function openSpecModal(game) {
