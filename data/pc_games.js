@@ -195,17 +195,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Schedule I (v0.4.3f3 + Online)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3164500/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation, Strategy, Early Access",
-      "Developer": "TVGS",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Grand Theft Auto V / GTA 5 (v1.0.3751.0/1.72)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/af0a25e27510f77d97634a6bbe653b13.jpg",
     "category": "pc",
@@ -305,17 +294,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Hollow Knight: Silksong (v1.0.29315)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1030300/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Team Cherry",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Ready or Not (B_20231875 + Co-op)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1144200/library_600x900.jpg",
     "category": "pc",
@@ -371,17 +349,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "PEAK (v1.54.a + Co-op)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/fbf3321aabbfb52b9361463b92a3b84b.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Landcrab",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Baldur’s Gate 3 (v4.1.1.6995620)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/library_600x900.jpg",
     "category": "pc",
@@ -389,17 +356,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, RPG, Strategy",
       "Developer": "Larian Studios",
       "Game Size": "123.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "GTA/Grand Theft Auto: San Andreas",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/12120/library_600x900_2x.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Rockstar Games",
-      "Game Size": "3.5 GB"
     },
     "system_requirements": []
   },
@@ -459,17 +415,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Bloons TD 6 (v53.2 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/960090/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "Ninja Kiwi",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Sekiro: Shadows Die Twice (v1.06)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/814380/library_600x900.jpg",
     "category": "pc",
@@ -481,17 +426,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Hollow Knight (v1.5.12459)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/367520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Team Cherry",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Marvel’s Spider-Man: Miles Morales (v3.617.1.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1817190/library_600x900.jpg",
     "category": "pc",
@@ -499,17 +433,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Insomniac Games, Nixxes Software",
       "Game Size": "62.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "ULTRAKILL (Build 17867434)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1229490/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Early Access",
-      "Developer": "New Blood Interactive",
-      "Game Size": "2.3 GB"
     },
     "system_requirements": []
   },
@@ -536,17 +459,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Project Zomboid (v42.13.1 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/108600/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Early Access",
-      "Developer": "The Indie Stone",
-      "Game Size": "4.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "FIFA 23 Ultimate Edition (v1.0.82.43747)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/ca7d8067aac9daee9132d7116231846c.png",
     "category": "pc",
@@ -565,61 +477,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie, Simulation",
       "Developer": "Endnight Games Ltd",
       "Game Size": "10.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Wallpaper Engine (v2.4.113)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/431960/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Animation & Modeling, Design & Illustration, Photo Editing, Utilities",
-      "Developer": "Wallpaper Engine Team",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Raft (v1.1.07 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/648800/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation, Early Access",
-      "Developer": "Redbeet Interactive",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "POSTAL 2 (Build 11052972)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/223470/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Running With Scissors",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Binding of Isaac: Repentance (v1.9.7.12 + Co-op)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/d22605e2bddb461a4034acb67334c1f7.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG",
-      "Developer": "Pajama Llama Games",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Hytale (v17022026)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/24d5d9de8fd0f989a622c597d4bb036b.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG",
-      "Developer": "Hypixel Studios",
-      "Game Size": "3.6 GB"
     },
     "system_requirements": []
   },
@@ -745,17 +602,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Placid Plastic Duck Simulator (v2.2.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1999360/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation",
-      "Developer": "turbolento games",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Call of Duty: Black Ops",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/42700/library_600x900_2x.jpg?t=1748040520",
     "category": "pc",
@@ -763,17 +609,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Shooter",
       "Developer": "Treyarch",
       "Game Size": "10.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Wildcat Gun Machine (v1.004)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1288610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Chunkybox Games",
-      "Game Size": "1.4 GB"
     },
     "system_requirements": []
   },
@@ -811,17 +646,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Cuphead (v1.3.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/268910/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Studio MDHR Entertainment Inc.",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Call of Duty: Modern Warfare 2",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/10180/library_600x900.jpg",
     "category": "pc",
@@ -855,17 +679,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "RV There Yet (v1.1.15619 + Co-op)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/9983e09c222e68826865672a7b4f3a26.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Nuggets Entertainment",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Marvel’s Spider-Man Remastered (v2.1012.0.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1817070/library_600x900.jpg",
     "category": "pc",
@@ -873,17 +686,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Insomniac Games, Nixxes Software",
       "Game Size": "53.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Need for Speed Most Wanted Black Edition",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/b7d110ec87a207bf18ae6f3569dff3a2.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Arcade, Racing, Cars, 3D",
-      "Developer": "EA Black Box",
-      "Game Size": "2.1 GB"
     },
     "system_requirements": []
   },
@@ -910,17 +712,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "MiniGolf Maker (Build 8270527)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1036660/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Sports",
-      "Developer": "Road Turtle Games",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Forza Horizon 3 (v1.0.125.2)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/0e98729842c746b65e68c204d5c17c2a.jpg",
     "category": "pc",
@@ -928,17 +719,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Racing, Simulation",
       "Developer": "Playground Games",
       "Game Size": "60.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Subnautica (v82304)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962700/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Extremely OK Games, Ltd.",
-      "Game Size": "3.6 GB"
     },
     "system_requirements": []
   },
@@ -965,17 +745,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "OMORI (Build 8879120)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1150690/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "OMOCAT, LLC",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Assassin’s Creed IV Black Flag (v1.07 & ALL DLC)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/242050/library_600x900.jpg",
     "category": "pc",
@@ -994,17 +763,6 @@ window.PC_GAMES_DATA = [
       "Genre": "RPG",
       "Developer": "Bethesda Game Studios",
       "Game Size": "16.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "MiSide (v0.93L)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2527500/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Simulation",
-      "Developer": "AIHASTO",
-      "Game Size": "2.5 GB"
     },
     "system_requirements": []
   },
@@ -1082,17 +840,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Bloober Team SA",
       "Game Size": "34.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Supermarket Simulator (v1.1.7)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2670630/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Nokta Games",
-      "Game Size": "1.0 GB"
     },
     "system_requirements": []
   },
@@ -1196,39 +943,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Minecraft Dungeons (v1.17.0.0 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1672970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Online Co-op",
-      "Developer": "Mojang",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Red Wings: American Aces (Build 8294180)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1654680/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Ironbird Creations",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Your Sword Is So Big",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1756120/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG, Simulation",
-      "Developer": "Flex Entertainment",
-      "Game Size": "4.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Farming Simulator 22 (v1.14.0.0 + Co-op)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1248130/library_600x900.jpg",
     "category": "pc",
@@ -1247,17 +961,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Bandai Namco Studios Inc.",
       "Game Size": "112.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Until You Fall VR (v1.0)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/f4151395b07c9e93d1e4593c17bfe554.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Schell Games",
-      "Game Size": "1.6 GB"
     },
     "system_requirements": []
   },
@@ -1339,28 +1042,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Moo Lander (v1.5.7.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1080040/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "The Sixth Hammer",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "BIT.TRIP RERUNNER",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2222540/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Choice Provisions, Gamecraft Studios",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Drive Beyond Horizons (Build 20625697 + Co-op)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2625420/library_600x900.jpg",
     "category": "pc",
@@ -1427,17 +1108,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Bully: Scholarship Edition (v1.2.0.0 + Modded)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/12200/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Rockstar New England",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "The Legend of Zelda: Breath of the Wild (v1.5.0)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/121b81f7d167ca2c24fdab4f044048f8.png",
     "category": "pc",
@@ -1467,17 +1137,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Casual, Indie, Simulation",
       "Developer": "Anegar Games",
       "Game Size": "7.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Forest (v1.12)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/242760/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation, VR",
-      "Developer": "Endnight Games Ltd",
-      "Game Size": "3.8 GB"
     },
     "system_requirements": []
   },
@@ -1746,17 +1405,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Car For Sale Simulator 2023 (v1.2.9)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2248760/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Red Axe Games",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "DARK SOULS II SOTFS (v1.02)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/7325756d790a1626acf5d2af12610812.jpg",
     "category": "pc",
@@ -1823,17 +1471,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Garry’s Mod (Build 17902109)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4000/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Facepunch Studios",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Assassin’s Creed III (Build 2174530)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/f0ce59b6bf8e03499c788c348919a196.jpg",
     "category": "pc",
@@ -1885,17 +1522,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "CAPCOM Co., Ltd.",
       "Game Size": "56.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Golf Club Wasteland (v15.11.2021)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/aa587ff68eccfabb7ab663f9f8548a45.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Sports",
-      "Developer": "Demagog Studio",
-      "Game Size": "1.1 GB"
     },
     "system_requirements": []
   },
@@ -1955,17 +1581,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Streamer Life Simulator 2 (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2890830/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Cheesecake Dev",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Solo Leveling: ARISE OVERDRIVE (v1.1.71.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2373990/library_600x900.jpg",
     "category": "pc",
@@ -2017,28 +1632,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "IO Interactive A/S",
       "Game Size": "69.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "TCG Card Shop Simulator (v0.66.8)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3070070/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Early Access",
-      "Developer": "OPNeon Games",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Liar’s Bar (v0.98 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3097560/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Strategy, Early Access",
-      "Developer": "Curve Animation",
-      "Game Size": "4.9 GB"
     },
     "system_requirements": []
   },
@@ -2197,17 +1790,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Super Mario Odyssey (v1.3.0 + YUZU EMU)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/505870c8848f2d550944bf64008c9472.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Arcade, Jump and run, 3D",
-      "Developer": "Nintendo",
-      "Game Size": "4.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "7 Days to Die (v2.2.b3 + Multiplayer)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/251570/library_600x900.jpg",
     "category": "pc",
@@ -2241,17 +1823,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "MX Bikes (Build 16359763)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/655500/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Racing, Simulation, Sports games, Early access",
-      "Developer": "PiBoSo",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Grounded (v1.4.7.4807 + Co-op)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/078a402ab61a00270f09ca3fa92f31d3.png",
     "category": "pc",
@@ -2259,17 +1830,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Obsidian Entertainment",
       "Game Size": "11.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Pokémon Legends: Arceus (v1.1.1 + Ryujinx/YUZU)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/ce098cf158927e2cea10919e1e2b36a3.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Role-Playing ,RPG",
-      "Developer": "Game Freak",
-      "Game Size": "2.2 GB"
     },
     "system_requirements": []
   },
@@ -2292,17 +1852,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Casual, Indie, Simulation, Strategy",
       "Developer": "Wube Software LTD.",
       "Game Size": "8.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Valheim (v0.221.4 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/892970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG, Early Access",
-      "Developer": "Iron Gate AB",
-      "Game Size": "1.4 GB"
     },
     "system_requirements": []
   },
@@ -2373,17 +1922,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Celeste (v1.4.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/504230/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Extremely OK Games, Ltd.",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Fallout: New Vegas Ultimate Edition (Build 1510068)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22380/library_600x900.jpg",
     "category": "pc",
@@ -2402,17 +1940,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Ubisoft Montreal",
       "Game Size": "5.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Cult of the Lamb (v1.5.20.1033)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1313140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Strategy",
-      "Developer": "Massive Monster",
-      "Game Size": "4.9 GB"
     },
     "system_requirements": []
   },
@@ -2549,17 +2076,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Grand Theft Auto: Vice City",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1546990/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Rockstar Games",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Mortal Kombat Komplete Edition (Build 344915)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/c9c9f8e41433ff4ad15aa577a465e599.png",
     "category": "pc",
@@ -2615,17 +2131,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "DARK SOULS Prepare To Die Edition",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/fe1d32871b8e877af3a10dc8ac6c6dbf.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "FromSoftware, Inc.",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "ARK: Survival Ascended (Build 08102025 + Multiplayer)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2399830/library_600x900.jpg",
     "category": "pc",
@@ -2633,17 +2138,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie, Massively Multiplayer, RPG, Early Access",
       "Developer": "Studio Wildcard, Grove Street Games, Instinct Games",
       "Game Size": "215.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Danganronpa S: Ultimate Summer Camp",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1691970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy, Early Access",
-      "Developer": "Spike Chunsoft Co., Ltd.",
-      "Game Size": "1.0 GB"
     },
     "system_requirements": []
   },
@@ -2666,17 +2160,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Radical Entertainment",
       "Game Size": "7.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Five Nights at Freddy’s 4 (v1.1)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/12cc97842f39de60ed91cd3740d551b2.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Strategy",
-      "Developer": "Scott Cawthon",
-      "Game Size": "1.0 GB"
     },
     "system_requirements": []
   },
@@ -2769,17 +2252,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Need for Speed Underground 2 (v1.2)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/8e4374a54f3a61fa403d8d70c99bca08.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Racing, Sports",
-      "Developer": "EA Blackbox",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "SnowRunner (v1.819854)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1465360/library_600x900.jpg",
     "category": "pc",
@@ -2787,28 +2259,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Simulation",
       "Developer": "Saber Interactive",
       "Game Size": "45.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Dead Cells (v35.8)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/588650/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Motion Twin",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Binding of Isaac: Rebirth (v1.9.7.14)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250900/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Nicalis, Inc., Edmund McMillen",
-      "Game Size": "1.9 GB"
     },
     "system_requirements": []
   },
@@ -2831,28 +2281,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Sledgehammer Games, Treyarch, Infinity Ward, Beenox, Raven Software, High Moon Studios, Demonware",
       "Game Size": "154.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Only Up! (Build 11651418)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2565960/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation",
-      "Developer": "SCKR Games",
-      "Game Size": "4.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Assassin’s Creed",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3751950/e38674a3067b5ac028974bbfb42c835d0cf27122/capsule_231x87.jpg?t=1779379763",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Ubisoft Montreal",
-      "Game Size": "4.5 GB"
     },
     "system_requirements": []
   },
@@ -2945,17 +2373,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "NEEDY STREAMER OVERLOAD (v1.4.0)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3412770/7f61052c193d79bb5c34509ff81195040a946f28/capsule_231x87.jpg?t=1737385361",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation",
-      "Developer": "WSS playground, xemono",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Resident Evil 6 (v1.1.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/221040/library_600x900.jpg",
     "category": "pc",
@@ -3000,28 +2417,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Party Animals (v1.0.3.0 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1260320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie",
-      "Developer": "Recreate Games",
-      "Game Size": "4.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Granny Escape Together (v1.1.1 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3070520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Horror",
-      "Developer": "CreepyToad",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Assassin’s Creed III Remastered (v1.0.3)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/f0ce59b6bf8e03499c788c348919a196.jpg",
     "category": "pc",
@@ -3029,28 +2424,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Ubisoft Entertainment",
       "Game Size": "26.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Outlast (Inclu Whistleblower)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/25644b95de790aea9e0cb3d19b17a945.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Red Barrels",
-      "Game Size": "4.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "DAVE THE DIVER (v1.0.5.1784)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1868140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, RPG, Simulation",
-      "Developer": "MINTROCKET",
-      "Game Size": "2.9 GB"
     },
     "system_requirements": []
   },
@@ -3073,28 +2446,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Capcom",
       "Game Size": "56.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Football Life Simulator",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3158270/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Sports, Early Access",
-      "Developer": "Ludu Arts",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Risk of Rain 2 (v1.4.1.886 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/632360/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Hopoo Games",
-      "Game Size": "2.5 GB"
     },
     "system_requirements": []
   },
@@ -3165,17 +2516,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Need for Speed Carbon (v1.4)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/8eb8c14637ad7f04b17390e3c4b16ec9.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RACING, SIMULATION, SPORT.",
-      "Developer": "EA Black Box",
-      "Game Size": "3.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "NBA 2K16",
     "banner_url": "https://cdn2.steamgriddb.com/grid/07ebae5de4be22e8d3916839a654d94a.png",
     "category": "pc",
@@ -3205,28 +2545,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "KOEI TECMO GAMES CO., LTD.",
       "Game Size": "34.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Totally Accurate Battle Simulator (v1.1.8.7)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/508440/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Landfall",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Universe Sandbox (v35.4.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/230290/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Early Access",
-      "Developer": "Giant Army",
-      "Game Size": "1.6 GB"
     },
     "system_requirements": []
   },
@@ -3341,28 +2659,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Fears to Fathom – Ironbark Lookout (v1.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2506160/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Rayll Studios",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Call of Duty 2",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2630/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Infinity Ward",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "No Place Like Home (v1.1.K_214)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1472660/library_600x900.jpg",
     "category": "pc",
@@ -3429,17 +2725,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Fast Food Simulator (v0.5.2 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2916430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Early Access",
-      "Developer": "No Ceiling Games",
-      "Game Size": "4.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Assassin’s Creed Brotherhood (v1.03)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/48190/library_600x900.jpg",
     "category": "pc",
@@ -3462,17 +2747,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "SPORE Complete (v1.3.0.22)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/b3e6fdc36d0f16ef605f73a6ad7f89fb.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, RPG, Simulation, Strategy",
-      "Developer": "Maxis",
-      "Game Size": "4.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "STAR WARS Jedi: Survivor (v1.0.0.11)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1774580/library_600x900.jpg",
     "category": "pc",
@@ -3480,28 +2754,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Respawn",
       "Game Size": "131.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Vampire Survivors (v1.14.111)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1794680/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, RPG",
-      "Developer": "poncle",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Doki Doki Literature Club Plus! (v02.08.2021)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1388880/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie",
-      "Developer": "Team Salvato",
-      "Game Size": "1.1 GB"
     },
     "system_requirements": []
   },
@@ -3583,17 +2835,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "ASTRONEER (v1.36.46.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/361420/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "System Era Softworks",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Enshrouded (v0.9.0.4 + Co-op)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1203620/library_600x900.jpg",
     "category": "pc",
@@ -3660,17 +2901,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Left 4 Dead (v1.0.4.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/500/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Valve",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Test Drive Unlimited Solar Crown (b15807300 + Multiplayer)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1249970/library_600x900.jpg",
     "category": "pc",
@@ -3715,17 +2945,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Hello Neighbor (v1.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/521890/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Strategy",
-      "Developer": "Dynamic Pixels",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Thief Simulator (v1.8)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/03db60c1bed170d152df5af674d5327f.jpg",
     "category": "pc",
@@ -3766,17 +2985,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Battlefield Studios",
       "Game Size": "95.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Wrench (Build 149 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/936720/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Racing, Simulation, Early Access",
-      "Developer": "Missing Digit",
-      "Game Size": "4.4 GB"
     },
     "system_requirements": []
   },
@@ -3869,17 +3077,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Hitman Blood Money (v1.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/6860/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Io-Interactive A/S",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Persona 4 Golden (Rev.2023)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/5cfeeeb27c39fc6e74d7ca2e1f205261.png",
     "category": "pc",
@@ -3902,17 +3099,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Police Simulator: Patrol Officers (v22.2.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/997010/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation",
-      "Developer": "Aesir Interactive",
-      "Game Size": "4.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Saints Row (v1.4.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/742420/library_600x900.jpg",
     "category": "pc",
@@ -3931,39 +3117,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Treyarch, Beenox Shift",
       "Game Size": "5.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "City Car Driving (v1.5.9.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2327720/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Racing, Simulation",
-      "Developer": "Forward Development, Ltd.",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "MISERY (Build 21591010 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2119830/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Massively Multiplayer, Simulation",
-      "Developer": "Platypus Entertainment",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Call of Duty Deluxe Edition (United Offensive)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/f9fb7c79045fc492a18b051150c2b269.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Infinity Ward",
-      "Game Size": "2.1 GB"
     },
     "system_requirements": []
   },
@@ -4012,17 +3165,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Escapists 2 (v1.1.10 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/641990/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Team17, Mouldy Toof Studios",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "WUCHANG: Fallen Feathers (v179951)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2277560/library_600x900.jpg",
     "category": "pc",
@@ -4056,39 +3198,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Creed: Rise to Glory VR",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/9fe7d01dfd32a742817d2c3316e045eb.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation, Sports, VR",
-      "Developer": "Survios",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Devil May Cry 3 Special Edition (v1.3.0)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426680/capsule_231x87.jpg?t=1608051759",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "CAPCOM Co., Ltd.",
-      "Game Size": "3.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Little Nightmares",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/424840/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Tarsier Studios",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "ONE PIECE: PIRATE WARRIORS 4 (v1.0.8.6)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1089090/library_600x900.jpg",
     "category": "pc",
@@ -4096,17 +3205,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Anime, 3rd person",
       "Developer": "Koei Tecmo",
       "Game Size": "25.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Outer Wilds (v1.1.16)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753640/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Mobius Digital",
-      "Game Size": "4.0 GB"
     },
     "system_requirements": []
   },
@@ -4151,17 +3249,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, RPG",
       "Developer": "Warhorse Studios",
       "Game Size": "69.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Don’t Starve Together (v705416)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/322330/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation",
-      "Developer": "Klei Entertainment",
-      "Game Size": "2.8 GB"
     },
     "system_requirements": []
   },
@@ -4232,28 +3319,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "MIMESIS (v0.2.8 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2827200/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Early Access",
-      "Developer": "ReLU Games, Inc.",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Counter-Strike: Source (Build 17399420 + LAN)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/240/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Valve",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Devil May Cry HD Collection",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/631510/library_600x900.jpg",
     "category": "pc",
@@ -4272,17 +3337,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Devil’s Details",
       "Game Size": "7.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mewgenics (v1.0.20695)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/686060/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Simulation, Strategy",
-      "Developer": "Edmund McMillen, Tyler Glaiel",
-      "Game Size": "3.8 GB"
     },
     "system_requirements": []
   },
@@ -4331,17 +3385,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "SurrounDead (Build 19622939)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1645820/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG, Early Access",
-      "Developer": "Zurvivor",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Yakuza 0 (v1.015a)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/01430ed8ef15ef59611ff5d1d6b3e196.png",
     "category": "pc",
@@ -4360,28 +3403,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, RPG",
       "Developer": "Monolith Productions",
       "Game Size": "52.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Beat Saber VR (v1.38.0 + Multiplayer)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/d7493205803bcec612bfa81cba8a833e.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, VR",
-      "Developer": "Beat Games",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Assassin’s Creed Liberation HD (Build 160942)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/184c5f0b07da07e0bd12e855b5fa4b57.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Ubisoft Sofia",
-      "Game Size": "3.0 GB"
     },
     "system_requirements": []
   },
@@ -4529,17 +3550,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Mouthwashing (Build 20077705)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2475490/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Wrong Organ",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Mafia II (Classic) (Build 1276171)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/50130/library_600x900.jpg",
     "category": "pc",
@@ -4558,28 +3568,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "KONAMI",
       "Game Size": "18.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The NOexistenceN of you AND me (v2.333 1.9)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/c6db50278ae02f0e7bef6157aa2abbb7.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "Fontainebleau",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Manhunt 2",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2421410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Horror",
-      "Developer": "Rockstar London, Rockstar Toronto",
-      "Game Size": "3.4 GB"
     },
     "system_requirements": []
   },
@@ -4613,17 +3601,6 @@ window.PC_GAMES_DATA = [
       "Genre": "RPG",
       "Developer": "Obsidian Entertainment",
       "Game Size": "69.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Planet Crafter (v1.618)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1284190/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure,",
-      "Developer": "Miju Games",
-      "Game Size": "3.1 GB"
     },
     "system_requirements": []
   },
@@ -4727,28 +3704,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Football Manager 2023 (v23.2)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2017220/capsule_231x87.jpg?t=1667866636",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Sports",
-      "Developer": "Sports Interactive",
-      "Game Size": "3.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Need for Speed Undercover",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/f619679ba92005bcb5c0d31e77fe4055.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Racing",
-      "Developer": "EA Black Box",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "LEGO MARVEL Super Heroes",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/249130/library_600x900.jpg",
     "category": "pc",
@@ -4837,17 +3792,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Tiny Glade (v1.14.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2198150/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Pounce Light",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Resident Evil / biohazard HD REMASTER",
     "banner_url": "https://cdn2.steamgriddb.com/grid/af37c0651e1224f45466dcb8fc082b8f.png",
     "category": "pc",
@@ -4870,28 +3814,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Silent Hill 3 (v1.0)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/a228a3fd54f3096e2fdac092e7127afc.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Survival horror",
-      "Developer": "Konami Digital Entertainment",
-      "Game Size": "4.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Little Nightmares II (v5.8)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/860510/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Tarsier Studios",
-      "Game Size": "3.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "METAL GEAR SOLID – Master Collection (v1.5.0)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/be9c9692971c6207d224c8df4983e8cd.png",
     "category": "pc",
@@ -4899,28 +3821,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "KONAMI",
       "Game Size": "8.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Prison Escape Simulator: Dig Out",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/7620fd807d6a6915b5bf5c8c17a295a4.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Simulation",
-      "Developer": "Digital Melody",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "South Park: The Stick of Truth (v1.0.1383)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/213670/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG",
-      "Developer": "Obsidian Entertainment",
-      "Game Size": "4.2 GB"
     },
     "system_requirements": []
   },
@@ -4980,17 +3880,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Plants vs. Zombies: Replanted (v1.5.1469.0)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/ff4bf2b35971ab9136bf25f3419b9029.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "PopCap Games, The Lost Pixels",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Gas Station Simulator (v1.0.2.38810s)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1149620/library_600x900.jpg",
     "category": "pc",
@@ -5009,17 +3898,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure",
       "Developer": "Tarsier Studios",
       "Game Size": "12.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Manhunt",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/12130/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Rockstar North",
-      "Game Size": "1.6 GB"
     },
     "system_requirements": []
   },
@@ -5123,28 +4001,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Precinct (v1.10.21485)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/490110/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation",
-      "Developer": "Fallen Tree Games Ltd",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Choo-Choo Charles (v1.2.0a)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1766740/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy",
-      "Developer": "Two Star Games",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "DEATH STRANDING DIRECTOR’S CUT (v1.003)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1850570/library_600x900.jpg",
     "category": "pc",
@@ -5211,39 +4067,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Blasphemous (v4.0.6.7)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2114740/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "The Game Kitchen",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Disney Pixar Cars 2: The Video Game (v1.0)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/564c1c8716db11260306011d5faa5ff3.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Racing",
-      "Developer": "Avalanche Software",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "My Dream Setup (Build 20603634)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2200780/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Campfire Studio",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Battlefield: Bad Company 2",
     "banner_url": "https://cdn2.steamgriddb.com/grid/d0d486f06c0b0cc28c3cf51bb0df648a.png",
     "category": "pc",
@@ -5266,17 +4089,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Lobotomy Corporation | Monster Management Simulation (v1.0.2.13f1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/568220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "ProjectMoon",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "WWE 2K19 (v1.04 & ALL DLC)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/37b4c628adfaf121d8156071d9d1fead.png",
     "category": "pc",
@@ -5284,17 +4096,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Simulation, Sports",
       "Developer": "Visual Concepts, Yuke’s Co., LTD",
       "Game Size": "48.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "V Rising (v1.1.9.0.92199 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1604030/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Massively Multiplayer",
-      "Developer": "Stunlock Studios",
-      "Game Size": "4.7 GB"
     },
     "system_requirements": []
   },
@@ -5453,28 +4254,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "LOCKDOWN Protocol (v0.15.3 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2780980/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Strategy, Early Access",
-      "Developer": "Mirage Creative Lab",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Just Cause 2 (v1.0.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/8190/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Avalanche Studios",
-      "Game Size": "4.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Age of Empires II: Definitive (v101.103.38337.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/813780/library_600x900.jpg",
     "category": "pc",
@@ -5519,28 +4298,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "HUNTER×HUNTER NEN×IMPACT (v1.0.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2456420/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Bushiroad Games",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Portal (Build 18647097)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/620/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "VALVE",
-      "Game Size": "2.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Battlefield V (v1.04)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1238810/library_600x900.jpg",
     "category": "pc",
@@ -5563,17 +4320,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Far Cry 2: Fortune’s Edition",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/64afb346ce729c37acd43dcabd7648e6.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Ubisoft Montreal",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Minecraft: Story Mode – Season Two",
     "banner_url": "https://cdn2.steamgriddb.com/grid/ccdb762781d918b6f9a22d7e9c43d652.png",
     "category": "pc",
@@ -5581,17 +4327,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure",
       "Developer": "Telltale Games",
       "Game Size": "6.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Class of ’09: The Flip Side",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2757330/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie",
-      "Developer": "SBN3",
-      "Game Size": "1.1 GB"
     },
     "system_requirements": []
   },
@@ -5629,17 +4364,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Ultimate Spider-Man (v1.0)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/16813e7554a111c9f9108be005b54442.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action-Adventure",
-      "Developer": "Beenox, Blizzard Albany, Treyarch, Hands-On Mobile",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Life is Strange Remastered (Build 8127227)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1265920/library_600x900.jpg",
     "category": "pc",
@@ -5658,17 +4382,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Casual, Indie, Simulation, Early Access",
       "Developer": "Triiodide Studios",
       "Game Size": "10.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Beyond Citadel (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3371240/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "doekuramori",
-      "Game Size": "1.4 GB"
     },
     "system_requirements": []
   },
@@ -5695,17 +4408,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Prince of Persia: The Lost Crown (v1.0.2 + Ryujinx Emu)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2751000/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Platformer",
-      "Developer": "Ubisoft",
-      "Game Size": "4.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Aliens vs Predator (Build 252020 + Multiplayer)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/10680/library_600x900.jpg",
     "category": "pc",
@@ -5713,28 +4415,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Rebellion",
       "Game Size": "17.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Walking Dead (v1.0.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/207610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Telltale Games",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Taxi Life: A City Driving Simulator (Patch 5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1351240/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation",
-      "Developer": "Simteract",
-      "Game Size": "4.0 GB"
     },
     "system_requirements": []
   },
@@ -5750,17 +4430,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Sonic Adventure 2",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/213610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Racing",
-      "Developer": "SEGA",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Wolfenstein II: The New Colossus (Build 3329064)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/612880/library_600x900.jpg",
     "category": "pc",
@@ -5768,28 +4437,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "MachineGames",
       "Game Size": "59.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Scrap Mechanic (v0.7.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/387990/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation",
-      "Developer": "Axolot Games",
-      "Game Size": "4.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Door Kickers 2: Task Force North (v1.11)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1239080/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation, Strategy",
-      "Developer": "KillHouse Games",
-      "Game Size": "2.2 GB"
     },
     "system_requirements": []
   },
@@ -5882,28 +4529,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Class of ’09: The Re-Up",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2318310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, RPG, Simulation",
-      "Developer": "SBN3",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Escape From Duckov (v2.2.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3167020/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Team Soda",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Remnant II (v453.438 + Co-op)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1282100/library_600x900.jpg",
     "category": "pc",
@@ -5922,17 +4547,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Casual, Indie, Simulation",
       "Developer": "FEKK Games",
       "Game Size": "5.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Human: Fall Flat (v1092002)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/477160/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "No Brakes Games",
-      "Game Size": "2.0 GB"
     },
     "system_requirements": []
   },
@@ -6010,17 +4624,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Massively Multiplayer, Racing",
       "Developer": "Ivory Tower",
       "Game Size": "31.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Project Demigod (Build 13333238)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1646580/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Omnifarious Studios LLC",
-      "Game Size": "4.9 GB"
     },
     "system_requirements": []
   },
@@ -6135,17 +4738,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Library Of Ruina (v1.1.0.6a10)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1256670/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Strategy",
-      "Developer": "ProjectMoon",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Blasphemous 2 (v2.0.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2114740/library_600x900.jpg",
     "category": "pc",
@@ -6153,28 +4745,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie",
       "Developer": "The Game Kitchen",
       "Game Size": "5.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Waterpark Simulator (v0.3.54)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/3a060bbf43c6f065248f762dd07c9c53.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Early Access",
-      "Developer": "CayPlay",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "A Little to the Left (v3.5.10B)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1629520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie",
-      "Developer": "Max Inferno",
-      "Game Size": "2.9 GB"
     },
     "system_requirements": []
   },
@@ -6197,28 +4767,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Massively Multiplayer, Sports",
       "Developer": "Ubisoft Annecy, Ubisoft Belgrade, Ubisoft Kyiv, Ubisoft Pune, Ubisoft Odesa",
       "Game Size": "25.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Haste (v1.10.b)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1796470/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Racing",
-      "Developer": "Landfall",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Pummel Party (v1.14.0c + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/880940/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie",
-      "Developer": "Rebuilt Games",
-      "Game Size": "1.3 GB"
     },
     "system_requirements": []
   },
@@ -6267,28 +4815,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "NightClub Simulator (Build 18256808)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1523100/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation, Early Access",
-      "Developer": "mandegames",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Kebab Chefs! Restaurant Simulator (B15112024 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1001270/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Early Access",
-      "Developer": "Biotech Gameworks",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Into the Dead: Our Darkest Days (v0.11.2.17410)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2239710/library_600x900.jpg",
     "category": "pc",
@@ -6307,28 +4833,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Creative Assembly, Feral Interactive (Mac), Feral Interactive (Linux)",
       "Game Size": "18.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Abiotic Factor (v1.2.0.23023 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/427410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG, Simulation",
-      "Developer": "Deep Field Games",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "INSIDE (v13.08.2021)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/3fcd1bdc9a6e93f44e205fffa88da92b.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Playdead",
-      "Game Size": "1.2 GB"
     },
     "system_requirements": []
   },
@@ -6410,28 +4914,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "gogh: Focus with Your Avatar (v2.4.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3213850/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "ambr",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Fable Anniversary",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/288470/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG",
-      "Developer": "Lionhead Studios",
-      "Game Size": "4.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Dark Souls II (Build 9849657)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/236430/library_600x900.jpg",
     "category": "pc",
@@ -6439,17 +4921,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, RPG",
       "Developer": "FromSoftware, Inc.",
       "Game Size": "14.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Until Then (Build 16523932)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1574820/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Polychroma Games",
-      "Game Size": "1.3 GB"
     },
     "system_requirements": []
   },
@@ -6564,17 +5035,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Corpse Party (2021)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1273260/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG",
-      "Developer": "MAGES.",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "ONE PUNCH MAN: A HERO NOBODY KNOWS",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/991560/library_600x900.jpg",
     "category": "pc",
@@ -6604,17 +5064,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Strategy",
       "Developer": "Team Bondi, Rockstar Leeds",
       "Game Size": "13.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Surgeon Simulator 2 (Build 15717747)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/774791/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Simulation",
-      "Developer": "Bossa Studios",
-      "Game Size": "2.0 GB"
     },
     "system_requirements": []
   },
@@ -6663,39 +5112,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Rayman Legends (v1.3.140380)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/aa01df8e6c2526116e1a7eab3f634de8.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Ubisoft",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "I Am Cat VR",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/16681ebacd55c0c00a97dc528e0313c1.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation",
-      "Developer": "NEW FOLDER GAMES LTD",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Five Nights At Freddy’s VR: Help Wanted",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/9748825b2cdeca82c669dc0e310414e5.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual",
-      "Developer": "Steel Wool Studios",
-      "Game Size": "4.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Europa Universalis IV (v1.37.0.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/236850/library_600x900.jpg",
     "category": "pc",
@@ -6714,39 +5130,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Simulation, Sports",
       "Developer": "Expansive Worlds",
       "Game Size": "64.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Forager (v4.1.9)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/751780/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation",
-      "Developer": "HopFrog",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Hotline Miami 2: Wrong Number",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/274170/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Dennaton Games",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2634890/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "CAPCOM Co., Ltd.",
-      "Game Size": "3.4 GB"
     },
     "system_requirements": []
   },
@@ -6861,17 +5244,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "YAPYAP (v1.0.3.577 + Co-op)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/2a515b77f972eb58c5718bc4d014e9f7.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Maison Bap",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Borderlands 3 (Build 15245523)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/397540/library_600x900.jpg",
     "category": "pc",
@@ -6879,28 +5251,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, RPG",
       "Developer": "Gearbox Software",
       "Game Size": "142.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Oxygen Not Included (v706793)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/457140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Klei Entertainment",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "STRIDE VR (v9.0)",
-    "banner_url": "https://steamrip.com/wp-content/uploads/2022/04/stride-portrait-steamrip.jpg.webp",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Simulation, Sports, Early Access",
-      "Developer": "Joy Way",
-      "Game Size": "4.7 GB"
     },
     "system_requirements": []
   },
@@ -6971,17 +5321,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Granny Remake (v3.6.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2110820/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "FerriteLabs",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Battlefield Hardline (v1.07.15.00)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1238880/library_600x900.jpg",
     "category": "pc",
@@ -6989,28 +5328,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "DICE",
       "Game Size": "37.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Internet Cafe Simulator 2 (v1.2.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1563180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Simulation, Strategy",
-      "Developer": "Cheesecake Dev",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Slackers – Carts of Glory (v0.994 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2354000/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Racing, Simulation",
-      "Developer": "Falling Saints",
-      "Game Size": "1.1 GB"
     },
     "system_requirements": []
   },
@@ -7048,17 +5365,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Break-In (Build 11818528 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1397390/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation, Early Access",
-      "Developer": "jorgen games Ltd, Oliver Josh",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Atelier Yumia: The Alchemist of Memories & the Envisioned Land (v1.0.0.1)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3123410/library_600x900.jpg",
     "category": "pc",
@@ -7092,17 +5398,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "METAL GEAR SOLID V: GROUND ZEROES (Build 558266)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/078c1993dcaa199add4a1b83be1a0c04.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "KONAMI",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Tactical Assault VR (Build 18779504)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2314160/library_600x900.jpg",
     "category": "pc",
@@ -7110,17 +5405,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Simulation, Early Access",
       "Developer": "HammerFire Interactive",
       "Game Size": "11.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Granny Simulator (Build 12162522)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1053680/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Early Access",
-      "Developer": "Nick Kestle",
-      "Game Size": "1.2 GB"
     },
     "system_requirements": []
   },
@@ -7136,17 +5420,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "KONOSUBA – God’s Blessing on this Wonderful World! Love For These Clothes Of Desire!",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2349140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual",
-      "Developer": "MAGES. Inc.",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "BONEWORKS VR (v6051516)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/f457edf5f7e4a23e096f326ca5b31f2e.png",
     "category": "pc",
@@ -7154,17 +5427,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie, Simulation",
       "Developer": "Stress Level Zero",
       "Game Size": "7.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Battle Talent (Build 17090360)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1331510/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Simulation",
-      "Developer": "CyDream",
-      "Game Size": "4.5 GB"
     },
     "system_requirements": []
   },
@@ -7213,28 +5475,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "KovaaK 2.0 (v2.8.8)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/4a23d2344fbb3840696d4d5501483194.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation",
-      "Developer": "The Meta",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "GORN 2",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3391450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Voracious Games",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Kenshi (v1.0.64)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/233860/library_600x900.jpg",
     "category": "pc",
@@ -7246,17 +5486,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Deep Rock Galactic (v1.40.134249.0 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2605790/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Ghost Ship Games",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Spec Ops: The Line (Build 765818 + LAN/Co-op)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/0f575f79f610cfa057a51cd284e4b827.png",
     "category": "pc",
@@ -7264,50 +5493,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "YAGER",
       "Game Size": "7.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Little Nightmares Enhanced Edition (Build 19756066)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/424840/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Engine Software BV",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Ori and the Blind Forest: Definitive Edition",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/387290/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Moon Studios GmbH",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Ghost Watchers (Build 05082022 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1850740/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Early Access",
-      "Developer": "Renderise",
-      "Game Size": "4.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tokyo Underground Killer",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2063090/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Phoenix Game Productions",
-      "Game Size": "3.6 GB"
     },
     "system_requirements": []
   },
@@ -7367,17 +5552,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Silent Hill 4: The Room (v6 – 82931)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/a00ffcaff1ed3a0803a8d48d7b4bde91.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Horror, Adventure",
-      "Developer": "Team Silent",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Slay the Princess (Build 16313218)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1989270/library_600x900.jpg",
     "category": "pc",
@@ -7385,17 +5559,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Indie, RPG, Simulation",
       "Developer": "Black Tabby Games",
       "Game Size": "11.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Keep Digging (v1.0.1.3523 + Co-op)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/244e40bc1fb0c6480c206a7ffc7aa641.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation",
-      "Developer": "Wild Dog",
-      "Game Size": "4.6 GB"
     },
     "system_requirements": []
   },
@@ -7444,17 +5607,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "GONE Fishing (v3.8.8 + Co-op)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3645890/54a0f62aad71eb440870f49e2b63fd635851a221/capsule_231x87.jpg?t=1773935873",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Early Access",
-      "Developer": "GONE Studios",
-      "Game Size": "4.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Trailmakers (v222.506.298.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/585420/library_600x900.jpg",
     "category": "pc",
@@ -7477,17 +5629,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Halo 2 (v1.01)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1064270/capsule_231x87.jpg?t=1634231273",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Bungie",
-      "Game Size": "4.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Saints Row 2 (Build 1076239)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/9480/library_600x900.jpg",
     "category": "pc",
@@ -7495,28 +5636,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Volition",
       "Game Size": "11.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Pigeon Simulator",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4590980/62c7bb320eb4f7b3d4b9f3bd4a04ef700bd8722e/capsule_231x87.jpg?t=1779376782",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG, Simulation",
-      "Developer": "HakJak",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Quadrober Simulator",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3268080/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG, Simulation, Strategy",
-      "Developer": "PropilGames",
-      "Game Size": "4.4 GB"
     },
     "system_requirements": []
   },
@@ -7554,28 +5673,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Len’s Island (v1.0.13 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1335830/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Flow Studio",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Danganronpa: Trigger Happy Havoc",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Spike Chunsoft Co., Ltd., Abstraction Games",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Vampire: The Masquerade – Bloodlines 2 (v49474)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/532790/library_600x900.jpg",
     "category": "pc",
@@ -7583,17 +5680,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, RPG",
       "Developer": "The Chinese Room",
       "Game Size": "20.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Dwarf Fortress (v53.10)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/975370/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Bay 12 Games",
-      "Game Size": "1.1 GB"
     },
     "system_requirements": []
   },
@@ -7620,17 +5706,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Stronghold Crusader: Definitive Edition (v2.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3024040/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "FireFly Studios",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Gears of War (v1.3)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/bab769665921dc6c49f36adc6da1d88e.png",
     "category": "pc",
@@ -7653,17 +5728,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Silent Still 2 (Build 19238022)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3869680/14ac362d8b2e6d707644a79ee06380203cb7e2be/capsule_231x87.jpg?t=1753353819",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "SolitaryStudios",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "OMSI 2: Steam Edition (v2.3.004)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/252530/library_600x900.jpg",
     "category": "pc",
@@ -7671,17 +5735,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Casual, Simulation",
       "Developer": "MR-Software GbR",
       "Game Size": "18.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "S.T.A.L.K.E.R.: Shadow of Chernobyl (v1.0006)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/99e8ff48f7f4a7ec3618f0a0efe1af07.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "GSC Game World",
-      "Game Size": "3.3 GB"
     },
     "system_requirements": []
   },
@@ -7741,28 +5794,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Firewatch (v1.12)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/383870/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Campo Santo",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Card Shop Simulator Multiplayer (v0.040 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3070070/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation, Strategy",
-      "Developer": "ShaneGame",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Military Conflict: Vietnam (Build 19753672)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1012110/library_600x900.jpg",
     "category": "pc",
@@ -7770,17 +5801,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Early Access",
       "Developer": "Dustfade",
       "Game Size": "22.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "FINAL FANTASY VIII – REMASTERED (Build 8131267)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1026680/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG",
-      "Developer": "Square Enix",
-      "Game Size": "2.7 GB"
     },
     "system_requirements": []
   },
@@ -7796,17 +5816,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "SWORN (v1.0.0.1.1002 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1763250/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "Windwalk Games",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Ghostrunner (v42441_444)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2144740/library_600x900.jpg",
     "category": "pc",
@@ -7818,17 +5827,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Stranded Deep (v1.0.38.0.29)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/313120/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Beam Team Games",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "LEGO City Undercover (Build 1825300 + Co-op)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/578330/library_600x900.jpg",
     "category": "pc",
@@ -7836,17 +5834,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Indie, RPG, Simulation, Strategy",
       "Developer": "Traveller’s Tales",
       "Game Size": "18.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Mortuary Assistant (v3.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1295920/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation",
-      "Developer": "DarkStone Digital",
-      "Game Size": "2.3 GB"
     },
     "system_requirements": []
   },
@@ -7873,28 +5860,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Max Payne 2: The Fall of Max Payne",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/12150/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Remedy Entertainment",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Bendy and the Ink Machine (v1.5.1.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/622650/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Strategy",
-      "Developer": "Joey Drew Studios",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "State of Decay 2: Juggernaut Edition (v38)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/495420/library_600x900.jpg",
     "category": "pc",
@@ -7917,50 +5882,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Exit 8 (v1.0.9)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2653790/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation",
-      "Developer": "KOTAKE CREATE",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Foundation (v1.11.0.12)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/392160/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Polymorph Games",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Street Fighter 30th Anniversary Collection",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/586200/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Digital Eclipse",
-      "Game Size": "4.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Blue Prince (v1.05)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1569580/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Strategy",
-      "Developer": "Dogubomb",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Hell is Us (v1.3.36.43556)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1620730/library_600x900.jpg",
     "category": "pc",
@@ -7968,39 +5889,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Rogue Factor",
       "Game Size": "24.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Ori and the Will of the Wisps (v3.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1057090/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Moon Studios GmbH",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "I Have No Mouth, and I Must Scream",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/245390/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Cyberdreams",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "DREDGE (v1.5.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1562430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG",
-      "Developer": "Black Salt Games",
-      "Game Size": "4.5 GB"
     },
     "system_requirements": []
   },
@@ -8104,17 +5992,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Inscryption (v1.10)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1092790/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Strategy",
-      "Developer": "Code Wakers",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "eFootball PES 2020",
     "banner_url": "https://cdn2.steamgriddb.com/grid/544120e55df7022d4ce8fddbfc4649a9.png",
     "category": "pc",
@@ -8181,17 +6058,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Simpsons: Hit and Run (v20130824)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/3ab7434b949fbf9a19c3fcc830c1bdf1.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action-Adventure, drivingDeveloper:Radical Entertainment",
-      "Developer": "",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "METAL GEAR SOLID 2: Sons of Liberty – Master Collection (v2.0.1)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2131640/library_600x900.jpg",
     "category": "pc",
@@ -8232,39 +6098,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, RPG",
       "Developer": "Nihon Falcom",
       "Game Size": "16.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Blood West (v4.6.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1587130/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "Hyperstrange",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Cash Cleaner Simulator (v1.5.1.961)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2488370/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Mind Control Games",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Rising Front (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1560250/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Simulation, Strategy, Early Access",
-      "Developer": "Sandstorm Studios Inc.",
-      "Game Size": "4.6 GB"
     },
     "system_requirements": []
   },
@@ -8313,28 +6146,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Hatred",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/862583d45282130fe0bf6997722d53f3.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Destructive Creations",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Noita (Build 17130612)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/881100/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG, Simulation",
-      "Developer": "Nolla Games",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Escape Simulator 2 (v16494r + Co-op)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2879840/library_600x900.jpg",
     "category": "pc",
@@ -8368,17 +6179,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Fear & Hunger 2: Termina (v1.9.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2171440/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG",
-      "Developer": "Miro Haverinen",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Assassin’s Creed Chronicles Trilogy",
     "banner_url": "https://cdn2.steamgriddb.com/grid/e4753e4b1b2db8b8b759b3ab3e506ffb.jpg",
     "category": "pc",
@@ -8386,17 +6186,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action-adventure game",
       "Developer": "Climax Studios",
       "Game Size": "12.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Disney Pixar Toy Story 3: The Video Game (Build 7875778)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/ea8ba783d1f874bce5c7e075563e9070.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Avalanche Software",
-      "Game Size": "3.8 GB"
     },
     "system_requirements": []
   },
@@ -8434,39 +6223,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Wrap House Simulator (v1.0 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3533100/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Broken Lyre Entertainment",
-      "Game Size": "3.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "LockYourDoor (v1.0.4 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3004140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Penguin’s Autumn",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Fears to Fathom – Woodbury Getaway (v1.13)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2961530/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Rayll Studios",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "F.E.A.R (v2.1.0.7)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/6eaf935a9ba18155b5f0e5f74505f4f1.png",
     "category": "pc",
@@ -8474,28 +6230,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Monolith Productions, Inc.",
       "Game Size": "15.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Pacify (v4.24)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/967050/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Strategy",
-      "Developer": "Shawn Hitchcock",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Need for Speed: Underground Definitive Edition (v1.4)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/0959494b92b81147796ce901ea4f9927.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Racing",
-      "Developer": "Electronic Arts, EA Black Box, Pocketeers",
-      "Game Size": "2.7 GB"
     },
     "system_requirements": []
   },
@@ -8522,17 +6256,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Who’s Your Daddy (Build 11594198)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/427730/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie",
-      "Developer": "Evil Tortilla Games",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Warcraft III: Reforged (v1.32.10.18820)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/89573a99e0f0129a690625e9ba4898ac.png",
     "category": "pc",
@@ -8555,17 +6278,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Bible (v1.28)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2167220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie",
-      "Developer": "Bible Games",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Dragon’s Dogma: Dark Arisen (v1.0.0.18)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/367500/library_600x900.jpg",
     "category": "pc",
@@ -8573,39 +6285,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, RPG",
       "Developer": "Capcom",
       "Game Size": "19.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Stanley Parable: Ultra Deluxe (v1.08)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1703340/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Sengi Games",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Clone Drone in the Hyperdome",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2401230/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Doborog Games",
-      "Game Size": "2.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Another Crab’s Treasure (v2.0.000.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1887840/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Aggro Crab",
-      "Game Size": "2.8 GB"
     },
     "system_requirements": []
   },
@@ -8654,17 +6333,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "OCTOPATH TRAVELER",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/08f95b09730ae981ff350b9a08b6a84e.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG",
-      "Developer": "Square Enix, ACQUIRE Corp.",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Tom Clancy’s Splinter Cell Conviction",
     "banner_url": "https://cdn2.steamgriddb.com/grid/6829f04c08f76d864d84dfad889698f2.png",
     "category": "pc",
@@ -8709,28 +6377,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Salt 2: Shores of Gold",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1574900/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Lavaboots Studios",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "VTOL VR (v1.12.5 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/667970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation",
-      "Developer": "Boundless Dynamics, LLC",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Suicide Squad: Kill the Justice League (v1.0.6.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/315210/library_600x900.jpg",
     "category": "pc",
@@ -8753,17 +6399,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Fernbus Simulator (v1.14.12800)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/427100/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation",
-      "Developer": "TML-Studios",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "The Sims 2 Legacy Collection (v1.0.0.70)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3314070/library_600x900.jpg",
     "category": "pc",
@@ -8782,17 +6417,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Purple Lamp",
       "Game Size": "9.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mount & Blade: Warband (v1.174 & ALL DLC)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/48700/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "TaleWorlds Entertainment",
-      "Game Size": "2.7 GB"
     },
     "system_requirements": []
   },
@@ -8830,17 +6454,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Far Cry",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/552520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Crytek Studios",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Green Hell (v2.9.5)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/815370/library_600x900.jpg",
     "category": "pc",
@@ -8848,17 +6461,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie, Simulation",
       "Developer": "Creepy Jar",
       "Game Size": "7.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Wobbly Life (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1211020/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Simulation",
-      "Developer": "RubberBandGames",
-      "Game Size": "1.7 GB"
     },
     "system_requirements": []
   },
@@ -8896,17 +6498,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "BEYBLADE X EVOBATTLE (v1.0.0)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/ac569e5aaa1ee53eccbaad8ae7ff7e94.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Sports",
-      "Developer": "",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Returnal (Build 11083317 + Co-op)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1649240/library_600x900.jpg",
     "category": "pc",
@@ -8914,17 +6505,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Housemarque, Climax Studios",
       "Game Size": "54.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "POOLS (Build 18675648)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2663530/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Tensori",
-      "Game Size": "3.0 GB"
     },
     "system_requirements": []
   },
@@ -8973,17 +6553,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "BrokenLore: DON’T WATCH",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/f8ad21d863553a909d9fc2db0c9ac372.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Simulation",
-      "Developer": "Serafini Productions",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Neighbors Suburban Warfare (v0.9.4.237 + Multiplayer)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1732430/library_600x900.jpg",
     "category": "pc",
@@ -8991,17 +6560,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Casual, Indie, Strategy, Early Access",
       "Developer": "Invisible Walls",
       "Game Size": "5.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Drunkn Bar Fight VR (B13052022 + Co-op)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3644120/eddc65416bb91abe83844a3438145b366a7ebb2f/capsule_231x87.jpg?t=1773049998",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Early Access",
-      "Developer": "The Munky",
-      "Game Size": "2.2 GB"
     },
     "system_requirements": []
   },
@@ -9061,17 +6619,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Phoenix Wright: Ace Attorney Trilogy",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/787480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "CAPCOM Co",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "The Midnight Walk",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2863640/library_600x900.jpg",
     "category": "pc",
@@ -9090,28 +6637,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Casual, Indie, Simulation, Strategy",
       "Developer": "Chilla’s Art",
       "Game Size": "6.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Sonic Adventure DX",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/71250/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Racing",
-      "Developer": "SEGA",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Muse Dash (v6.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/774171/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie",
-      "Developer": "PeroPeroGames",
-      "Game Size": "3.9 GB"
     },
     "system_requirements": []
   },
@@ -9145,28 +6670,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "SNK CORPORATION",
       "Game Size": "43.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Ancient Cities (v1.7.34)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/667610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation, Strategy",
-      "Developer": "Uncasual Games",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "BALL x PIT (Build 21684508)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/69ed042101c53dd867358c36f247be0a.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Kenny Sun",
-      "Game Size": "1.3 GB"
     },
     "system_requirements": []
   },
@@ -9270,17 +6773,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Rooftops & Alleys: The Parkour Game (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2703850/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Sports",
-      "Developer": "MLMEDIA",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Digimon Story Cyber Sleuth: Complete Edition",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1042550/library_600x900.jpg",
     "category": "pc",
@@ -9288,17 +6780,6 @@ window.PC_GAMES_DATA = [
       "Genre": "RPG",
       "Developer": "h.a.n.d., Inc.",
       "Game Size": "5.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "LEGO Batman 2 DC Super Heroes (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/213330/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "TT Games",
-      "Game Size": "3.5 GB"
     },
     "system_requirements": []
   },
@@ -9332,17 +6813,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Byking Inc.",
       "Game Size": "12.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Universim (v1.0.00.46017)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/352720/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Crytivo",
-      "Game Size": "1.9 GB"
     },
     "system_requirements": []
   },
@@ -9446,39 +6916,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "OHV (Build 21379117)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1783780/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Racing, Simulation, Early Access",
-      "Developer": "Przemysław Hadała",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Farm Together 2 (v270)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2418520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Milkstone Studios",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mafia (v1.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1941540/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Illusion Softworks",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "The Long Dark (v2.43)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/305620/library_600x900.jpg",
     "category": "pc",
@@ -9545,17 +6982,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "RPG Maker MZ (v1.1.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1096900/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Design & Illustration, Web Publishing",
-      "Developer": "Gotcha Gotcha Games, KADOKAWA, Yoji Ojima",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Zero Escape: The Nonary Games (Build 1784664)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/477740/library_600x900.jpg",
     "category": "pc",
@@ -9607,17 +7033,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Early Access",
       "Developer": "Hillcrest Games Inc.",
       "Game Size": "12.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "DRIVE Rally (v1.3.20)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2494780/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Racing, Simulation, Sports",
-      "Developer": "Pixel Perfect Dude",
-      "Game Size": "1.0 GB"
     },
     "system_requirements": []
   },
@@ -9677,17 +7092,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Yasuke Simulator: Digital Deluxe Edition (3 DLCs)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/eaeac47ab31514ef13e9492416dee1c1.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Simulation",
-      "Developer": "HistoryAccurateDevelopers",
-      "Game Size": "3.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Jotunnslayer: Hordes of Hel (v1.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2820820/library_600x900.jpg",
     "category": "pc",
@@ -9728,17 +7132,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "TT Games Ltd",
       "Game Size": "7.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Motor Town: Behind The Wheel (Build 18502709 + Online)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1369670/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Racing, Simulation, Early Access",
-      "Developer": "P3 Games",
-      "Game Size": "2.9 GB"
     },
     "system_requirements": []
   },
@@ -9809,17 +7202,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Dead Season (v1.0.0.9)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2666550/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Strategy",
-      "Developer": "Snail Bite",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Hot Dogs, Horseshoes & Hand Grenades (Build 18079396)",
     "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4632350/50ac7a6f96d8afe04d0065133f4bea9bb84db94a/capsule_231x87.jpg?t=1778085781",
     "category": "pc",
@@ -9827,28 +7209,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Indie, Simulation, Early Access",
       "Developer": "RUST LTD.",
       "Game Size": "16.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "HELLMART",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/45a6664492064999848bfd0e1fd8fb76.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation",
-      "Developer": "GAZE IN GAMES",
-      "Game Size": "4.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Town to City (v0.1.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3115220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy, Early Access",
-      "Developer": "Galaxy Grove",
-      "Game Size": "1.9 GB"
     },
     "system_requirements": []
   },
@@ -9875,17 +7235,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Transformers: The Game (v1.0)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/ef6c84ac469cc5c9e34c56f18531b7d7.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action-Adventure",
-      "Developer": "Traveller’s Tales, Vicarious Visions, Savage Entertainment",
-      "Game Size": "4.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Automobilista 2 (v1.6.6.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1066890/library_600x900.jpg",
     "category": "pc",
@@ -9893,17 +7242,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Racing, Simulation, Sports",
       "Developer": "Reiza Studios",
       "Game Size": "117.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Sonic and All-Stars Racing Transformed Collection (B15012014 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/212480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Racing, Sports",
-      "Developer": "Sumo Digital",
-      "Game Size": "4.0 GB"
     },
     "system_requirements": []
   },
@@ -9941,28 +7279,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Internet Cafe Simulator 2025 (Build 17032379)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3326290/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Revolt Games",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Digimon World: Next Order",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1530160/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Simulation",
-      "Developer": "HYDE, Inc.",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "SPY×ANYA: Operation Memories (v1.0.5)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2170370/library_600x900.jpg",
     "category": "pc",
@@ -9970,28 +7286,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure",
       "Developer": "GrooveBoxJapan",
       "Game Size": "8.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tech Store Simulator",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3076400/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Strategy",
-      "Developer": "Astrasoft",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Europa",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/236850/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Helder Pinto, Chozabu (Alex PB), Novadust Entertainment",
-      "Game Size": "2.1 GB"
     },
     "system_requirements": []
   },
@@ -10073,17 +7367,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "In Silence (v1.01)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1361000/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Ravenhood Games",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "KINGDOM HEARTS -HD 1.5+2.5 ReMIX-",
     "banner_url": "https://cdn2.steamgriddb.com/grid/bc1dba18530dcba2b3117b5b375a15eb.jpg",
     "category": "pc",
@@ -10106,17 +7389,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Stranger Things VR",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2777970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Tender Claws",
-      "Game Size": "3.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "FATAL FURY: City of the Wolves (v1.4.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2492040/library_600x900.jpg",
     "category": "pc",
@@ -10124,17 +7396,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "SNK CORPORATION",
       "Game Size": "24.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Amanda the Adventurer (v1.6.17b)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2166060/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie",
-      "Developer": "MANGLEDmaw Games",
-      "Game Size": "1.2 GB"
     },
     "system_requirements": []
   },
@@ -10172,28 +7433,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Species: Unknown (v0.12.5 + Online)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2747330/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Early Access",
-      "Developer": "WanadevStudio",
-      "Game Size": "4.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Just Cause (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/225540/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Avalanche Studios",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "The LEGO NINJAGO Movie Video Game",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/640590/library_600x900.jpg",
     "category": "pc",
@@ -10205,17 +7444,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Wolf Among Us (Complete Season)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/5fb272a4907bbea419e44c2d624fdb72.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual",
-      "Developer": "Telltale",
-      "Game Size": "4.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "SOMA (Build 7755316)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/282140/library_600x900.jpg",
     "category": "pc",
@@ -10223,50 +7451,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie",
       "Developer": "Frictional Games",
       "Game Size": "20.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Last Faith (v2.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1274600/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Kumi Souls Games",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Wizard of Legend 2 (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2193540/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "Dead Mage",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "My Garage (v8091)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1578390/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Racing, Simulation, Early Access",
-      "Developer": "Viking Game Studio",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Barotrauma (v1.11.5.0 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/602960/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation, Strategy",
-      "Developer": "FakeFish, Undertow Games",
-      "Game Size": "1.5 GB"
     },
     "system_requirements": []
   },
@@ -10293,17 +7477,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "LEGO Batman: The Videogame",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/21000/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Traveller’s Tales",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "FINAL FANTASY IX (Build 5378074)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/377840/library_600x900.jpg",
     "category": "pc",
@@ -10315,39 +7488,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Infection Free Zone (v0.25.12.18)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1465460/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation, Strategy, Early Access",
-      "Developer": "Jutsu Games",
-      "Game Size": "4.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Oh Deer (v3.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2708450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie",
-      "Developer": "Cozy Cabin Studios",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mr.President!",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/507010/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation",
-      "Developer": "Game Developer X",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "PATHOGEN X (Build 17170573)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2508980/library_600x900.jpg",
     "category": "pc",
@@ -10355,28 +7495,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie",
       "Developer": "BraveCat’Studios",
       "Game Size": "14.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Streamer Life Simulator (v1.2.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2890830/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Simulation, Strategy",
-      "Developer": "Cheesecake Dev",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Vampire: The Masquerade – Bloodlines (v1.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2600/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Troika Games",
-      "Game Size": "2.4 GB"
     },
     "system_requirements": []
   },
@@ -10399,17 +7517,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Casual, Indie, Simulation",
       "Developer": "Pine Studio",
       "Game Size": "19.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "DEATHWATCH (Build 9781604)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010270/bf5349733e11a6dd00730a263da7a8ade95fb62e/capsule_231x87_alt_assets_0.jpg?t=1779382375",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Voracious Games",
-      "Game Size": "1.0 GB"
     },
     "system_requirements": []
   },
@@ -10465,17 +7572,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Indie",
       "Developer": "To The Sky",
       "Game Size": "5.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Deep Rock Galactic: Survivor (v1.0.40P)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2321470/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Funday Games",
-      "Game Size": "2.2 GB"
     },
     "system_requirements": []
   },
@@ -10579,17 +7675,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Jackbox Party Pack 11 (Build 20790248)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/aa11c61c967bc3f8dedc99b943d83a42.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, RPG, Simulation, Strategy",
-      "Developer": "Jackbox Games, Inc.",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "StarRupture (v0.1.1.112941-S + Co-op)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1631270/library_600x900.jpg",
     "category": "pc",
@@ -10608,39 +7693,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, RPG, Simulation",
       "Developer": "Frontier Developments",
       "Game Size": "20.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Skullgirls 2nd Encore (v3.7.14)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/245170/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Hidden Variable Studios",
-      "Game Size": "2.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Grand Theft Auto III (Build 2743)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1546970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Rockstar Games",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Punisher (v1.0)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/fdfe44e68dc9914b41cab590f0a77ecc.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "third-person shooter, action-adventure",
-      "Developer": "Volition",
-      "Game Size": "1.9 GB"
     },
     "system_requirements": []
   },
@@ -10667,17 +7719,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Parcel Simulator (v1.0.5.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2424010/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Dansan Digital",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Insurgency: Sandstorm (v1.17.0.343179)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/581320/library_600x900.jpg",
     "category": "pc",
@@ -10685,39 +7726,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "New World Interactive",
       "Game Size": "23.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Gal*Gun 2",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/851890/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Anime, VR",
-      "Developer": "INTI CREATES CO., LTD.",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "SWAT 4 Gold Edition (v2.0.0.4)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/0d74586badbef2905ed11b65c6dd6199.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Irrational Games",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Jackbox Party Pack 7",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1211630/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie",
-      "Developer": "Jackbox Games, Inc.",
-      "Game Size": "1.5 GB"
     },
     "system_requirements": []
   },
@@ -10744,17 +7752,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "KEEP GAMBLING (Build 21259637 + Online)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/9225e03e307be70b4c70ddeb38f0009f.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation",
-      "Developer": "WIRED FEELINGS",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Into the Radius VR",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1012790/library_600x900.jpg",
     "category": "pc",
@@ -10762,17 +7759,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Indie",
       "Developer": "CM Games",
       "Game Size": "8.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "RDS – The Official Drift Videogame (v175)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/934930/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Racing, Simulation, Sports",
-      "Developer": "Drift Physics Crew",
-      "Game Size": "4.8 GB"
     },
     "system_requirements": []
   },
@@ -10799,28 +7785,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Kerbal Space Program (v1.12.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/220200/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Maxis",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Emissary Zero (v1.2.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3176060/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Massively Multiplayer",
-      "Developer": "Rone Vine",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "The Climb VR",
     "banner_url": "https://cdn2.steamgriddb.com/grid/93a708bf53709f4ed0fda8ab74eb43f4.png",
     "category": "pc",
@@ -10828,61 +7792,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Arcade, Simulator, 1st person, VR",
       "Developer": "Crytek",
       "Game Size": "5.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Project Castaway (v0.1.48)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1713350/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Early Access",
-      "Developer": "Mardonpol Inc.",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Afterlove EP (v1.0.18)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1599780/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Pikselnesia",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Survival Nation VR",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/9a173d049899bcd73d24c9c4bbb68010.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Wenkly Studio Sp. z o.o.",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Jackbox Party Pack 6 (v7666884 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1005300/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Strategy",
-      "Developer": "Jackbox Games, Inc.",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Crab Champions (v1830 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/774801/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Racing, Strategy, Early Access",
-      "Developer": "Noisestorm Limited",
-      "Game Size": "1.5 GB"
     },
     "system_requirements": []
   },
@@ -10905,17 +7814,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Sports, American Football, Third-person, 3D",
       "Developer": "EA Tiburon, Electronic Arts",
       "Game Size": "31.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Jackbox Party Pack 9 (v445 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1850960/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie",
-      "Developer": "Jackbox Games, Inc.",
-      "Game Size": "4.8 GB"
     },
     "system_requirements": []
   },
@@ -10964,17 +7862,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "UNDERDOGS VR (Build 18568593)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/333fe976bd3abaf3d312e02fff87b644.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation",
-      "Developer": "One Hamsa",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Tourist Bus Simulator (v1.10.81093)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/953580/library_600x900.jpg",
     "category": "pc",
@@ -10982,17 +7869,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Casual, Simulation",
       "Developer": "TML-Studios, PEDEPE",
       "Game Size": "22.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Ravenswatch (v1.04.01.00)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2071280/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Passtech Games",
-      "Game Size": "3.8 GB"
     },
     "system_requirements": []
   },
@@ -11030,17 +7906,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Stronghold: Definitive Edition (v1.0 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2140020/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "FireFly Studios",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Disney Infinity 3.0: Gold Edition (Build 1522802)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/a8711660171c8e72e0f836d54b988757.png",
     "category": "pc",
@@ -11052,28 +7917,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "IT Specialist Simulator (Build 20969209)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3266090/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Early Access",
-      "Developer": "Pixel Team RED",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "VOIN (v.0.4.1)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/e72c4a9beb68417feb379a987b2d2101.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG, Early Access",
-      "Developer": "Nikita Sozidar",
-      "Game Size": "3.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Sonic Frontiers – Digital Deluxe Edition (v1.42)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1237320/library_600x900.jpg",
     "category": "pc",
@@ -11081,39 +7924,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Sonic Team",
       "Game Size": "33.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mortal Sin (Build 19808204)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1494810/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "Nikola Todorovic",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Potion Craft: Alchemist Simulator (v2.0.2.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1210320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "niceplay games",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "LEGO Star Wars: The Complete Saga",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32440/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Traveller’s Tales",
-      "Game Size": "3.9 GB"
     },
     "system_requirements": []
   },
@@ -11184,17 +7994,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Jackbox Party Pack 3 (v7667193)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/434170/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Strategy",
-      "Developer": "Jackbox Games, Inc.",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Persona 4 Arena Ultimax (v1.0.1 + Ryujinx EMU)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1602010/library_600x900.jpg",
     "category": "pc",
@@ -11202,17 +8001,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Arc System Works, ATLUS",
       "Game Size": "15.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Scribblenauts Unlimited",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/b82d949cf4a38f15b1297f97b82d0a77.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Strategy",
-      "Developer": "5th Cell Media",
-      "Game Size": "1.6 GB"
     },
     "system_requirements": []
   },
@@ -11246,17 +8034,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "The Chinese Room",
       "Game Size": "11.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "SUPERHOT (v1.0.21)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/617830/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "SUPERHOT Team",
-      "Game Size": "1.3 GB"
     },
     "system_requirements": []
   },
@@ -11305,39 +8082,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Trombone Champ: Unflattened (Build 17240520)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3151670/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, VR",
-      "Developer": "Flat2VR Studios, Holy Wow Studios",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tobacco Shop Simulator (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3211680/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Business Tycoon",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Forts (v1.35.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/410900/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Strategy",
-      "Developer": "EarthWork Games",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Hi-Fi RUSH",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1817230/library_600x900.jpg",
     "category": "pc",
@@ -11371,39 +8115,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Darkwood (Build 13092424)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/274520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG, Strategy",
-      "Developer": "Acid Wizard Studio",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Get To Work (v1.1.1.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2706170/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Racing",
-      "Developer": "Isto Inc.",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Bus Flipper: Renovator Simulator (v1.0.22r)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2174560/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Project Zima",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "The Devil Within: Satgat (v1.4.82.46571)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1802880/library_600x900.jpg",
     "category": "pc",
@@ -11411,28 +8122,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie, RPG",
       "Developer": "Newcore Games",
       "Game Size": "7.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Zort (v0.3.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3121110/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Early Access",
-      "Developer": "Londer Software",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Fable – The Lost Chapters (Build 29928)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/204030/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG",
-      "Developer": "Lionhead Studios",
-      "Game Size": "2.7 GB"
     },
     "system_requirements": []
   },
@@ -11466,28 +8155,6 @@ window.PC_GAMES_DATA = [
       "Genre": "RPG",
       "Developer": "HYDE, Inc.",
       "Game Size": "6.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "SWAPMEAT (v0.10 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2790700/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Early Access",
-      "Developer": "One More Game",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Squirrel with a Gun (v1.4.3.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2067050/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation",
-      "Developer": "Dee Dee Creations LLC",
-      "Game Size": "2.6 GB"
     },
     "system_requirements": []
   },
@@ -11558,28 +8225,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Soulstone Survivors (v1.4D)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2066020/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "Game Smithing Limited",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Great Villainess: Strategy of Lily",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2454960/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "One or Eight, Alliance Arts, WSS Playground",
-      "Game Size": "4.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Sonic Lost World",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/329440/library_600x900.jpg",
     "category": "pc",
@@ -11587,28 +8232,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure",
       "Developer": "Sonic Team",
       "Game Size": "6.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Call of Juarez Gunslinger (v1.0.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/204450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Techland",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Shin chan: Shiro and the Coal Town",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2699820/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Simulation",
-      "Developer": "h.a.n.d., Inc.",
-      "Game Size": "4.5 GB"
     },
     "system_requirements": []
   },
@@ -11646,17 +8269,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Darkest Dungeon (Build 25622)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/262060/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Strategy",
-      "Developer": "Red Hook Studios",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Darksiders Genesis (Build 4801913 + Online/LAN)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/710920/library_600x900.jpg",
     "category": "pc",
@@ -11664,17 +8276,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Airship Syndicate",
       "Game Size": "10.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "DreadOut (v2.2.18)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/945710/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Digital Happiness",
-      "Game Size": "4.1 GB"
     },
     "system_requirements": []
   },
@@ -11756,17 +8357,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Monaco 2 (v1.0.0.18962 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1063030/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Strategy",
-      "Developer": "Pocketwatch Games",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Copycat (v1.0.4)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1622350/library_600x900.jpg",
     "category": "pc",
@@ -11789,17 +8379,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "MONOPOLY PLUS",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/3acc60912ab5edf5da1810c51c8ccb21.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual",
-      "Developer": "Ubisoft Pune",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Dead Rising 2 (Build 11445504)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/45740/library_600x900.jpg",
     "category": "pc",
@@ -11811,39 +8390,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "THE KING OF FIGHTERS XIII GLOBAL MATCH",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3050220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "SAFARI GAMES",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Last Spell (v1.3.32.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1105670/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG, Strategy",
-      "Developer": "Ishtar Games",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Sonic & SEGA All-Stars Racing (Build 462)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/34190/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Racing",
-      "Developer": "Sumo Digital",
-      "Game Size": "4.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Zombie Army 4: Dead War",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/694280/library_600x900.jpg",
     "category": "pc",
@@ -11851,17 +8397,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Rebellion",
       "Game Size": "46.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Jet Set Radio (Build 537082)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/e96fb9f9c97bcc38136043fb0627ef91.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Blit Software",
-      "Game Size": "1.2 GB"
     },
     "system_requirements": []
   },
@@ -11910,39 +8445,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Tom Clancy’s Splinter Cell Chaos Theory (Build 252084)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/923ccbcec867ebc5588386df7c370c55.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "ActionDeveloper:Ubisoft Montreal",
-      "Developer": "",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "RIOT: Civil Unrest",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/342310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Leonard Menchiari, IV Productions, Ivan Venturi Productions",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tabletop Simulator (v13.1.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/286160/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, RPG, Simulation, Strategy",
-      "Developer": "Berserk Games",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Danganronpa V3: Killing Harmony (Build 2186010)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/567640/library_600x900.jpg",
     "category": "pc",
@@ -11950,17 +8452,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure",
       "Developer": "Spike Chunsoft Co., Ltd.",
       "Game Size": "22.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Big Ambitions (Build 10881096)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1331550/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Early Access",
-      "Developer": "Hovgaard Games",
-      "Game Size": "2.5 GB"
     },
     "system_requirements": []
   },
@@ -11987,17 +8478,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Welcome to the Game II (v1.21)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/cfea3b6ea2c1a82ef50e42e6a7c66ac5.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Reflect Studios",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "LEGO Jurassic World",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/352400/library_600x900.jpg",
     "category": "pc",
@@ -12009,39 +8489,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Clone Drone in the Danger Zone (v1.6.0.34)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/597170/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Doborog Games",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Voidborn (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2072660/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Xekvera",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Neon White (Build 8946152)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1533420/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Angel Matrix",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "The Hundred Line -Last Defense Academy-",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3014080/library_600x900.jpg",
     "category": "pc",
@@ -12049,17 +8496,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Simulation",
       "Developer": "Too Kyo Games, Media.Vision Inc.",
       "Game Size": "27.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "CLANNAD (Build 6751983)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/324160/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual",
-      "Developer": "VisualArts/Key",
-      "Game Size": "4.6 GB"
     },
     "system_requirements": []
   },
@@ -12086,17 +8522,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Sunset Motel",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2616140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Simulation",
-      "Developer": "Efkey Studios",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "F1 2021 (v1.18.1)",
     "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1660061/a961cd2f5f19fd423ccd5b3130a35a2581ea8a4c/capsule_231x87.jpg?t=1727977643",
     "category": "pc",
@@ -12104,28 +8529,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Racing, Simulation, Sports",
       "Developer": "Codemasters",
       "Game Size": "70.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Jackbox Party Pack 10 (Build 393 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2216830/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Strategy",
-      "Developer": "Jackbox Games, Inc.",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Far Cry 3 – Blood Dragon (Build 7796294)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/84aaa84129e365590aeb86b57697edb9.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Ubisoft Montreal",
-      "Game Size": "3.3 GB"
     },
     "system_requirements": []
   },
@@ -12152,17 +8555,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Dark Hours (Build 18584870)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2208570/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Early Access",
-      "Developer": "Piece of Cake studios",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "BLACK CLOVER: QUARTET KNIGHTS (ALL DLC)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/69901e874b3e3a262499a762cf8fc32c.png",
     "category": "pc",
@@ -12174,28 +8566,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Half-Life: Source (Build 4233304)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/98f573e27ff366ffb6ef534ab4033fef.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Valve",
-      "Game Size": "4.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Yasha: Legends of the Demon Blade (v1.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2169950/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "7QUARK",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Overcooked! All You Can Eat (Build 15801630 + Online)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1243830/library_600x900.jpg",
     "category": "pc",
@@ -12203,28 +8573,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Casual, Indie, Simulation, Strategy",
       "Developer": "Team17 Digital",
       "Game Size": "6.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Jackbox Party Pack 5",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/774461/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual",
-      "Developer": "Jackbox Games, Inc.",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Skater XL – The Ultimate Skateboarding Game (v1.2.2.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/962730/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation, Sports",
-      "Developer": "Easy Day Studios Pty Ltd",
-      "Game Size": "4.6 GB"
     },
     "system_requirements": []
   },
@@ -12251,28 +8599,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Gunner, HEAT, PC! (v20251218.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1705180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation, Early Access",
-      "Developer": "Radian Simulations LLC",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Skul: The Hero Slayer (v1.09.02)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1147560/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "SouthPAW Games",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Syberia: The World Before (v1.39367)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1410640/library_600x900.jpg",
     "category": "pc",
@@ -12280,17 +8606,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure",
       "Developer": "Microids Studio Paris",
       "Game Size": "12.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Keep Driving (v1.3.1.1B)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2756920/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, RPG, Simulation",
-      "Developer": "YCJY Games",
-      "Game Size": "1.8 GB"
     },
     "system_requirements": []
   },
@@ -12361,28 +8676,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Danganronpa 2: Goodbye Despair (Build 1312489)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413420/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Spike Chunsoft Co., Ltd.",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "BACKROOMS: APPREHENSION (Build 19212337 + Online)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2234150/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "DMNT Interactive",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Movies Tycoon (v2.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2659050/library_600x900.jpg",
     "category": "pc",
@@ -12394,17 +8687,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Ale & Tale Tavern (v1.0.2 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2683150/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Simulation",
-      "Developer": "Scienart Games",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "MotoGP 14 (v1.001)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/256390/library_600x900.jpg",
     "category": "pc",
@@ -12412,17 +8694,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Racing, Simulation, Sports",
       "Developer": "Milestone S.r.l.",
       "Game Size": "15.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Youtubers Life 2 (v1.4.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1493760/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation, Strategy",
-      "Developer": "UPLAY Online",
-      "Game Size": "1.8 GB"
     },
     "system_requirements": []
   },
@@ -12504,28 +8775,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Bendy and the Dark Revival (v1.0.4.0332)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1063660/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Joey Drew Studios",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "POSTAL Redux (Build 2789907)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/401680/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Running With Scissors",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Monster Hunter Stories 2: Wings of Ruin (v1.6.1)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1277400/library_600x900.jpg",
     "category": "pc",
@@ -12570,28 +8819,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Worldwide Rush (v1.2.8)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3325500/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Strategy",
-      "Developer": "Memel Games",
-      "Game Size": "4.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Little Kitty, Big City (v1.25.9.26)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1177980/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation",
-      "Developer": "Double Dagger Studio",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Sackboy: A Big Adventure (B-10480047)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1599660/library_600x900.jpg",
     "category": "pc",
@@ -12625,17 +8852,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Roadside Research (v0.80 + Co-op)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/fa0ba908eb7a59556b2f33fa8df6a877.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation, Early Access",
-      "Developer": "Cybernetic Walrus",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "MotoGP 25 (Build 19022332)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3077390/library_600x900.jpg",
     "category": "pc",
@@ -12654,17 +8870,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Early Access",
       "Developer": "Mantaliss",
       "Game Size": "12.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Warhammer 40,000: Boltgun (v1.18)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2005010/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Auroch Digital",
-      "Game Size": "4.5 GB"
     },
     "system_requirements": []
   },
@@ -12724,28 +8929,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "White Knuckle (Build 18619271)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3195790/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Early Access",
-      "Developer": "Dark Machine Games",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "BMX Streets (v1.0.0.96.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/871540/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Sports",
-      "Developer": "Mash Games",
-      "Game Size": "4.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Soulmask (v0.5.18)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2646460/library_600x900.jpg",
     "category": "pc",
@@ -12790,17 +8973,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "LORT (v0.5.2 + Co-op)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/eb451e80bb1c2bc3983be32d4521f31a.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Early Access",
-      "Developer": "Big Distraction",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "POSTAL: Brain Damaged (Build 21193832)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1359980/library_600x900.jpg",
     "category": "pc",
@@ -12819,17 +8991,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Frogwares",
       "Game Size": "48.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Matchless Kungfu (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1696440/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Strategy",
-      "Developer": "HuanMos Game",
-      "Game Size": "2.3 GB"
     },
     "system_requirements": []
   },
@@ -12878,17 +9039,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Cubic Odyssey (v1.0.1.18 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3400000/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Atypical Games",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Soulslinger: Envoy of Death (v1.031)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2429240/library_600x900.jpg",
     "category": "pc",
@@ -12933,17 +9083,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Ratatan",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2949320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG, Early Access",
-      "Developer": "TVT Co. Ltd., Ratata Arts",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Cardfight!! Vanguard Dear Days 2 (v1.1.2)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2457540/library_600x900.jpg",
     "category": "pc",
@@ -12955,17 +9094,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Chrono Ark (Build 14253576)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1188930/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Strategy",
-      "Developer": "Al Fine",
-      "Game Size": "4.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Vietnam War (Build 18601375)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1837480/library_600x900.jpg",
     "category": "pc",
@@ -12973,17 +9101,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Early Access",
       "Developer": "Thorium Game Lab",
       "Game Size": "17.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Scrutinized (Build 5417686)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1384770/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Reflect Studios",
-      "Game Size": "2.8 GB"
     },
     "system_requirements": []
   },
@@ -13006,17 +9123,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Casual",
       "Developer": "Voracious Games",
       "Game Size": "6.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Possessor(s)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2132890/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Heart Machine",
-      "Game Size": "4.8 GB"
     },
     "system_requirements": []
   },
@@ -13098,39 +9204,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Hell Clock",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1782460/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "Rogue Snail",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mirthwood (v1.1.1p1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2272900/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Simulation",
-      "Developer": "Bad Ridge Games",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Green Hell VR (v1.0.7)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1782330/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation",
-      "Developer": "Incuvo",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Vertigo 2",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/843390/library_600x900.jpg",
     "category": "pc",
@@ -13164,39 +9237,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The RPG (v1.019)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2429270/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG",
-      "Developer": "Dionysus Acroreites",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tomb Raider I-III Remastered Starring Lara Croft (v1.01)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2478970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Aspyr, Crystal Dynamics",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Walking Dead Season 2 PC",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/add7ef939fdb278717731689fc456f66.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Telltale Games",
-      "Game Size": "4.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Bum Simulator (v3.7.12a)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/855740/library_600x900.jpg",
     "category": "pc",
@@ -13204,17 +9244,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie, Simulation",
       "Developer": "Ragged Games",
       "Game Size": "5.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Alchemy Factory (v0.4.0.3692 Co-op)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/07b89762275b824cf553d6e837bf83b0.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Strategy, Early Access",
-      "Developer": "D5 Copperhead",
-      "Game Size": "3.1 GB"
     },
     "system_requirements": []
   },
@@ -13248,28 +9277,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Marvelous Inc.",
       "Game Size": "12.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Constance (v1.0.1.40150)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2313700/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "btf",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Neon Abyss 2 (v2025.9.30)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2235200/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG, Early Access",
-      "Developer": "Veewo Games",
-      "Game Size": "2.1 GB"
     },
     "system_requirements": []
   },
@@ -13314,17 +9321,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Indie, Early Access",
       "Developer": "Pigeons at Play",
       "Game Size": "5.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Storebound (v0.7.3 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3417410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Early Access",
-      "Developer": "Embers",
-      "Game Size": "1.3 GB"
     },
     "system_requirements": []
   },
@@ -13384,39 +9380,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Anonymous Hacker Simulator (Build 16213148)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2487060/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Sicarius",
-      "Game Size": "3.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "At Dead of Night (Build 14844637)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1450830/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG, Strategy",
-      "Developer": "Baggy Cat Ltd.",
-      "Game Size": "4.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "ASKA (v14771759)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1898300/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Simulation, Early Access",
-      "Developer": "Sand Sailor Studio",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Monster Hunter Stories (v1.1.0)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/16f363a300e240b5be1ce1be1fe61129.png",
     "category": "pc",
@@ -13428,17 +9391,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Dinkum (v1.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1062520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Early Access",
-      "Developer": "James Bendon",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Life is Strange: Before the Storm Remastered (Build 8195842)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1265930/library_600x900.jpg",
     "category": "pc",
@@ -13446,17 +9398,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Deck Nine",
       "Game Size": "18.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Dyson Sphere Program (Build 17999078)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1366540/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy, Early Access",
-      "Developer": "Youthcat Studio",
-      "Game Size": "4.3 GB"
     },
     "system_requirements": []
   },
@@ -13490,28 +9431,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Strategy",
       "Developer": "CAPCOM Co., Ltd.",
       "Game Size": "22.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "PAYDAY The Heist",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/24240/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "OVERKILL Software",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Garten of Banban 8: Anti Devil (v1.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2917040/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Euphoric Brothers",
-      "Game Size": "1.7 GB"
     },
     "system_requirements": []
   },
@@ -13571,17 +9490,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Cataclismo (v1.0.3.2.267)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1422440/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "Digital Sun",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "BioShock 2 Remastered (Build 8552776)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/831dd83cf1981832ca556c89f7c7156d.png",
     "category": "pc",
@@ -13589,17 +9497,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, RPG",
       "Developer": "2K Marin",
       "Game Size": "20.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Sunkenland (v0.5.21)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2080690/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Early Access",
-      "Developer": "Vector3 Studio",
-      "Game Size": "3.3 GB"
     },
     "system_requirements": []
   },
@@ -13626,17 +9523,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Cooking Simulator VR (Build 9802491)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1358140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "GameBoom VR",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Tom Clancy’s Rainbow Six Vegas 2 (Build 252092)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/1bebc4f67cbeda086e5ac2d8d0eea72f.png",
     "category": "pc",
@@ -13655,17 +9541,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Aspyr Studios",
       "Game Size": "9.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Age of Mythology Extended Edition (v2.8)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/266840/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "SkyBox Labs, Ensemble Studios",
-      "Game Size": "3.8 GB"
     },
     "system_requirements": []
   },
@@ -13692,17 +9567,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Baldur’s Gate II: Enhanced Edition (v2.6.6.0-p)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/257350/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG",
-      "Developer": "Beamdog",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Vampyr (Build 3077463)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/427290/library_600x900.jpg",
     "category": "pc",
@@ -13710,17 +9574,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, RPG",
       "Developer": "DONTNOD Entertainment",
       "Game Size": "14.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Serious Fun Football (v0.981 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1392560/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Simulation, Sports, Early Access",
-      "Developer": "KW-SFF",
-      "Game Size": "1.5 GB"
     },
     "system_requirements": []
   },
@@ -13736,17 +9589,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Bomb Rush Cyberfunk (Build 11921324)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1353230/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Team Reptile",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "SLEEP AWAKE",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2446540/library_600x900.jpg",
     "category": "pc",
@@ -13754,17 +9596,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie",
       "Developer": "EYES OUT, LLC.",
       "Game Size": "42.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Supercar Collection Simulator (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3453600/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Racing, Simulation",
-      "Developer": "Kiki Games",
-      "Game Size": "2.0 GB"
     },
     "system_requirements": []
   },
@@ -13824,17 +9655,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Who’s at the door? (v1.0.9)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/8bcd2f85ded6b195d89a3669f45ac066.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation",
-      "Developer": "SKONEC Entertainment",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Ghostwire: Tokyo (Build 13890751)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1475810/library_600x900.jpg",
     "category": "pc",
@@ -13875,17 +9695,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Early Access",
       "Developer": "Traega Entertainment",
       "Game Size": "5.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Zombie Graveyard Simulator (v1.2.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3430450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation",
-      "Developer": "threeW",
-      "Game Size": "1.0 GB"
     },
     "system_requirements": []
   },
@@ -13934,28 +9743,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Rabi-Ribi (v2.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/400910/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "CreSpirit, GemaYue",
-      "Game Size": "2.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Republic of Pirates (v0.32.1.24)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2103470/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "Crazy Goat Games",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Climb The Backrooms (Build 19712652 + Online)",
     "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3575300/9c18114b66a2d6325727322ac1a657a8332cdf91/capsule_231x87.jpg?t=1778541006",
     "category": "pc",
@@ -13978,28 +9765,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Hello Neighbor: Hide and Seek",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/960420/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Dynamic Pixels",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Factory Outlet Simulator (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2981590/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "PISHO",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Steel Division 2 (v143305)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/919640/library_600x900.jpg",
     "category": "pc",
@@ -14011,28 +9776,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Parking Tycoon: Business Simulator (Build 12620582)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2475420/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Geekon",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "KILL KNIGHT (v1.0.0.108)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2694420/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "PlaySide",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Crisol: Theater of Idols",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1790930/library_600x900.jpg",
     "category": "pc",
@@ -14040,50 +9783,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Vermila Studios",
       "Game Size": "15.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Viscera Cleanup Detail (v1.145)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/246900/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "RuneStorm",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "A Space for the Unbound (v1.0.33.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1201270/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Mojiken",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Our Adventurer Guild (v1.61)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2026000/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Strategy",
-      "Developer": "GreenGuy",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "FOUNDRY (v0.6.0.20868)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/983870/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy, Early Access",
-      "Developer": "Channel 3 Entertainment",
-      "Game Size": "2.2 GB"
     },
     "system_requirements": []
   },
@@ -14110,17 +9809,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "UNDER NIGHT IN-BIRTH II Sys:Celes (v1.32.00)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2076010/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "FRENCH-BREAD, Arc System Works",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Intravenous 2 (v1.4.7)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2608270/library_600x900.jpg",
     "category": "pc",
@@ -14128,17 +9816,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Indie, RPG, Simulation, Strategy",
       "Developer": "Explosive Squat Games",
       "Game Size": "6.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "State of Decay: YOSE",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/329430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG, Simulation",
-      "Developer": "Undead Labs",
-      "Game Size": "2.9 GB"
     },
     "system_requirements": []
   },
@@ -14154,28 +9831,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "MIO: Memories in Orbit (vr21665)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/5d87e5849e22e2a6d393fcc93e5ac684.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Douze Dixièmes",
-      "Game Size": "2.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Gunfire Reborn (B25102025 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1217060/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Duoyi Games",
-      "Game Size": "3.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "One Piece: Unlimited World Red – Deluxe Edition",
     "banner_url": "https://cdn2.steamgriddb.com/grid/9dbb9329fdbb9ed1b0be28629c8e3672.png",
     "category": "pc",
@@ -14183,39 +9838,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Ganbarion",
       "Game Size": "10.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "FINAL FANTASY VI (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1173820/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG",
-      "Developer": "Square Enix",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Human Fast Food",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3281090/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation",
-      "Developer": "Bricchi Games",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Rock Star Life Simulator (v1.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2530950/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation",
-      "Developer": "HOGO Games",
-      "Game Size": "1.5 GB"
     },
     "system_requirements": []
   },
@@ -14264,28 +9886,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Worms W.M.D (Build 3974938 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/327030/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Strategy",
-      "Developer": "Team17",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Jackbox Naughty Pack",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2652000/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual",
-      "Developer": "Jackbox Games, Inc.",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "RoboCop: Rogue City – Unfinished Business (Build 19527669)",
     "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3743240/b0fa4bc068cfcd84dd73dcb97efa8dbb63fa06bc/capsule_231x87.jpg?t=1752768037",
     "category": "pc",
@@ -14297,39 +9897,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Computer Repair Shop (v1.01)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2479290/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Cheesecake Dev",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Final Fantasy VII (Build 115956)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837340/3ee5805552260a0dcb79750d34cc2e853c16711b/capsule_231x87.jpg?t=1775108423",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG",
-      "Developer": "Square Enix",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Hydroneer (v3.0.8)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1106840/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation, Strategy",
-      "Developer": "Foulball Hangover",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Grim Dawn Definitive Edition (v1.2.1.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/219990/library_600x900.jpg",
     "category": "pc",
@@ -14337,28 +9904,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie, RPG",
       "Developer": "Crate Entertainment",
       "Game Size": "7.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Jackbox Party Pack 4",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/610180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Strategy",
-      "Developer": "Jackbox Games, Inc.",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Bus Simulator 18 (Update 15)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/515180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation",
-      "Developer": "stillalive studios",
-      "Game Size": "3.9 GB"
     },
     "system_requirements": []
   },
@@ -14385,17 +9930,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Duck Season VR",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/3b6fe2dc98ceed6e1608e7cfc662ab11.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Stress Level Zero",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "LEGO Party! (v1.1.0)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/f8522ccca7a5ac46c4d309434b9fbee8.png",
     "category": "pc",
@@ -14403,17 +9937,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Casual",
       "Developer": "SMG Studio",
       "Game Size": "6.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "ORDER 13 (v1.02)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2259310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy",
-      "Developer": "Voracious Games",
-      "Game Size": "2.0 GB"
     },
     "system_requirements": []
   },
@@ -14429,39 +9952,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Flashing Lights – Police Fire EMS (Build 230525-1)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/cb224b8dd744ee4cc02843b350af5bff.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Massively Multiplayer, RPG, Simulation",
-      "Developer": "Nils Jakrins",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "STORY OF SEASONS: Grand Bazaar (v1.0.3)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/618e54d1c3db5ac3a3b07d3fa3ce06d9.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation",
-      "Developer": "Marvelous Inc.",
-      "Game Size": "4.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Night in the Woods",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/481510/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Infinite Fall",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Crime Boss: Rockay City (v1.13.2.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2933080/library_600x900.jpg",
     "category": "pc",
@@ -14469,72 +9959,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "INGAME STUDIOS",
       "Game Size": "80.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Elder Scrolls III: Morrowind GOTY",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/1ac14644c9b40ddeb100f417af0e608b.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG",
-      "Developer": "Bethesda Game Studios",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Yes, Your Grace 2: Snowfall (v1.1.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1373090/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy",
-      "Developer": "Brave At Night",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "ENDER MAGNOLIA: Bloom in the Mist (v1.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2725260/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "Adglobe, Live Wire",
-      "Game Size": "4.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tavern Manager Simulator (v1.5.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2756770/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "One More Time",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "My Friend Pedro (v1.03)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/557340/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "DeadToast Entertainment",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Quake II Enhanced (v1.0.5663)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/5e26badb3867ac7f26d3624ca39a9df4.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "id Software, Nightdive Studios, MachineGames",
-      "Game Size": "3.8 GB"
     },
     "system_requirements": []
   },
@@ -14568,61 +9992,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Indie",
       "Developer": "Gears for Breakfast",
       "Game Size": "6.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "AirportSim (v1.4.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1715280/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "MS GAMES, MK STUDIOS",
-      "Game Size": "4.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Rue Valley",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2126190/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "Emotion Spark Studio",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Sims Legacy Collection (v1.0.0.70)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3314060/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation",
-      "Developer": "MAXIS",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Master of Command",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2878450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "Armchair History Interactive",
-      "Game Size": "4.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "KILL IT WITH FIRE! 2 (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2357000/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Simulation",
-      "Developer": "Casey Donnellan Games LLC",
-      "Game Size": "3.8 GB"
     },
     "system_requirements": []
   },
@@ -14693,17 +10062,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Jurassic Park Classic Games Collection",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/ce2b2b0b7a33f82daad1757021fa165f.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Limited Run Games",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Finding Frankie (Build 16260850)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2597970/library_600x900.jpg",
     "category": "pc",
@@ -14722,28 +10080,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Flux Games",
       "Game Size": "39.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Don’t Starve (578406)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/966fbc7903cd1716d92bfe9398a4e794.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation",
-      "Developer": "Klei Entertainment",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Hidden Deep (v0.97.66)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/976890/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Early Access",
-      "Developer": "Cogwheel Software",
-      "Game Size": "1.5 GB"
     },
     "system_requirements": []
   },
@@ -14777,39 +10113,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Simulation",
       "Developer": "weltenbauer. Software Entwicklung GmbH",
       "Game Size": "35.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Fabledom (v1.084)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1651560/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation, Strategy",
-      "Developer": "Grenaa Games",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Superliminal (v1.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1049410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Games by Malcs",
-      "Game Size": "3.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "UNDYING (v1.0.2)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2828470/capsule_231x87.jpg?t=1772188911",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Vanimals",
-      "Game Size": "2.4 GB"
     },
     "system_requirements": []
   },
@@ -14858,17 +10161,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Gun Club VR (v1.0.17)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/691320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation",
-      "Developer": "The Binary Mill",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Serious Sam 4 (v1.09)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/257420/library_600x900.jpg",
     "category": "pc",
@@ -14876,17 +10168,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie",
       "Developer": "Croteam",
       "Game Size": "52.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Beff Jezos Simulator (v1.1.0.0711)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3128740/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "tiplay studio",
-      "Game Size": "1.2 GB"
     },
     "system_requirements": []
   },
@@ -14902,50 +10183,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "OverDrift Festival (Build 21072022)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/d1e5b571ea0716acb136d7035c2abc40.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Massively Multiplayer, Racing, Simulation, Sports, Early Access",
-      "Developer": "OverDrift Crew",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Backrooms Bodycam",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3746210/bdffa805e492b204edf1866bad09ecfdbd2034d9/capsule_231x87.jpg?t=1749948545",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG, Simulation",
-      "Developer": "Pine Studio",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tavern Keeper",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/436780/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy, Early Access",
-      "Developer": "Greenheart Games 💚",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Teenage Mutant Ninja Turtles: Splintered Fate (v1.11.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2996040/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Super Evil Megacorp",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "R.I.P. – Reincarnation Insurance Program (v0.8.1.8)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/f0dbd179263e4b2f6d54163d3ed7628a.jpg",
     "category": "pc",
@@ -14957,28 +10194,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "KitHack Model Club (v1.5.0)",
-    "banner_url": "https://steamrip.com/wp-content/uploads/2024/10/kithack-model-club-portrait-steamrip.jpg.webp",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Racing, Simulation",
-      "Developer": "Floating Origin Interactive",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Fida Puti Samurai (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1534340/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Zanardi and Liza",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Transport Fever 2 (v35720)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1066780/library_600x900.jpg",
     "category": "pc",
@@ -14986,39 +10201,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Simulation, Strategy",
       "Developer": "Urban Games",
       "Game Size": "29.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Derail Valley (B99.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/588030/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation, Early Access",
-      "Developer": "Altfuture",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Weed Shop 3 (Build 10562557)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1182110/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Weed Games",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "I Am Your Beast",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1876590/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Strange Scaffold",
-      "Game Size": "1.0 GB"
     },
     "system_requirements": []
   },
@@ -15056,50 +10238,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Goat Simulator: GOATY Edition (v1.5.58533)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/abeacba57a904095ae4aae799bced579.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Coffee Stain Studios",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Duke Nukem Forever",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/57900/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Gearbox Software",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Bus Driving Sim 22 (v1.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1032700/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation",
-      "Developer": "Ovilex Software",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "S.T.A.L.K.E.R.: Clear Sky",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/3d6a88e3289f15714c4bdff3a7958be7.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "GSC Game World",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Dread Dawn (v2024.10.1.1000)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2093920/library_600x900.jpg",
     "category": "pc",
@@ -15133,17 +10271,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "WRATH: Aeon of Ruin (v1.1.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1000410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "KillPixel Games, Slipgate Ironworks",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Ni no Kuni Wrath of the White Witch Remastered",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/798460/library_600x900.jpg",
     "category": "pc",
@@ -15151,28 +10278,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, RPG",
       "Developer": "LEVEL5 Inc.",
       "Game Size": "43.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Drova – Forsaken Kin (v1.2.1.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1585180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Just2D",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "THE HOUSE OF THE DEAD 2: Remake",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3376690/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "MegaPixel Studio S. A",
-      "Game Size": "3.5 GB"
     },
     "system_requirements": []
   },
@@ -15221,28 +10326,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Rivals of Aether II (Build 29102024 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2217000/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Aether Studios",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "All Quiet in the Trenches (Build 20667826)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/863500/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy, Early Access",
-      "Developer": "Totally Not Aliens",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Tiny Tina’s Wonderlands",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1286680/library_600x900.jpg",
     "category": "pc",
@@ -15265,17 +10348,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "DRIFT21 (rev_22438)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/3384049cd5dc019a7570438f72e024fd.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Racing, Simulation, Sports",
-      "Developer": "ECC GAMES S.A.",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "ENDLESS Legend 2 (v0.0.71.158018)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3407390/library_600x900.jpg",
     "category": "pc",
@@ -15283,28 +10355,6 @@ window.PC_GAMES_DATA = [
       "Genre": "RPG, Simulation, Strategy, Early Access",
       "Developer": "AMPLITUDE Studios",
       "Game Size": "7.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Surgeon Simulator (v2.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/233720/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation",
-      "Developer": "Bossa Studios",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "STAR WARS Republic Commando (Build 251740)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/87f7f8f823a0bc9edecdf4c22aa2007a.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "LucasArts",
-      "Game Size": "2.0 GB"
     },
     "system_requirements": []
   },
@@ -15375,50 +10425,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Tactical Breach Wizards (v2025-01-17)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1043810/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Strategy",
-      "Developer": "Suspicious Developments Inc",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Thrill of the Fight – VR Boxing (Build 4641271)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/494150/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Sports",
-      "Developer": "Halfbrick Studios Pty Ltd",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "UNO (Build 10181864)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/470220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual",
-      "Developer": "Ubisoft Entertainment",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Star Wars: Knights of the Old Republic (Build 19296)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32370/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG",
-      "Developer": "BioWare",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Empire of the Ants (v1.03.19990)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2287330/library_600x900.jpg",
     "category": "pc",
@@ -15426,17 +10432,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Strategy",
       "Developer": "Tower Five",
       "Game Size": "36.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "ACTION SANDBOX (v1.20)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1381650/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation",
-      "Developer": "Vona Soft",
-      "Game Size": "1.1 GB"
     },
     "system_requirements": []
   },
@@ -15463,17 +10458,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Golf With Your Friends (v282)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/431240/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Sports",
-      "Developer": "Team17, Mouldy Toof Studios",
-      "Game Size": "4.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Age of Darkness: Final Stand (v1.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1426450/library_600x900.jpg",
     "category": "pc",
@@ -15481,17 +10465,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Strategy",
       "Developer": "PlaySide",
       "Game Size": "7.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Sandwich Simulator",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3445340/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "FiftyEight Studios",
-      "Game Size": "2.6 GB"
     },
     "system_requirements": []
   },
@@ -15518,17 +10491,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Love, Money, Rock’n’Roll (B_9251252)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/615530/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Soviet Games",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Blacksmith Simulator (v1.0.0.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1959120/library_600x900.jpg",
     "category": "pc",
@@ -15536,39 +10498,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Casual, Indie, Simulation",
       "Developer": "GalaxyVerse",
       "Game Size": "5.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Moonlighter 2: The Endless Vault",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2350790/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG, Early Access",
-      "Developer": "Digital Sun",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Good Pizza, Great Pizza (v5.29.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/770810/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Early Access",
-      "Developer": "TapBlaze",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Decktamer (v1.0.24)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2870340/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "Horizon Edge",
-      "Game Size": "1.4 GB"
     },
     "system_requirements": []
   },
@@ -15617,39 +10546,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Garten of Banban 2 (v1.0.1_HF3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2262770/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Euphoric Brothers",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "I Expect You To Die 3: Cog in the Machine",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2296380/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Simulation",
-      "Developer": "Schell Games",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Rally Mechanic Simulator (v1.0.236)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1588090/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Racing, Simulation, Sports",
-      "Developer": "Play2Chill S.A., Atomic Jelly",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Borderlands GOTY (Build 356062)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/e18f2157e946d2e640161f31f30364f3.png",
     "category": "pc",
@@ -15657,17 +10553,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, RPG",
       "Developer": "Gearbox Software, Blind Squirrel Games",
       "Game Size": "12.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Whisper of the House (v1.0.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2589500/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "(GD Studio)",
-      "Game Size": "1.0 GB"
     },
     "system_requirements": []
   },
@@ -15701,39 +10586,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Indie, RPG",
       "Developer": "Doryah Games",
       "Game Size": "5.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Panelka (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3376760/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "MonsterAttack",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Project Winter (v1.29.990.0 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/774861/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Strategy",
-      "Developer": "Other Ocean Interactive",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "River City Girls 2 (v1.1.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1920480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG",
-      "Developer": "WayForward",
-      "Game Size": "4.2 GB"
     },
     "system_requirements": []
   },
@@ -15826,17 +10678,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Storm Chasers (Build 11720617 + Online)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/862800/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation, Early Access",
-      "Developer": "Little Cloud Games",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Frostpunk GOTY (v1.6.2)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/68d4d73fe3f66990557405cae2207b68.png",
     "category": "pc",
@@ -15844,28 +10685,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Simulation, Strategy",
       "Developer": "11 bit studios",
       "Game Size": "20.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tetris Effect: Connected (v2.0.1 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1003590/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, VR",
-      "Developer": "Monstars Inc., Resonair, Stage Games",
-      "Game Size": "3.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "I Hate This Place",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/227b86532fbc49f93a4ed37bdf777b0b.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie",
-      "Developer": "Rock Square Thunder",
-      "Game Size": "1.9 GB"
     },
     "system_requirements": []
   },
@@ -15881,28 +10700,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Tom Clancy’s Splinter Cell: Pandora Tomorrow",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/56264ea885fc83ab860fe6364f132358.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Ubisoft",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "shapez 2 (v0.1.0-pre8-rc1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2162800/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Strategy, Early Access",
-      "Developer": "tobspr Games",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Fate/Samurai Remnant (v1.3.1)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1902690/library_600x900.jpg",
     "category": "pc",
@@ -15910,17 +10707,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, RPG",
       "Developer": "KOEI TECMO GAMES CO., LTD.",
       "Game Size": "21.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Baladins (v1.0.18 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1866320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "Seed by Seed",
-      "Game Size": "1.6 GB"
     },
     "system_requirements": []
   },
@@ -15947,17 +10733,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Survivalist: Invisible Strain (Build 18173243)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1054510/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG, Simulation, Strategy",
-      "Developer": "Bob",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Yakuza 3 Remastered (Build 6407476)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1088710/library_600x900.jpg",
     "category": "pc",
@@ -15980,17 +10755,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "I Am Fish (v1.1.13)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1472560/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Simulation",
-      "Developer": "Bossa Studios",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Immortals Fenyx Rising (v1.3.4)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2221920/library_600x900.jpg",
     "category": "pc",
@@ -15998,28 +10762,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, RPG",
       "Developer": "Ubisoft",
       "Game Size": "36.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "LEGO Worlds (v1.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/332310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "TT Games, Traveller’s Tales",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Jackal (v0.9.10)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3124230/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Transhuman Design",
-      "Game Size": "1.1 GB"
     },
     "system_requirements": []
   },
@@ -16046,39 +10788,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "What Remains of Edith Finch (v1.0.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/501300/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Giant Sparrow",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Sun Haven (v3.0.2b)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1432860/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, RPG, Simulation",
-      "Developer": "Pixel Sprout Studios",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "PixARK (v1.191)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/593600/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Massively Multiplayer, RPG, Strategy",
-      "Developer": "Snail Games USA",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Mass Effect 2 Enhanced Edition (v1.02)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2362420/library_600x900.jpg",
     "category": "pc",
@@ -16086,17 +10795,6 @@ window.PC_GAMES_DATA = [
       "Genre": "RPG",
       "Developer": "BioWare",
       "Game Size": "27.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Lessaria: Fantasy Kingdom Sim (v1.0.1034)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2461280/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy",
-      "Developer": "Rockbee Team",
-      "Game Size": "4.6 GB"
     },
     "system_requirements": []
   },
@@ -16112,17 +10810,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "art of rally (v1.5.8)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/550320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Racing, Simulation, Sports",
-      "Developer": "Funselektor Labs Inc.",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "The Legend of Heroes: Trails beyond the Horizon (v1.0.6 r21)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/82e854c92452b44da51442489abd3a21.png",
     "category": "pc",
@@ -16130,17 +10817,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, RPG",
       "Developer": "Nihon Falcom, PH3 GmbH",
       "Game Size": "25.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "WitchSpring R (v1.315)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1958220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "KIWIWALKS",
-      "Game Size": "4.8 GB"
     },
     "system_requirements": []
   },
@@ -16200,72 +10876,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Prison Simulator (v1.4.3.29)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/842180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG, Simulation",
-      "Developer": "Baked Games S.A.",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Static Dread: The Lighthouse (v2025.08.06.18.12)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3298940/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Simulation",
-      "Developer": "solarsuit.games",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Shop Simulator: Supermarket (v1.0.5.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2886550/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Three River Games (3RG)",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Demeo x Dungeons & Dragons: Battlemarked",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/d34e9520cb82668542e3a8b297c538ee.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG, Strategy",
-      "Developer": "Resolution Games",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Cafe Owner Simulator (v1.0.213)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1498140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Second Reality",
-      "Game Size": "4.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Longvinter (Build 27032025)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1635450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Massively Multiplayer, RPG, Simulation, Early Access",
-      "Developer": "Uuvana Studios",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "NEO: The World Ends with You (Build 8031936)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1647550/library_600x900.jpg",
     "category": "pc",
@@ -16284,17 +10894,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Yellow Brick Games",
       "Game Size": "8.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Teenage Mutant Ninja Turtles: Shredder’s Revenge (v1.0.0.349)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1361510/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Con Man Games, SmashGames",
-      "Game Size": "1.0 GB"
     },
     "system_requirements": []
   },
@@ -16343,28 +10942,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Rayman Origins (v1.0.32504)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/cb1a716a70ad58a2f02792dcc8db2039.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "UBIart Montpellier",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "MEMORIAPOLIS (v1.0.26)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2228280/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "5PM Studio",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Enigma of Fear (v1.0.2)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1507580/library_600x900.jpg",
     "category": "pc",
@@ -16372,28 +10949,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie",
       "Developer": "Dumativa, Cellbit",
       "Game Size": "7.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Rogue: Genesia (v1.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2067920/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, RPG, Strategy",
-      "Developer": "Ouadi Huard",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Driftwood",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2223700/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Racing, Simulation, Sports",
-      "Developer": "Stoked Sloth Interactive",
-      "Game Size": "1.6 GB"
     },
     "system_requirements": []
   },
@@ -16420,28 +10975,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "System Shock Remake (v1.1)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/2fc3f594ec96e430d2f36f848cb8e0c9.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Nightdive Studios",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Berlin Apartment",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2280430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "btf",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Danganronpa Another Episode: Ultra Despair Girls (Build 1940939)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/555950/library_600x900.jpg",
     "category": "pc",
@@ -16449,39 +10982,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Spike Chunsoft Co., Ltd.",
       "Game Size": "16.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "GORN (v4043783)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3391450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Free Lives",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Farmer’s Life (v1.0.43)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1137750/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG, Simulation",
-      "Developer": "FreeMind S.A.",
-      "Game Size": "4.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "MADiSON (v2.2.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1670870/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation",
-      "Developer": "BLOODIOUS GAMES",
-      "Game Size": "4.2 GB"
     },
     "system_requirements": []
   },
@@ -16508,17 +11008,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Kingdom Rush 5: Alliance TD (v6.00.114)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2849080/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Strategy",
-      "Developer": "Ironhide Game Studio",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "MULLET MADJACK (v1.13d23)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2111190/library_600x900.jpg",
     "category": "pc",
@@ -16526,50 +11015,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Indie",
       "Developer": "HAMMER95",
       "Game Size": "5.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Vacation Simulator VR",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/011a51cc1878129b9487a23279d8a061.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Simulation, VR",
-      "Developer": "Owlchemy Labs",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "I am Bread (Build 7370715)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/327890/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation",
-      "Developer": "Bossa Studios",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Liquor Store Simulator (v1.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3124550/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Tovarishch Games",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Phantom (v1.013)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3061570/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Art Of Play Interactive",
-      "Game Size": "1.8 GB"
     },
     "system_requirements": []
   },
@@ -16585,17 +11030,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "City Bus Manager (v2.1.17)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1364210/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation",
-      "Developer": "PeDePe GbR",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Legacy of Kain Soul Reaver 1&2 Remastered (Build 16961337)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2521380/library_600x900.jpg",
     "category": "pc",
@@ -16603,28 +11037,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Aspyr, Crystal Dynamics",
       "Game Size": "7.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Jackbox Party Pack 8 (v15.11.2021)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1552350/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie",
-      "Developer": "Jackbox Games, Inc.",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "NFL PRO ERA VR (v1.0.0)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/5c06c4da829abe982686eb4a1356951c.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Sports",
-      "Developer": "StatusPRO Inc",
-      "Game Size": "3.8 GB"
     },
     "system_requirements": []
   },
@@ -16673,17 +11085,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Egging On (v0.1.8671)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2897610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation",
-      "Developer": "Egobounds",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "A Total War Saga: THRONES OF BRITANNIA (v1.2.3)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/712100/library_600x900.jpg",
     "category": "pc",
@@ -16691,17 +11092,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Strategy",
       "Developer": "CREATIVE ASSEMBLY",
       "Game Size": "6.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "LEGO Indiana Jones 2: The Adventure Continues",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Traveller’s Tales",
-      "Game Size": "4.4 GB"
     },
     "system_requirements": []
   },
@@ -16750,17 +11140,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Power & Revolution 2023 Edition (v6.94)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2392520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "Eversim",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Martha Is Dead (v1.0712.00)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/515960/library_600x900.jpg",
     "category": "pc",
@@ -16772,17 +11151,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Eco Global Survival Game (v0.11.1.8 + Co-op)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/c477f70d2885dff00cbb6c3680fd7710.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Early Access",
-      "Developer": "Strange Loop Games",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Atelier Ryza 3 Alchemist of the End & the Secret Key (v1.6.0.0)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/8f9edde52139570f20d70dfc9080c4e1.png",
     "category": "pc",
@@ -16790,28 +11158,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Casual, RPG, Simulation",
       "Developer": "KOEI TECMO GAMES CO., LTD.",
       "Game Size": "26.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Murky Divers (v0.3.1 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2963880/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Early Access",
-      "Developer": "Embers",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Kentucky Route Zero PC Edition (v27)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/231200/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Cardboard Computer",
-      "Game Size": "1.6 GB"
     },
     "system_requirements": []
   },
@@ -16838,39 +11184,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Dreamcore (v1.8.76258)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2453060/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Montraluz",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Kingdom Two Crowns (v2.3.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/701160/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation, Strategy",
-      "Developer": "Stumpy?Squid, Fury Studios, Coatsink",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Little Misfortune",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/714120/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Killmonday Games AB",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Yakuza 4 Remastered (Build 6407475)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1105500/library_600x900.jpg",
     "category": "pc",
@@ -16878,28 +11191,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Ryu Ga Gotoku Studio",
       "Game Size": "34.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Anger Foot (v1.46)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1978590/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Free Lives",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Golf It! (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/571740/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Sports",
-      "Developer": "Perfuse Entertainment",
-      "Game Size": "4.6 GB"
     },
     "system_requirements": []
   },
@@ -16937,50 +11228,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Ecosystem (v1.01)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1133120/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Strategy",
-      "Developer": "Tom Johnson",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Rustler (v1.37.25)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/844260/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Racing, RPG",
-      "Developer": "Jutsu Games",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "WE ARE FOOTBALL 2024",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1951410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation, Sports, Strategy",
-      "Developer": "Winning Streak Games",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Cuisineer (v1.1.3909)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1963570/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG, Simulation",
-      "Developer": "BattleBrew Productions",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Shatterline (v98.0.36.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2087030/library_600x900.jpg",
     "category": "pc",
@@ -16988,17 +11235,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Frag Lab LLC",
       "Game Size": "22.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Rift of the NecroDancer (v1.5.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2073250/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "Brace Yourself Games, Tic Toc Games",
-      "Game Size": "4.3 GB"
     },
     "system_requirements": []
   },
@@ -17043,50 +11279,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, RPG",
       "Developer": "CRAFTS ＆ MEISTER Co., Ltd",
       "Game Size": "9.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Hacker Simulator (v23.02.2022)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1754840/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Save All Studio",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "You are the Judge!",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2305180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy",
-      "Developer": "Steel Games",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Make Good Choices (v1.2.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3410310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie",
-      "Developer": "TN Games",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "MySims",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3328900/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation",
-      "Developer": "Maxis",
-      "Game Size": "1.2 GB"
     },
     "system_requirements": []
   },
@@ -17146,17 +11338,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Delta Force – Complete Collection",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/d175f2ef17ce146447db56d910b97677.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "NovaLogic, THQ Nordic",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Tempest Rising (v1.0.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1486920/library_600x900.jpg",
     "category": "pc",
@@ -17175,17 +11356,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Early Access",
       "Developer": "Stubby Games",
       "Game Size": "9.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "WindStop Strategy (v1.0.0)",
-    "banner_url": "https://steamrip.com/wp-content/uploads/2026/01/windstop-strategy-portrait-steamrip.jpg.webp",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Strategy",
-      "Developer": "Xia Start",
-      "Game Size": "2.2 GB"
     },
     "system_requirements": []
   },
@@ -17212,50 +11382,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Kanjozoku Game (v1.1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2073470/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Racing, Simulation, Sports",
-      "Developer": "SG DEV",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Hooked on You: A Dead by Daylight Dating Sim (v1.0.16.11)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1866180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Psyop",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Star Wars Empire at War: Gold Pack",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/d08d5343774bbb48609d43f22d57ac66.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "Petroglyph",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Star Wars Jedi Knight: Jedi Academy",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/b3d97fc266bb8892b7d48aadd19aca31.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Raven Software",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Starsand Island (Build 22033914)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2966320/library_600x900.jpg",
     "category": "pc",
@@ -17263,28 +11389,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Casual, Indie, RPG, Simulation, Early Access",
       "Developer": "Seed Sparkle Lab",
       "Game Size": "8.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "GUN (2005) (v2.0.0.3)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/1accc1c92278a9bc2bbc6a8002026b25.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Neversoft",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Escapists (v1.37)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/641990/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation, Strategy",
-      "Developer": "Mouldy Toof Studios",
-      "Game Size": "1.3 GB"
     },
     "system_requirements": []
   },
@@ -17307,17 +11411,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie, Simulation",
       "Developer": "Odinsoft Inc.",
       "Game Size": "12.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Poly Plaza ULTIMATE (v1.0.13)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3208170/907f61ca32b84b42652f64efcfe04d71694f699a/capsule_231x87.jpg?t=1771253123",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Victor Game Studio",
-      "Game Size": "1.4 GB"
     },
     "system_requirements": []
   },
@@ -17355,28 +11448,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Land of the Vikings (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1981570/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "Laps Games",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Let Them Trade",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1313290/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Spaceflower",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "LEGO The Lord of the Rings",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/214510/library_600x900.jpg",
     "category": "pc",
@@ -17399,17 +11470,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Adventure of Samsara (v1.0.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1292460/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Ilex Games",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Smalland: Survive the Wilds (v2.0.1)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/768200/library_600x900.jpg",
     "category": "pc",
@@ -17421,39 +11481,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Bendy: Lone Wolf",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3232610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Joey Drew Studios",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Souls of Chronos (v1.5.226.9)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1629910/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "FUTU Studio",
-      "Game Size": "2.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "ICBM: Escalation (v1.0.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2647680/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "SoftWarWare",
-      "Game Size": "4.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Sonic Colors: Ultimate",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2055290/library_600x900.jpg",
     "category": "pc",
@@ -17461,28 +11488,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Casual",
       "Developer": "Blind Squirrel Entertainment",
       "Game Size": "16.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Knights in Tight Spaces (v1.0.18525)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2315400/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Strategy",
-      "Developer": "Ground Shatter",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Quarantine (v1.0.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3419520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Simulation, Strategy",
-      "Developer": "Sproing",
-      "Game Size": "1.2 GB"
     },
     "system_requirements": []
   },
@@ -17509,28 +11514,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Last Flame (v1.0.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1830970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Strategy",
-      "Developer": "Hotloop",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Recycling Center Simulator (v1.7.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2928520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Balas Games",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Infinity Strash: DRAGON QUEST The Adventure of Dai (v1.0.3)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1895810/library_600x900.jpg",
     "category": "pc",
@@ -17542,17 +11525,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "METAL SLUG ATTACK RELOADED",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322440/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Simulation, Strategy",
-      "Developer": "SNK CORPORATION",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Team Sonic Racing (Build 3985325)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/785260/library_600x900.jpg",
     "category": "pc",
@@ -17560,17 +11532,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Racing",
       "Developer": "Sumo Digital",
       "Game Size": "11.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Have A Nice Death (v1.0.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1740720/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Magic Design Studios",
-      "Game Size": "1.7 GB"
     },
     "system_requirements": []
   },
@@ -17597,50 +11558,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Big Helmet Heroes (Build 17224573)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2397250/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Exalted Studio",
-      "Game Size": "4.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Shantae Advance: Risky Revolution (Build 19450760)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3055950/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "WayForward",
-      "Game Size": "4.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Trackmania Turbo",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/375900/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Massively Multiplayer, Racing",
-      "Developer": "Nadeo",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Gloomwood (v0.1.311.35)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1150760/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Early Access",
-      "Developer": "Dillon Rogers, David Szymanski",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "NightFeed (v1.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2718150/library_600x900.jpg",
     "category": "pc",
@@ -17659,39 +11576,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Indie",
       "Developer": "Croteam",
       "Game Size": "8.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "WW2: Bunker Simulator (B-9561234)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1155870/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation",
-      "Developer": "BEPLAYER, Art Games Studio S.A.",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tyrant’s Realm (Build 19375382)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2259260/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "Team Tyrant",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Abyssus",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1721110/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "DoubleMoose Games",
-      "Game Size": "3.6 GB"
     },
     "system_requirements": []
   },
@@ -17729,50 +11613,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Backrooms: Run For Your Life!",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2559530/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie",
-      "Developer": "哈基轩",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tavern Talk (Build 16658962)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3054600/capsule_231x87.jpg?t=1773823347",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Gentle Troll Entertainment",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "No More Heroes (Build 7018523)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1420290/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "GRASSHOPPER MANUFACTURE INC.",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Dune Spice Wars (v2.2.6.32935)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1605220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "Shiro Games",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "FPV LOGIC (Build 18810974)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2398030/library_600x900.jpg",
     "category": "pc",
@@ -17780,17 +11620,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Indie, Racing, Simulation, Early Access",
       "Developer": "UT STUDIO",
       "Game Size": "8.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Chocolate Factory Simulator (v1.1.52)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2822370/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Simulation",
-      "Developer": "Games Incubator",
-      "Game Size": "1.3 GB"
     },
     "system_requirements": []
   },
@@ -17806,50 +11635,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "PAC-MAN WORLD 2 Re-PAC",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2324290/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual",
-      "Developer": "NOW PRODUCTION Co., Ltd.",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Candy Shop Simulator",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2811530/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Games Incubator",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Besiege (v1.75-23301)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/346010/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Spiderling Studios",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "iDigging (v1.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3447690/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation",
-      "Developer": "TWEN",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "LUNAR Remastered Collection",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3255380/library_600x900.jpg",
     "category": "pc",
@@ -17857,17 +11642,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, RPG",
       "Developer": "ASHIBI Co., Ltd., GAME ARTS Co., Ltd.",
       "Game Size": "5.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Internet Cafe Simulator (v12.09.2020)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1136160/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation",
-      "Developer": "Cheesecake Dev",
-      "Game Size": "1.4 GB"
     },
     "system_requirements": []
   },
@@ -17883,17 +11657,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Witch It (v1.2.3 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/559650/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie",
-      "Developer": "Barrel Roll Games",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Kirby and the Forgotten Land (v1.0.0 + Ryujinx/Yuzu EMUs)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/fd5b431d065e37e793b3d8219735f3be.png",
     "category": "pc",
@@ -17901,39 +11664,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Arcade, Jump and run, Third-person, 3D",
       "Developer": "HAL Laboratory",
       "Game Size": "6.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Food Truck Simulator (v1.0.65937)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1160920/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "DRAGO entertainment",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Running With Rifles (v1.95)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/270150/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Osumia Games",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Voidwrought (v0.27.56)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2014550/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Powersnake",
-      "Game Size": "1.5 GB"
     },
     "system_requirements": []
   },
@@ -17949,28 +11679,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "WARRIORS: Abyss (v1.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3178350/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "KOEI TECMO GAMES CO., LTD.",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Gatekeeper (v1.0.0.00)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1933650/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Gravity Lagoon",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Blair Witch (v1.04)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1092660/library_600x900.jpg",
     "category": "pc",
@@ -17982,17 +11690,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Skate Story",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1263240/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG, Sports",
-      "Developer": "by Sam Eng",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "HOT WHEELS UNLEASHED (Update 29)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1271700/library_600x900.jpg",
     "category": "pc",
@@ -18000,50 +11697,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Racing",
       "Developer": "Milestone S.r.l.",
       "Game Size": "27.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Killer Frequency",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903620/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy",
-      "Developer": "Team17 Digital",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Songs of Conquest (v1.7.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/867210/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Strategy",
-      "Developer": "Lavapotion",
-      "Game Size": "2.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Snow Ash (Build 21437369)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3367030/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Ember Studio",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Propagation: Paradise Hotel VR",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/20975e91306f07ea96e97bd3b8aa6f59.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "WanadevStudio",
-      "Game Size": "4.0 GB"
     },
     "system_requirements": []
   },
@@ -18081,72 +11734,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Wheel World (v1.740.53899.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1497460/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Racing, Sports",
-      "Developer": "Messhof",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Camper Van: Make it Home (Build 21022382)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2843190/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie",
-      "Developer": "Malapata Studio",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Kill It With Fire VR (Build 10990934)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1905220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Simulation",
-      "Developer": "Charm Games, Casey Donnellan Games LLC",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "AaaaaAAaaaAAAaaAAAAaAAAAA!!! Remastered (v2024.01.24b110)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/90d13f666fc89043f384ae5355732b2b.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Racing",
-      "Developer": "Dejobaan Games, Petricore, Inc.",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Metal Slug Tactics (v1.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1590760/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG, Strategy",
-      "Developer": "Leikir Studio",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Ancient Farm (v1.0.8)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1933930/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation",
-      "Developer": "A2 Softworks",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Laundering Simulator – Clean Cash and Laundry",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3432750/library_600x900.jpg",
     "category": "pc",
@@ -18169,17 +11756,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Fallen Aces (v0.8.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1411910/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Early Access",
-      "Developer": "Trey Powell, Jason Bond",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "METAL EDEN (Build 20664754)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990380/library_600x900.jpg",
     "category": "pc",
@@ -18187,17 +11763,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Reikon Games",
       "Game Size": "20.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Neon Echo",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2321210/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG, Early Access",
-      "Developer": "Xinyuan Studio",
-      "Game Size": "1.1 GB"
     },
     "system_requirements": []
   },
@@ -18235,17 +11800,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Home Safety Hotline (Build 15856119)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2357910/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Night Signal Entertainment",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Spyro Reignited Trilogy",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/996580/library_600x900.jpg",
     "category": "pc",
@@ -18268,17 +11822,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Cartel Tycoon (v1.0.9.6429)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1220140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation, Strategy",
-      "Developer": "Moon Moose",
-      "Game Size": "3.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "LEGO STAR WARS The Force Awakens (v1.0.3)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/438640/library_600x900.jpg",
     "category": "pc",
@@ -18290,50 +11833,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Volcano Princess (v2.02.01)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1669980/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation",
-      "Developer": "养蛋人工作室 Egg Hatcher",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "MADNESS: Project Nexus (v1.06b)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/488860/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "GIBBING TREE, LLC",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "LEGO Voyagers",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/38085244b90aa7358d95f38c84a711b0.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual",
-      "Developer": "Light Brick Studio",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "SUPERHOT: MIND CONTROL DELETE (B10361572)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/690040/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Viking Game Studio",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Coridden (v1.2.6)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1656930/library_600x900.jpg",
     "category": "pc",
@@ -18341,28 +11840,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie, RPG",
       "Developer": "Aftnareld",
       "Game Size": "7.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Jackbox Party Pack (Build 7667348)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/aa11c61c967bc3f8dedc99b943d83a42.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Strategy",
-      "Developer": "Jackbox Games, Inc.",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Two Point Hospital (v1.29.36)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/535930/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Two Point Studios",
-      "Game Size": "3.8 GB"
     },
     "system_requirements": []
   },
@@ -18389,17 +11866,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "This War of Mine (v6.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/282070/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation",
-      "Developer": "11 bit studios",
-      "Game Size": "2.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Neva",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2420660/library_600x900.jpg",
     "category": "pc",
@@ -18407,17 +11873,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Indie",
       "Developer": "Nomada Studio",
       "Game Size": "6.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Suzerain (v3.0.9)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1207650/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "Torpor Games",
-      "Game Size": "1.7 GB"
     },
     "system_requirements": []
   },
@@ -18433,83 +11888,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "God Of Weapons (v1.5.62)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2342950/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, RPG",
-      "Developer": "Archmage Labs",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "9-Bit Armies: A Bit Too Far (Build 15494769)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1439750/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation, Strategy",
-      "Developer": "Petroglyph",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Monster Train 2 (Build 21751654)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2742830/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Strategy",
-      "Developer": "Shiny Shoe",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "FlatOut 2 Enhanced",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/d18d818a5f619c1aa02988d4dc45c2fb.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Racing",
-      "Developer": "Bugbear Entertainment, ZOOM Platform Media, Jordan Freeman Group",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Clothing Store Simulator (v1.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2923390/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Kiki Games",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "ENDER LILIES: Quietus of the Knights (v1.1.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1369630/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "Live Wire, Adglobe",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Darkest Files (v1.0.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2058730/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation",
-      "Developer": "Paintbucket Games",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Life is Strange: Before the Storm Farewell",
     "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/763780/capsule_231x87.jpg?t=1571821458",
     "category": "pc",
@@ -18517,28 +11895,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Deck Nine, Feral Interactive (Mac), Feral Interactive (Linux)",
       "Game Size": "18.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Amanda the Adventurer 2 (v1.0.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2826800/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "MANGLEDmaw Games",
-      "Game Size": "4.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Captain of Industry (v0.7.9a)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1594320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy, Early Access",
-      "Developer": "MaFi Games",
-      "Game Size": "3.5 GB"
     },
     "system_requirements": []
   },
@@ -18565,28 +11921,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "TUNIC (Build 10371237)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/553420/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG",
-      "Developer": "Andrew Shouldice",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Capcom Fighting Collection 2",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2400430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "CAPCOM Co., Ltd.",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "REDACTED / [REDACTED] (v1.0.0.6)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1660150/library_600x900.jpg",
     "category": "pc",
@@ -18594,28 +11928,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Striking Distance Studios",
       "Game Size": "9.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mad Streets (Build 8378620)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1282760/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Simulation",
-      "Developer": "Craftshop Arts Inc.",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Luma Island (v1.1.5.25810)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2408820/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, RPG, Simulation",
-      "Developer": "Feel Free Games",
-      "Game Size": "2.1 GB"
     },
     "system_requirements": []
   },
@@ -18642,39 +11954,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Out of Sight (v1.0.39)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2526310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "The Gang",
-      "Game Size": "4.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Survivalists (v24.06.2021)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/897450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Team17",
-      "Game Size": "2.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Garten of Banban 3 (v1.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2311190/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Euphoric Brothers",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "ToHeart",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3380520/library_600x900.jpg",
     "category": "pc",
@@ -18682,17 +11961,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Simulation",
       "Developer": "AQUAPLUS",
       "Game Size": "6.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Operation: Tango (v2.01.03 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1335790/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual",
-      "Developer": "Clever Plays",
-      "Game Size": "1.8 GB"
     },
     "system_requirements": []
   },
@@ -18715,50 +11983,6 @@ window.PC_GAMES_DATA = [
       "Genre": "RPG, Simulation, Strategy, Early Access",
       "Developer": "Overhype Studios",
       "Game Size": "5.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Pocket Mirror ~ GoldenerTraum",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1899060/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, RPG",
-      "Developer": "AstralShift, VisuStella",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "DUSK: Intruder Edition (Build 13575647)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/a297b230c0f9d1354283c802648f6c58.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "David Szymanski",
-      "Game Size": "3.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Northgard (v4.0.10.43165)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/466560/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Shiro Games",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "GameDev Life Simulator (B10629649)",
-    "banner_url": "https://steamrip.com/wp-content/uploads/2023/02/gamedev-life-simulator-portrait-steamrip-Copy.jpg.webp",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Octo Games",
-      "Game Size": "2.5 GB"
     },
     "system_requirements": []
   },
@@ -18796,94 +12020,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "GRIS (v1.03)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/683320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Nomada Studio",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Kejora",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1410400/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Berangin Creative",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Doraemon Story Of Seasons: Friends Of The Great Kingdom",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1492730/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation",
-      "Developer": "Marvelous Inc.",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Party Hard 2 (v1.1.005)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/572430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation, Strategy",
-      "Developer": "Pinokl Games, Kverta, Hologryph",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Sons of Valhalla (v1.0.23g)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1409830/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG, Simulation, Strategy",
-      "Developer": "Pixel Chest",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Forklift Simulator (v1.0.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2717850/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation",
-      "Developer": "Bandsoft",
-      "Game Size": "2.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tails of Iron 2: Whiskers of Winter (v1.14327)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2473480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Odd Bug Studio",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Food Processing Simulator (v0.5.2)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3928990/0c84aeea26d0610c219fe5c8bcaff703983a73e3/capsule_231x87.jpg?t=1778758217",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Early Access",
-      "Developer": "Bewolba Studios",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Dungeons & Dragons Neverwinter Nights 2: Enhanced Edition (v1.110)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2738630/library_600x900.jpg",
     "category": "pc",
@@ -18906,72 +12042,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Vampire Hunters (v1.2.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2206270/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Gamecraft Studios",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "STAR WARS: Dark Forces Remaster",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2292260/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Nightdive Studios, LucasArts",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Escape the Ayuwoki: Horror Night (v0.7.7a)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/2284784c80b209b4e7b88b194edfe2e2.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Early Access",
-      "Developer": "Deadlycrow Games",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Oceanhorn 2: Knights of the Lost Realm",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1622710/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Cornfox & Brothers Ltd.",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Castlevania Dominus Collection (v1.003.001)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2369900/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "KONAMI",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Jazzpunk Director’s Cut (Build 2159353)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250260/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Necrophone Games",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Viewfinder (v1.0.6)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1382070/library_600x900.jpg",
     "category": "pc",
@@ -18979,17 +12049,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Indie",
       "Developer": "Sad Owl Studios",
       "Game Size": "6.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "ICBM (v1.02.03)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2647680/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "SoftWarWare, K-Project",
-      "Game Size": "2.8 GB"
     },
     "system_requirements": []
   },
@@ -19005,50 +12064,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Oxide Room 104 (Build 8944753)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1819180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "WildSphere",
-      "Game Size": "2.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "PATAPON 1+2 REPLAY (Build 18905519)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2383200/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG",
-      "Developer": "SAS CO.,LTD.",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Snezhinka:Sentinel Girls2 (v1.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2608350/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "hinyari9",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Worshippers of Cthulhu (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2807150/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "Crazy Goat Games",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Achilles: Survivor",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2922410/library_600x900.jpg",
     "category": "pc",
@@ -19056,28 +12071,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Dark Point Games",
       "Game Size": "5.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Escape the Ayuwoki (Build 8059556)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/2284784c80b209b4e7b88b194edfe2e2.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Horror, Indie",
-      "Developer": "Deadlycrow Games",
-      "Game Size": "4.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Cyber Manhunt 2: New World – The Hacking Simulator (v1.0.8)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2421410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation",
-      "Developer": "Aluba Studio",
-      "Game Size": "3.5 GB"
     },
     "system_requirements": []
   },
@@ -19093,17 +12086,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Football Manager 2021",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1275920/capsule_231x87.jpg?t=1641312896",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Sports",
-      "Developer": "Sports Interactive",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Bright Memory: Infinite (B12410962)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1178830/library_600x900.jpg",
     "category": "pc",
@@ -19111,39 +12093,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Indie",
       "Developer": "FYQD-Studio",
       "Game Size": "10.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Taiko no Tatsujin: Rhythm Festival (v2.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2288630/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual",
-      "Developer": "Bandai Namco Amusement Lab Inc",
-      "Game Size": "2.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Cosmic Wheel Sisterhood (v1.1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1340480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Deconstructeam",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Aragami 2 (v1.0.30079.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158370/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Lince Works",
-      "Game Size": "4.8 GB"
     },
     "system_requirements": []
   },
@@ -19166,17 +12115,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Flying Wild Hog",
       "Game Size": "22.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Drop Duchy (v1.2.18)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2525310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Strategy",
-      "Developer": "Sleepy Mill Studio",
-      "Game Size": "1.8 GB"
     },
     "system_requirements": []
   },
@@ -19225,17 +12163,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Deliver At All Costs",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1880610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Studio Far Out Games",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Keeper (v1.121.2146.0)",
     "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4358690/c74bedb07502eb35eedcb3990e44c9593875a1ef/capsule_231x87.jpg?t=1777372984",
     "category": "pc",
@@ -19247,28 +12174,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Clownfield 2042 (Build 10236124)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1591520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Edmund McMillen, James Interactive, Ridiculon",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Deadlink (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1676130/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Gruby Entertainment",
-      "Game Size": "2.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Midnight Fight Express (v1.021)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1390410/library_600x900.jpg",
     "category": "pc",
@@ -19276,28 +12181,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Indie",
       "Developer": "Jacob Dzwinel",
       "Game Size": "5.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "E-TECH SIMULATOR",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2990240/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "LUDI STUDIO, NOSSE",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Herdling (v1.1.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3047750/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Okomotive",
-      "Game Size": "1.6 GB"
     },
     "system_requirements": []
   },
@@ -19335,39 +12218,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Horizon Chase 2",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/add500717355718ecf5a28ddfb85d1a1.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Racing",
-      "Developer": "Aquiris Game Studio",
-      "Game Size": "4.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Sky Oceans: Wings for Hire",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1691750/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG",
-      "Developer": "Octeto Studios",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "SANABI (v1.3.51)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1562700/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "WONDER POTION",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Wandering Sword (v1.24.23)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1876890/library_600x900.jpg",
     "category": "pc",
@@ -19379,28 +12229,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Night Swarm (v1.0.1)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/41e4c71bc0dfcacbe99566eed2ae3e2f.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, RPG",
-      "Developer": "Fubu Games",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Bad Cheese (Build 19796183)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3094480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Simon Lukasik",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Contra: Operation Galuga",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2235020/library_600x900.jpg",
     "category": "pc",
@@ -19408,28 +12236,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "WayForward",
       "Game Size": "8.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Last Stand: Aftermath (v1.2.0.485)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1266840/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Con Artist Games",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Hollywood Animal (v0.8.64)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2680550/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy, Early Access",
-      "Developer": "Weappy Wholesome",
-      "Game Size": "2.0 GB"
     },
     "system_requirements": []
   },
@@ -19456,50 +12262,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Before Your Eyes (v1.2.6.9)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1082430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "GoodbyeWorld Games",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Lightyear Frontier (v0.5.1770)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1677110/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation, Early Access",
-      "Developer": "FRAME BREAK, Amplifier Studios",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "File Destined (v1.0.382)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2257460/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Metavision Studio",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "LOST EPIC (v1.01.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1426490/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "oneoreight, Team EARTHWARS",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Pathologic 3 (v61362-st)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3199650/library_600x900.jpg",
     "category": "pc",
@@ -19518,39 +12280,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, RPG",
       "Developer": "ZUIJIANGYUE Game",
       "Game Size": "8.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Yet Another Zombie Survivors (v0.2.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2163330/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, RPG, Early Access",
-      "Developer": "Awesome Games Studio",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Jusant (v1.07)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1977170/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "DON’T NOD",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Ereban: Shadow Legacy (v1.1.14)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1671360/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Baby Robot Games",
-      "Game Size": "3.0 GB"
     },
     "system_requirements": []
   },
@@ -19588,17 +12317,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Immortal Life (v1.0.40)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1201230/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, RPG, Simulation",
-      "Developer": "Young Horses",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Star Trucker (v1.0.64.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2380050/library_600x900.jpg",
     "category": "pc",
@@ -19606,17 +12324,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Simulation",
       "Developer": "Monster and Monster",
       "Game Size": "5.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "FINAL FANTASY V",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1173810/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG",
-      "Developer": "Square Enix",
-      "Game Size": "1.0 GB"
     },
     "system_requirements": []
   },
@@ -19643,17 +12350,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Rising Star 2 (v2.98.388)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1235110/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation",
-      "Developer": "Gilligames",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Captain Blood",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3040220/library_600x900.jpg",
     "category": "pc",
@@ -19676,61 +12372,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Last Vanguard (v1.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1729180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Cool Tapir Studios",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Barista Simulator (v1.0 HF)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1694510/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "CubeCube Sports Ltd.",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Super Bunny Man (Build 11603728)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/673750/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Catobyte",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Bō: Path of the Teal Lotus (v1.1.7)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1614440/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Squid Shock Studios, Christopher Stair, Trevor Youngquist",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Roots Devour (v1.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2612690/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Strategy",
-      "Developer": "Rewinding Games",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "The Backrooms Lost Tape (v20230224)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/089ba012470522d677d08af02bb4c64a.png",
     "category": "pc",
@@ -19742,17 +12383,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Mageseeker: A League of Legends Story (v1.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1457080/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "Digital Sun",
-      "Game Size": "2.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "The House of Tesla",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2738230/library_600x900.jpg",
     "category": "pc",
@@ -19760,50 +12390,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure",
       "Developer": "Blue Brain Games",
       "Game Size": "7.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Game of Sisyphus (Build 14101774)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2904890/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "cream",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "STAR WARS: Episode I: Jedi Power Battles (Build 17629530)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2443630/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual",
-      "Developer": "Aspyr",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Death Howl",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2825880/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Strategy",
-      "Developer": "The Outer Zone",
-      "Game Size": "4.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "STORY OF SEASONS: Friends of Mineral Town",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/978780/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, RPG, Simulation",
-      "Developer": "Marvelous Inc.",
-      "Game Size": "1.2 GB"
     },
     "system_requirements": []
   },
@@ -19830,39 +12416,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Dialtown: Phone Dating Sim",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1035990/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie",
-      "Developer": "DirectDoggo",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "They Are Billions (v1.1.4.10)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/644930/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "Numantian Games",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Baldur’s Gate: Dark Alliance",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1695830/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "Square One Games Inc., Black Isle Studios",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "IL-2 Sturmovik: Desert Wings – Tobruk (v5.028)",
     "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1049440/capsule_231x87.jpg?t=1675873960",
     "category": "pc",
@@ -19870,50 +12423,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Simulation",
       "Developer": "Team Fusion Simulations, 1C: Maddox Games",
       "Game Size": "14.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Bladesong (Build 21756184)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2305640/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Early Access",
-      "Developer": "SUN AND SERPENT creations",
-      "Game Size": "3.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Pool Cleaning Simulator (v1.7.0.2.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2165620/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation",
-      "Developer": "Rubens Games, FreeMind S.A.",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Children of the Sun (Build 16524106)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1309950/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Strategy",
-      "Developer": "René Rother",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Aquatic Store Simulator (Build 18794750)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3073580/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "FreeMind S.A.",
-      "Game Size": "2.9 GB"
     },
     "system_requirements": []
   },
@@ -19929,28 +12438,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Nocturnals (v1.0.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2578910/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Cowboy Toad Games",
-      "Game Size": "2.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Rogue Waters (v1.0.0.3149)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1691190/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG, Strategy",
-      "Developer": "Ice Code Games",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Deceive Inc (v1.07.01 + Multiplayer)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/820520/library_600x900.jpg",
     "category": "pc",
@@ -19958,17 +12445,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Indie, Strategy",
       "Developer": "Sweet Bandits Studios",
       "Game Size": "8.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "TRANSFORMERS: Galactic Trials",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2324210/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Racing",
-      "Developer": "3DClouds",
-      "Game Size": "3.6 GB"
     },
     "system_requirements": []
   },
@@ -19984,28 +12460,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Punch Club 2: Fast Forward (v1.101)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1161590/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Simulation, Sports, Strategy",
-      "Developer": "Lazy Bear Games",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Aragami (v1.09)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158370/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Lince Works",
-      "Game Size": "2.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Tales of Graces f Remastered (v1.0.2)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2530980/library_600x900.jpg",
     "category": "pc",
@@ -20013,39 +12467,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, RPG",
       "Developer": "TOSE CO., LTD.",
       "Game Size": "10.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "ROBOBEAT (v1.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1456760/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Simon Fredholm",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Block Fortress 2",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2107030/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Strategy",
-      "Developer": "Foursaken Media",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Teenage Mutant Ninja Turtles Arcade: Wrath of the Mutants",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2527580/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Cradle Games",
-      "Game Size": "2.4 GB"
     },
     "system_requirements": []
   },
@@ -20072,39 +12493,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "STORY OF SEASONS: A Wonderful Life (v1.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2111170/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, RPG, Simulation",
-      "Developer": "Marvelous Inc.",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Northend Tower Defense (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1669170/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation, Strategy",
-      "Developer": "Northend Games",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "From the Depths (v4.2.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/268650/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation, Strategy",
-      "Developer": "Brilliant Skies Ltd.",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Arctic Motel Simulator (v3.0.2)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3098470/library_600x900.jpg",
     "category": "pc",
@@ -20112,28 +12500,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Simulation",
       "Developer": "One Slice of Pizza Games",
       "Game Size": "7.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Twelve Minutes (v6131)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1097200/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Luis Antonio",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Wanderstop (Build 17668849)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1299460/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation",
-      "Developer": "Ivy Road",
-      "Game Size": "3.7 GB"
     },
     "system_requirements": []
   },
@@ -20149,61 +12515,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "BattleBlock Theater (v1.4)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/0e66221beb8e0a06d4648ae151a52201.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "The Behemoth",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Esports Godfather (v2.1.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1278540/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, RPG, Simulation, Sports, Strategy",
-      "Developer": "Asteroid Game Studio",
-      "Game Size": "2.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Spiritfall (v1.6.27)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1835240/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Gentle Giant",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Ultimate Epic Battle Simulator (v1.9_HF2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1468720/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation, Strategy",
-      "Developer": "Brilliant Game Studios",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "NINJA SLAYER NEO-SAITAMA IN FLAMES",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2752330/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Skeleton Crew Studio",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "MONARK (Build 8233522)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1539620/library_600x900.jpg",
     "category": "pc",
@@ -20211,17 +12522,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Anime, RPG",
       "Developer": "FURYU Corporation",
       "Game Size": "10.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Junkyard Truck (Build 9721640)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1697880/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Early Access",
-      "Developer": "Keystone Knight",
-      "Game Size": "2.1 GB"
     },
     "system_requirements": []
   },
@@ -20244,39 +12544,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie, RPG",
       "Developer": "Neon Giant",
       "Game Size": "20.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Monster Prom (v6.8b)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/743450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Beautiful Glitch",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mind Over Magic (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1270580/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation",
-      "Developer": "Sparkypants",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "#BLUD",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1921480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Exit 73 Studios",
-      "Game Size": "3.2 GB"
     },
     "system_requirements": []
   },
@@ -20325,17 +12592,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "11F",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1847120/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation",
-      "Developer": "PUMPKIM",
-      "Game Size": "4.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Motorcycle Mechanic Simulator 2021 (v1.0.57.10)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1078760/library_600x900.jpg",
     "category": "pc",
@@ -20369,39 +12625,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Afterimage (Build 11375425)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3902750/3e8ae177e20af9b69b19cba0e61914ecc0d81b11/capsule_231x87.jpg?t=1778008869",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Aurogon Shanghai",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "LISA Complete Edition (Build 19490150)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/subs/77828/capsule_231x87.jpg?t=1692395309",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "Dingaling",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "LIVE A LIVE (Build 10717762)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2014380/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG",
-      "Developer": "Square Enix, historia Inc.",
-      "Game Size": "4.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Funko Fusion (v2.6.3.152571)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1843310/library_600x900.jpg",
     "category": "pc",
@@ -20409,17 +12632,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "1010 Games Ltd",
       "Game Size": "41.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Mobius Machine (Build 15742896)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2281940/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Madruga Works",
-      "Game Size": "1.5 GB"
     },
     "system_requirements": []
   },
@@ -20435,17 +12647,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "HunterX (v1.0.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2680330/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "ORANGE POPCORN",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Little Goody Two Shoes (Build 12464502)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1812370/library_600x900.jpg",
     "category": "pc",
@@ -20457,17 +12658,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Capcom Fighting Collection (Build 8776857)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2400430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "CAPCOM",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Streets of Rage 4 (v08g)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/985890/library_600x900.jpg",
     "category": "pc",
@@ -20475,83 +12665,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Indie",
       "Developer": "Dotemu, Guard Crush, Lizardcube",
       "Game Size": "6.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Nadir: A Grimdark Deckbuilder (v5901)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1535100/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Strategy",
-      "Developer": "Black Eye Games, Team Nadir",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "ANTONBLAST (v1.2.1e)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1887400/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Summitsphere",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Realpolitiks 3: Earth and Beyond",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2298690/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy, Early Access",
-      "Developer": "Jujubee",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Total Tank Simulator (v09.05.2021)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/674500/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation, Strategy",
-      "Developer": "Noobz from Poland",
-      "Game Size": "2.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Death in the Water 2 (v1.1.10)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1338840/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Lighthouse Games Studio",
-      "Game Size": "3.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tales of the Shire: A The Lord of The Rings Game",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2016460/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, RPG, Simulation",
-      "Developer": "Wētā Workshop",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Chef Life: A Restaurant Simulator (v1.4.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1122340/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation",
-      "Developer": "Cyanide Studio",
-      "Game Size": "3.0 GB"
     },
     "system_requirements": []
   },
@@ -20574,17 +12687,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Simulation, Strategy",
       "Developer": "Realmforge Studios",
       "Game Size": "12.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mario Golf: Super Rush (v1.1.0)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/3874fadcd362ecf248b1454cae0ad8ad.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Arcade, Sports, 3rd person",
-      "Developer": "Camelot Software Planning",
-      "Game Size": "3.1 GB"
     },
     "system_requirements": []
   },
@@ -20622,28 +12724,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "CHRONO CROSS: THE RADICAL DREAMERS EDITION",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1133760/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG",
-      "Developer": "Square Enix, D4Enterprise Co.,Ltd.",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "THE GAME OF LIFE 2 (v0.5.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1455630/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation, Strategy",
-      "Developer": "Marmalade Game Studio Ltd",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Dustborn (v1.10)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/721180/library_600x900.jpg",
     "category": "pc",
@@ -20651,28 +12731,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie",
       "Developer": "Red Thread Games",
       "Game Size": "11.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Headbangers Rhythm Royale (v1.0.50842 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1761620/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual",
-      "Developer": "Glee-Cheese Studio",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Trover Saves the Universe VR (ALL DLC)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/48cc6a9f8001fceb808743bb8684fd70.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, VR",
-      "Developer": "Squanch Games, Inc.",
-      "Game Size": "4.5 GB"
     },
     "system_requirements": []
   },
@@ -20699,72 +12757,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Stanley Parable",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/221910/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Galactic Cafe",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Road 96: Mile 0 (v1.2.04)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2095340/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Digixart",
-      "Game Size": "4.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Passpartout 2: The Lost Artist (v1.1.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1571100/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Flamebait Games",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Strike Force Heroes (v1.28)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1981820/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "Sky9 Games",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "New Cycle (v140.05)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2198510/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy, Early Access",
-      "Developer": "Core Engage",
-      "Game Size": "4.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Ultimate Admiral Dreadnoughts (v1.6.0.8)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1069660/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy",
-      "Developer": "Game-Labs",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Cricket 24 (v0.2.5521)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2358260/library_600x900.jpg",
     "category": "pc",
@@ -20783,17 +12775,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Casual, Indie, Simulation",
       "Developer": "Two Horizons",
       "Game Size": "16.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Zombieland VR: Headshot Fever",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1296970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, VR",
-      "Developer": "XR Games",
-      "Game Size": "2.2 GB"
     },
     "system_requirements": []
   },
@@ -20820,61 +12801,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Worms Clan Wars (v0185)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/233840/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "Team17 Digital Ltd",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Fobia – St. Dinfna Hotel (Build 9148598)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1298140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie",
-      "Developer": "Pulsatrix Studios",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Open Wheel Manager 2",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1757580/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Racing, Simulation, Sports, Strategy",
-      "Developer": "Paprikash Games",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Organs Please (v1.04)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1593780/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy",
-      "Developer": "TECHHOME",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Road Maintenance Simulator",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1419040/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Caipirinha Games",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Amanda the Adventurer 3 (v1.0.10)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/abd444a641880bfb520b44538e5aaefc.png",
     "category": "pc",
@@ -20882,28 +12808,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Indie",
       "Developer": "MANGLEDmaw Games",
       "Game Size": "5.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Dragon Chronicles: Black Tears",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2701350/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Strategy",
-      "Developer": "Nyou",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "BROK the InvestiGator (v1.5.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/949480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "COWCAT",
-      "Game Size": "3.8 GB"
     },
     "system_requirements": []
   },
@@ -20963,39 +12867,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "That’s not your Neighbor",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/ad9508b835715c4a971d6ca7065c6cca.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Strategy",
-      "Developer": "Nacho",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Withering Rooms (v1.25)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2006140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG",
-      "Developer": "Moonless Formless",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Moving Out 2 (v1.2.274)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1641700/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Simulation",
-      "Developer": "SMG Studio, Devm Games",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Jumanji: Wild Adventures",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1823200/library_600x900.jpg",
     "category": "pc",
@@ -21018,50 +12889,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Sheba: A New Dawn (v1.0.6.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1682820/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Kashkool Games",
-      "Game Size": "3.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Cosmoteer Starship Architect & Commander (v0.24.0a)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/799600/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy, Early Access",
-      "Developer": "Walternate Realities",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Gaokao.Love.100Days",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/347620/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation",
-      "Developer": "高考恋爱委员会, 橘子班",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Goalgetter (v2.1.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1676860/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Sports",
-      "Developer": "netmin games",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Tales from the Borderlands (Build 6086951)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/330830/library_600x900.jpg",
     "category": "pc",
@@ -21069,39 +12896,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure",
       "Developer": "Telltale Games",
       "Game Size": "7.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Potionomics (Build 16245907)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1874490/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy",
-      "Developer": "Voracious Games",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "United Assault – Battle of the Bulge",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1625340/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Polygon Art, Enigma Entertainment",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Bang-On Balls: Chronicles (Build 05102023 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1227650/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Exit Plan Games",
-      "Game Size": "3.8 GB"
     },
     "system_requirements": []
   },
@@ -21117,39 +12911,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Mirror of Heaven (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2180340/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "EnjoyPlay Ltd",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Dungeons of Hinterberg",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1983260/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG",
-      "Developer": "Microbird Games",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Zombieville USA 3D (v1.03)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1801520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Mika Mobile, Inc.",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Destroy All Humans! 2 – Reprobed (v1.0.362)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1266700/library_600x900.jpg",
     "category": "pc",
@@ -21157,17 +12918,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Black Forest Games",
       "Game Size": "36.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "100% Orange Juice (Build 13623225)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/282800/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Strategy",
-      "Developer": "Orange_Juice",
-      "Game Size": "1.7 GB"
     },
     "system_requirements": []
   },
@@ -21190,17 +12940,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Casual, Indie",
       "Developer": "Infuse Studio",
       "Game Size": "20.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Forgive Me Father (v1.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2272250/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Byte Barrel",
-      "Game Size": "3.8 GB"
     },
     "system_requirements": []
   },
@@ -21238,17 +12977,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "River City Girls (v1.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1920480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "WayForward",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "ReSetna (v1.0.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2936080/library_600x900.jpg",
     "category": "pc",
@@ -21267,50 +12995,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Indie, RPG, Strategy",
       "Developer": "RedBoon",
       "Game Size": "6.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Peaks of Yore (v2.1.2b)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2236070/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Anders Grube Jensen",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Operation Wolf Returns: First Mission VR",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/c304918c39e89da50978f6e46196a994.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "VIRTUALLYZ GAMING",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Cat Quest III (v1.2.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2305840/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "The Gentlebros",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "This Land Is My Land (v1.0.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1069640/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG, Simulation",
-      "Developer": "Game-Labs",
-      "Game Size": "3.7 GB"
     },
     "system_requirements": []
   },
@@ -21337,17 +13021,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Among the Sleep Enhanced Edition",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250620/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Krillbite Studio",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Builders of Egypt (v1.036)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/818520/library_600x900.jpg",
     "category": "pc",
@@ -21355,17 +13028,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Indie, Simulation, Strategy",
       "Developer": "Strategy Labs",
       "Game Size": "14.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "It’s Only Money",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1415220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG, Simulation",
-      "Developer": "Usual Suspects Studios",
-      "Game Size": "3.4 GB"
     },
     "system_requirements": []
   },
@@ -21381,17 +13043,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Age of Defense",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/603320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Strategy",
-      "Developer": "Battlecruiser Games",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Orcs Must Die! 3 (v1.2.0.0 + Multiplayer)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1522820/library_600x900.jpg",
     "category": "pc",
@@ -21399,28 +13050,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie, Strategy",
       "Developer": "Robot Entertainment",
       "Game Size": "10.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Storm Lancers",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4046570/ec5b013896b8c1b1095ef599d9dd161ae3e1e155/capsule_231x87.jpg?t=1765310774",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "ProbablyMonsters",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "FlatOut Enhanced",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/017cdb1b373ff5c6060b6e51b9ccc4e0.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Racing, Simulation",
-      "Developer": "Bugbear Entertainment, ZOOM Platform Media, Jordan Freeman Group",
-      "Game Size": "1.1 GB"
     },
     "system_requirements": []
   },
@@ -21469,17 +13098,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Nice Day for Fishing (Build 18370553)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2393160/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG",
-      "Developer": "FusionPlay",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Wayfinder (v1.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1171690/library_600x900.jpg",
     "category": "pc",
@@ -21487,17 +13105,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, RPG",
       "Developer": "Airship Syndicate",
       "Game Size": "47.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Badlands Crew",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2078230/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation, Strategy",
-      "Developer": "Runner Duck",
-      "Game Size": "2.1 GB"
     },
     "system_requirements": []
   },
@@ -21513,127 +13120,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Heretic + Hexen",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/86aa6d1f7fa0f80b052b3b879eec8975.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG",
-      "Developer": "id Software, Nightdive Studios",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Better Mart (v0.1.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3498270/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Exanticx Studio",
-      "Game Size": "2.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Disco Simulator (v1.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1226970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Strategy",
-      "Developer": "Games Incubator",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Planet of Lana (v1.1.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1608230/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Wishfully",
-      "Game Size": "4.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Who Wants To Be A Millionaire (v1.3.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1356240/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual",
-      "Developer": "Appeal Studios, Balio Studio",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Enjenir (Build 13168265)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1800940/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Simulation, Early Access",
-      "Developer": "PeatyTurf",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Downward: Enhanced Edition (v2.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/506900/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Caracal Games",
-      "Game Size": "4.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Garfield Kart 2 – All You Can Drift",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3239650/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Racing, Sports",
-      "Developer": "Eden Games",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Supraworld (v7925)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1869290/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Early Access",
-      "Developer": "Supra Games",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Rollerdrome (v1.23)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1294420/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Sports",
-      "Developer": "Roll7",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Totally Reliable Delivery Service",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1011670/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Racing, Simulation",
-      "Developer": "We’re Five Games",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Neptunia: Sisters VS Sisters (Build 9741659)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1932160/library_600x900.jpg",
     "category": "pc",
@@ -21641,28 +13127,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, RPG",
       "Developer": "Idea Factory, Compile Heart",
       "Game Size": "11.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Bad Guys at School",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1218280/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Simulation",
-      "Developer": "Forceight",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Garfield Kart – Furious Racing (v21032021 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1085510/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Racing",
-      "Developer": "Artefacts Studio",
-      "Game Size": "1.4 GB"
     },
     "system_requirements": []
   },
@@ -21678,39 +13142,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Reus 2 (v1.11.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1875060/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Abbey Games",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Inkulinati (v1.48.1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/957960/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Strategy",
-      "Developer": "Yaza Games",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "MEGA MAN X DiVE Offline (Build 11846221)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/c4ea3bec89b262cc6247fbd6b9f0699a.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "CAPCOM Co., Ltd.",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Nobody – The Turnaround",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1810580/library_600x900.jpg",
     "category": "pc",
@@ -21718,50 +13149,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Simulation, Strategy, Early Access",
       "Developer": "U.Ground Game Studio",
       "Game Size": "8.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Lorn’s Lure",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1417930/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Rubeki Games",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Spirit City: Lofi Sessions (v2.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2113850/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Mooncube Games",
-      "Game Size": "3.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Cook Serve Forever",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1928090/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Simulation, Strategy",
-      "Developer": "Vertigo Gaming Inc.",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tails of Iron (v1.51)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1283410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Odd Bug Studio",
-      "Game Size": "1.4 GB"
     },
     "system_requirements": []
   },
@@ -21799,28 +13186,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Deadly Path (Build 17805438)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2455350/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Strategy",
-      "Developer": "Owlskip Enterprises",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mega Man Zero/ZX Legacy Collection",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/999020/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "CAPCOM CO., LTD.",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Trek to Yomi (v1.03)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1370050/library_600x900.jpg",
     "category": "pc",
@@ -21854,17 +13219,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "World of Goo 2 (v13112W)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3385670/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie",
-      "Developer": "2D BOY",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Song of Nunu: A League of Legends Story",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1333200/library_600x900.jpg",
     "category": "pc",
@@ -21872,17 +13226,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure",
       "Developer": "Tequila Works",
       "Game Size": "10.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Lost in Random: The Eternal Die (v29915)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2564520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG",
-      "Developer": "Stormteller Games",
-      "Game Size": "3.3 GB"
     },
     "system_requirements": []
   },
@@ -21898,83 +13241,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "FaceRig Pro (v08.20.2020)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/6530182418d0c6cec847a94e76e81c7b.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Animation & Modeling, Video Production",
-      "Developer": "Holotech Studios",
-      "Game Size": "4.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Diluvian Ultra",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1306970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Crest Helm Studios",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Hellboy Web of Wyrd",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2160480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Upstream Arcade",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Nordic Ashes: Survivors of Ragnarok (v2.0.2.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2068280/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG, Strategy",
-      "Developer": "Noxfall Studios",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Field of Glory: Kingdoms (v1.0.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1985050/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "AGEOD",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Apocalypse Party (Build 16145511)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2351560/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Strategy",
-      "Developer": "Breaker Games",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Blockbuster Inc. (v1.9.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1793090/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation",
-      "Developer": "Super Sly Fox",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Sports: Renovations",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2230960/library_600x900.jpg",
     "category": "pc",
@@ -21982,17 +13248,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Indie, Simulation, Sports",
       "Developer": "Goat Gamez",
       "Game Size": "9.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Escape from Ever After (v2.7.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1996390/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "Sleepy Castle Studio, Wing-It! Creative",
-      "Game Size": "1.6 GB"
     },
     "system_requirements": []
   },
@@ -22008,50 +13263,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Rune Factory 4 Special",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1580240/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG",
-      "Developer": "Marvelous Inc.",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Coffee Shop Tycoon (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/370060/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Strategy",
-      "Developer": "Riff Studios",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Garbage Truck Simulator (v1.01)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2241020/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation",
-      "Developer": "Darius Bode",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Looney Tunes: Wacky World of Sports",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2330430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Sports",
-      "Developer": "Bamtang Games",
-      "Game Size": "3.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Go Home Annie",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1939100/library_600x900.jpg",
     "category": "pc",
@@ -22063,28 +13274,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Bogos Binted? (v1.0)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3588490/233b515268848cdeb39eff9ded550ade9ade7ae3/capsule_231x87.jpg?t=1778694019",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Strategy",
-      "Developer": "underbadger",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "NASCAR Arcade Rush (v1.0.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2192060/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Racing",
-      "Developer": "Team6 Game Studios",
-      "Game Size": "4.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "DreamWorks All-Star Kart Racing",
     "banner_url": "https://cdn2.steamgriddb.com/grid/3dad4911f830c45dad0abd3840567399.png",
     "category": "pc",
@@ -22092,17 +13281,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Racing",
       "Developer": "Bamtang Games",
       "Game Size": "7.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Cozy Caravan (v1.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2788520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "5 Lives Studios",
-      "Game Size": "1.3 GB"
     },
     "system_requirements": []
   },
@@ -22125,50 +13303,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Simulation, Strategy",
       "Developer": "Trigger Labs",
       "Game Size": "5.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Dimensionals (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2086060/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG, Strategy",
-      "Developer": "Mino Games",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "IXION (v1.0.3.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1113120/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Bulwark Studios",
-      "Game Size": "4.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "ForeVR Bowl VR (v2.0.49)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2341530/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Sports, Strategy",
-      "Developer": "ForeVR Games Inc",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mega Man Battle Network Legacy Collection Vol. 1 + 2",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/7633ab5eb56ce725d9d8b290598989bf.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "CAPCOM Co., Ltd.",
-      "Game Size": "3.2 GB"
     },
     "system_requirements": []
   },
@@ -22202,28 +13336,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Simulation",
       "Developer": "Zen Studios",
       "Game Size": "37.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Loop8: Summer of Gods",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2127430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG",
-      "Developer": "Marvelous Inc.",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Worms Rumble (v2016.748356 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1186040/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Team17 Digital",
-      "Game Size": "2.8 GB"
     },
     "system_requirements": []
   },
@@ -22294,17 +13406,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "ABZU (v1.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/384190/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "ActionA ction, Adventure, Casual, Indie, Simulation",
-      "Developer": "Giant Squid",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Scars Above (v1.0.1)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1196090/library_600x900.jpg",
     "category": "pc",
@@ -22312,17 +13413,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Mad Head Games",
       "Game Size": "15.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Fae Farm (v3.2.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2230110/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG, Simulation",
-      "Developer": "Phoenix Labs",
-      "Game Size": "2.2 GB"
     },
     "system_requirements": []
   },
@@ -22349,28 +13439,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Hob (v1.17.2.0)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2815310/0d11a4fc3310c435b77169f197b7353037c7dd80/capsule_231x87.jpg?t=1775765698",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Runic Games",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Cruise Ship Manager (v1.0.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1730240/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Image Power S.A.",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "IRREVERSIBLE",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3215560/library_600x900.jpg",
     "category": "pc",
@@ -22382,61 +13450,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Hero Siege (v6.7.1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/269210/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Massively Multiplayer, RPG",
-      "Developer": "Elias Viglione, Jussi Kukkonen",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Out Of Hands",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1839810/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, RPG, Strategy",
-      "Developer": "Game River",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Rise of the Golden Idol",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2716400/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Color Gray Games",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Magenta Horizon – Neverending Harvest (v1.0.11)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2109060/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Maddison Baek(Hellfire Railway Interactive)",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Stone of Madness",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1309710/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG, Strategy",
-      "Developer": "The Game Kitchen",
-      "Game Size": "3.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Tetris Effect (v1.0.6)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1003590/library_600x900.jpg",
     "category": "pc",
@@ -22444,28 +13457,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Casual, Indie",
       "Developer": "Monstars Inc., Resonair, Stage Games",
       "Game Size": "8.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "CUFFBUST (v1.0.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2592220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Strategy",
-      "Developer": "Two Star Games",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Volcanoids (v1.31.580.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/951440/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation, Early Access",
-      "Developer": "Volcanoid",
-      "Game Size": "3.4 GB"
     },
     "system_requirements": []
   },
@@ -22503,39 +13494,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Do Not Feed the Monkeys 2099 (v1.1.40)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1964040/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Fictiorama Studios",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Stick Em Up",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1108740/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Strategy",
-      "Developer": "Nicholas Rizzo",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Outerverse (v03.02.2022)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1293540/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG, Simulation, Strategy, Early Access",
-      "Developer": "Tbjbu2",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "PaintBall War 2 (Build 8747117)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1561980/library_600x900.jpg",
     "category": "pc",
@@ -22543,28 +13501,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Massively Multiplayer, Simulation, Sports",
       "Developer": "ShadowWolf Games",
       "Game Size": "5.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Last Light (v1.0.2.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1675620/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Team Corn Field",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Flash Doll",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3328720/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Strategy",
-      "Developer": "Game Star",
-      "Game Size": "1.3 GB"
     },
     "system_requirements": []
   },
@@ -22580,17 +13516,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Cassette Beasts (v1.8.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1321440/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG",
-      "Developer": "Bytten Studio",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Monterey Jack",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3512950/library_600x900.jpg",
     "category": "pc",
@@ -22598,39 +13523,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "DangerousBob Studio LLC",
       "Game Size": "12.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Buccaneers VR (v1.0.14)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/9131cc11f8669ecbe03f0bbd88f427b8.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "Skyward Digital",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "GEX Trilogy",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3183970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Limited Run Games, Crystal Dynamics",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Astral Ascent (v2.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1280930/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Hibernian Workshop",
-      "Game Size": "1.5 GB"
     },
     "system_requirements": []
   },
@@ -22646,17 +13538,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Joyride (Build 11129441)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1969460/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Racing, Sports",
-      "Developer": "Millwoo Studio",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Ship Graveyard Simulator 2 (v13486)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2201940/library_600x900.jpg",
     "category": "pc",
@@ -22664,28 +13545,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Casual, Indie, Simulation",
       "Developer": "Games Incubator",
       "Game Size": "11.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Unstoppable",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/252010/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Funnylocks Corp",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Prodeus (v1.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/964800/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Bounding Box Software Inc.",
-      "Game Size": "1.0 GB"
     },
     "system_requirements": []
   },
@@ -22701,138 +13560,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Furi Onnamusha (v1.7.224)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1802170/0cb8df1672287e478c821601b965e6016702ac19/capsule_231x87.jpg?t=1728993385",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "The Game Bakers",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Paper Beast",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1232570/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation",
-      "Developer": "Pixel Reef",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Guns’n’Stories: Bulletproof VR",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/f555766fdb2bdb1c31ada2264672a5fc.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Simulation",
-      "Developer": "MIROWIN",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Salt and Sacrifice (v1.0.1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1437400/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "Ska Studios",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Kingdom Rush Vengeance – Tower Defense (v1.16.0.56)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1367550/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Sports, Strategy",
-      "Developer": "Ironhide Game Studio",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Suicide Guy (Build 11235315)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/303610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Fabio Ferrara",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "PAC-MAN WORLD Re-PAC",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1859470/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Racing",
-      "Developer": "NOW PRODUCTION",
-      "Game Size": "4.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Commander Quest (v1.0.45.920)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2697930/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Flyway Games, Inc.",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Journey to the West (v1.12.0b)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2664810/8aa611ded1de9ee5b431a7701a6118dcee08092f/capsule_231x87.jpg?t=1758177620",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Strategy",
-      "Developer": "Z Studio",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "DEADCRAFT",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1702260/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Simulation",
-      "Developer": "Ludeme Games, Sirlin Games",
-      "Game Size": "4.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Arcade Paradise (v1.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1388870/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation",
-      "Developer": "Nosebleed Interactive",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Airport CEO (v1.1-3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/673610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Apog Labs",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "The Repair House: Restoration Sim (v1.7)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1759870/library_600x900.jpg",
     "category": "pc",
@@ -22840,28 +13567,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Casual, Indie, Simulation",
       "Developer": "Claudiu Kiss, QUANTUM LOGIC GAMES",
       "Game Size": "6.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Spiritfarer Farewell Edition (v35325a)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/972660/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation",
-      "Developer": "Thunder Lotus Games",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "FAR: Changing Tides (v1.1.0 + Ryujinx/Yuzu Emus)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1570010/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Okomotive",
-      "Game Size": "2.2 GB"
     },
     "system_requirements": []
   },
@@ -22877,28 +13582,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Once Upon A KATAMARI",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/d4ab910e81e69b831c517056f3731009.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual",
-      "Developer": "RENGAME",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "SteamWorld Heist II (v1.5)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/ceb96b7cca21fbd0fe3f49e73d136376.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG, Strategy",
-      "Developer": "Thunderful Development",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Ruined King: A League of Legends Story (v58287)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1276790/library_600x900.jpg",
     "category": "pc",
@@ -22906,72 +13589,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Indie, RPG",
       "Developer": "Airship Syndicate",
       "Game Size": "14.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Drug Business",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1794390/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Black Flamingo",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Heroes of Valor (v0.1.3.017)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2504090/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Early Access",
-      "Developer": "Fancy Cat Interactive",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Earth Must Die",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/58757f104a629b97903c5b7a163972a2.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG",
-      "Developer": "Size Five Games",
-      "Game Size": "2.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "None Shall Intrude (v1.0.0011)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2518630/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Strategy",
-      "Developer": "Aeterna Ludi",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Choppy Cuts",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2947650/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Simulation, Strategy",
-      "Developer": "Moco Studios I",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Panta Rhei – Guardian of Time",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1730550/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "reignite games, Sappalot Studio, Omme Animation, Nordic Scoring",
-      "Game Size": "1.5 GB"
     },
     "system_requirements": []
   },
@@ -22987,17 +13604,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "System Shock (v1.2.18887)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/2fc3f594ec96e430d2f36f848cb8e0c9.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Nightdive Studios",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Jagged Alliance 3 (v1.03)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1084160/library_600x900.jpg",
     "category": "pc",
@@ -23005,28 +13611,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Strategy",
       "Developer": "Haemimont Games",
       "Game Size": "14.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Temtem: Swarm (Build 16393994)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2510960/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, RPG, Early Access",
-      "Developer": "Crema, GGTech Studios",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Homeseek (v1.0.9 HF)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2093000/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Traptics",
-      "Game Size": "4.3 GB"
     },
     "system_requirements": []
   },
@@ -23042,17 +13626,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Etrian Odyssey Origins Collection",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/5bb3cefe850680d6e5d17868e8cd118d.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG",
-      "Developer": "ATLUS",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Yooka-Replaylee (v24.10.2025)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2448020/library_600x900.jpg",
     "category": "pc",
@@ -23060,39 +13633,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Casual, Indie",
       "Developer": "Playtonic Games",
       "Game Size": "9.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Shotgun Farmers (v1.6.10.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/604240/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, FPS, Indie, Shooter",
-      "Developer": "Megastorm Games",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Trinity Trigger (v1.0.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2176930/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "FURYU Corporation",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Death’s Door (v1.1.5.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/894020/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Acid Nerve",
-      "Game Size": "1.7 GB"
     },
     "system_requirements": []
   },
@@ -23115,39 +13655,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, RPG",
       "Developer": "Square Enix, Claytechworks",
       "Game Size": "12.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Old World (v1.0.78527)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/597180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Simulation, Strategy",
-      "Developer": "Mohawk Games",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Esports Life Tycoon (v1.0.4.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/897410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Sports, Strategy",
-      "Developer": "UPLAY Online",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "SteamWorld Build (v1.0.13.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2134770/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "The Station",
-      "Game Size": "1.3 GB"
     },
     "system_requirements": []
   },
@@ -23185,39 +13692,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Coastal Kitchen Simulator (v1.0)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3444630/fc39d1fe36edbbf3096768bd320ba2a3baddef8c/capsule_231x87.jpg?t=1778747613",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Bewolba Studios",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Goodnight Universe (v1.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2416100/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Nice Dream",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tortuga – A Pirate’s Tale (v1.2.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1604250/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "Gaming Minds Studios",
-      "Game Size": "4.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "One Military Camp (v1.1.0.33)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1743830/library_600x900.jpg",
     "category": "pc",
@@ -23240,28 +13714,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Trap Genesis",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1585700/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "No Strike",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "killer7",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/868520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "GRASSHOPPER MANUFACTURE INC., Engine Software BV",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Lysfanga: The Time Shift Warrior",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2161620/library_600x900.jpg",
     "category": "pc",
@@ -23273,182 +13725,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Cryptmaster (v1.032)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1885110/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "Paul Hart, Lee Williams, Akupara Games",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Coin Game (Build 7920670)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/598980/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation, Early Access",
-      "Developer": "devotid",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "LEGO Brawls (v5.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1731460/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual",
-      "Developer": "Red Games Co.",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Super Loco World – Cozy Train Automation (v1.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3109280/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Strategy",
-      "Developer": "Andriy Bychkovskyi",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Dog Man: Mission Impawsible",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3112730/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual",
-      "Developer": "Floor 84 Studio",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Lost Castle 2 (v0.9.1.5_3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2445690/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG, Early Access",
-      "Developer": "Hunter Studio",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Super Meat Boy Forever (v6755)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/581660/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Team Meat",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Against the Storm (v1.8.4R)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1336490/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "Eremite Games",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Cookie Cutter (Build 17680734)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1924430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Subcult Joint LTD",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Garden Life: A Cozy Simulator (v1272@67558)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1915380/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation",
-      "Developer": "stillalive studios",
-      "Game Size": "4.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Bartender VR Simulator (Build 3502329)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/524cdeca9d753cbd29fd87196abaa6aa.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "VR Factory",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "REAVER (v0.7.13)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2906070/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Early Access",
-      "Developer": "MAD TRIO",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Dark Light (v1.1.0.13)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1134520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Mirari&Co.",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Grandma, No!",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2362680/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, RPG",
-      "Developer": "WALLRIDE",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Grouls (Build 14810552)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3047770/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Strategy",
-      "Developer": "OxygenStudio",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Arsene Lupin – Once a Thief",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2922980/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Blazing Griffin",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Shadow Gambit: The Cursed Crew (Build 13002227)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1545560/library_600x900.jpg",
     "category": "pc",
@@ -23456,17 +13732,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, RPG, Strategy",
       "Developer": "Mimimi Games",
       "Game Size": "15.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Crypt of the NecroDancer ULTIMATE PACK (v4.1.0)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/464b8ffaa28b46c1b2026dedb063f488.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "Brace Yourself Games",
-      "Game Size": "4.0 GB"
     },
     "system_requirements": []
   },
@@ -23493,17 +13758,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "STUFFED (v1.0.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1243200/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie",
-      "Developer": "Waving Bear Studio",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Tetris Forever",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3180240/library_600x900.jpg",
     "category": "pc",
@@ -23522,28 +13776,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Simulation, Strategy",
       "Developer": "Pavonis Interactive",
       "Game Size": "17.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "DOOMBLADE (v1.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/922050/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Muro Studios",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Sam & Max: The Devil’s Playhouse (v1.2.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2648050/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Skunkape Games",
-      "Game Size": "1.9 GB"
     },
     "system_requirements": []
   },
@@ -23570,61 +13802,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Uncle Chop’s Rocket Shop (v1.0.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1849790/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Beard Envy",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "UMIGARI | ウミガリ (Build 21934145)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3772960/7a9dd2e5cf812ade1363324b898a9be49226f08e/capsule_231x87.jpg?t=1770375007",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Chilla’s Art",
-      "Game Size": "4.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Hand Simulator (v1.50.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/657200/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation",
-      "Developer": "HFM Games",
-      "Game Size": "4.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Caligula Effect 2 (Build 8966446)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1933740/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG",
-      "Developer": "historia Inc., FURYU Corporation",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Offroad Horizons: Arcade Rock Crawling",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1370390/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Racing, Simulation",
-      "Developer": "Grenoble Interactive, LLC",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Workshop Simulator (v1.2.10536)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1650550/library_600x900.jpg",
     "category": "pc",
@@ -23632,105 +13809,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Indie, Simulation",
       "Developer": "INTERMARUM",
       "Game Size": "5.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Bahamut and the Waqwaq Tree",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2525300/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Starvania Studio",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Immortal Mayor (v1.1.08)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/bacc3dd0a0a844834d7b846a3d95313d.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "Star Chess Studio",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Skin Deep (v2025.05.19.1747)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/301280/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Simulation",
-      "Developer": "Blendo Games",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Smurfs – Dreams (v0.0.18)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2602020/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Ocellus Studio",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Ultros",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2386310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Hadoque",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Savage: Ultimate Boss Fight",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2166690/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "SavageDev",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Fights in Tight Spaces (v1.2.11818)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1265820/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Strategy",
-      "Developer": "Ground Shatter",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Pit People (Update 7d)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/291860/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG, Strategy",
-      "Developer": "The Behemoth",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Gripper (v1.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1336380/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Heart Core",
-      "Game Size": "1.8 GB"
     },
     "system_requirements": []
   },
@@ -23746,72 +13824,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Open Roads",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1497360/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Open Roads Team",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "InfraSpace (v1.2.359)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1511460/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Dionic Software",
-      "Game Size": "2.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "War Hospital (Build 13157162)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1553000/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "Brave Lamb Studio S.A.",
-      "Game Size": "4.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "COCOON (Build 12353675)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1497440/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Geometric Interactive",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Fretless – The Wrath of Riffson (Build 19154879)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2429050/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "Ritual Studios",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Kingpin: Reloaded (v1.02)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1224700/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "Slipgate Ironworks",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Police Shootout (Build 8835415)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1279240/library_600x900.jpg",
     "category": "pc",
@@ -23823,61 +13835,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Scribblenauts Unmasked: A DC Comics Adventure",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/2c72d354d8bee2a9a345689ec0abd978.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Strategy",
-      "Developer": "5th Cell Media",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Revhead (v1.9.11049)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/589760/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Racing, Simulation, Sports, Strategy",
-      "Developer": "Creative Pudding Hungary Llc.",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "American Theft 80s (v1.1.061)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1321450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation",
-      "Developer": "Noble Muffins",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Breakwaters (v0.5.32)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1203180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation, Early Access",
-      "Developer": "Soaring Pixels Games",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Axis Football 2024",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2422110/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Sports, Strategy",
-      "Developer": "Axis Games",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Graffism VR – Graffiti Simulator (Build 20809687)",
     "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3597180/c95c1db484f6d8105d944a3151b20f84c926171c/capsule_231x87.jpg?t=1759448833",
     "category": "pc",
@@ -23885,28 +13842,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Casual, Simulation, Early Access",
       "Developer": "VRiteLabs",
       "Game Size": "7.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Disgaea 6 Complete (Build 8848380)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1749750/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Strategy",
-      "Developer": "Nippon Ichi Software, Inc.",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Godsworn (Build 14493694)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1328990/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Strategy, Early Access",
-      "Developer": "Thunderoak Interactive",
-      "Game Size": "2.1 GB"
     },
     "system_requirements": []
   },
@@ -23933,17 +13868,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Princess Maker 5",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/724250/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation",
-      "Developer": "CFK Co., Ltd.",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "The Plucky Squire (v1.50.15)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1627570/library_600x900.jpg",
     "category": "pc",
@@ -23966,50 +13890,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Flame Keeper (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1374230/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Kautki Cave",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Warlord: Britannia (v7.021)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1970980/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Strategy",
-      "Developer": "Darkmatter Games",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Dungeon Defenders: Going Rogue (v0.9.34625EA)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1815530/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Chromatic Games",
-      "Game Size": "4.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "1 Trait Escape (v1.15)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2149630/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Andrew Katz, Jeremy Collette",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Teenage Mutant Ninja Turtles: The Cowabunga Collection",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1659600/library_600x900.jpg",
     "category": "pc",
@@ -24017,17 +13897,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Digital Eclipse",
       "Game Size": "8.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Fire Pro Wrestling World (v2.15.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/564230/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Sports",
-      "Developer": "Spike Chunsoft Co., Ltd.",
-      "Game Size": "2.8 GB"
     },
     "system_requirements": []
   },
@@ -24043,39 +13912,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "METALLIC CHILD (v1.2.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1490610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "STUDIO HG",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Barbie Horse Trails",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/85e2da6c253c01d65a94ef85270f11b7.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual",
-      "Developer": "PHL Collective",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Symphonia (v1.1.2)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/416d07c6075b83e829f5caa29891cdf2.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Sunny Peak",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Smack Studio (Build 11392115)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1739300/library_600x900.jpg",
     "category": "pc",
@@ -24083,61 +13919,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Casual, Indie, Early Access",
       "Developer": "ThirdPixel Interactive",
       "Game Size": "8.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "A Shelter Full of Cats",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3087650/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie",
-      "Developer": "Devcats",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Pharaoh: A New Era (v1.5.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1351080/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "Triskell Interactive",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "HELLCARD (v1.1.250731)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1201540/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Strategy",
-      "Developer": "Thing Trunk",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mr. Prepper (v1.41z)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/761830/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG, Simulation",
-      "Developer": "Rejected Games",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Ghost Song (v1.1.9b)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/347800/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Old Moon",
-      "Game Size": "1.1 GB"
     },
     "system_requirements": []
   },
@@ -24153,50 +13934,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "ABRISS – build to destroy (v1.0.11)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1671480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Randwerk",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "YEAH! YOU WANT “THOSE GAMES,” RIGHT? SO HERE YOU GO! NOW, LET’S SEE YOU CLEAR THEM! 2",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2744230/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Puzzle",
-      "Developer": "MONKEYCRAFT Co. Ltd.",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Tenants (v1.2.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1009560/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Sluggerfly",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Winter Ember (v1.6.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1417880/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Strategy",
-      "Developer": "Sky Machine Studios",
-      "Game Size": "3.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Creatures of Ava",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2304440/library_600x900.jpg",
     "category": "pc",
@@ -24204,17 +13941,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie",
       "Developer": "Inverge Studios",
       "Game Size": "9.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Little Big Adventure – Twinsen’s Quest (v1.1.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2318070/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "[2.21]",
-      "Game Size": "2.4 GB"
     },
     "system_requirements": []
   },
@@ -24230,17 +13956,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Spells & Secrets (v1.01)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1518220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Alchemist Interactive, rokaplay",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Iron Harvest (v1.4.8.2986)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/826630/library_600x900.jpg",
     "category": "pc",
@@ -24252,72 +13967,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Chef: A Restaurant Tycoon Game (v1.51)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/886900/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation",
-      "Developer": "Inner Void",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Séance of Blake Manor (Build 21194802)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Spooky Doorway",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "BAKERU",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2969380/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Good-Feel Co., Ltd.",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "CULTIC (Build 21247207)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1684930/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Jasozz Games",
-      "Game Size": "3.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Pathfinder: Gallowspire Survivors (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2388460/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, RPG",
-      "Developer": "BKOM Studios",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Guild 3 (v1.0.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/311260/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Simulation, Strategy",
-      "Developer": "Purple Lamp, GolemLabs",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Commandos 3 HD Remaster (v1.00.045)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1469170/library_600x900.jpg",
     "category": "pc",
@@ -24325,17 +13974,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Strategy",
       "Developer": "Raylight Games",
       "Game Size": "6.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Castle Story (v1.1.10a)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/227860/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Sauropod Studio",
-      "Game Size": "1.8 GB"
     },
     "system_requirements": []
   },
@@ -24362,105 +14000,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Sixtar Gate: STARTRAIL (v0.1.009)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1802720/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Early Access",
-      "Developer": "Lyrebird Studio, Magical Works",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "3 Minutes to Midnight – A Comedy Graphic Adventure",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/832500/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Scarecrow Studio",
-      "Game Size": "4.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Twilight Survivors (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2788310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG",
-      "Developer": "DORIDORI STUDIO",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Winter Resort Simulator 2: Complete (v1.2.4)",
-    "banner_url": "https://steamrip.com/wp-content/uploads/2021/12/winter-resort-simulator-2-free-download-portrait-steamrip.jpg.webp",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "HR Innoways",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Eastward (v1.2.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/977880/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "Pixpil",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Cosmic: A Journey Among Shadows",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1769100/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "King’s Pleasure",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Sable (v3.7.7)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/757310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Racing",
-      "Developer": "Shedworks",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Bonesaw (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1586860/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Strategy",
-      "Developer": "Samuel Gauthier, David Bastien-Robert",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Oblivion Override (v1.0.0.1494)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1952370/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Humble Mill",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "GYLT (v1.1.1.5)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2206210/library_600x900.jpg",
     "category": "pc",
@@ -24468,17 +14007,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Tequila Works, Parallel Circles",
       "Game Size": "5.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Active Soccer 2023",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/63240b4cd8ec5016239b7d0c97763769.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Sports, Early Access",
-      "Developer": "The Fox Software",
-      "Game Size": "2.0 GB"
     },
     "system_requirements": []
   },
@@ -24505,105 +14033,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Eiyuden Chronicle: Rising (Build 8638189)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1658290/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Natsume Atari",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Surviving the Abyss (v0.1.4.9)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1254320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy, Early Access",
-      "Developer": "Rocket Flair Studios",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Handball 17 (Build 1464816)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/373ca39d0a5c1dc1141f9f279d92280f.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Sports",
-      "Developer": "Eko Software",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Heroes of Eternal Quest (v1.0.16a)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2234200/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Strategy",
-      "Developer": "Drakkar Game Studio",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "ELDERBORN (Build 16550554)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/727850/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Hyperstrange",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Osiris: New Dawn (v0.5.616)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/6d2eb3d6774bceeb9d2f7a244deb42d9.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Fenix Fire Entertainment",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Farm Manager 2021 (v1.1.526)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1123830/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Cleversan Games",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Forgotlings",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2059570/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Throughline Games",
-      "Game Size": "4.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Voidigo (v1.1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1304680/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "semiwork",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Tony Stewart’s All-American Racing (v12182020 & DLC)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1367690/library_600x900.jpg",
     "category": "pc",
@@ -24611,50 +14040,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Racing, Simulation, Sports",
       "Developer": "Monster Games, Inc",
       "Game Size": "12.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Sweet Transit (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1612770/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Ernestas Norvaišas",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "ANTHEM#9 (v1.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2656490/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Strategy",
-      "Developer": "koeda",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Thirsty Suitors",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1617220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG",
-      "Developer": "Outerloop Games",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Signal Simulator (v1.7.8)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/839310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Blagovest Penev",
-      "Game Size": "4.1 GB"
     },
     "system_requirements": []
   },
@@ -24670,17 +14055,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Bugsnax (v2.0.70367)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/674140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Young Horses",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Nikoderiko: The Magical World – Director’s Cut",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2374190/library_600x900.jpg",
     "category": "pc",
@@ -24688,17 +14062,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "VEA Games",
       "Game Size": "12.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Cub",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1941410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Demagog Studio",
-      "Game Size": "2.0 GB"
     },
     "system_requirements": []
   },
@@ -24714,28 +14077,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "SkateBIRD",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/971030/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Racing, Simulation, Sports",
-      "Developer": "Glass Bottom Games",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Path of the Midnight Sun",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1969060/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG, Strategy",
-      "Developer": "Studio Daimon",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Redemption Reapers (v1.0.2)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2139300/library_600x900.jpg",
     "category": "pc",
@@ -24743,61 +14084,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Simulation",
       "Developer": "Adglobe",
       "Game Size": "7.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Children of Morta (v1.3.155.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/330020/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Dead Mage",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Supraland (v1.23.7)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1522870/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Supra Games",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Coromon (v1.3.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1218210/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Strategy",
-      "Developer": "TRAGsoft",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Homestead Arcana (Build 10921041)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1867520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, RPG, Simulation",
-      "Developer": "Serenity Forge",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "There Is No Light (v1.1.7.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1132980/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Zelart",
-      "Game Size": "1.3 GB"
     },
     "system_requirements": []
   },
@@ -24813,39 +14099,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Starsand (v1.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2966320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Simulation",
-      "Developer": "Tunnel Vision Studio",
-      "Game Size": "3.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Warm Snow (v3.1.0.1)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2612950/capsule_231x87.jpg?t=1702642988",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "BadMudStudio",
-      "Game Size": "2.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Beholder 3 (v1.0.9_99)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1570070/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation, Strategy",
-      "Developer": "Paintbucket Games",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "AFL 26",
     "banner_url": "https://cdn2.steamgriddb.com/grid/f8e991160185d27cb11f9638dac3fa76.jpg",
     "category": "pc",
@@ -24853,72 +14106,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Sports",
       "Developer": "Big Ant Studios",
       "Game Size": "102.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Greatest Penguin Heist of All Time (Build 16082024 + Co-op)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1451480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Early Access",
-      "Developer": "That Fish, That Other Fish",
-      "Game Size": "3.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Gunvolt Chronicles: Luminous Avenger iX 2 (Build 8365022)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/4799d63e7671ffd9fcc127caff537883.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "INTI CREATES CO., LTD.",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "While Waiting",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2449160/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Optillusion",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Out of the Park Baseball 25 (v25.1.46)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/7905883cb22b6fde0fa845ff4c7a9f3a.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Sports, Strategy",
-      "Developer": "Out of the Park Developments",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Randal’s Tuesday",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3110450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Nuclear Tales, Nexus Game Studios",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Praey for the Gods (v1.0.009)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/494430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "No Matter Studios",
-      "Game Size": "1.9 GB"
     },
     "system_requirements": []
   },
@@ -24934,17 +14121,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Escape Academy: Escape From the Past (v3.0.5)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2067480/capsule_231x87.jpg?t=1733430054",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Coin Crew Games",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "SuperPower 3 (Build 9670207)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1563130/library_600x900.jpg",
     "category": "pc",
@@ -24952,17 +14128,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Simulation, Strategy",
       "Developer": "GolemLabs",
       "Game Size": "6.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Fruitbus (v1.0.12)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2484130/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation",
-      "Developer": "Krillbite Studio",
-      "Game Size": "1.9 GB"
     },
     "system_requirements": []
   },
@@ -24978,17 +14143,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Espresso Tycoon (Update 14)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1543280/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "DreamWay Games",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Synth Riders (v2.3.16.a8)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/885000/library_600x900.jpg",
     "category": "pc",
@@ -24996,17 +14150,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Casual, Indie",
       "Developer": "Kluge Interactive",
       "Game Size": "8.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Rune Factory 3 Special",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2243710/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, RPG, Simulation",
-      "Developer": "Marvelous Inc.",
-      "Game Size": "2.6 GB"
     },
     "system_requirements": []
   },
@@ -25033,28 +14176,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Timelie (Build 10037592)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1150950/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Strategy",
-      "Developer": "Urnique Studio",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Ragnarock VR (Build 7755630)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/73dd021053750c2620ac2e00e0095d10.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Racing, Sports, VR",
-      "Developer": "WanadevStudio",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Curiosity (v1.0.1)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/845880/library_600x900.jpg",
     "category": "pc",
@@ -25062,50 +14183,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Indie",
       "Developer": "DarkBear Studios, iNightGaming LLC",
       "Game Size": "7.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "RAILGRADE (v7.3.63.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1355090/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "Minakata Dynamics",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Last Hero of Nostalgaia (v3.3.6.8)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1766100/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Over the Moon",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Retrowave (Build 11766090)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1784890/64c46ab0750a025a833128017ffad41da121cf45/capsule_231x87.jpg?t=1754919767",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "RewindApp",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Braid, Anniversary Edition (v0.444)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/499180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Thekla, Inc.",
-      "Game Size": "2.9 GB"
     },
     "system_requirements": []
   },
@@ -25121,50 +14198,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Undead Under Night Rain (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1957010/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "Three Legged People Run Faster",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Nickelodeon All-Star Brawl (v20221007)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1414850/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Ludosity, Fair Play Labs",
-      "Game Size": "4.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Highrise (v3.6.5.7.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1273480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Voracious Games",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Ogu and the Secret Forest (v1.3a)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1985960/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Moonlab Studio,Sinkhole Studio",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Hot Lava (v1.0.562090)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/382560/library_600x900.jpg",
     "category": "pc",
@@ -25176,28 +14209,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "CLeM",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1861440/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Mango Protocol",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Loot River (v1.0.94)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1494260/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG, Strategy",
-      "Developer": "straka.studio",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Distant Worlds 2 (v1.2.0.5)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1531540/library_600x900.jpg",
     "category": "pc",
@@ -25205,50 +14216,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Simulation, Strategy",
       "Developer": "CodeForce",
       "Game Size": "8.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Animal Shelter (v1.3.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2658510/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation",
-      "Developer": "Games Incubator",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "BioGun (v1.7.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1219240/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Dapper Dog Digital",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Monster Lab Simulator (Build 21945378)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3994610/770cc62f535d8aad2314f85507421385b5d50197/capsule_231x87.jpg?t=1776851736",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Strategy, Early Access",
-      "Developer": "Round3 Studios",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "KLETKA",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1699480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Callback, ln404",
-      "Game Size": "1.9 GB"
     },
     "system_requirements": []
   },
@@ -25275,17 +14242,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Xenonauts 2 (v1.17)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/538030/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy, Early Access",
-      "Developer": "Goldhawk Interactive",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "King’s Bounty II (v1.7)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1135300/library_600x900.jpg",
     "category": "pc",
@@ -25293,28 +14249,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, RPG, Strategy",
       "Developer": "1C Entertainment",
       "Game Size": "20.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Pro Basketball Manager 2023",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1875310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Sports, Strategy",
-      "Developer": "Umix Studios",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Power & Revolution 2021 Edition",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1683320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "Eversim",
-      "Game Size": "3.1 GB"
     },
     "system_requirements": []
   },
@@ -25330,105 +14264,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Gone Rogue (v1.18)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1803600/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "AskaLot Games",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "SpellForce: Conquest of Eo (v01.10.31934)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/80b7723332f4398e01c1d0b7aafde1c5.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Strategy",
-      "Developer": "Owned by Gravity",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Beat Slayer (v1.1.14)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2089830/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "ByteRockers’ Games",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Peppa Pig: World Adventures",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1998980/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Petoons Studio",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Night Slashers: Remake (v1.0.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2795750/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual",
-      "Developer": "Storm Trident S.A.",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Pumpkin Jack (v1.5.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1186640/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Nicolas Meyssonnier",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Voltaire The Vegan Vampire (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1952540/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, RPG, Simulation",
-      "Developer": "Digitality Games",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "System of Souls",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2210130/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Chaotic Lab",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "OXENFREE II: Lost Signals (v1.2.14)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1574310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Night School Studio",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "HYPERCHARGE: Unboxed (B-10909918)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/523660/library_600x900.jpg",
     "category": "pc",
@@ -25436,116 +14271,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Casual, Indie, Strategy",
       "Developer": "Digital Cybercherries",
       "Game Size": "6.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Lumencraft (v9027)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1713810/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG, Simulation, Strategy",
-      "Developer": "2Dynamic Games",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "I’m Hungry VR (Build 4266060)",
-    "banner_url": "https://steamrip.com/wp-content/uploads/2022/06/i-m-hungry-portrait-steamrip.jpg.webp",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation, Strategy",
-      "Developer": "Light Era Studio",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Kindeman Remedy (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2055410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation",
-      "Developer": "Troglobytes Games",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Potty Knight Saga",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2728950/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "PLAY Mephistowaltz",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Diesel Legacy: The Brazen Age",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1959140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Maximum Entertainment",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Stray Gods: The Roleplaying Musical (v1.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1920780/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Summerfall Studios",
-      "Game Size": "4.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Kick Bastards (Build 13112661)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1737400/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Something Something Games",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Terraformers (v1.3.25)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1244800/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "Asteroid Lab",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Artist Life Simulator (v1.1.9)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1643180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation",
-      "Developer": "Interactive Fate",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Hokko Life (v1.1.51_rel)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/824000/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, RPG, Simulation",
-      "Developer": "Wonderscope, Team17",
-      "Game Size": "3.3 GB"
     },
     "system_requirements": []
   },
@@ -25561,61 +14286,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Echoes of the Plum Grove (v1.0.0.0s)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1536090/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Unwound Games",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Sunset Hills (Build 15541229)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1791590/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "Cotton Game",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "King of Seas (v1.20)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1209410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "3DClouds",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Noun Town Language Learning (v1.003)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2313720/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Simulation, Early Access",
-      "Developer": "Noun Town",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "HighFleet (v1.151)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1434950/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Strategy",
-      "Developer": "Konstantin Koshutin",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Spirit Mancer",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2172580/library_600x900.jpg",
     "category": "pc",
@@ -25627,39 +14297,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Floodland (v1.2.22330)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1336180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "Vile Monarch",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Pioneers: Surviving Desolation (v0.35.04)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1734390/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Simulation, Strategy, Early Access",
-      "Developer": "Supercube",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Sheltered 2 (v1.2.14)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1289380/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy",
-      "Developer": "Unicube",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Highrise City (v2.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1489970/library_600x900.jpg",
     "category": "pc",
@@ -25667,94 +14304,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Simulation, Strategy",
       "Developer": "Fourexo Entertainment",
       "Game Size": "7.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Dread Templar (v1.0.2b)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1334730/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Early Access",
-      "Developer": "T19 Games",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "IDIOTIC (The Game)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1746520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Racing",
-      "Developer": "Emanuel N.M",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Closer the Distance",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1991300/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Osmotic Studios",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tron: Identity",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2109430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Bithell Games",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Penny’s Big Breakaway",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1955230/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Evening Star",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Station to Station (v1.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2272400/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation, Strategy",
-      "Developer": "Galaxy Grove",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Unity of Command II (Build 21099579)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/809230/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "2×2 Games, Croteam",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Feastopia (v1.0.6.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3085910/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "White Star Studio",
-      "Game Size": "3.6 GB"
     },
     "system_requirements": []
   },
@@ -25781,28 +14330,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Supraland Six Inches Under (v1.2.3349)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1522870/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Supra Games",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Ash of Gods: The Way (v1.05.12)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1293460/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Strategy",
-      "Developer": "AurumDust",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Pocket Bravery (v2.15)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1555150/library_600x900.jpg",
     "category": "pc",
@@ -25810,72 +14337,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Indie",
       "Developer": "Statera Studio",
       "Game Size": "5.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Ete / Été (v1.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1049590/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, RPG",
-      "Developer": "Impossible",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mark Out! The Wrestling Card Game",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1634990/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Sports, Strategy",
-      "Developer": "DIY Experiences LLC",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Warhammer 40,000: Shootas, Blood & Teef (v1.0.18b)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1324530/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Rogueside",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Bear and Breakfast (v1.6.10)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1136370/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, RPG, Simulation",
-      "Developer": "Gummy Cat",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "KUR (v1.0.1)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3001250/c776f74109f5dfef706374cf8ab3fbc9bfeb916b/capsule_231x87.jpg?t=1775721940",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Really Ragdoll",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Coffee Talk Episode 2: Hibiscus & Butterfly",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1663220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation",
-      "Developer": "Toge Productions",
-      "Game Size": "4.2 GB"
     },
     "system_requirements": []
   },
@@ -25891,28 +14352,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Aircraft Carrier Survival (Build 8589024)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1021100/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Simulation",
-      "Developer": "Gambit Games Studio",
-      "Game Size": "4.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Slavania (v1.1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1349600/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "FrostLeaf Games LLC",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "The Last Case of Benedict Fox",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2023360/library_600x900.jpg",
     "category": "pc",
@@ -25920,61 +14359,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie, RPG",
       "Developer": "Plot Twist",
       "Game Size": "9.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Metal Mutation (v1:603)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1840790/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "T0 STUDIO",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Brewmaster: Beer Brewing Simulator (v1.0.3.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1569200/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation",
-      "Developer": "Auroch Digital",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Drakkar Crew (v1.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/879050/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "SiBear Games",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Legendary Hoplite (v1.3.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1479810/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG, Strategy",
-      "Developer": "TripleBricksGames",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "RC Rush (v1.2.9.8 + VR Option)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1654800/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Racing, Sports",
-      "Developer": "Tea Monster Games, 4 Fun Studio",
-      "Game Size": "3.2 GB"
     },
     "system_requirements": []
   },
@@ -26001,61 +14385,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Soundfall (Build 8692266)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1608700/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Drastic Games",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Grim Realms (v1.0.0.9)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1522280/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Edym Pixels",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Legend of Bum-Bo (v1.0.1.41f)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1148650/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Strategy",
-      "Developer": "Edmund McMillen, James Interactive, Ridiculon",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "For The King (v1.1.00.11378)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1676840/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Strategy",
-      "Developer": "IronOak Games",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Unrooted",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2441100/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "85 Plus Games",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Asterigos: Curse of the Stars (v01.06.00)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1731070/library_600x900.jpg",
     "category": "pc",
@@ -26067,28 +14396,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "This Is the President",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Simulation, Strategy",
-      "Developer": "SuperPAC",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Hidden Cats in Tokyo",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2671320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie",
-      "Developer": "Nukearts Studio",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Beyond a Steel Sky (v1.5.29158)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1146310/library_600x900.jpg",
     "category": "pc",
@@ -26096,28 +14403,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie",
       "Developer": "Revolution Software Ltd",
       "Game Size": "16.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Final Profit: A Shop RPG",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1705140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Simulation, Strategy",
-      "Developer": "Brent Arnold",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Rayman: 30th Anniversary Edition",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4094670/e9b29a0e798a93777749e01b4027ed12cc254fdf/capsule_231x87.jpg?t=1777993830",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Digital Eclipse, Ubisoft",
-      "Game Size": "3.5 GB"
     },
     "system_requirements": []
   },
@@ -26144,17 +14429,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Last Worker (v1.0.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1579280/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Oiffy, Wolf & Wood Interactive Ltd",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "We Love Katamari REROLL+ Royal Reverie",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1730700/library_600x900.jpg",
     "category": "pc",
@@ -26162,149 +14436,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "MONKEYCRAFT Co. Ltd.",
       "Game Size": "5.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Surviving the Aftermath (v1.25.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/684450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "Iceflake Studios",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Endzone – A World Apart (v1.2.8630)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/933820/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Gentlymad Studios",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Lumberjack Simulator",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/763100/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation",
-      "Developer": "Every Single Soldier",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Gift (Build 14299796)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/433091/capsule_231x87.jpg?t=1599495486",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Toydium, Million Edge",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Wingspan (v1.7.1147)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1054490/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Strategy",
-      "Developer": "Monster Couch",
-      "Game Size": "2.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Summer Trip Cruise (v1.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2103480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Racing, Simulation",
-      "Developer": "Gius Caminiti",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "DYSMANTLE (v1.4.0.41)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/846770/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG, Simulation, Early Access",
-      "Developer": "10tons Ltd",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "9 Years of Shadows (v1.1.41)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1402120/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Halberd Studios",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Desynced (v0.1.14243)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1450900/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy, Early Access",
-      "Developer": "Stage Games Inc.",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mindlock – The Apartment",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2669150/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Roof Cut Media",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Heretic’s Fork (v1.3.3.22)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2181610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Strategy",
-      "Developer": "9FingerGames",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "We Are The Caretakers (v1.1.1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1042960/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy",
-      "Developer": "Heart Shaped Games LLC",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Star Named EOS (v1.0.0_03)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1619230/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Silver Lining Studio",
-      "Game Size": "1.5 GB"
     },
     "system_requirements": []
   },
@@ -26320,94 +14451,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "PARQUET",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1662840/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual",
-      "Developer": "YUZUSOFTSOUR",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Goblin Stone (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1521970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Strategy",
-      "Developer": "Orc Chop Games",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "A House of Thieves Anniversary (v1.5)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/0af7569d86dac91b8c781084dfa56dc1.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Strategy",
-      "Developer": "Barrel Roll Games",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Run Pizza Run",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2649220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Simulation",
-      "Developer": "IZI Games",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Falsepine",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2214250/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Voyager Softworks",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Severed Steel (v5.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1227690/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Greylock Studio",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Decision: Red Daze (v1.2.0.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1621760/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG, Strategy",
-      "Developer": "FlyAnvil",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Actraiser Renaissance",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1393370/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Simulation, Strategy",
-      "Developer": "Square Enix, Sonic Powered",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Serial Cleaners (v1.2.3404)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1337920/library_600x900.jpg",
     "category": "pc",
@@ -26415,171 +14458,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Indie",
       "Developer": "Draw Distance",
       "Game Size": "6.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "BOOK OF HOURS (v2023.8.b.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1028310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation",
-      "Developer": "Weather Factory",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Wildermyth (v1.16.559)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/763890/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Strategy",
-      "Developer": "Worldwalker Games LLC",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Oaken (v1.1.2)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3400960/282f33da8d12c4b0f68fdf79f27c1338b0672c89/capsule_231x87.jpg?t=1777391953",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Strategy",
-      "Developer": "Laki Studios",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Botany Manor (v1.1.73.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1425350/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Balloon Studios",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "OlliOlli World (Build 8273920)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1190170/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Sports",
-      "Developer": "Roll7",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Per Aspera (v1.8.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/803050/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Tlön Industries",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Across the Obelisk (v1.7.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1385380/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Strategy",
-      "Developer": "Dreamsite Games",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Pre Dusk (v1.1v)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1721680/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Okba Amrate",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Game Dev Masters",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1478350/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, RPG, Simulation, Strategy",
-      "Developer": "Ryan Saunders",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Streetdog BMX (v1.0.31)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2707870/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Sports",
-      "Developer": "Yeah Us! Games",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Demeo: PC Edition (v1.31.226224)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/cb0ffc295a97ed27f185281e73365c2e.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Strategy",
-      "Developer": "Resolution Games",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Let’s Cook Together 2",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1637400/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Yellow Dot",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Dust: An Elysian Tail (v1.04)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/236090/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Humble Hearts LLC",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Blue Fire (v6.3.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1220150/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Robi Studios",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Snufkin: Melody of Moominvalley (Build 16780083)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1808680/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "Hyper Games",
-      "Game Size": "4.3 GB"
     },
     "system_requirements": []
   },
@@ -26595,17 +14473,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "VINE (Build 11588656)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/407340/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "FrogParty",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Marco & The Galaxy Dragon",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1202540/library_600x900.jpg",
     "category": "pc",
@@ -26613,28 +14480,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Casual, Simulation",
       "Developer": "TOKYOTOON",
       "Game Size": "7.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Ranch of Rivershine",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1559600/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Early Access",
-      "Developer": "Cozy Bee Games",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Silt (v1.0.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1325890/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Spiral Circus Games",
-      "Game Size": "4.6 GB"
     },
     "system_requirements": []
   },
@@ -26650,94 +14495,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Void -Dementia- (v1.0.7)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1538640/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "J2YSOFT",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "OPUS: Echo of Starsong (v09.09.2021)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1504500/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "SIGONO INC.",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Inkbound (v1.1.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1062810/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Strategy",
-      "Developer": "Shiny Shoe",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Death or Treat (v1.0.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2096620/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Saona Studios",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Phantom Brigade (v1.0.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/553540/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy",
-      "Developer": "Brace Yourself Games",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Horse Club Adventures 2: Hazelwood Stories (Build 9617536)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1937570/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Wild River Games GmbH",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Elroy and the Aliens (v1.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1082190/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Motiviti",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "WE ARE FOOTBALL (v1.21)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1951410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Sports, Strategy",
-      "Developer": "Winning Streak Games",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Star Trek: Infinite (v1.0.0.256)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1622900/library_600x900.jpg",
     "category": "pc",
@@ -26745,17 +14502,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Simulation, Strategy",
       "Developer": "Nimble Giant Entertainment",
       "Game Size": "7.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Rugrats: Adventures in Gameland",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2633950/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "The MIX Games, Wallride",
-      "Game Size": "1.1 GB"
     },
     "system_requirements": []
   },
@@ -26771,17 +14517,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Reviver",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3476440/5cd747398db6edd2c16843b0934e8140d13cb85b/capsule_231x87.jpg?t=1738691034",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Strategy",
-      "Developer": "Cotton Game",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "En Garde! (v1.0.1.18179)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1654660/library_600x900.jpg",
     "category": "pc",
@@ -26789,17 +14524,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie",
       "Developer": "Fireplace Games",
       "Game Size": "6.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "WitchSpring3 Re:Fine – The Story of Eirudy",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/51c11653f982482ccbc0cfa8e7e74006.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, RPG",
-      "Developer": "G CHOICE, IKINAGAMES, KIWIWALKS",
-      "Game Size": "1.1 GB"
     },
     "system_requirements": []
   },
@@ -26815,39 +14539,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "From Space (v1.1.1556)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1502190/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Triangle Studios",
-      "Game Size": "2.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Secrets of Grindea (v1.10)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/269770/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Pixel Ferrets",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Holy Gosh Darn",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1466230/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Perfectly Paranormal",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "GigaBash (Build 9242811)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1546400/library_600x900.jpg",
     "category": "pc",
@@ -26855,149 +14546,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Indie",
       "Developer": "Passion Republic Games",
       "Game Size": "8.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "ADACA (v1.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1765780/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Siris Pendrake",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Weird Dream",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2532300/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Shanghai AmberDragon",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Asfalia: Fear",
-    "banner_url": "https://steamrip.com/wp-content/uploads/2025/01/asfalia-fear-portrait-steamrip.jpg.webp",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Funtomata",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Railroad Corporation (v1.1.13418)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1677970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "Corbie Games",
-      "Game Size": "4.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Universe For Sale",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1627840/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Tmesis Studio",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Fuga: Melodies of Steel (v1.20)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1357860/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG",
-      "Developer": "CyberConnect2",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Capes (v1.2.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2488540/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Strategy",
-      "Developer": "Spitfire Interactive",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "DC’s Justice League: Cosmic Chaos",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/eba3375e44759a8d8e5d66bea9cb25c5.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "PHL Collective",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Aquatico (v1.007.9)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1812300/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Strategy",
-      "Developer": "Digital Reef Games0",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tennis Manager 2021 (v1.7.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1433010/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Racing, Simulation, Sports, Strategy",
-      "Developer": "Rebound CG",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Soda Crisis (v10.30.2022)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1592670/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Team Soda",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Yuppie Psycho: Executive Edition (v2.7.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/597760/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Baroque Decay",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Airport Firefighters – The Simulation",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/350530/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation",
-      "Developer": "Visual Imagination Software GbR",
-      "Game Size": "2.0 GB"
     },
     "system_requirements": []
   },
@@ -27013,50 +14561,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Solar Ash (v1.03.44179)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1867530/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Heart Machine",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tin Can (v1.0.01b)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1315980/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Tin Can Studio",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Wonhon: A Vengeful Spirit",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1294340/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "BUSAN SANAI GAMES",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Hero’s Hour (v2.8.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1656780/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Strategy",
-      "Developer": "Benjamin “ThingOnItsOwn” Hauer",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Aven Colony (v1.0.25665)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/484900/library_600x900.jpg",
     "category": "pc",
@@ -27064,39 +14568,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Indie, Simulation, Strategy",
       "Developer": "Mothership Entertainment LLC",
       "Game Size": "10.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Endling – Extinction is Forever (v0.16.25)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/898890/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation",
-      "Developer": "Herobeat Studios",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Banners of Ruin (v1.4.55)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1075740/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Strategy",
-      "Developer": "MonteBearo",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "LEGO Builder’s Journey (v3.0.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1544360/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Racing, Simulation, Sports",
-      "Developer": "Kunos Simulazioni",
-      "Game Size": "1.0 GB"
     },
     "system_requirements": []
   },
@@ -27112,28 +14583,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "RC Revolution",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2347040/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Racing, Simulation, Sports",
-      "Developer": "Phren Games",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Shooty Fruity VR (Build 3617365)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/3b082c405be34bd7716e80849e4d5c1a.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Simulation",
-      "Developer": "nDreams / Near Light",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "BALAN WONDERWORLD",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1341050/library_600x900.jpg",
     "category": "pc",
@@ -27141,171 +14590,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "quare Enix, ARZEST Corp.",
       "Game Size": "13.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "DROS",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2720070/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "emergeWorlds",
-      "Game Size": "4.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Garden Simulator (v1.0.6.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1403310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation",
-      "Developer": "PRODUKTIVKELLER Studios",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Quiet on Set",
-    "banner_url": "https://steamrip.com/wp-content/uploads/2024/03/quiet-on-set-portrait-steamrip.jpg.webp",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "Northern Dev Studio",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Cantata (v1.01)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/690370/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Afterschool Studio",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "GWENT: Rogue Mage (v1.0.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1711950/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "CD PROJEKT RED",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Teslagrad 2",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1698220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Rain Games",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Kulebra and the Souls of Limbo (v1.0.13)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2246470/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Galla",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Sunday Gold (v1.0.0.20344)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1969440/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "BKOM Studios",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tiny Troopers: Joint Ops XL",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2225750/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Epiphany Games, Kukouri Mobile Entertainment",
-      "Game Size": "2.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Kingdom Eighties (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1956040/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Strategy",
-      "Developer": "Fury Studios",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "SYNTHETIK 2 (v05.01.2022)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1471410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Early Access",
-      "Developer": "Flow Fire Games",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Demon Turf (Build 10675724)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1325900/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Fabraz",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Pale Beyond (v1.2.00.00)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1266030/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Simulation, Strategy",
-      "Developer": "Bellular Studios",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Blade of Darkness (Build 10785701)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1710170/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG",
-      "Developer": "Rebel Act Studios, Fire Falcom, General Arcade",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Acceleration of SUGURI 2 (Build 1135320)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/390710/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Orange_Juice",
-      "Game Size": "1.0 GB"
     },
     "system_requirements": []
   },
@@ -27321,50 +14605,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Source of Madness (Build 10646278)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1315610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Carry Castle",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Turbo Golf Racing (v17416 + Multiplayer)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1324350/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Racing, Sports, Early Access",
-      "Developer": "Hugecalf Studios",
-      "Game Size": "3.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Nebuchadnezzar (v1.4.3)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/16868/capsule_231x87.jpg?t=1545236909",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Nepos Games",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Fuga: Melodies of Steel 2",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2001340/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Simulation, Strategy",
-      "Developer": "CyberConnect2",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Port Royale 4 (v1.6.0.21040)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1024650/library_600x900.jpg",
     "category": "pc",
@@ -27372,105 +14612,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Simulation, Strategy",
       "Developer": "Gaming Minds",
       "Game Size": "7.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Somerville (Build 9959843)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1671410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Jumpship",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Dragon Forge (v1.0.8224)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1163930/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG, Simulation, Strategy",
-      "Developer": "Legend Studio",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Wavetale (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1823930/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Thunderful Development",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Simpler Times",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1812210/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie",
-      "Developer": "stoneskip.",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Enchanted Portals (Build 12328639)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2444350/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Xixo Games Studio",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Hazel Sky (v1.0.10)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1094920/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Coffee Addict Studio",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Wylde Flowers (Build 13410979)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1896700/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Simulation",
-      "Developer": "Studio Drydock Pty Ltd",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Golf VS Zombies (Build 12130773)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2330380/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Sports",
-      "Developer": "Sleepwalking Potatoes",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Handyman Corporation (v1.0.1.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1703180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "YuzuGames",
-      "Game Size": "1.9 GB"
     },
     "system_requirements": []
   },
@@ -27497,39 +14638,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Void Rains Upon Her Heart (v7.27)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/790060/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Early Access",
-      "Developer": "Veyeral Games",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "PAW Patrol World",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1952520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "3DClouds",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "XEL (v1.0.6.323)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2690610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "Tiny Roar",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Star Trek: Resurgence",
     "banner_url": "https://cdn2.steamgriddb.com/grid/7ada938aa7f0d165b15f65b954b1e0d5.jpg",
     "category": "pc",
@@ -27537,39 +14645,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action",
       "Developer": "Dramatic Labs",
       "Game Size": "14.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Common’hood (v1.0.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/962090/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Plethora Project",
-      "Game Size": "2.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Second Front (v1.313)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1148490/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Hexdraw",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Exo One (v21.11.18.1756)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/773370/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation",
-      "Developer": "Exbleative",
-      "Game Size": "1.8 GB"
     },
     "system_requirements": []
   },
@@ -27596,50 +14671,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Synthwave FURY",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1984710/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Racing, Simulation",
-      "Developer": "Virtual Edition",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Born of Bread (v3.2.4d)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1555140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, RPG",
-      "Developer": "WildArts Studio Inc.",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "El Paso, Elsewhere (v10)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1546310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Strange Scaffold",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Breathedge (v1.1.0.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/738520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Simulation",
-      "Developer": "RedRuins Softworks",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Klonoa Phantasy Reverie Series",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1730680/library_600x900.jpg",
     "category": "pc",
@@ -27647,17 +14678,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Casual",
       "Developer": "MONKEYCRAFT Co. Ltd.",
       "Game Size": "7.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "NINJA KIDZ: TIME MASTERS (Build 11885126)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2287000/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Selecta Play",
-      "Game Size": "1.6 GB"
     },
     "system_requirements": []
   },
@@ -27673,28 +14693,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "GearCity (v2.0.0.11)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/285110/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Visual Entertainment And Technologies",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Between Horizons (v1.0.4+S)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1921980/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "DigiTales Interactive",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "No Straight Roads: Encore Edition (v1.1.5)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1726190/library_600x900.jpg",
     "category": "pc",
@@ -27702,50 +14700,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie, RPG",
       "Developer": "Metronomik",
       "Game Size": "9.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Knight Witch (v1.8)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1872680/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Super Mega Team",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "MEATGRINDER (v1.11)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1968710/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Vampire Squid",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Alien Hominid Invasion",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/843200/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "The Behemoth",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "To Hell With The Ugly (v1.0.12)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1455450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "La Poule Noire, ARTE France",
-      "Game Size": "1.5 GB"
     },
     "system_requirements": []
   },
@@ -27761,28 +14715,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "HyperParasite (v1.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/838110/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Troglobytes Games",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Sands of Salzaar (v1.0.42)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1094520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Strategy",
-      "Developer": "汉家松鼠Han-Squirrel Studio",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Dusk Diver 2 (v1.0.2)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1792600/library_600x900.jpg",
     "category": "pc",
@@ -27790,50 +14722,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, RPG",
       "Developer": "Wanin International",
       "Game Size": "5.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Wayward Strand (v1.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1080450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Simulation",
-      "Developer": "ghost pattern",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Lost in Play (v1.0.63)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1328840/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Happy Juice Games",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Cats and the Other Lives (B-10000789)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1360390/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Cultic Games",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "American Hero (v0.0.31)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/ab1038f2fe1c572792c1bd934c6fbf24.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Empty Clip Studios",
-      "Game Size": "2.8 GB"
     },
     "system_requirements": []
   },
@@ -27849,160 +14737,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Monster Boy and the Cursed Kingdom (v1.0.1.rc6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/449610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Game Atelier",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "MiLE HiGH TAXi (v1.0.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1366560/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Racing, Simulation",
-      "Developer": "Cassius John-Adams",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Darkest Tales (v1.04)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1307690/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Trinity Team",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mist Slayer (v1.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2088650/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, RPG",
-      "Developer": "Moju Games",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "World’s End Club (Build 9169778)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1570020/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG",
-      "Developer": "IzanagiGames, Too Kyo Games, Grounding Inc., ESQUADRA,inc.",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Spirit of the Island (v3.0.5.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1592110/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, RPG, Simulation",
-      "Developer": "1M Bits Horde",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Smurfs Kart",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1911220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Racing",
-      "Developer": "Eden Games",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Escape Game – FORT BOYARD 2022",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1921180/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Sports",
-      "Developer": "Balio Studio",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Undungeon (v1.0.12)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/928990/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Laughing Machines",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Messy Up",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2572560/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, RPG, Simulation",
-      "Developer": "Liquid Meow",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Night is Grey (Build 13056210)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1281490/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Whalestork Interactive",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Apex Rush (Build 22006936)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638250/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Racing, Simulation, Early Access",
-      "Developer": "Thunderboom Studios",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tchia (Build 13814412)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1496590/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Awaceb",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Legend of Keepers: Career of a Dungeon Manager (v1.1.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/978520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Strategy",
-      "Developer": "Goblinz Studio",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "MAGLAM LORD (Build 8156297)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1799380/library_600x900.jpg",
     "category": "pc",
@@ -28014,17 +14748,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Wargroove 2 (v1.2.7c)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1346020/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Strategy",
-      "Developer": "Chucklefish, Robotality",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "The Gunk (v1014.1.6.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1087760/library_600x900.jpg",
     "category": "pc",
@@ -28032,72 +14755,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure",
       "Developer": "Image & Form Games",
       "Game Size": "5.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Party Club (v1.3.14)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2796010/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Simulation",
-      "Developer": "Lucid11 Interactive",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "River City Girls Zero",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1851020/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "WayForward",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Super Monkey Ball Banana Mania",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1316910/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Ryu Ga Gotoku Studio",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Children of Silentown (v1.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1108000/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Elf Games, Luna2 Studio",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Return to Monkey Island (v570741)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2060130/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual",
-      "Developer": "Terrible Toybox",
-      "Game Size": "4.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Them’s Fightin’ Herds (v6.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/574980/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Mane6, Inc.",
-      "Game Size": "3.4 GB"
     },
     "system_requirements": []
   },
@@ -28146,171 +14803,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Out of the Park Baseball 24 (v24.1)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/b358e92503cf5188cd92088bb9bae5af.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Sports, Strategy",
-      "Developer": "Out of the Park Developments",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Golden Light (Build 12533521)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Mr. Pink",
-      "Game Size": "3.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Filthy Animals | Heist Simulator (v1.0.05)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1195420/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Pewter Games Studios, LoPoly Games",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "GetsuFumaDen: Undying Moon (v1.1.1)",
-    "banner_url": "https://steamrip.com/wp-content/uploads/2022/02/getsufumaden-undying-moon-portrait-steamrip.jpg.webp",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Konami Digital Entertainment, GuruGuru",
-      "Game Size": "4.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Asterix & Obelix XXXL : The Ram From Hibernia (v1.03.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1894730/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "OSome Studio",
-      "Game Size": "4.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Saint Kotar (v1.26)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1358530/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Red Martyr Entertainment",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Taxi Chaos",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1457570/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation, Strategy",
-      "Developer": "Team6 Game Studios",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Checkmate Showdown",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1803410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Strategy",
-      "Developer": "ManaVoid Entertainment, BadRez Games",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "World of Contraptions (Build 8416719)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/681640/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "JCP Games Studio",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Shing! (v2.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2193911/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Mass Creation",
-      "Game Size": "2.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mars Horizon (v1.4.2.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/765810/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Auroch Digital",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Necrobarista (v1.08p2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/725270/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie",
-      "Developer": "Route 59",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Surmount: A Mountain Climbing Adventure",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1675000/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Sports",
-      "Developer": "Jasper Oprel, Indiana-Jonas",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Boxville (Build 9598403)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3131280/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Triomatica Games",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Hoa (v1.05)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3314750/b380a15697d5ba7c238339967fcd05c9de3cf05a/capsule_231x87.jpg?t=1751043621",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual",
-      "Developer": "Skrollcat Studio",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Industries of Titan (v1.0)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/427940/library_600x900.jpg",
     "category": "pc",
@@ -28318,160 +14810,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Indie, Simulation, Strategy",
       "Developer": "Brace Yourself Games",
       "Game Size": "6.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Library of Babel",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1822030/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Tanuki Game Studio",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "WrestleQuest (Build 15388309)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1867510/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "Mega Cat Studios",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Myth Or Reality: Snowbound Secrets Collector’s Edition",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3007580/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual",
-      "Developer": "Do Games Limited",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Project Downfall (v1.0.3)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/56917a463111a43a9a17e8ff46931e5f.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "MGP Studios, Solid9 Studio",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Between the Stars (v0.5.2.7)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/727130/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG, Simulation, Strategy, Early Access",
-      "Developer": "Isolated Games",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Embr (v06.01.2022)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2672430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie, Simulation, Strategy",
-      "Developer": "Muse Games",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Ultra Age (Build 8630330)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1683100/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Next Stage Inc., Visual DART Co., Ltd",
-      "Game Size": "4.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Boti: Byteland Overclocked (v1.15)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2161050/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy",
-      "Developer": "Purple Ray Studio",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Estencel (v1.0.7)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2025320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Massively Multiplayer",
-      "Developer": "Rone Vine",
-      "Game Size": "2.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Aces & Adventures (v1.21)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1815570/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG, Strategy",
-      "Developer": "Triple.B.Titles",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mahokenshi (Build 61931)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1717640/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Strategy",
-      "Developer": "Game Source Studio",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Virtual Rides 3 Ultimate Edition (v2.5.0f1)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1113140/capsule_231x87.jpg?t=1563196421",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Simulation",
-      "Developer": "Pixelsplit Simulations",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Madshot: Road to Madness (v0.349)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2149610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Overflow",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Riftbound (Build 11366241)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4146620/0e0d6993f80124c6332ef9a45c4cba2b8dd96225/capsule_231x87.jpg?t=1779289852",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG, Strategy",
-      "Developer": "Barrel Smash Studios",
-      "Game Size": "1.3 GB"
     },
     "system_requirements": []
   },
@@ -28498,83 +14836,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Tale of Bistun (Build 9099794)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/916140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Black Cube Games",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Leisure Suit Larry Wet Dreams Dry Twice",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1373430/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "CrazyBunch",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tested on Humans: Escape Room (v1.0.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1483780/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "mc2games",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "United Penguin Kingdom (v1.004)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2635350/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Turquoise Revival Games",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Bright Side: Riddles and Puzzles",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2478240/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie",
-      "Developer": "QubicGames S.A.",
-      "Game Size": "2.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Last Campfire (v09.10.2021)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990630/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Hello Games",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mythos (Build 9465999)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1553061/capsule_231x87.jpg?t=1641404435",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG",
-      "Developer": "HanbitSoft Inc.",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Dead No-Head (Build 8035446)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1785320/library_600x900.jpg",
     "category": "pc",
@@ -28597,17 +14858,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Tunche (v1.1.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/887450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG",
-      "Developer": "LEAP Game Studios",
-      "Game Size": "2.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Harold Halibut (v1.1.1)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/924750/library_600x900.jpg",
     "category": "pc",
@@ -28615,116 +14865,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Indie",
       "Developer": "Slow Bros.",
       "Game Size": "40.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Shady Part of Me (Build 09.12.2020)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1116580/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie",
-      "Developer": "Douze Dixièmes",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Super Buff HD",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1295220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Buffcorp",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Vibrant Venture (Build 11848738)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1264520/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Early Access",
-      "Developer": "Semag Games",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Riffle Effect (v1.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1479400/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "OutsiderKids Corp.",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Valley of the Dead: MalnaZidos",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1887730/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Gammera Nest",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "MY LITTLE PONY: A Maretime Bay Adventure",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1600780/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Melbot Studios",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Night Book",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1477920/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Good Gate Media, Wales Interactive",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "GROSS (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1535360/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Strategy",
-      "Developer": "hangry owl games",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Mystery of William Moore",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2007270/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual",
-      "Developer": "Atlantean Games",
-      "Game Size": "4.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "God of Rock (Build 11007551)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1851030/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie, Strategy",
-      "Developer": "Modus Studios",
-      "Game Size": "2.5 GB"
     },
     "system_requirements": []
   },
@@ -28740,138 +14880,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Card Shark (v1.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1371720/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Simulation",
-      "Developer": "Nerial",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Aztech Forgotten Gods (Build 8270511)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1592320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Lienzo",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Blue Oak Bridge (v1.0.16)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1961370/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation",
-      "Developer": "Lemon Seed Studio",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Sapper – Defuse The Bomb Simulator",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1083070/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Simulation",
-      "Developer": "Live Motion Games",
-      "Game Size": "2.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Tails: The Backbone Preludes",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/c2c60dfab8f25d4d6cd8c1b01886079a.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Eggnut",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "A Tale of Paper: Refolded",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1454640/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Open House Games",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Pets Hotel (Build 11020259)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1714250/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation",
-      "Developer": "Games Incubator",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Agatha Christie – Hercule Poirot: The First Cases (v1.0.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1573720/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Blazing Griffin",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "HALF DEAD 2 (v1.01)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/914260/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Massively Multiplayer",
-      "Developer": "Room710Games",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Greak: Memories of Azur (v1.0.6.114)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1311070/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Navegante Entertainment",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Super Toy Cars Offroad (Build 8150692)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1511190/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Racing, Sports",
-      "Developer": "Eclipse Games",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "DE-EXIT – Eternal Matters (v1.0.23)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1396190/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "SandBloom Studio",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Noob – The Factionless",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1623880/library_600x900.jpg",
     "category": "pc",
@@ -28879,171 +14887,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Indie, RPG",
       "Developer": "BlackPixel Studio, Olydri Games",
       "Game Size": "6.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mini Maker: Make A Thing",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1315410/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie, Simulation",
-      "Developer": "Casa Rara",
-      "Game Size": "2.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Battle Bands: Rock & Roll Deckbuilder (v1.2.4)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1322100/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Strategy",
-      "Developer": "Aerie Digital",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Curse of the Sea Rats (v1.0.19)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1453900/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG",
-      "Developer": "Petoons Studio",
-      "Game Size": "3.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Invector: Rhythm Galaxy",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2009450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Indie",
-      "Developer": "Hello There Games",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Good Life (v2.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1452500/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG",
-      "Developer": "White Owls Inc.",
-      "Game Size": "3.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Knight vs Giant: The Broken Excalibur (v1.0.7b)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/715680/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Gambir Studio",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Kujlevka (v1.0.9)",
-    "banner_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2423460/capsule_231x87.jpg?t=1683724940",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "Callback",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "ITORAH (Build 8406422)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1132910/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Grimbart Tales",
-      "Game Size": "3.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "One More Dungeon 2 (v1.0.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1483100/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Stately Snail",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Time Loader (v1.0.65)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1301950/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Racing, Simulation",
-      "Developer": "Flazm",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "River Tails: Stronger Together (v1.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1851610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Kid Onion Studio",
-      "Game Size": "3.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Multi-Medium",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2077380/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Micah Boursier",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Spin Rhythm XD (v1.5.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1058830/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie",
-      "Developer": "Super Spin Digital",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "GRUNND (v1.0.11)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1449920/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "SEKTAHOUSE",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Art Reborn (Painting Connoisseur) (v20230818)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2064490/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, RPG",
-      "Developer": "MuccyGames",
-      "Game Size": "1.0 GB"
     },
     "system_requirements": []
   },
@@ -29059,28 +14902,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Clunky Hero (v1.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1687990/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG",
-      "Developer": "Chaosmonger Studio",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Jitsu Squad (Build 8459199)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1522080/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Tanuki Creative Studio",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Paws and Soul",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/911510/library_600x900.jpg",
     "category": "pc",
@@ -29088,83 +14909,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Indie",
       "Developer": "ELECTROSTALIN ENTERTAINMENT",
       "Game Size": "10.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Trifox (v1.0.3.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1211240/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Glowfish Interactive",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "COTTOn Rock’n’Roll -SUPERLATIVE NIGHT DREAMS- (v1.05)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/f8860d5ea8b3e388ddeecece2e40d0fa.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Studio Saizensen",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Black Book (v1.0.36)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1138660/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Strategy",
-      "Developer": "Morteshka",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Hextech Mayhem: A League of Legends Story",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1651960/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Choice Provisions",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Knights And Bikes (v1.12)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/592480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Foam Sword",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Knights of Braveland (v1.1.4.50)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1253610/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "Tortuga Team",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Pulling No Punches (Build 9285086)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1425760/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "BrainDead Broccoli",
-      "Game Size": "1.6 GB"
     },
     "system_requirements": []
   },
@@ -29180,116 +14924,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Jack Move (v1.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1099640/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "So Romantic",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Before The Last Hour (v0.8.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1948290/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Strategy, Early Access",
-      "Developer": "Ludeme Games, Sirlin Games",
-      "Game Size": "3.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Glitch Busters: Stuck On You (Build 11501924)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1616110/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Toylogic Inc",
-      "Game Size": "4.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Power Chord (v1.0.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1724390/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy",
-      "Developer": "Big Blue Bubble",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Arto",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/550320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "OrionGames",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Wonder Boy: Asha in Monster World",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1420080/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, RPG, Arcade",
-      "Developer": "G CHOICE, Monkey Craft",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Overmorrow",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1658970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "PixelManta",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Turbo Kid (v1.0.117279)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1733250/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Simulation, Strategy",
-      "Developer": "Voracious Games",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Figment 2: Creed Valley (v1.0.13)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1085220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Bedtime Digital Games",
-      "Game Size": "2.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Deathbulge: Battle of the Bands (v1.0.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1083790/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG",
-      "Developer": "Deathbulge, Five Houses LLC",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Windfolk: Sky is just the Beginning",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1966700/library_600x900.jpg",
     "category": "pc",
@@ -29297,39 +14931,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie",
       "Developer": "Fractal Fall, Gammera Nest",
       "Game Size": "5.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Paper Cut Mansion (v1.6)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1004370/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Space Lizard Studio",
-      "Game Size": "2.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "River City Saga: Three Kingdoms (v1.0.2)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1013220/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Arc System Works",
-      "Game Size": "3.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Slice of Sea (v12.11.2021)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/750290/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Mateusz Skutnik",
-      "Game Size": "2.6 GB"
     },
     "system_requirements": []
   },
@@ -29345,292 +14946,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "She and the Light Bearer",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/658590/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Mojiken",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Kraken Wakes",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/b8825b40a91b6a77ccccd6a7b102611f.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Charisma Entertainment Limited",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Little Orpheus (v4.0.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1558930/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual",
-      "Developer": "The Chinese Room",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Wigmund (Build 8446402)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1164690/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, RPG",
-      "Developer": "The Scholastics",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "UNDETECTED (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1715350/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Antonio Freyre",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Smurfs – Mission Vileaf",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1502560/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "OSome Studio",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Age of Grit",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/724330/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Strategy",
-      "Developer": "IQ Soup",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Backfirewall_",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1920100/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Naraven Games",
-      "Game Size": "4.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Timeloop: Sink Again Beach (v1.2.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2094750/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Voracious Games",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Skinny & Franko: Fists of Violence",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2114970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Blue Sunset Games, Console Labs S.A.",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Bish Bash Bots (v1.0.1)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1424860/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie",
-      "Developer": "CATASTROPHIC_OVERLOAD",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Life of Delta",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1376760/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Airo Games",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Desta: The Memories Between",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2009650/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Sports, Strategy",
-      "Developer": "ustwo games",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Grow: Song of the Evertree (Build 8284513)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1380420/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual",
-      "Developer": "Prideful Sloth",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Swordbreaker: Origins (v1.04)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1080700/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "DuCats Games Studio",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "James Peris 2: The fountain of eternal drunkenness",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2290450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, Strategy",
-      "Developer": "Pavo Entertainment",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Fashion Police Squad (Build 9295259)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1319460/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Mopeful Games",
-      "Game Size": "2.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "HEROish (Build 10156563)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1876350/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, RPG, Strategy",
-      "Developer": "Sunblink",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Paperman: Adventure Delivered",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1887310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Secret Item Games",
-      "Game Size": "1.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Rogue Lords (v1.1.04.10)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1069690/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG, Strategy",
-      "Developer": "Leikir Studio, Cyanide Studio",
-      "Game Size": "3.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Finding America: The West",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1767140/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual",
-      "Developer": "Boomzap Inc",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Circus Electrique (Build 9415991)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1666250/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, RPG, Strategy",
-      "Developer": "Zen Studios",
-      "Game Size": "4.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "A Memoir Blue (Build 8395721)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1497450/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Cloisters Interactive",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Out of the Park Baseball 23",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/1de718c8d667cb1f44b20a4577bfa1ad.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Sports, Strategy",
-      "Developer": "Out of the Park Developments",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Chameleon",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1493970/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie",
-      "Developer": "Merlino Games",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Enemy Remains",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1478590/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "GameRealmMadness",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Corbid! A Colorful Adventure",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1034020/library_600x900.jpg",
     "category": "pc",
@@ -29638,127 +14953,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Adventure, Casual, Indie",
       "Developer": "CuCurry",
       "Game Size": "6.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Dawn of the Monsters (B8208742)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1642170/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "13AM Games, WayForward",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Slap City (Build 9601271)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/725480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Ludosity",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Plane Effect (v1.01.2563)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1448760/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Innovina/StudioKiku",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Zombie Soup (v1.0 Build 7)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1095290/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, RPG",
-      "Developer": "AeonSparx Interactive",
-      "Game Size": "2.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "RESEARCH and DESTROY (v1.1.7)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1279310/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Strategy",
-      "Developer": "Implausible Industries",
-      "Game Size": "3.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Hell Pie (v1.1.5)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/889910/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Sluggerfly",
-      "Game Size": "4.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Imp of the Sun (Build 8410536)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1535780/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Simulation",
-      "Developer": "Sunwolf Entertainment",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Just Find It 2",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2428320/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual",
-      "Developer": "Tiny Little Lion",
-      "Game Size": "1.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Minute of Islands (v1.0)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1049710/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Indie, Simulation, Strategy",
-      "Developer": "Double Eleven, Introversion Software",
-      "Game Size": "1.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mari and Bayu – The Road Home",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1725350/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "Skinny Bandit",
-      "Game Size": "1.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Recursive Ruin (v22.05.17)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1561890/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Bit Rot",
-      "Game Size": "3.1 GB"
     },
     "system_requirements": []
   },
@@ -29774,72 +14968,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "Born Punk (Build 8965389)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/979480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Insert Disk 22",
-      "Game Size": "1.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Tales of Bayun (Build 10566887)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1935470/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "FlyinDogs",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mickey Storm and the Cursed Mask",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1459760/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Racing",
-      "Developer": "Triangle Studios",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Doors: Paradox (Build 9862611)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1622770/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Big Loop Studios",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Cassiodora (v0.5.2364)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1708550/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Void Studios",
-      "Game Size": "4.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "PJ MASKS: HEROES OF THE NIGHT",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1635600/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action",
-      "Developer": "Petoons Studio",
-      "Game Size": "3.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Q.U.B.E. 10th Anniversary (v1.4.24)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1564220/library_600x900.jpg",
     "category": "pc",
@@ -29847,28 +14975,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Action, Adventure, Indie, Simulation",
       "Developer": "Toxic Games",
       "Game Size": "8.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mayhem Brawler (v2.1.9)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1306720/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "IzanagiGames, Too Kyo Games, Grounding Inc., ESQUADRA,inc.",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Deep Abyss (Build 9706604)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1299880/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "Studio RO",
-      "Game Size": "1.5 GB"
     },
     "system_requirements": []
   },
@@ -29884,105 +14990,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "RPG Time: The Legend of Wright",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1839510/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, RPG",
-      "Developer": "株式会社デスクワークス",
-      "Game Size": "1.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "The Outbound Ghost (v1.0.17)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1276810/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG",
-      "Developer": "Conradical Games",
-      "Game Size": "3.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Override 2: Super Mech League",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1329790/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Indie",
-      "Developer": "Modus Studios Brazil",
-      "Game Size": "3.2 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Platypus Adventures (Build 9094429)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1719550/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG",
-      "Developer": "Figtree Digital",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "SOWON (Build 9824066)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2104560/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie",
-      "Developer": "PUMPKIM",
-      "Game Size": "4.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Pronty: Fishy Adventure (v2.0.0)",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/f88010ea4d219482e1a2bf20e77e1437.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie",
-      "Developer": "18Light Game Ltd FunZone Games",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Epic Chef",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1312960/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Indie, RPG, Simulation",
-      "Developer": "Infinigon Games",
-      "Game Size": "3.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Undernauts: Labyrinth of Yomi",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1570510/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "RPG",
-      "Developer": "EXPERIENCE, Poppy Works",
-      "Game Size": "1.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "HordeCore (v1.9)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/980210/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, RPG, Strategy",
-      "Developer": "Digitality Studios",
-      "Game Size": "2.6 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Tin Hearts (Build 11243721)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1831700/library_600x900.jpg",
     "category": "pc",
@@ -29994,105 +15001,6 @@ window.PC_GAMES_DATA = [
     "system_requirements": []
   },
   {
-    "title": "The Galactic Junkers",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1243160/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Indie, Strategy",
-      "Developer": "Evil Twin Artworks",
-      "Game Size": "3.9 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Whateverland (v1.0.3)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1299990/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "Caligari Games",
-      "Game Size": "2.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Clive ‘N’ Wrench",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1094720/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure",
-      "Developer": "Dinosaur Bytes Studio",
-      "Game Size": "3.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Richman 11 (Build 9751000)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2074800/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Casual, Strategy",
-      "Developer": "CMGE",
-      "Game Size": "2.3 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Mongrel (v0.0.01)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1101790/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie, Early Access",
-      "Developer": "Fischmell",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Candy Disaster Tower Defense (Build 8021358)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1231460/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie, Strategy",
-      "Developer": "ACE Entertainment",
-      "Game Size": "1.4 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Catie in MeowmeowLand (Build 8448662)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1417890/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure, Casual, Indie",
-      "Developer": "ARTillery",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Rocco’s Island: Ring to End the Pain",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1394480/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Casual, Indie",
-      "Developer": "Cogoo",
-      "Game Size": "1.1 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Derpy Conga (Build 8164768)",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1149290/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Adventure, Casual, Indie",
-      "Developer": "Giant Door",
-      "Game Size": "1.5 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Rival Stars Horse Racing: Desktop Edition (v1.40.1)",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1166860/library_600x900.jpg",
     "category": "pc",
@@ -30100,17 +15008,6 @@ window.PC_GAMES_DATA = [
       "Genre": "Racing, Simulation, Sports, Strategy",
       "Developer": "PikPok",
       "Game Size": "6.7 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "Placid Plastic Deck – A Quiet Quest",
-    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2510020/library_600x900.jpg",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Adventure",
-      "Developer": "turbolento games, Fantastico Studio",
-      "Game Size": "1.8 GB"
     },
     "system_requirements": []
   }
