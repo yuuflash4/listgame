@@ -1307,27 +1307,15 @@ function initApp() {
   if (adminSettingsForm) {
     adminSettingsForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      adminWaNumber = adminWaNumberInput.value.trim().replace(/[^0-9]/g, '');
-      sizeBufferPercentage = parseFloat(adminBufferPercentageInput.value) || 5;
+      if (adminWaNumberInput) adminWaNumber = adminWaNumberInput.value.trim().replace(/[^0-9]/g, '');
+      if (adminBufferPercentageInput) sizeBufferPercentage = parseFloat(adminBufferPercentageInput.value) || 5;
       sizeBufferMultiplier = 1 + (sizeBufferPercentage / 100);
-      if (adminGithubTokenInput) adminGithubToken = adminGithubTokenInput.value.trim();
 
       localStorage.setItem('admin_wa_number', adminWaNumber);
       localStorage.setItem('admin_buffer_percentage', sizeBufferPercentage);
-      localStorage.setItem('admin_github_token', adminGithubToken);
-      if (adminWebAppUrlInput) adminWebAppUrl = adminWebAppUrlInput.value.trim();
-      localStorage.setItem('admin_webapp_url', adminWebAppUrl);
-
-      if (_localServerAvailable) {
-        fetch('/api/drive_config', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ web_app_url: adminWebAppUrl })
-        }).catch(() => {});
-      }
 
       updateStorageUI();
-      showToast('Pengaturan Toko, WhatsApp, GitHub Token, & Cloud Sync berhasil disimpan!', 'success');
+      showToast('Pengaturan Toko & WhatsApp berhasil disimpan!', 'success');
     });
   }
 
