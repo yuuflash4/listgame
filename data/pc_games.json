@@ -41,6 +41,17 @@
     ]
   },
   {
+    "title": "Crimson Desert",
+    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3321460/0ea942465fd1dff8a7fbc11cc9fca8c476c5e5ae/library_capsule.jpg",
+    "category": "pc",
+    "game_info": {
+      "Genre": "Action, RPG",
+      "Developer": "Game Science",
+      "Game Size": "141.0 GB"
+    },
+    "system_requirements": []
+  },
+  {
     "title": "Avatar: Frontiers of Pandora",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2840770/library_600x900.jpg",
     "category": "pc",
