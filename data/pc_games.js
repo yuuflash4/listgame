@@ -48,7 +48,7 @@ window.PC_GAMES_DATA = [
     "game_info": {
       "Genre": "Action, RPG",
       "Developer": "Game Science",
-      "Game Size": "148.0 GB"
+      "Game Size": "176.0 GB"
     },
     "system_requirements": []
   },
