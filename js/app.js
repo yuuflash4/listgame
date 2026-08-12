@@ -230,6 +230,8 @@ function initApp() {
   }
 
   async function syncFromServer() {
+    const deletedTitles = JSON.parse(localStorage.getItem('admin_deleted_titles') || '[]');
+
     const isLocal = await checkLocalServer();
     if (isLocal) {
       try {
@@ -239,16 +241,20 @@ function initApp() {
         const res = await fetch(`${_localServerUrl}/api/data`, options);
         if (timeoutId) clearTimeout(timeoutId);
         if (res.ok) {
-          const cloudCustomGames = await res.json();
+          let cloudCustomGames = await res.json();
           if (Array.isArray(cloudCustomGames)) {
+            if (deletedTitles.length > 0) {
+              cloudCustomGames = cloudCustomGames.filter(cg => cg && cg.title && !deletedTitles.includes(cg.title));
+            }
             if (cloudCustomGames.length > 0) {
               localStorage.setItem('admin_custom_games', JSON.stringify(cloudCustomGames));
               return cloudCustomGames;
             } else {
               const storedLocal = JSON.parse(localStorage.getItem('admin_custom_games') || '[]');
-              if (storedLocal.length > 0) {
+              const cleanStored = storedLocal.filter(cg => cg && cg.title && !deletedTitles.includes(cg.title));
+              if (cleanStored.length > 0) {
                 syncToServer();
-                return storedLocal;
+                return cleanStored;
               }
             }
           }
@@ -274,9 +280,14 @@ function initApp() {
           } catch (pe) {
             console.log('JSON parse error from Google Cloud response:', pe);
           }
-          if (Array.isArray(cloudCustomGames) && cloudCustomGames.length > 0) {
-            localStorage.setItem('admin_custom_games', JSON.stringify(cloudCustomGames));
-            return cloudCustomGames;
+          if (Array.isArray(cloudCustomGames)) {
+            if (deletedTitles.length > 0) {
+              cloudCustomGames = cloudCustomGames.filter(cg => cg && cg.title && !deletedTitles.includes(cg.title));
+            }
+            if (cloudCustomGames.length > 0) {
+              localStorage.setItem('admin_custom_games', JSON.stringify(cloudCustomGames));
+              return cloudCustomGames;
+            }
           }
         }
       } catch (e) {
@@ -315,11 +326,6 @@ function initApp() {
       } catch (e) {
         _localServerAvailable = false;
       }
-    }
-
-    // Skip Google Cloud Sync when running on Localhost for testing
-    if (isLocalHost) {
-      return;
     }
 
     if (adminWebAppUrl) {
@@ -660,8 +666,9 @@ function initApp() {
       // Sync latest custom games in background without blocking catalog display
       syncFromServer().then(cloudCustomGames => {
         if (cloudCustomGames && Array.isArray(cloudCustomGames)) {
+          const deletedTitles = JSON.parse(localStorage.getItem('admin_deleted_titles') || '[]');
           cloudCustomGames.forEach(cg => {
-            if (!cg || !cg.title) return;
+            if (!cg || !cg.title || deletedTitles.includes(cg.title)) return;
             const existingIdx = allGames.findIndex(g => (cg.id && g.id === cg.id) || g.title === cg.title);
             if (existingIdx !== -1) {
               allGames[existingIdx] = cg;
