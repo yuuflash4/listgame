@@ -1,5 +1,26 @@
 window.PC_GAMES_DATA = [
   {
+    "title": "Forza Horizon 5 Premium Edition (v1.688.044.0)",
+    "banner_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfq8E6A7f1-1pNr2vxCAIo8__4WW_rv9ZsEVUqWokFfA&s=10",
+    "category": "pc",
+    "game_info": {
+      "Genre": "Action, Adventure, Racing, Simulation, Sports",
+      "Developer": "Playground Games",
+      "Game Size": "176.0 GB"
+    },
+    "system_requirements": [
+      "Minimum:",
+      "Prosesor 64-bit dan OS diperlukan",
+      "OS: Windows 10 version 18362.0 or higher",
+      "Prosesor: Intel i5-4460 or AMD Ryzen 3 1200",
+      "Memori: 8 GB RAM",
+      "Grafis: NVidia GTX 970",
+      "AMD RX 470",
+      "OR Intel Arc A380",
+      "DirectX: Versi 12"
+    ]
+  },
+  {
     "title": "The First Berserker: Khazan",
     "banner_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8roc.webp",
     "category": "pc",
