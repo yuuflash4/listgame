@@ -189,22 +189,44 @@ function initApp() {
 
   // Cloud Auto-Sync Engine
   let _localServerAvailable = null;
+  let _localServerUrl = '';
   let _syncTimer = null;
 
   async function checkLocalServer() {
     if (_localServerAvailable !== null) return _localServerAvailable;
+    
+    // 1. Try relative path
     try {
       const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
-      const timeoutId = controller ? setTimeout(() => controller.abort(), 2000) : null;
+      const timeoutId = controller ? setTimeout(() => controller.abort(), 1500) : null;
       const options = { method: 'HEAD' };
       if (controller) options.signal = controller.signal;
       const res = await fetch('/api/data', options);
       if (timeoutId) clearTimeout(timeoutId);
-      _localServerAvailable = res.ok;
-    } catch (e) {
-      _localServerAvailable = false;
-    }
-    return _localServerAvailable;
+      if (res.ok) {
+        _localServerAvailable = true;
+        _localServerUrl = '';
+        return true;
+      }
+    } catch (e) {}
+
+    // 2. Fallback to explicit localhost:8999 if running via Live Server or file protocol
+    try {
+      const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+      const timeoutId = controller ? setTimeout(() => controller.abort(), 1500) : null;
+      const options = { method: 'HEAD' };
+      if (controller) options.signal = controller.signal;
+      const res = await fetch('http://127.0.0.1:8999/api/data', options);
+      if (timeoutId) clearTimeout(timeoutId);
+      if (res.ok) {
+        _localServerAvailable = true;
+        _localServerUrl = 'http://127.0.0.1:8999';
+        return true;
+      }
+    } catch (e) {}
+
+    _localServerAvailable = false;
+    return false;
   }
 
   async function syncFromServer() {
@@ -214,13 +236,21 @@ function initApp() {
         const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
         const timeoutId = controller ? setTimeout(() => controller.abort(), 2500) : null;
         const options = controller ? { signal: controller.signal } : {};
-        const res = await fetch('/api/data', options);
+        const res = await fetch(`${_localServerUrl}/api/data`, options);
         if (timeoutId) clearTimeout(timeoutId);
         if (res.ok) {
           const cloudCustomGames = await res.json();
-          if (Array.isArray(cloudCustomGames) && cloudCustomGames.length > 0) {
-            localStorage.setItem('admin_custom_games', JSON.stringify(cloudCustomGames));
-            return cloudCustomGames;
+          if (Array.isArray(cloudCustomGames)) {
+            if (cloudCustomGames.length > 0) {
+              localStorage.setItem('admin_custom_games', JSON.stringify(cloudCustomGames));
+              return cloudCustomGames;
+            } else {
+              const storedLocal = JSON.parse(localStorage.getItem('admin_custom_games') || '[]');
+              if (storedLocal.length > 0) {
+                syncToServer();
+                return storedLocal;
+              }
+            }
           }
         }
       } catch (e) {
@@ -228,7 +258,7 @@ function initApp() {
       }
     }
 
-    if (adminWebAppUrl) {
+    if (!_localServerAvailable && adminWebAppUrl) {
       try {
         const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
         const timeoutId = controller ? setTimeout(() => controller.abort(), 4000) : null;
@@ -244,7 +274,7 @@ function initApp() {
           } catch (pe) {
             console.log('JSON parse error from Google Cloud response:', pe);
           }
-          if (Array.isArray(cloudCustomGames)) {
+          if (Array.isArray(cloudCustomGames) && cloudCustomGames.length > 0) {
             localStorage.setItem('admin_custom_games', JSON.stringify(cloudCustomGames));
             return cloudCustomGames;
           }
@@ -273,9 +303,10 @@ function initApp() {
   async function syncToServer() {
     const customGames = JSON.parse(localStorage.getItem('admin_custom_games') || '[]');
 
-    if (_localServerAvailable !== false) {
+    const isLocal = await checkLocalServer();
+    if (isLocal) {
       try {
-        const res = await fetch('/api/data', {
+        const res = await fetch(`${_localServerUrl}/api/data`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(customGames)
@@ -605,7 +636,13 @@ function initApp() {
           const customGames = JSON.parse(customGamesJSON);
           if (Array.isArray(customGames)) {
             customGames.forEach(cg => {
-              allGames.unshift(cg); // Place admin custom games on top
+              if (!cg || !cg.title) return;
+              const existingIdx = allGames.findIndex(g => (cg.id && g.id === cg.id) || g.title === cg.title);
+              if (existingIdx !== -1) {
+                allGames[existingIdx] = cg;
+              } else {
+                allGames.unshift(cg);
+              }
               gamesByTitle.set(cg.title, cg);
             });
           }
@@ -620,10 +657,14 @@ function initApp() {
       syncFromServer().then(cloudCustomGames => {
         if (cloudCustomGames && Array.isArray(cloudCustomGames)) {
           cloudCustomGames.forEach(cg => {
-            if (cg && cg.title && !gamesByTitle.has(cg.title)) {
+            if (!cg || !cg.title) return;
+            const existingIdx = allGames.findIndex(g => (cg.id && g.id === cg.id) || g.title === cg.title);
+            if (existingIdx !== -1) {
+              allGames[existingIdx] = cg;
+            } else {
               allGames.unshift(cg);
-              gamesByTitle.set(cg.title, cg);
             }
+            gamesByTitle.set(cg.title, cg);
           });
           applyFilters();
           if (adminTableBody) renderAdminTable();
@@ -1323,10 +1364,39 @@ function initApp() {
 
   if (adminResetFormBtn) adminResetFormBtn.addEventListener('click', resetAdminGameForm);
 
-  // GitHub API Auto-Sync to Netlify Cloud
+  // GitHub API & Local File Auto-Sync
   async function syncCatalogToGitHub(category) {
+    const categoryGames = allGames
+      .filter(g => g.category === category)
+      .map(g => ({
+        title: g.title,
+        banner_url: g.cover,
+        category: g.category,
+        game_info: {
+          Genre: g.game_info ? (g.game_info.Genre || '') : '',
+          Developer: g.game_info ? (g.game_info.Developer || '') : '',
+          'Game Size': `${(g.sizeGB || 0).toFixed(1)} GB`
+        },
+        system_requirements: Array.isArray(g.requirements) ? g.requirements : []
+      }));
+
+    const isLocal = await checkLocalServer();
+    if (isLocal) {
+      try {
+        const res = await fetch(`${_localServerUrl}/api/save_catalog`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ category: category, games: categoryGames })
+        });
+        if (res.ok) {
+          showToast(`💾 Perubahan katalog ${category.toUpperCase()} berhasil disimpan ke file lokal (${category}_games.js)!`, 'success');
+        }
+      } catch (e) {
+        console.error('Local catalog save error:', e);
+      }
+    }
+
     if (isLocalHost) {
-      showToast('💻 Mode Testing Lokal: Perubahan tersimpan di server lokal saja (tidak mempengaruhi Netlify online).', 'info');
       return;
     }
 
@@ -1344,20 +1414,6 @@ function initApp() {
     showToast('🚀 Mengirim pembaruan katalog ke Netlify Cloud...', 'info');
 
     try {
-      const categoryGames = allGames
-        .filter(g => g.category === category)
-        .map(g => ({
-          title: g.title,
-          banner_url: g.cover,
-          category: g.category,
-          game_info: {
-            Genre: g.game_info ? (g.game_info.Genre || '') : '',
-            Developer: g.game_info ? (g.game_info.Developer || '') : '',
-            'Game Size': `${(g.sizeGB || 0).toFixed(1)} GB`
-          },
-          system_requirements: Array.isArray(g.requirements) ? g.requirements : []
-        }));
-
       const jsonStr = JSON.stringify(categoryGames, null, 2);
       const jsStr = `window.${category.toUpperCase()}_GAMES_DATA = ${jsonStr};\n`;
 

@@ -68,7 +68,7 @@ class PemilihanGameRequestHandler(SimpleHTTPRequestHandler):
         if self.path.startswith('/api/drive_config'):
             self.send_json(get_drive_config(), is_head=True)
             return
-        if self.path.startswith('/api/data'):
+        if self.path.startswith('/api/data') or self.path.startswith('/api/save_catalog'):
             self.send_json([], is_head=True)
             return
         return super().do_HEAD()
@@ -155,6 +155,33 @@ class PemilihanGameRequestHandler(SimpleHTTPRequestHandler):
                 with open(DATA_FILE, 'w', encoding='utf-8') as f:
                     json.dump(payload, f, indent=2, ensure_ascii=False)
                 self.send_json({"status": "success", "message": "Data custom games tersimpan di server lokal!"})
+            except Exception as e:
+                self.send_json({"status": "error", "message": str(e)}, status=500)
+            return
+
+        if self.path.startswith('/api/save_catalog'):
+            try:
+                length = int(self.headers.get('Content-Length', 0))
+                body = self.rfile.read(length)
+                payload = json.loads(body.decode('utf-8'))
+                category = payload.get('category')
+                games = payload.get('games', [])
+                if category in ['pc', 'ps2'] and isinstance(games, list):
+                    json_path = os.path.join(DATA_DIR, f"{category}_games.json")
+                    js_path = os.path.join(DATA_DIR, f"{category}_games.js")
+                    
+                    with open(json_path, 'w', encoding='utf-8') as f:
+                        json.dump(games, f, indent=2, ensure_ascii=False)
+                    
+                    var_name = f"{category.upper()}_GAMES_DATA"
+                    with open(js_path, 'w', encoding='utf-8') as f:
+                        f.write(f"window.{var_name} = ")
+                        json.dump(games, f, indent=2, ensure_ascii=False)
+                        f.write(";\n")
+                    
+                    self.send_json({"status": "success", "message": f"Katalog {category.upper()} berhasil disimpan ke file lokal!"})
+                else:
+                    self.send_json({"status": "error", "message": "Kategori tidak valid."}, status=400)
             except Exception as e:
                 self.send_json({"status": "error", "message": str(e)}, status=500)
             return
