@@ -6,6 +6,13 @@
   <title>Admin Panel - GRANDIA GAME TAVERN</title>
   <meta name="description" content="Halaman khusus Admin untuk mengelola katalog game, pengaturan WhatsApp, dan backup data Grandia Game Tavern." />
   
+  <!-- Auto-Forward Old Domain grandiagame.netlify.app -> grandiagames.netlify.app -->
+  <script>
+    if (window.location.hostname === 'grandiagame.netlify.app') {
+      window.location.replace('https://grandiagames.netlify.app' + window.location.pathname + window.location.search + window.location.hash);
+    }
+  </script>
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
