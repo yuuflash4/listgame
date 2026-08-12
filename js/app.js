@@ -563,34 +563,44 @@ function initApp() {
     return false;
   }
 
+  // Helper to check if a game has been marked as deleted by Admin
+  function isGameDeleted(game) {
+    if (!game) return true;
+    const deletedTitles = JSON.parse(localStorage.getItem('admin_deleted_titles') || '[]');
+    const deletedIds = JSON.parse(localStorage.getItem('admin_deleted_ids') || '[]');
+    
+    if (game.id && deletedIds.includes(String(game.id))) return true;
+    if (game.title) {
+      const cleanTitle = String(game.title).trim().toLowerCase();
+      if (deletedTitles.some(t => String(t).trim().toLowerCase() === cleanTitle)) return true;
+    }
+    return false;
+  }
+
   // Load All Catalogs + LocalStorage Custom Admin Edits
   async function loadAllCatalogs() {
     try {
       if (gameGrid) gameGrid.innerHTML = `<div class="loading-state">Memuat katalog game...</div>`;
-      
-      await waitForWindowData();
 
-      let pcRaw = window.PC_GAMES_DATA || null;
-      let ps2Raw = window.PS2_GAMES_DATA || null;
+      let pcRaw = null;
+      let ps2Raw = null;
 
-      // 1. Fallback to Live JSON Fetch if embedded script data is not available
-      if (!pcRaw || !ps2Raw) {
-        try {
-          const timestamp = Date.now();
-          const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
-          const timeoutId = controller ? setTimeout(() => controller.abort(), 2000) : null;
-          const options = controller ? { signal: controller.signal } : {};
+      // 1. Try fetching fresh live JSON first (bypassing browser script cache)
+      try {
+        const timestamp = Date.now();
+        const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+        const timeoutId = controller ? setTimeout(() => controller.abort(), 2000) : null;
+        const options = controller ? { signal: controller.signal } : {};
 
-          const [pcRes, ps2Res] = await Promise.all([
-            fetch(`data/pc_games.json?t=${timestamp}`, options),
-            fetch(`data/ps2_games.json?t=${timestamp}`, options)
-          ]);
-          if (timeoutId) clearTimeout(timeoutId);
-          if (pcRes.ok && !pcRaw) pcRaw = await pcRes.json();
-          if (ps2Res.ok && !ps2Raw) ps2Raw = await ps2Res.json();
-        } catch (fetchErr) {
-          console.warn('Fetch JSON failed or blocked, checking fallback script data:', fetchErr);
-        }
+        const [pcRes, ps2Res] = await Promise.all([
+          fetch(`data/pc_games.json?t=${timestamp}`, options),
+          fetch(`data/ps2_games.json?t=${timestamp}`, options)
+        ]);
+        if (timeoutId) clearTimeout(timeoutId);
+        if (pcRes.ok) pcRaw = await pcRes.json();
+        if (ps2Res.ok) ps2Raw = await ps2Res.json();
+      } catch (fetchErr) {
+        console.warn('Fetch live JSON skipped, falling back to script data:', fetchErr);
       }
 
       pcRaw = pcRaw || window.PC_GAMES_DATA || [];
@@ -603,38 +613,34 @@ function initApp() {
       allGames = [];
       gamesByTitle.clear();
 
-      const deletedTitles = JSON.parse(localStorage.getItem('admin_deleted_titles') || '[]');
-
       pcRaw.forEach((game, idx) => {
-        if (deletedTitles.includes(game.title)) return;
-        const sizeGB = parseSizeToGB(game.game_info ? game.game_info['Game Size'] : 0);
         const item = {
           id: `pc-${idx}`,
           title: game.title,
           category: 'pc',
-          sizeGB: sizeGB,
+          sizeGB: parseSizeToGB(game.game_info ? game.game_info['Game Size'] : 0),
           platform: 'PC (Windows)',
           cover: game.banner_url || 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop',
           game_info: game.game_info || {},
           requirements: game.system_requirements
         };
+        if (isGameDeleted(item) || isGameDeleted(game)) return;
         allGames.push(item);
         gamesByTitle.set(item.title, item);
       });
 
       ps2Raw.forEach((game, idx) => {
-        if (deletedTitles.includes(game.title)) return;
-        const sizeGB = parseSizeToGB(game.game_info ? game.game_info['Game Size'] : game.sizeGB);
         const item = {
           id: `ps2-${idx}`,
           title: game.title,
           category: 'ps2',
-          sizeGB: sizeGB,
+          sizeGB: parseSizeToGB(game.game_info ? game.game_info['Game Size'] : game.sizeGB),
           platform: 'PS2 ISO / OPL / PCSX2',
           cover: game.banner_url || 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop',
           game_info: game.game_info || {},
           requirements: game.system_requirements
         };
+        if (isGameDeleted(item) || isGameDeleted(game)) return;
         allGames.push(item);
         gamesByTitle.set(item.title, item);
       });
@@ -646,8 +652,9 @@ function initApp() {
           const customGames = JSON.parse(customGamesJSON);
           if (Array.isArray(customGames)) {
             customGames.forEach(cg => {
-              if (!cg || !cg.title || deletedTitles.includes(cg.title)) return;
-              const existingIdx = allGames.findIndex(g => (cg.id && g.id === cg.id) || g.title === cg.title);
+              if (!cg || !cg.title || isGameDeleted(cg)) return;
+              const cleanCgTitle = cg.title.trim().toLowerCase();
+              const existingIdx = allGames.findIndex(g => (cg.id && g.id === cg.id) || g.title.trim().toLowerCase() === cleanCgTitle);
               if (existingIdx !== -1) {
                 allGames[existingIdx] = cg;
               } else {
@@ -666,10 +673,10 @@ function initApp() {
       // Sync latest custom games in background without blocking catalog display
       syncFromServer().then(cloudCustomGames => {
         if (cloudCustomGames && Array.isArray(cloudCustomGames)) {
-          const deletedTitles = JSON.parse(localStorage.getItem('admin_deleted_titles') || '[]');
           cloudCustomGames.forEach(cg => {
-            if (!cg || !cg.title || deletedTitles.includes(cg.title)) return;
-            const existingIdx = allGames.findIndex(g => (cg.id && g.id === cg.id) || g.title === cg.title);
+            if (!cg || !cg.title || isGameDeleted(cg)) return;
+            const cleanCgTitle = cg.title.trim().toLowerCase();
+            const existingIdx = allGames.findIndex(g => (cg.id && g.id === cg.id) || g.title.trim().toLowerCase() === cleanCgTitle);
             if (existingIdx !== -1) {
               allGames[existingIdx] = cg;
             } else {
@@ -1350,9 +1357,15 @@ function initApp() {
     }
 
     let deletedTitles = JSON.parse(localStorage.getItem('admin_deleted_titles') || '[]');
-    if (deletedTitles.includes(title)) {
-      deletedTitles = deletedTitles.filter(t => t !== title);
-      localStorage.setItem('admin_deleted_titles', JSON.stringify(deletedTitles));
+    let deletedIds = JSON.parse(localStorage.getItem('admin_deleted_ids') || '[]');
+    const cleanTitle = title.trim().toLowerCase();
+
+    deletedTitles = deletedTitles.filter(t => String(t).trim().toLowerCase() !== cleanTitle);
+    localStorage.setItem('admin_deleted_titles', JSON.stringify(deletedTitles));
+
+    if (editId) {
+      deletedIds = deletedIds.filter(id => id !== String(editId));
+      localStorage.setItem('admin_deleted_ids', JSON.stringify(deletedIds));
     }
 
     localStorage.setItem('admin_custom_games', JSON.stringify(customGames));
@@ -1546,18 +1559,37 @@ function initApp() {
       if (btnDelete) {
         btnDelete.addEventListener('click', () => {
           if (confirm(`Apakah Anda yakin ingin menghapus "${titleStr}"?`)) {
-            allGames = allGames.filter(g => g.id !== game.id && g.title !== game.title);
+            const cleanTitle = titleStr.trim().toLowerCase();
+
+            allGames = allGames.filter(g => {
+              if (!g) return false;
+              if (game.id && g.id === game.id) return false;
+              if (g.title && g.title.trim().toLowerCase() === cleanTitle) return false;
+              return true;
+            });
+
             gamesByTitle.delete(game.title);
             selectedGames.delete(game.title);
 
             let customGames = JSON.parse(localStorage.getItem('admin_custom_games') || '[]');
-            customGames = customGames.filter(g => g.id !== game.id && g.title !== game.title);
+            customGames = customGames.filter(g => {
+              if (!g) return false;
+              if (game.id && g.id === game.id) return false;
+              if (g.title && g.title.trim().toLowerCase() === cleanTitle) return false;
+              return true;
+            });
             localStorage.setItem('admin_custom_games', JSON.stringify(customGames));
 
             let deletedTitles = JSON.parse(localStorage.getItem('admin_deleted_titles') || '[]');
-            if (!deletedTitles.includes(game.title)) {
-              deletedTitles.push(game.title);
+            if (!deletedTitles.some(t => String(t).trim().toLowerCase() === cleanTitle)) {
+              deletedTitles.push(titleStr);
               localStorage.setItem('admin_deleted_titles', JSON.stringify(deletedTitles));
+            }
+
+            let deletedIds = JSON.parse(localStorage.getItem('admin_deleted_ids') || '[]');
+            if (game.id && !deletedIds.includes(String(game.id))) {
+              deletedIds.push(String(game.id));
+              localStorage.setItem('admin_deleted_ids', JSON.stringify(deletedIds));
             }
 
             debouncedSyncToServer();
@@ -1691,6 +1723,8 @@ function initApp() {
         localStorage.setItem('admin_custom_games', '[]');
         localStorage.removeItem('admin_deleted_titles');
         localStorage.setItem('admin_deleted_titles', '[]');
+        localStorage.removeItem('admin_deleted_ids');
+        localStorage.setItem('admin_deleted_ids', '[]');
 
         // Wipe Local Server custom_games.json
         if (_localServerAvailable !== false) {
