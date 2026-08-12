@@ -1,5 +1,47 @@
 [
   {
+    "title": "007 First Light",
+    "banner_url": "https://store-images.s-microsoft.com/image/apps.8071.14287567326939893.1fdb2217-3463-49e6-b44c-c16587b03bc8.d8033845-8141-4dc4-b49e-2a8e6749235d",
+    "category": "pc",
+    "game_info": {
+      "Genre": "Action",
+      "Developer": "IO Interactive A/S",
+      "Game Size": "54.0 GB"
+    },
+    "system_requirements": [
+      "Minimum:",
+      "Prosesor 64-bit dan OS diperlukan",
+      "OS: MICROSOFT WINDOWS 10/11",
+      "64-BIT",
+      "Prosesor: INTEL CORE i5 9500",
+      "AMD RYZEN 5 3500",
+      "Memori: 16 GB RAM",
+      "Grafis: NVIDIA GFORCE GTX 1660",
+      "AMD RX 5700",
+      "INTEL DISCRETE GPU EQUIVALENT"
+    ]
+  },
+  {
+    "title": "Crimson Desert",
+    "banner_url": "https://upload.wikimedia.org/wikipedia/en/7/73/Crimson_Desert_Steam_Cover.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
+    "category": "pc",
+    "game_info": {
+      "Genre": "Action, RPG",
+      "Developer": "Pearl Abyss",
+      "Game Size": "141.0 GB"
+    },
+    "system_requirements": [
+      "Minimum:",
+      "Requires a 64-bit processor and operating system",
+      "OS: Windows 10 64-bit",
+      "Processor: Ryzen 5 2600X / i5-8500",
+      "Memory: 16 GB RAM",
+      "Graphics: RX 5500 XT / GTX 1060",
+      "DirectX: Version 12",
+      "Storage: 150 GB available space"
+    ]
+  },
+  {
     "title": "Forza Horizon 5 Premium Edition (v1.688.044.0)",
     "banner_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfq8E6A7f1-1pNr2vxCAIo8__4WW_rv9ZsEVUqWokFfA&s=10",
     "category": "pc",

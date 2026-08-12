@@ -1,5 +1,30 @@
 [
   {
+    "id": "custom-1786529948342",
+    "title": "007 First Light",
+    "category": "pc",
+    "sizeGB": 54,
+    "platform": "PC (Windows)",
+    "cover": "https://store-images.s-microsoft.com/image/apps.8071.14287567326939893.1fdb2217-3463-49e6-b44c-c16587b03bc8.d8033845-8141-4dc4-b49e-2a8e6749235d",
+    "game_info": {
+      "Genre": "Action",
+      "Developer": "IO Interactive A/S",
+      "Version": "Full Version"
+    },
+    "requirements": [
+      "Minimum:",
+      "Prosesor 64-bit dan OS diperlukan",
+      "OS: MICROSOFT WINDOWS 10/11",
+      "64-BIT",
+      "Prosesor: INTEL CORE i5 9500",
+      "AMD RYZEN 5 3500",
+      "Memori: 16 GB RAM",
+      "Grafis: NVIDIA GFORCE GTX 1660",
+      "AMD RX 5700",
+      "INTEL DISCRETE GPU EQUIVALENT"
+    ]
+  },
+  {
     "id": "custom-1786514054022",
     "title": "Crimson Desert",
     "category": "pc",

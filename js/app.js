@@ -673,6 +673,44 @@ function initApp() {
       applyFilters();
       if (adminTableBody) renderAdminTable();
 
+      // Sync from Firebase Firestore in background
+      if (window.db) {
+        window.db.collection('games').get().then(snapshot => {
+          if (!snapshot.empty) {
+            snapshot.forEach(doc => {
+              const cg = doc.data();
+              if (!cg || !cg.title || isGameDeleted(cg)) return;
+              const cleanCgTitle = cg.title.trim().toLowerCase();
+              const rawSize = cg.sizeGB || cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0);
+              const coverUrl = cg.banner_url || cg.cover || (cg.category === 'ps2' ? 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop');
+              const item = {
+                id: doc.id,
+                title: cg.title,
+                category: cg.category || 'pc',
+                sizeGB: parseSizeToGB(rawSize),
+                platform: cg.category === 'ps2' ? 'PS2 ISO / OPL / PCSX2' : 'PC (Windows)',
+                cover: coverUrl,
+                banner_url: coverUrl,
+                game_info: cg.game_info || { Genre: cg.genre || 'Action', Developer: cg.developer || 'Unknown', 'Game Size': `${parseSizeToGB(rawSize).toFixed(1)} GB` },
+                requirements: cg.system_requirements || cg.requirements || (cg.minReqs ? [cg.minReqs] : [])
+              };
+              const existingIdx = allGames.findIndex(g => (g.id && g.id === doc.id) || g.title.trim().toLowerCase() === cleanCgTitle);
+              if (existingIdx !== -1) {
+                const existing = allGames[existingIdx];
+                if (item.sizeGB > 0 || !existing.sizeGB || existing.sizeGB === 0) {
+                  allGames[existingIdx] = { ...existing, ...item };
+                }
+              } else {
+                allGames.unshift(item);
+              }
+              gamesByTitle.set(item.title, allGames[existingIdx !== -1 ? existingIdx : 0]);
+            });
+            applyFilters();
+            if (adminTableBody) renderAdminTable();
+          }
+        }).catch(err => console.warn('Firestore load warning:', err));
+      }
+
       // Sync latest custom games in background without blocking catalog display
       syncFromServer().then(cloudCustomGames => {
         if (cloudCustomGames && Array.isArray(cloudCustomGames)) {
@@ -1398,6 +1436,14 @@ function initApp() {
     localStorage.setItem('admin_custom_games', JSON.stringify(customGames));
     gamesByTitle.set(gameObject.title, gameObject);
 
+    if (window.db) {
+      window.db.collection('games').doc(gameObject.id).set({
+        ...gameObject,
+        size: gameObject.sizeGB,
+        updatedAt: new Date().toISOString()
+      }, { merge: true }).catch(err => console.error("Firestore save error:", err));
+    }
+
     debouncedSyncToServer();
     resetAdminGameForm();
     applyFilters();
@@ -1619,6 +1665,10 @@ function initApp() {
               localStorage.setItem('admin_deleted_ids', JSON.stringify(deletedIds));
             }
 
+            if (window.db && game.id) {
+              window.db.collection('games').doc(game.id).delete().catch(err => console.error("Firestore delete error:", err));
+            }
+
             debouncedSyncToServer();
             showToast(`Game "${titleStr}" telah dihapus!`, 'success');
             applyFilters();
@@ -1833,7 +1883,88 @@ function initApp() {
     }, 4200);
   }
 
-  // Initial Load
+  // Initial Load & Firebase Auth Handlers
+  const adminLoginForm = document.getElementById('admin-login-form');
+  const adminAuthOverlay = document.getElementById('admin-auth-overlay');
+  const loginErrorMsg = document.getElementById('login-error-msg');
+  const adminLogoutBtn = document.getElementById('admin-logout-btn');
+
+  if (window.auth) {
+    window.auth.onAuthStateChanged((user) => {
+      if (user) {
+        if (adminAuthOverlay) adminAuthOverlay.style.display = 'none';
+        if (adminLogoutBtn) adminLogoutBtn.style.display = 'inline-flex';
+      } else {
+        if (adminAuthOverlay && document.body.classList.contains('admin-page')) {
+          adminAuthOverlay.style.display = 'flex';
+        }
+        if (adminLogoutBtn) adminLogoutBtn.style.display = 'none';
+      }
+    });
+  }
+
+  if (adminLoginForm) {
+    adminLoginForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('login-email').value;
+      const password = document.getElementById('login-password').value;
+      const submitBtn = document.getElementById('login-submit-btn');
+      if (loginErrorMsg) loginErrorMsg.style.display = 'none';
+
+      try {
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.innerText = 'Memproses...';
+        }
+        await window.auth.signInWithEmailAndPassword(email, password);
+        if (adminAuthOverlay) adminAuthOverlay.style.display = 'none';
+        showToast('🔑 Login Admin Berhasil!', 'success');
+      } catch (err) {
+        if (loginErrorMsg) {
+          loginErrorMsg.innerText = 'Login Gagal: Email atau password salah.';
+          loginErrorMsg.style.display = 'block';
+        }
+        showToast('Login Gagal: Periksa email dan password.', 'error');
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerText = 'Masuk ke Panel Admin';
+        }
+      }
+    });
+  }
+
+  const loginGoogleBtn = document.getElementById('login-google-btn');
+  if (loginGoogleBtn) {
+    loginGoogleBtn.addEventListener('click', async () => {
+      if (!window.auth || typeof firebase === 'undefined' || !firebase.auth.GoogleAuthProvider) {
+        showToast('Firebase SDK belum siap.', 'error');
+        return;
+      }
+      const provider = new firebase.auth.GoogleAuthProvider();
+      try {
+        await window.auth.signInWithPopup(provider);
+        if (adminAuthOverlay) adminAuthOverlay.style.display = 'none';
+        showToast('🔑 Login Admin dengan Google Berhasil!', 'success');
+      } catch (err) {
+        if (loginErrorMsg) {
+          loginErrorMsg.innerText = 'Login Google Gagal: ' + (err.message || '');
+          loginErrorMsg.style.display = 'block';
+        }
+        showToast('Login Google Gagal.', 'error');
+      }
+    });
+  }
+
+  if (adminLogoutBtn) {
+    adminLogoutBtn.addEventListener('click', async () => {
+      if (window.auth) {
+        await window.auth.signOut();
+        showToast('🔒 Berhasil Logout dari Admin.', 'info');
+      }
+    });
+  }
+
   renderCapacityDropdown('hdd');
   loadAllCatalogs();
 }
