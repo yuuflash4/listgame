@@ -179,14 +179,8 @@ function initApp() {
   let adminWaNumber = localStorage.getItem('admin_wa_number') || '6285701917085';
   let sizeBufferPercentage = parseFloat(localStorage.getItem('admin_buffer_percentage') || '5');
   let sizeBufferMultiplier = 1 + (sizeBufferPercentage / 100);
-  let adminGithubToken = localStorage.getItem('admin_github_token') || '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';
-  let adminWebAppUrl = localStorage.getItem('admin_webapp_url') || 'https://script.google.com/macros/s/AKfycbyWZKd1eMTZSRZoMNaLX1zVlik3rje63ldJ7PmCZHX3UToU5qx_i_6N2zncOmz6Yeh82Q/exec';
-  const adminWebAppUrlInput = document.getElementById('admin-webapp-url');
-
   if (adminWaNumberInput) adminWaNumberInput.value = adminWaNumber;
   if (adminBufferPercentageInput) adminBufferPercentageInput.value = sizeBufferPercentage;
-  if (adminGithubTokenInput) adminGithubTokenInput.value = adminGithubToken;
-  if (adminWebAppUrlInput) adminWebAppUrlInput.value = adminWebAppUrl;
 
   // Cloud Auto-Sync Engine
   let _localServerAvailable = null;
@@ -274,36 +268,6 @@ function initApp() {
       }
     }
 
-    if (!_localServerAvailable && adminWebAppUrl) {
-      try {
-        const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
-        const timeoutId = controller ? setTimeout(() => controller.abort(), 4000) : null;
-        const cloudUrl = adminWebAppUrl.includes('?') ? `${adminWebAppUrl}&action=get_data` : `${adminWebAppUrl}?action=get_data`;
-        const options = controller ? { signal: controller.signal } : {};
-        const res = await fetch(cloudUrl, options);
-        if (timeoutId) clearTimeout(timeoutId);
-        if (res.ok || res.status === 200 || res.type === 'opaque') {
-          const text = await res.text();
-          let cloudCustomGames = null;
-          try {
-            cloudCustomGames = JSON.parse(text);
-          } catch (pe) {
-            console.log('JSON parse error from Google Cloud response:', pe);
-          }
-          if (Array.isArray(cloudCustomGames)) {
-            if (deletedTitles.length > 0) {
-              cloudCustomGames = cloudCustomGames.filter(cg => cg && cg.title && !deletedTitles.includes(cg.title));
-            }
-            if (cloudCustomGames.length > 0) {
-              localStorage.setItem('admin_custom_games', JSON.stringify(cloudCustomGames));
-              return cloudCustomGames;
-            }
-          }
-        }
-      } catch (e) {
-        console.log('Google Cloud Sync fetch skipped/error:', e);
-      }
-    }
     return null;
   }
 
@@ -328,25 +292,6 @@ function initApp() {
         if (res.ok) _localServerAvailable = true;
       } catch (e) {
         _localServerAvailable = false;
-      }
-    }
-
-    if (adminWebAppUrl) {
-      try {
-        const payload = JSON.stringify({
-          action: 'save_data',
-          storeData: JSON.stringify(customGames)
-        });
-
-        // Use mode: 'no-cors' with text/plain to bypass browser CORS preflight blocking
-        await fetch(adminWebAppUrl, {
-          method: 'POST',
-          mode: 'no-cors',
-          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-          body: payload
-        });
-      } catch (err) {
-        console.log('Google Cloud Sync post skipped/error:', err);
       }
     }
   }

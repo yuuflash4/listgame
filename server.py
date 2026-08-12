@@ -6,7 +6,6 @@ import uuid
 import socket
 import mimetypes
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
-from drive_service import upload_to_google_drive, get_drive_config, save_drive_config
 
 mimetypes.init()
 mimetypes.add_type('text/javascript', '.js')
@@ -66,7 +65,7 @@ class PemilihanGameRequestHandler(SimpleHTTPRequestHandler):
 
     def do_HEAD(self):
         if self.path.startswith('/api/drive_config'):
-            self.send_json(get_drive_config(), is_head=True)
+            self.send_json({}, is_head=True)
             return
         if self.path.startswith('/api/data') or self.path.startswith('/api/save_catalog'):
             self.send_json([], is_head=True)
@@ -88,7 +87,7 @@ class PemilihanGameRequestHandler(SimpleHTTPRequestHandler):
 
     def do_GET(self):
         if self.path.startswith('/api/drive_config'):
-            self.send_json(get_drive_config())
+            self.send_json({})
             return
 
         if self.path.startswith('/api/data'):
@@ -187,14 +186,7 @@ class PemilihanGameRequestHandler(SimpleHTTPRequestHandler):
             return
 
         if self.path.startswith('/api/drive_config'):
-            try:
-                length = int(self.headers.get('Content-Length', 0))
-                data = self.rfile.read(length)
-                new_cfg = json.loads(data.decode('utf-8'))
-                save_drive_config(new_cfg)
-                self.send_json({"status": "success", "message": "Konfigurasi Google Drive berhasil disimpan!"})
-            except Exception as e:
-                self.send_json({"status": "error", "message": str(e)}, status=500)
+            self.send_json({"status": "success", "message": "OK"})
             return
 
         if self.path.startswith('/upload_cover'):
