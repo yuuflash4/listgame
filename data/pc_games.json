@@ -42,13 +42,24 @@
     "system_requirements": []
   },
   {
+    "title": "Assassin's Creed Shadows",
+    "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3159330/bdab6ed673aea5877d76e8c99c696ced92cf0d12/library_capsule.jpg",
+    "category": "pc",
+    "game_info": {
+      "Genre": "Action, RPG",
+      "Developer": "Game Science",
+      "Game Size": "176.0 GB"
+    },
+    "system_requirements": []
+  },
+  {
     "title": "007 First Light",
     "banner_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/1159a696d257cbeb3f4479be3466cfba2ae938a0/library_600x900_2x.jpg?t=1780990824",
     "category": "pc",
     "game_info": {
       "Genre": "Action, RPG",
       "Developer": "Game Science",
-      "Game Size": "49.2 GB"
+      "Game Size": "54.0 GB"
     },
     "system_requirements": []
   },
