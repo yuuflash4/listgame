@@ -3567,7 +3567,7 @@ window.PS2_GAMES_DATA = [
     }
   },
   {
-    "title": "Kingdom Hearts II – Final Mix+",
+    "title": "Kingdom Hearts II – Final Mix",
     "banner_url": "http://romsfun.com/wp-content/uploads/2019/09/Kingdom-Hearts-II-Final-Mix.jpg",
     "url": "https://romsfun.com/roms/playstation-2/kingdom-hearts-ii-final-mix.html",
     "system_requirements": {},
@@ -23567,7 +23567,7 @@ window.PS2_GAMES_DATA = [
     }
   },
   {
-    "title": "Que:  Ancient Leaf no Yousei",
+    "title": "Que: Ancient Leaf no Yousei",
     "banner_url": "https://romsfun.com/wp-content/uploads/2021/04/1618689530-e9e33cc8-9aad-447b-a5a3-aacebf040cb9.jpg",
     "url": "https://romsfun.com/roms/playstation-2/que-ancient-leaf-no-yousei.html",
     "system_requirements": {},
@@ -29439,7 +29439,7 @@ window.PS2_GAMES_DATA = [
     }
   },
   {
-    "title": "Akudaikan 2:  Mousouden",
+    "title": "Akudaikan 2: Mousouden",
     "banner_url": "https://romsfun.com/wp-content/uploads/2023/08/Akudaikan-2-Mousouden.jpg",
     "url": "https://romsfun.com/roms/playstation-2/akudaikan-2-mousouden.html",
     "system_requirements": {},
