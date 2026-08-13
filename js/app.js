@@ -740,7 +740,11 @@ function initApp() {
                 if (adminTableBody) renderAdminTable();
               }
             })
-            .subscribe();
+            .subscribe((status) => {
+              if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT') {
+                console.info("Supabase Realtime status:", status);
+              }
+            });
         } catch(e) {
           console.warn("Supabase Realtime subscription error:", e);
         }
@@ -1499,16 +1503,25 @@ function initApp() {
         custom: true,
         created_at: nowIso
       };
-      window.supabaseClient.from('games').upsert([sbRow], { onConflict: 'id' })
-        .then(({ error }) => {
+      console.log('📤 Supabase upsert payload:', JSON.stringify(sbRow, null, 2));
+      window.supabaseClient.from('games').upsert([sbRow], { onConflict: 'id' }).select()
+        .then(({ data, error, status, statusText }) => {
+          console.log('📥 Supabase upsert response:', { data, error, status, statusText });
           if (error) {
             console.error("Supabase save error:", error);
-            showToast('⚠️ Gagal simpan ke Supabase Cloud: ' + error.message, 'error');
+            showToast('⚠️ Gagal simpan ke Supabase Cloud: ' + (error.message || error.details || JSON.stringify(error)), 'error');
+          } else if (!data || data.length === 0) {
+            console.warn("Supabase upsert returned empty data - kemungkinan RLS policy memblokir. Jalankan SQL fix di Supabase Dashboard.");
+            showToast('⚠️ Data TIDAK tersimpan di Supabase! Kemungkinan RLS Policy belum diatur. Cek konsol browser (F12).', 'error');
           } else {
+            console.log('✅ Supabase save verified! Saved row:', data[0]);
             showToast('☁️ Data game berhasil tersimpan di Database Cloud Supabase!', 'success');
           }
         })
-        .catch(err => console.error("Supabase save error:", err));
+        .catch(err => {
+          console.error("Supabase save catch error:", err);
+          showToast('⚠️ Gagal simpan ke Supabase: ' + String(err), 'error');
+        });
     }
 
     debouncedSyncToServer();
