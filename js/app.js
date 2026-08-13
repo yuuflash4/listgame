@@ -1605,6 +1605,8 @@ function initApp() {
             showToast('☁️ Data game berhasil tersimpan di Database Cloud Supabase!', 'success');
           }
         })
+        .catch(err => {
+          console.error("Supabase save catch error:", err);
         });
     }
 
