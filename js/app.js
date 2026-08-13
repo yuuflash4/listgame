@@ -556,8 +556,9 @@ function initApp() {
 
       pcRaw.forEach((game, idx) => {
         if (!game || !game.title) return;
+        const generatedId = 'pc_' + idx + '_' + String(game.title).toLowerCase().replace(/[^a-z0-9]/g, '');
         const item = {
-          id: `pc-${idx}`,
+          id: game.id || generatedId,
           title: game.title,
           category: 'pc',
           sizeGB: parseSizeToGB(game.game_info ? game.game_info['Game Size'] : 0),
@@ -573,8 +574,9 @@ function initApp() {
 
       ps2Raw.forEach((game, idx) => {
         if (!game || !game.title) return;
+        const generatedId = 'ps2_' + idx + '_' + String(game.title).toLowerCase().replace(/[^a-z0-9]/g, '');
         const item = {
-          id: `ps2-${idx}`,
+          id: game.id || generatedId,
           title: game.title,
           category: 'ps2',
           sizeGB: parseSizeToGB(game.game_info ? game.game_info['Game Size'] : game.sizeGB),
@@ -631,10 +633,24 @@ function initApp() {
         window.supabaseClient.from('games').select('*').then(({ data: sbGames, error }) => {
           if (!error && sbGames && sbGames.length > 0) {
             let hasNewItems = false;
-            let customGamesList = [];
 
+            // Deduplicate Supabase rows by title, favoring the newest created_at timestamp
+            const latestGamesMap = new Map();
             sbGames.forEach(cg => {
               if (!cg || !cg.title || isGameDeleted(cg)) return;
+              const cleanKey = cg.title.trim().toLowerCase();
+              const existingRow = latestGamesMap.get(cleanKey);
+              const cgTime = cg.created_at ? new Date(cg.created_at).getTime() : 0;
+              const existingTime = existingRow && existingRow.created_at ? new Date(existingRow.created_at).getTime() : 0;
+
+              if (!existingRow || cgTime >= existingTime) {
+                latestGamesMap.set(cleanKey, cg);
+              }
+            });
+
+            const resolvedSbGames = Array.from(latestGamesMap.values());
+
+            resolvedSbGames.forEach(cg => {
               const cleanCgTitle = cg.title.trim().toLowerCase();
               const rawSize = cg.size_gb || cg.sizeGB || cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0);
               const coverUrl = cg.banner_url || cg.cover || (cg.category === 'ps2' ? 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop');
@@ -652,8 +668,6 @@ function initApp() {
                 updatedAt: cg.created_at || new Date().toISOString()
               };
 
-              customGamesList.push(item);
-
               const existingIdx = allGames.findIndex(g => (g.id && String(g.id) === String(cg.id)) || g.title.trim().toLowerCase() === cleanCgTitle);
               if (existingIdx !== -1) {
                 const existing = allGames[existingIdx];
@@ -662,23 +676,7 @@ function initApp() {
 
                 let finalSize = existing.sizeGB;
                 if (existingTime > itemTime && existing.sizeGB > 0) {
-                  // Local edit is newer! Preserve local size & re-sync to Supabase
                   finalSize = existing.sizeGB;
-                  if (window.supabaseClient) {
-                    window.supabaseClient.from('games').upsert([{
-                      id: String(existing.id || cg.id),
-                      title: existing.title,
-                      category: existing.category || 'pc',
-                      size_gb: existing.sizeGB,
-                      platform: existing.platform || 'PC (Windows)',
-                      cover: existing.cover || '',
-                      banner_url: existing.cover || '',
-                      game_info: existing.game_info || {},
-                      download_links: existing.download_links || null,
-                      custom: true,
-                      created_at: existing.updatedAt
-                    }], { onConflict: 'id' }).catch(() => {});
-                  }
                 } else {
                   finalSize = item.sizeGB > 0 ? item.sizeGB : existing.sizeGB;
                 }
@@ -718,6 +716,35 @@ function initApp() {
             }
           }
         }).catch(err => console.warn('Supabase load warning:', err));
+
+        // Realtime Subscription for live updates across devices
+        try {
+          window.supabaseClient
+            .channel('public:games')
+            .on('postgres_changes', { event: '*', schema: 'public', table: 'games' }, (payload) => {
+              if (payload.new && payload.new.title) {
+                const cg = payload.new;
+                if (isGameDeleted(cg)) return;
+                const rawSize = cg.size_gb || cg.sizeGB || cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0);
+                const sizeNum = parseSizeToGB(rawSize);
+                const cleanCgTitle = cg.title.trim().toLowerCase();
+                const existingIdx = allGames.findIndex(g => (g.id && String(g.id) === String(cg.id)) || g.title.trim().toLowerCase() === cleanCgTitle);
+                
+                if (existingIdx !== -1) {
+                  allGames[existingIdx].sizeGB = sizeNum > 0 ? sizeNum : allGames[existingIdx].sizeGB;
+                  if (!allGames[existingIdx].game_info) allGames[existingIdx].game_info = {};
+                  allGames[existingIdx].game_info['Game Size'] = `${allGames[existingIdx].sizeGB.toFixed(1)} GB`;
+                  allGames[existingIdx].title = cg.title;
+                  if (cg.cover) allGames[existingIdx].cover = cg.cover;
+                }
+                applyFilters();
+                if (adminTableBody) renderAdminTable();
+              }
+            })
+            .subscribe();
+        } catch(e) {
+          console.warn("Supabase Realtime subscription error:", e);
+        }
       }
 
       // Sync latest custom games in background without blocking catalog display
@@ -1469,7 +1496,12 @@ function initApp() {
       };
       window.supabaseClient.from('games').upsert([sbRow], { onConflict: 'id' })
         .then(({ error }) => {
-          if (error) console.error("Supabase save error:", error);
+          if (error) {
+            console.error("Supabase save error:", error);
+            showToast('⚠️ Gagal simpan ke Supabase Cloud: ' + error.message, 'error');
+          } else {
+            showToast('☁️ Data game berhasil tersimpan di Database Cloud Supabase!', 'success');
+          }
         })
         .catch(err => console.error("Supabase save error:", err));
     }
