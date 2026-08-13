@@ -197,6 +197,12 @@ function initApp() {
   async function checkLocalServer() {
     if (_localServerAvailable !== null) return _localServerAvailable;
     
+    // Skip local server ping if running on production host (e.g. Netlify)
+    if (!isLocalHost) {
+      _localServerAvailable = false;
+      return false;
+    }
+
     // 1. Try relative path
     try {
       const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
@@ -212,22 +218,20 @@ function initApp() {
       }
     } catch (e) {}
 
-    // 2. Fallback to explicit localhost:8999 ONLY if running on local environment
-    if (isLocalHost) {
-      try {
-        const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
-        const timeoutId = controller ? setTimeout(() => controller.abort(), 1500) : null;
-        const options = { method: 'HEAD' };
-        if (controller) options.signal = controller.signal;
-        const res = await fetch('http://127.0.0.1:8999/api/data', options);
-        if (timeoutId) clearTimeout(timeoutId);
-        if (res.ok) {
-          _localServerAvailable = true;
-          _localServerUrl = 'http://127.0.0.1:8999';
-          return true;
-        }
-      } catch (e) {}
-    }
+    // 2. Fallback to explicit localhost:8999
+    try {
+      const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+      const timeoutId = controller ? setTimeout(() => controller.abort(), 1500) : null;
+      const options = { method: 'HEAD' };
+      if (controller) options.signal = controller.signal;
+      const res = await fetch('http://127.0.0.1:8999/api/data', options);
+      if (timeoutId) clearTimeout(timeoutId);
+      if (res.ok) {
+        _localServerAvailable = true;
+        _localServerUrl = 'http://127.0.0.1:8999';
+        return true;
+      }
+    } catch (e) {}
 
     _localServerAvailable = false;
     return false;
