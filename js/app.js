@@ -635,6 +635,7 @@ function initApp() {
       // Sync from Supabase Database in background
       if (window.supabaseClient) {
         window.supabaseClient.from('games').select('*').then(({ data: sbGames, error }) => {
+          console.log('🔍 Supabase fetch result:', { count: sbGames ? sbGames.length : 0, error, khazan: sbGames ? sbGames.find(g => g.title && g.title.includes('Khazan')) : null });
           if (!error && sbGames && sbGames.length > 0) {
             let hasNewItems = false;
 
@@ -682,6 +683,10 @@ function initApp() {
 
                 const finalCover = (item.cover && !item.cover.includes('unsplash')) ? item.cover : existing.cover;
 
+                if (cg.title && cg.title.includes('Khazan')) {
+                  console.log('🎮 Khazan merge debug:', { existingSize: existing.sizeGB, itemSize: item.sizeGB, finalSize, sbSizeGb: cg.size_gb, existingId: existing.id, itemId: item.id });
+                }
+
                 allGames[existingIdx] = { 
                   ...existing, 
                   ...item, 
@@ -710,6 +715,8 @@ function initApp() {
             } catch(e) {}
 
             if (hasNewItems) {
+              const khazanAfter = allGames.find(g => g.title && g.title.includes('Khazan'));
+              console.log('🎮 Khazan AFTER Supabase merge:', { sizeGB: khazanAfter ? khazanAfter.sizeGB : 'NOT FOUND', gameInfo: khazanAfter ? khazanAfter.game_info : null });
               applyFilters();
               if (adminTableBody) renderAdminTable();
             }
