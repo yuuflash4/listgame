@@ -622,6 +622,9 @@ function initApp() {
       if (window.db) {
         window.db.collection('games').get().then(snapshot => {
           if (!snapshot.empty) {
+            let hasNewItems = false;
+            let firestoreCustomGames = [];
+
             snapshot.forEach(doc => {
               const cg = doc.data();
               if (!cg || !cg.title || isGameDeleted(cg)) return;
@@ -637,21 +640,40 @@ function initApp() {
                 cover: coverUrl,
                 banner_url: coverUrl,
                 game_info: cg.game_info || { Genre: cg.genre || 'Action', Developer: cg.developer || 'Unknown', 'Game Size': `${parseSizeToGB(rawSize).toFixed(1)} GB` },
-                requirements: cg.system_requirements || cg.requirements || (cg.minReqs ? [cg.minReqs] : [])
+                requirements: cg.system_requirements || cg.requirements || (cg.minReqs ? [cg.minReqs] : []),
+                updatedAt: cg.updatedAt || new Date().toISOString()
               };
+
+              firestoreCustomGames.push(item);
+
               const existingIdx = allGames.findIndex(g => (g.id && g.id === doc.id) || g.title.trim().toLowerCase() === cleanCgTitle);
               if (existingIdx !== -1) {
                 const existing = allGames[existingIdx];
-                if (item.sizeGB > 0 || !existing.sizeGB || existing.sizeGB === 0) {
+                const existingTime = existing.updatedAt ? new Date(existing.updatedAt).getTime() : 0;
+                const itemTime = item.updatedAt ? new Date(item.updatedAt).getTime() : 0;
+
+                if (itemTime >= existingTime) {
                   allGames[existingIdx] = { ...existing, ...item };
+                  hasNewItems = true;
                 }
               } else {
                 allGames.unshift(item);
+                hasNewItems = true;
               }
               gamesByTitle.set(item.title, allGames[existingIdx !== -1 ? existingIdx : 0]);
             });
-            applyFilters();
-            if (adminTableBody) renderAdminTable();
+
+            // Cache Firestore custom games to LocalStorage so they load instantly (0ms) on next refresh
+            if (firestoreCustomGames.length > 0) {
+              try {
+                localStorage.setItem('admin_custom_games', JSON.stringify(firestoreCustomGames));
+              } catch(e) {}
+            }
+
+            if (hasNewItems) {
+              applyFilters();
+              if (adminTableBody) renderAdminTable();
+            }
           }
         }).catch(err => console.warn('Firestore load warning:', err));
       }
@@ -1316,19 +1338,24 @@ function initApp() {
     const reqsText = adminReqs.value.trim();
     const requirements = reqsText ? reqsText.split(/[\n,]+/).map(r => r.trim()).filter(Boolean) : [];
 
+    const nowIso = new Date().toISOString();
     const gameObject = {
       id: editId || `custom-${Date.now()}`,
       title: title,
       category: category,
       sizeGB: sizeGB,
+      size: sizeGB,
       platform: category === 'ps2' ? 'PS2 ISO / OPL' : 'PC (Windows)',
       cover: cover,
+      banner_url: cover,
       game_info: {
         Genre: genre,
         Developer: developer,
-        Version: 'Full Version'
+        Version: 'Full Version',
+        'Game Size': `${sizeGB.toFixed(1)} GB`
       },
-      requirements: requirements
+      requirements: requirements,
+      updatedAt: nowIso
     };
 
     let customGames = JSON.parse(localStorage.getItem('admin_custom_games') || '[]');

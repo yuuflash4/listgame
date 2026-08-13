@@ -84,6 +84,7 @@
 <!-- Firebase SDK -->
 <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
 <script src="js/firebase-config.js"></script>
 
 <!-- Data Lokal Bawaan -->
@@ -118,9 +119,22 @@
   }
 
   async function startMigration() {
-    if (!window.db) {
+    if (!window.db || !window.auth) {
       alert("Firebase belum terinisialisasi! Pastikan Firestore sudah diaktifkan di Firebase Console.");
       return;
+    }
+
+    if (!window.auth.currentUser) {
+      log("🔒 Otentikasi Admin diperlukan untuk izin menulis ke Firestore...");
+      try {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        await window.auth.signInWithPopup(provider);
+        log("🔑 Login Admin Berhasil! Melanjutkan migrasi...");
+      } catch (authErr) {
+        log(`❌ Gagal Login Admin: ${authErr.message}`);
+        alert("Kamu harus login sebagai Admin terlebih dahulu untuk melakukan upload data!");
+        return;
+      }
     }
 
     startBtn.disabled = true;
@@ -168,7 +182,7 @@
       const sizeGB = parseSizeToGB(rawSize);
       const coverUrl = g.banner_url || g.cover || '';
       allGames.push({
-        id: g.id || `pc_${idx}`,
+        id: g.id || `pc-${idx}`,
         title: g.title,
         category: 'pc',
         size: sizeGB,
@@ -191,7 +205,7 @@
       const sizeGB = parseSizeToGB(rawSize);
       const coverUrl = g.banner_url || g.cover || '';
       allGames.push({
-        id: g.id || `ps2_${idx}`,
+        id: g.id || `ps2-${idx}`,
         title: g.title,
         category: 'ps2',
         size: sizeGB,
