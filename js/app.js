@@ -603,12 +603,25 @@ function initApp() {
               if (!cg || !cg.title || isGameDeleted(cg)) return;
               const cleanCgTitle = cg.title.trim().toLowerCase();
               const existingIdx = allGames.findIndex(g => (cg.id && g.id === cg.id) || g.title.trim().toLowerCase() === cleanCgTitle);
+              
+              const itemSize = parseSizeToGB(cg.sizeGB || cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0));
+              
               if (existingIdx !== -1) {
-                allGames[existingIdx] = cg;
+                const existing = allGames[existingIdx];
+                allGames[existingIdx] = {
+                  ...existing,
+                  ...cg,
+                  sizeGB: itemSize > 0 ? itemSize : existing.sizeGB,
+                  cover: cg.cover || cg.banner_url || existing.cover
+                };
               } else {
-                allGames.unshift(cg);
+                allGames.unshift({
+                  ...cg,
+                  sizeGB: itemSize,
+                  cover: cg.cover || cg.banner_url || 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop'
+                });
               }
-              gamesByTitle.set(cg.title, cg);
+              gamesByTitle.set(cg.title, allGames[existingIdx !== -1 ? existingIdx : 0]);
             });
           }
         } catch (e) {}
@@ -652,8 +665,16 @@ function initApp() {
                 const existingTime = existing.updatedAt ? new Date(existing.updatedAt).getTime() : 0;
                 const itemTime = item.updatedAt ? new Date(item.updatedAt).getTime() : 0;
 
+                const finalSize = item.sizeGB > 0 ? item.sizeGB : existing.sizeGB;
+                const finalCover = (item.cover && !item.cover.includes('unsplash')) ? item.cover : existing.cover;
+
                 if (itemTime >= existingTime) {
-                  allGames[existingIdx] = { ...existing, ...item };
+                  allGames[existingIdx] = { 
+                    ...existing, 
+                    ...item, 
+                    sizeGB: finalSize, 
+                    cover: finalCover 
+                  };
                   hasNewItems = true;
                 }
               } else {
