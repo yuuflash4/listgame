@@ -485,7 +485,7 @@ window.PC_GAMES_DATA = [
     "game_info": {
       "Genre": "Action",
       "Developer": "Rockstar Games, Double Eleven",
-      "Game Size": "8.4 GB"
+      "Game Size": "11.0 GB"
     },
     "system_requirements": []
   },
@@ -826,7 +826,7 @@ window.PC_GAMES_DATA = [
     "game_info": {
       "Genre": "Action, Adventure, Racing, Sports",
       "Developer": "Ghost Games",
-      "Game Size": "29.4 GB"
+      "Game Size": "35.0 GB"
     },
     "system_requirements": []
   },

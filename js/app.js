@@ -614,43 +614,7 @@ function initApp() {
         gamesByTitle.set(item.title, item);
       });
 
-      // Merge Google Sheets Live Data BEFORE initial card render
-      if (gasGames && Array.isArray(gasGames) && gasGames.length > 0) {
-        gasGames.forEach(cg => {
-          if (!cg || !cg.title || isGameDeleted(cg)) return;
-          const cleanCgTitle = cg.title.trim().toLowerCase();
-          const rawSize = cg.sizeGB !== undefined && cg.sizeGB !== null ? cg.sizeGB : (cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0));
-          const sizeNum = parseSizeToGB(rawSize);
-          const coverUrl = cg.cover || cg.banner_url || (cg.category === 'ps2' ? 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop');
-
-          const gameInfo = { ...(cg.game_info || { Genre: 'Action', Developer: 'Unknown' }) };
-          if (sizeNum > 0) gameInfo['Game Size'] = `${sizeNum.toFixed(1)} GB`;
-
-          const item = {
-            id: String(cg.id),
-            title: cg.title,
-            category: cg.category || 'pc',
-            sizeGB: sizeNum,
-            platform: cg.platform || (cg.category === 'ps2' ? 'PlayStation 2' : 'PC (Windows)'),
-            cover: coverUrl,
-            banner_url: coverUrl,
-            game_info: gameInfo,
-            requirements: cg.requirements || cg.system_requirements || []
-          };
-
-          const existingIdx = allGames.findIndex(g => (g.id && String(g.id) === String(cg.id)) || (g.title && g.title.trim().toLowerCase() === cleanCgTitle));
-          if (existingIdx !== -1) {
-            const existing = allGames[existingIdx];
-            allGames[existingIdx] = { ...existing, ...item, sizeGB: sizeNum > 0 ? sizeNum : existing.sizeGB };
-            gamesByTitle.set(item.title, allGames[existingIdx]);
-          } else {
-            allGames.push(item);
-            gamesByTitle.set(item.title, item);
-          }
-        });
-      }
-
-      // Merge Custom LocalStorage Games & Edits
+      // 1. Merge Custom LocalStorage Games & Edits
       const customGamesJSON = localStorage.getItem('admin_custom_games');
       if (customGamesJSON) {
         try {
@@ -688,6 +652,42 @@ function initApp() {
             });
           }
         } catch (e) {}
+      }
+
+      // 2. Merge Google Sheets Live Data (OVERWRITES older local data with live 11.0 GB values!)
+      if (gasGames && Array.isArray(gasGames) && gasGames.length > 0) {
+        gasGames.forEach(cg => {
+          if (!cg || !cg.title || isGameDeleted(cg)) return;
+          const cleanCgTitle = cg.title.trim().toLowerCase();
+          const rawSize = cg.sizeGB !== undefined && cg.sizeGB !== null ? cg.sizeGB : (cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0));
+          const sizeNum = parseSizeToGB(rawSize);
+          const coverUrl = cg.cover || cg.banner_url || (cg.category === 'ps2' ? 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop');
+
+          const gameInfo = { ...(cg.game_info || { Genre: 'Action', Developer: 'Unknown' }) };
+          if (sizeNum > 0) gameInfo['Game Size'] = `${sizeNum.toFixed(1)} GB`;
+
+          const item = {
+            id: String(cg.id),
+            title: cg.title,
+            category: cg.category || 'pc',
+            sizeGB: sizeNum,
+            platform: cg.platform || (cg.category === 'ps2' ? 'PlayStation 2' : 'PC (Windows)'),
+            cover: coverUrl,
+            banner_url: coverUrl,
+            game_info: gameInfo,
+            requirements: cg.requirements || cg.system_requirements || []
+          };
+
+          const existingIdx = allGames.findIndex(g => (g.id && String(g.id) === String(cg.id)) || (g.title && g.title.trim().toLowerCase() === cleanCgTitle));
+          if (existingIdx !== -1) {
+            const existing = allGames[existingIdx];
+            allGames[existingIdx] = { ...existing, ...item, sizeGB: sizeNum > 0 ? sizeNum : existing.sizeGB };
+            gamesByTitle.set(item.title, allGames[existingIdx]);
+          } else {
+            allGames.push(item);
+            gamesByTitle.set(item.title, item);
+          }
+        });
       }
 
       // NOW RENDER ALL CARDS DIRECTLY FROM LIVE GOOGLE SHEETS DATA!
