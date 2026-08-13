@@ -1486,33 +1486,60 @@ function initApp() {
     gamesByTitle.set(gameObject.title, gameObject);
 
     if (window.supabaseClient) {
-      const existingInAll = allGames.find(g => (g.id && String(g.id) === String(editId)) || (g.title && g.title.trim().toLowerCase() === cleanTitle));
-      const targetId = (existingInAll && existingInAll.id) ? String(existingInAll.id) : String(gameObject.id);
-      gameObject.id = targetId;
+      // Step 1: Query Supabase for existing rows with the same title to find the real DB ID
+      window.supabaseClient.from('games').select('id').eq('title', gameObject.title)
+        .then(({ data: existingRows }) => {
+          let targetId = String(gameObject.id);
+          const duplicateIds = [];
 
-      const sbRow = {
-        id: targetId,
-        title: gameObject.title,
-        category: gameObject.category || 'pc',
-        size_gb: gameObject.sizeGB || 0,
-        platform: gameObject.platform || (gameObject.category === 'ps2' ? 'PS2 ISO / OPL / PCSX2' : 'PC (Windows)'),
-        cover: gameObject.cover || '',
-        banner_url: gameObject.banner_url || gameObject.cover || '',
-        game_info: gameObject.game_info || {},
-        download_links: gameObject.download_links || null,
-        custom: true,
-        created_at: nowIso
-      };
-      console.log('📤 Supabase upsert payload:', JSON.stringify(sbRow, null, 2));
-      window.supabaseClient.from('games').upsert([sbRow], { onConflict: 'id' }).select()
+          if (existingRows && existingRows.length > 0) {
+            // Use the first found Supabase ID as the target
+            targetId = String(existingRows[0].id);
+            // Collect any OTHER duplicate IDs to clean up
+            existingRows.forEach(row => {
+              if (String(row.id) !== targetId) {
+                duplicateIds.push(String(row.id));
+              }
+            });
+          }
+
+          gameObject.id = targetId;
+
+          const sbRow = {
+            id: targetId,
+            title: gameObject.title,
+            category: gameObject.category || 'pc',
+            size_gb: gameObject.sizeGB || 0,
+            platform: gameObject.platform || (gameObject.category === 'ps2' ? 'PS2 ISO / OPL / PCSX2' : 'PC (Windows)'),
+            cover: gameObject.cover || '',
+            banner_url: gameObject.banner_url || gameObject.cover || '',
+            game_info: gameObject.game_info || {},
+            download_links: gameObject.download_links || null,
+            custom: true,
+            created_at: nowIso
+          };
+
+          console.log('📤 Supabase upsert payload:', JSON.stringify(sbRow, null, 2));
+
+          // Step 2: Delete duplicate rows with different IDs (cleanup old migration data)
+          if (duplicateIds.length > 0) {
+            console.log('🧹 Cleaning up duplicate Supabase rows:', duplicateIds);
+            window.supabaseClient.from('games').delete().in('id', duplicateIds)
+              .then(() => console.log('🧹 Duplicates cleaned up successfully'))
+              .catch(err => console.warn('Duplicate cleanup warning:', err));
+          }
+
+          // Step 3: Upsert the game data
+          return window.supabaseClient.from('games').upsert([sbRow], { onConflict: 'id' }).select();
+        })
         .then(({ data, error, status, statusText }) => {
           console.log('📥 Supabase upsert response:', { data, error, status, statusText });
           if (error) {
             console.error("Supabase save error:", error);
             showToast('⚠️ Gagal simpan ke Supabase Cloud: ' + (error.message || error.details || JSON.stringify(error)), 'error');
           } else if (!data || data.length === 0) {
-            console.warn("Supabase upsert returned empty data - kemungkinan RLS policy memblokir. Jalankan SQL fix di Supabase Dashboard.");
-            showToast('⚠️ Data TIDAK tersimpan di Supabase! Kemungkinan RLS Policy belum diatur. Cek konsol browser (F12).', 'error');
+            console.warn("Supabase upsert returned empty data - kemungkinan RLS policy memblokir.");
+            showToast('⚠️ Data TIDAK tersimpan di Supabase! Cek RLS Policy.', 'error');
           } else {
             console.log('✅ Supabase save verified! Saved row:', data[0]);
             showToast('☁️ Data game berhasil tersimpan di Database Cloud Supabase!', 'success');
