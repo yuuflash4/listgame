@@ -750,6 +750,27 @@ function initApp() {
     `;
   }
 
+  // Mobile-Specific Image Compression Helper (wsrv.nl Proxy)
+  function getOptimizedImageUrl(url) {
+    if (!url || typeof url !== 'string') {
+      return 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop';
+    }
+    const trimmed = url.trim();
+    if (trimmed.startsWith('data:') || trimmed.endsWith('.svg') || trimmed.includes('wsrv.nl')) {
+      return trimmed;
+    }
+
+    // Detect if user is on a mobile device / smartphone (screen <= 768px or mobile userAgent)
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
+
+    if (isMobile) {
+      const cleanUrl = trimmed.replace(/^https?:\/\//, '');
+      return `https://wsrv.nl/?url=${encodeURIComponent(cleanUrl)}&w=280&output=webp&q=65`;
+    }
+
+    return trimmed;
+  }
+
   function renderGameGrid(append = false) {
     if (!gameGrid) return;
 
@@ -779,7 +800,8 @@ function initApp() {
         card.dataset.title = game.title;
 
         const sizeGBNum = (typeof game.sizeGB === 'number' && !isNaN(game.sizeGB)) ? game.sizeGB : (parseFloat(game.sizeGB) || 0);
-        const coverUrl = game.cover || game.banner_url || 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop';
+        const rawCoverUrl = game.cover || game.banner_url || 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop';
+        const coverUrl = getOptimizedImageUrl(rawCoverUrl);
 
         const price = calculateGamePrice(sizeGBNum);
         const priceStr = formatRupiah(price);
@@ -1983,6 +2005,25 @@ function initApp() {
         await window.supabaseClient.auth.signOut();
         showToast('🔒 Berhasil Logout dari Admin.', 'info');
       }
+    });
+  }
+
+  // Back to Top (Scroll to Top) Button Handler
+  const btnScrollTop = document.getElementById('btn-scroll-top');
+  if (btnScrollTop) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        btnScrollTop.classList.add('visible');
+      } else {
+        btnScrollTop.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    btnScrollTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
   }
 

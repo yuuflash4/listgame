@@ -2220,3 +2220,55 @@ body.no-price-mode #storage-price-total-wrap {
   }
 }
 
+/* Floating Back to Top Button */
+.btn-scroll-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(30, 41, 59, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 995;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px) scale(0.9);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 15px rgba(99, 102, 241, 0.3);
+}
+
+.btn-scroll-top:hover {
+  background: var(--accent, #6366f1);
+  color: #ffffff;
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 12px 28px rgba(99, 102, 241, 0.5), 0 0 20px rgba(99, 102, 241, 0.6);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-scroll-top:active {
+  transform: translateY(0) scale(0.95);
+}
+
+.btn-scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+@media (max-width: 768px) {
+  .btn-scroll-top {
+    bottom: 80px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
