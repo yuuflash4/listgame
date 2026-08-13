@@ -145,7 +145,11 @@ DROP POLICY IF EXISTS "Allow public write" ON public.games;
 DROP POLICY IF EXISTS "Allow public write for migration" ON public.games;
 
 CREATE POLICY "Allow public read" ON public.games FOR SELECT USING (true);
-CREATE POLICY "Allow public write" ON public.games FOR ALL USING (true) WITH CHECK (true);</div>
+CREATE POLICY "Allow public write" ON public.games FOR ALL USING (true) WITH CHECK (true);
+
+-- Aktifkan Realtime secara aman (Abaikan jika tabel sudah terdaftar)
+ALTER PUBLICATION supabase_realtime DROP TABLE IF EXISTS public.games;
+ALTER PUBLICATION supabase_realtime ADD TABLE public.games;</div>
 
   <div class="form-group">
     <label for="sb-url">2. Supabase URL:</label>

@@ -1448,7 +1448,7 @@ function initApp() {
         customGames[idx] = gameObject;
       } else {
         // Edit existing stock game
-        const stockIdx = allGames.findIndex(g => g.id === editId || g.title === title);
+        const stockIdx = allGames.findIndex(g => g.id === editId || (g.title && g.title.trim().toLowerCase() === title.trim().toLowerCase()));
         if (stockIdx !== -1) {
           allGames[stockIdx] = gameObject;
         }
@@ -1478,8 +1478,12 @@ function initApp() {
     gamesByTitle.set(gameObject.title, gameObject);
 
     if (window.supabaseClient) {
+      const existingInAll = allGames.find(g => (g.id && String(g.id) === String(editId)) || (g.title && g.title.trim().toLowerCase() === cleanTitle));
+      const targetId = (existingInAll && existingInAll.id) ? String(existingInAll.id) : String(gameObject.id);
+      gameObject.id = targetId;
+
       const sbRow = {
-        id: String(gameObject.id),
+        id: targetId,
         title: gameObject.title,
         category: gameObject.category || 'pc',
         size_gb: gameObject.sizeGB || 0,
