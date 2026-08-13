@@ -543,17 +543,19 @@ function initApp() {
       console.warn("isGameDeleted check warning:", e);
     }
     return false;
-  }
-
-  // Load All Catalogs + LocalStorage Custom Admin Edits
+  }  // Load All Catalogs + LocalStorage Custom Admin Edits
   async function loadAllCatalogs() {
     try {
-      if (gameGrid) gameGrid.innerHTML = `<div class="loading-state">Memuat katalog game...</div>`;
+      if (gameGrid) gameGrid.innerHTML = `<div class="loading-state" style="padding: 40px; text-align: center; color: var(--accent); font-size: 1.1rem; font-weight: 600;">⚡ Memuat Katalog Live dari Google Sheets...</div>`;
 
-      // Start GAS DB fetch in parallel immediately
-      let gasPromise = null;
+      // 1. Fetch live data from Google Apps Script DB (Google Sheets) BEFORE rendering cards
+      let gasGames = null;
       if (window.GASDB) {
-        gasPromise = window.GASDB.fetchGames().catch(err => console.warn('GAS DB fetch warning:', err));
+        try {
+          gasGames = await window.GASDB.fetchGames();
+        } catch (e) {
+          console.warn('GAS DB fetch warning:', e);
+        }
       }
 
       await waitForWindowData();
@@ -600,6 +602,42 @@ function initApp() {
         gamesByTitle.set(item.title, item);
       });
 
+      // Merge Google Sheets Live Data BEFORE initial render!
+      if (gasGames && Array.isArray(gasGames) && gasGames.length > 0) {
+        gasGames.forEach(cg => {
+          if (!cg || !cg.title || isGameDeleted(cg)) return;
+          const cleanCgTitle = cg.title.trim().toLowerCase();
+          const rawSize = cg.sizeGB !== undefined && cg.sizeGB !== null ? cg.sizeGB : (cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0));
+          const sizeNum = parseSizeToGB(rawSize);
+          const coverUrl = cg.cover || cg.banner_url || (cg.category === 'ps2' ? 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop');
+
+          const gameInfo = { ...(cg.game_info || { Genre: 'Action', Developer: 'Unknown' }) };
+          if (sizeNum > 0) gameInfo['Game Size'] = `${sizeNum.toFixed(1)} GB`;
+
+          const item = {
+            id: String(cg.id),
+            title: cg.title,
+            category: cg.category || 'pc',
+            sizeGB: sizeNum,
+            platform: cg.platform || (cg.category === 'ps2' ? 'PlayStation 2' : 'PC (Windows)'),
+            cover: coverUrl,
+            banner_url: coverUrl,
+            game_info: gameInfo,
+            requirements: cg.requirements || cg.system_requirements || []
+          };
+
+          const existingIdx = allGames.findIndex(g => (g.id && String(g.id) === String(cg.id)) || (g.title && g.title.trim().toLowerCase() === cleanCgTitle));
+          if (existingIdx !== -1) {
+            const existing = allGames[existingIdx];
+            allGames[existingIdx] = { ...existing, ...item, sizeGB: sizeNum > 0 ? sizeNum : existing.sizeGB };
+            gamesByTitle.set(item.title, allGames[existingIdx]);
+          } else {
+            allGames.push(item);
+            gamesByTitle.set(item.title, item);
+          }
+        });
+      }
+
       // Merge Custom LocalStorage Games Added by Admin
       const customGamesJSON = localStorage.getItem('admin_custom_games');
       if (customGamesJSON) {
@@ -609,7 +647,7 @@ function initApp() {
             customGames.forEach(cg => {
               if (!cg || !cg.title || isGameDeleted(cg)) return;
               const cleanCgTitle = cg.title.trim().toLowerCase();
-              const existingIdx = allGames.findIndex(g => (cg.id && g.id === cg.id) || g.title.trim().toLowerCase() === cleanCgTitle);
+              const existingIdx = allGames.findIndex(g => (cg.id && g.id === cg.id) || (g.title && g.title.trim().toLowerCase() === cleanCgTitle));
               
               const itemSize = parseSizeToGB(cg.sizeGB || cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0));
               
@@ -640,199 +678,18 @@ function initApp() {
         } catch (e) {}
       }
 
-      // RENDER CATALOG IMMEDIATELY! (0ms delay)
+      // RENDER CATALOG ONCE WITH 100% ACCURATE PURE DATA FROM GOOGLE SHEETS!
       applyFilters();
       if (adminTableBody) renderAdminTable();
 
-      // Sync from Supabase Database in background
-      if (window.supabaseClient) {
-        window.supabaseClient.from('games').select('*').then(({ data: sbGames, error }) => {
-          console.log('🔍 Supabase fetch result:', { count: sbGames ? sbGames.length : 0, error, khazan: sbGames ? sbGames.find(g => g.title && g.title.includes('Khazan')) : null });
-          if (!error && sbGames && sbGames.length > 0) {
-            let hasNewItems = false;
-
-            // Deduplicate Supabase rows by title, favoring the newest created_at timestamp
-            const latestGamesMap = new Map();
-            sbGames.forEach(cg => {
-              if (!cg || !cg.title || isGameDeleted(cg)) return;
-              const cleanKey = cg.title.trim().toLowerCase();
-              const existingRow = latestGamesMap.get(cleanKey);
-              const cgTime = cg.created_at ? new Date(cg.created_at).getTime() : 0;
-              const existingTime = existingRow && existingRow.created_at ? new Date(existingRow.created_at).getTime() : 0;
-
-              if (!existingRow || cgTime >= existingTime) {
-                latestGamesMap.set(cleanKey, cg);
-              }
-            });
-
-            const resolvedSbGames = Array.from(latestGamesMap.values());
-
-            resolvedSbGames.forEach(cg => {
-              const cleanCgTitle = cg.title.trim().toLowerCase();
-              const rawSize = cg.size_gb || cg.sizeGB || cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0);
-              const coverUrl = cg.banner_url || cg.cover || (cg.category === 'ps2' ? 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop');
-              const item = {
-                id: String(cg.id),
-                title: cg.title,
-                category: cg.category || 'pc',
-                sizeGB: parseSizeToGB(rawSize),
-                platform: cg.platform || (cg.category === 'ps2' ? 'PS2 ISO / OPL / PCSX2' : 'PC (Windows)'),
-                cover: coverUrl,
-                banner_url: coverUrl,
-                game_info: cg.game_info || { Genre: cg.genre || 'Action', Developer: cg.developer || 'Unknown', 'Game Size': `${parseSizeToGB(rawSize).toFixed(1)} GB` },
-                requirements: cg.requirements || cg.system_requirements || [],
-                download_links: cg.download_links || null,
-                updatedAt: cg.created_at || new Date().toISOString()
-              };
-
-              const existingIdx = allGames.findIndex(g => (g.id && String(g.id) === String(cg.id)) || g.title.trim().toLowerCase() === cleanCgTitle);
-              if (existingIdx !== -1) {
-                const existing = allGames[existingIdx];
-                const existingTime = existing.updatedAt ? new Date(existing.updatedAt).getTime() : 0;
-                const itemTime = item.updatedAt ? new Date(item.updatedAt).getTime() : 0;
-
-                const finalSize = item.sizeGB > 0 ? item.sizeGB : existing.sizeGB;
-
-                const finalCover = (item.cover && !item.cover.includes('unsplash')) ? item.cover : existing.cover;
-
-                if (cg.title && cg.title.includes('Khazan')) {
-                  console.log('🎮 Khazan merge debug:', { existingSize: existing.sizeGB, itemSize: item.sizeGB, finalSize, sbSizeGb: cg.size_gb, existingId: existing.id, itemId: item.id });
-                }
-
-                allGames[existingIdx] = { 
-                  ...existing, 
-                  ...item, 
-                  sizeGB: finalSize, 
-                  game_info: {
-                    ...(existing.game_info || {}),
-                    ...(item.game_info || {}),
-                    'Game Size': `${finalSize.toFixed(1)} GB`
-                  },
-                  cover: finalCover 
-                };
-                hasNewItems = true;
-              } else {
-                allGames.unshift(item);
-                hasNewItems = true;
-              }
-              gamesByTitle.set(item.title, allGames[existingIdx !== -1 ? existingIdx : 0]);
-            });
-
-            // Cache updated custom/edited games list to LocalStorage for instant load
-            try {
-              const customOnly = allGames.filter(g => g.updatedAt || g.custom);
-              if (customOnly.length > 0) {
-                localStorage.setItem('admin_custom_games', JSON.stringify(customOnly));
-              }
-            } catch(e) {}
-
-            if (hasNewItems) {
-              const khazanAfter = allGames.find(g => g.title && g.title.includes('Khazan'));
-              console.log('🎮 Khazan AFTER Supabase merge:', { sizeGB: khazanAfter ? khazanAfter.sizeGB : 'NOT FOUND', gameInfo: khazanAfter ? khazanAfter.game_info : null });
-              applyFilters();
-              if (adminTableBody) renderAdminTable();
-            }
-          }
-        }).catch(err => console.warn('Supabase load warning:', err));
-
-        // Realtime Subscription for live updates across devices
-        try {
-          window.supabaseClient
-            .channel('public:games')
-            .on('postgres_changes', { event: '*', schema: 'public', table: 'games' }, (payload) => {
-              if (payload.new && payload.new.title) {
-                const cg = payload.new;
-                if (isGameDeleted(cg)) return;
-                const rawSize = cg.size_gb || cg.sizeGB || cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0);
-                const sizeNum = parseSizeToGB(rawSize);
-                const cleanCgTitle = cg.title.trim().toLowerCase();
-                const existingIdx = allGames.findIndex(g => (g.id && String(g.id) === String(cg.id)) || g.title.trim().toLowerCase() === cleanCgTitle);
-                
-                if (existingIdx !== -1) {
-                  allGames[existingIdx].sizeGB = sizeNum > 0 ? sizeNum : allGames[existingIdx].sizeGB;
-                  if (!allGames[existingIdx].game_info) allGames[existingIdx].game_info = {};
-                  allGames[existingIdx].game_info['Game Size'] = `${allGames[existingIdx].sizeGB.toFixed(1)} GB`;
-                  allGames[existingIdx].title = cg.title;
-                  if (cg.cover) allGames[existingIdx].cover = cg.cover;
-                }
-                applyFilters();
-                if (adminTableBody) renderAdminTable();
-              }
-            })
-            .subscribe((status) => {
-              if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT') {
-                console.info("Supabase Realtime status:", status);
-              }
-            });
-        } catch(e) {
-          console.warn("Supabase Realtime subscription error:", e);
-        }
+    } catch (err) {
+      console.error('Error loading game catalog:', err);
+      if (gameGrid) gameGrid.innerHTML = `<div class="empty-state">Gagal memuat katalog game: ${err.message}</div>`;
+      if (adminTableBody) {
+        adminTableBody.innerHTML = `<tr><td colspan="6" style="text-align: center; color: var(--danger); padding: 20px;">Gagal memuat data katalog: ${err.message}</td></tr>`;
       }
-
-      // Sync from Google Apps Script Database (Google Sheets)
-      const handleGasGames = (gasGames) => {
-        if (gasGames && Array.isArray(gasGames) && gasGames.length > 0) {
-          let hasGasUpdates = false;
-          gasGames.forEach(cg => {
-            if (!cg || !cg.title || isGameDeleted(cg)) return;
-            const cleanCgTitle = cg.title.trim().toLowerCase();
-            const rawSize = cg.sizeGB !== undefined && cg.sizeGB !== null ? cg.sizeGB : (cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0));
-            const sizeNum = parseSizeToGB(rawSize);
-            const coverUrl = cg.cover || cg.banner_url || (cg.category === 'ps2' ? 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop');
-
-            const gameInfo = { ...(cg.game_info || { Genre: 'Action', Developer: 'Unknown' }) };
-            if (sizeNum > 0) gameInfo['Game Size'] = `${sizeNum.toFixed(1)} GB`;
-
-            const item = {
-              id: String(cg.id),
-              title: cg.title,
-              category: cg.category || 'pc',
-              sizeGB: sizeNum,
-              platform: cg.platform || (cg.category === 'ps2' ? 'PlayStation 2' : 'PC (Windows)'),
-              cover: coverUrl,
-              banner_url: coverUrl,
-              game_info: gameInfo,
-              requirements: cg.requirements || cg.system_requirements || []
-            };
-
-            const existingIdx = allGames.findIndex(g => (g.id && String(g.id) === String(cg.id)) || (g.title && g.title.trim().toLowerCase() === cleanCgTitle));
-            if (existingIdx !== -1) {
-              const existing = allGames[existingIdx];
-              allGames[existingIdx] = { ...existing, ...item, sizeGB: sizeNum > 0 ? sizeNum : existing.sizeGB };
-              gamesByTitle.set(item.title, allGames[existingIdx]);
-            } else {
-              allGames.push(item);
-              gamesByTitle.set(item.title, item);
-            }
-            hasGasUpdates = true;
-          });
-
-          if (hasGasUpdates) {
-            // Cache all updated/edited games to localStorage so next refresh renders instantly at 0ms
-            try {
-              const localCustoms = JSON.parse(localStorage.getItem('admin_custom_games') || '[]');
-              const mergedCustomsMap = new Map();
-              localCustoms.forEach(c => { if (c && c.title) mergedCustomsMap.set(c.title.trim().toLowerCase(), c); });
-              
-              allGames.forEach(g => {
-                if (g.custom || g.updatedAt) {
-                  if (!isGameDeleted(g)) mergedCustomsMap.set(g.title.trim().toLowerCase(), g);
-                }
-              });
-              
-              localStorage.setItem('admin_custom_games', JSON.stringify(Array.from(mergedCustomsMap.values())));
-            } catch (e) {}
-
-            applyFilters();
-            if (adminTableBody) renderAdminTable();
-          }
-        }
-      };
-
-      if (gasPromise) {
-        gasPromise.then(handleGasGames);
-      } else if (window.GASDB) {
-        window.GASDB.fetchGames().then(handleGasGames).catch(err => console.warn('GAS DB fetch warning:', err));
+    }
+  }));
       }
 
       // Sync latest custom games from local server ONLY if Supabase is not active
