@@ -781,13 +781,14 @@ function initApp() {
                 requirements: cg.requirements || cg.system_requirements || []
               };
 
-              const existingIdx = allGames.findIndex(g => (g.id && String(g.id) === String(cg.id)) || g.title.trim().toLowerCase() === cleanCgTitle);
+              const existingIdx = allGames.findIndex(g => (g.id && String(g.id) === String(cg.id)) || (g.title && g.title.trim().toLowerCase() === cleanCgTitle));
               if (existingIdx !== -1) {
                 allGames[existingIdx] = { ...allGames[existingIdx], ...item };
+                gamesByTitle.set(item.title, allGames[existingIdx]);
               } else {
-                allGames.unshift(item);
+                allGames.push(item);
+                gamesByTitle.set(item.title, item);
               }
-              gamesByTitle.set(item.title, allGames[existingIdx !== -1 ? existingIdx : 0]);
               hasGasUpdates = true;
             });
 
