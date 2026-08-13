@@ -674,12 +674,7 @@ function initApp() {
                 const existingTime = existing.updatedAt ? new Date(existing.updatedAt).getTime() : 0;
                 const itemTime = item.updatedAt ? new Date(item.updatedAt).getTime() : 0;
 
-                let finalSize = existing.sizeGB;
-                if (existingTime > itemTime && existing.sizeGB > 0) {
-                  finalSize = existing.sizeGB;
-                } else {
-                  finalSize = item.sizeGB > 0 ? item.sizeGB : existing.sizeGB;
-                }
+                const finalSize = item.sizeGB > 0 ? item.sizeGB : existing.sizeGB;
 
                 const finalCover = (item.cover && !item.cover.includes('unsplash')) ? item.cover : existing.cover;
 
@@ -747,24 +742,26 @@ function initApp() {
         }
       }
 
-      // Sync latest custom games in background without blocking catalog display
-      syncFromServer().then(cloudCustomGames => {
-        if (cloudCustomGames && Array.isArray(cloudCustomGames)) {
-          cloudCustomGames.forEach(cg => {
-            if (!cg || !cg.title || isGameDeleted(cg)) return;
-            const cleanCgTitle = cg.title.trim().toLowerCase();
-            const existingIdx = allGames.findIndex(g => (cg.id && g.id === cg.id) || g.title.trim().toLowerCase() === cleanCgTitle);
-            if (existingIdx !== -1) {
-              allGames[existingIdx] = cg;
-            } else {
-              allGames.unshift(cg);
-            }
-            gamesByTitle.set(cg.title, cg);
-          });
-          applyFilters();
-          if (adminTableBody) renderAdminTable();
-        }
-      }).catch(() => {});
+      // Sync latest custom games from local server ONLY if Supabase is not active
+      if (!window.supabaseClient) {
+        syncFromServer().then(cloudCustomGames => {
+          if (cloudCustomGames && Array.isArray(cloudCustomGames)) {
+            cloudCustomGames.forEach(cg => {
+              if (!cg || !cg.title || isGameDeleted(cg)) return;
+              const cleanCgTitle = cg.title.trim().toLowerCase();
+              const existingIdx = allGames.findIndex(g => (cg.id && g.id === cg.id) || g.title.trim().toLowerCase() === cleanCgTitle);
+              if (existingIdx !== -1) {
+                allGames[existingIdx] = cg;
+              } else {
+                allGames.unshift(cg);
+              }
+              gamesByTitle.set(cg.title, cg);
+            });
+            applyFilters();
+            if (adminTableBody) renderAdminTable();
+          }
+        }).catch(() => {});
+      }
 
     } catch (err) {
       console.error('Error loading game catalog:', err);
@@ -1529,7 +1526,7 @@ function initApp() {
 
   if (adminResetFormBtn) adminResetFormBtn.addEventListener('click', resetAdminGameForm);
 
-  // GitHub API & Local File Auto-Sync
+  // Local File Auto-Sync (Only active when running on local Python server)
   async function syncCatalogToGitHub(category) {
     const categoryGames = allGames
       .filter(g => g.category === category)
@@ -1559,73 +1556,6 @@ function initApp() {
       } catch (e) {
         console.error('Local catalog save error:', e);
       }
-    }
-
-    if (isLocalHost) {
-      return;
-    }
-
-    const token = localStorage.getItem('admin_github_token') || adminGithubToken;
-    if (!token) {
-      showToast('Game tersimpan lokal. Isi GitHub Personal Access Token di Pengaturan Toko untuk Auto-Sync ke Netlify Cloud!', 'info');
-      return;
-    }
-
-    const repoOwner = 'yuuflash4';
-    const repoName = 'listgame';
-    const targetFile = `data/${category}_games.json`;
-    const targetJsFile = `data/${category}_games.js`;
-
-    showToast('🚀 Mengirim pembaruan katalog ke Netlify Cloud...', 'info');
-
-    try {
-      const jsonStr = JSON.stringify(categoryGames, null, 2);
-      const jsStr = `window.${category.toUpperCase()}_GAMES_DATA = ${jsonStr};\n`;
-
-      async function updateGitHubFile(path, contentStr, commitMsg) {
-        const getUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${path}`;
-        const getRes = await fetch(getUrl, {
-          headers: {
-            Authorization: `token ${token}`,
-            Accept: 'application/vnd.github.v3+json'
-          }
-        });
-        
-        let sha = '';
-        if (getRes.ok) {
-          const fileData = await getRes.json();
-          sha = fileData.sha;
-        }
-
-        const base64Content = btoa(unescape(encodeURIComponent(contentStr)));
-
-        const putRes = await fetch(getUrl, {
-          method: 'PUT',
-          headers: {
-            Authorization: `token ${token}`,
-            'Content-Type': 'application/json',
-            Accept: 'application/vnd.github.v3+json'
-          },
-          body: JSON.stringify({
-            message: commitMsg,
-            content: base64Content,
-            sha: sha || undefined
-          })
-        });
-
-        if (!putRes.ok) {
-          const errData = await putRes.json();
-          throw new Error(errData.message || 'Gagal update file di GitHub');
-        }
-      }
-
-      await updateGitHubFile(targetFile, jsonStr, `feat(catalog): Auto-update ${targetFile} from Admin Panel`);
-      await updateGitHubFile(targetJsFile, jsStr, `feat(catalog): Auto-update ${targetJsFile} from Admin Panel`);
-
-      showToast('🎉 SUCCESS! Katalog tersimpan di Cloud Netlify! Web online di-update dalam ~15 detik.', 'success');
-    } catch (err) {
-      console.error('GitHub Sync Error:', err);
-      showToast(`Gagal sync ke GitHub Cloud: ${err.message}. Periksa Personal Access Token Anda.`, 'error');
     }
   }
 

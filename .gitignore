@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 uploads/*
 !.gitkeep
+data/custom_games.json
+drive_config.json
+.env
