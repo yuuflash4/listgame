@@ -11,18 +11,18 @@ const isLocalEnv = typeof window !== 'undefined' && (
   window.location.protocol === 'file:'
 );
 
-// Initialize Supabase client globally ONLY for Online Production
+// Pilihan A: Supabase Client HANYA aktif di Online Production (Netlify)
 if (!isLocalEnv && typeof supabase !== 'undefined') {
   try {
     window.supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-    console.log("Supabase Client initialized successfully for Production.");
+    console.log("☁️ Supabase Client initialized for Production Cloud.");
   } catch (e) {
     console.warn("Supabase initialization error:", e);
   }
 } else if (isLocalEnv) {
-  console.log("⚡ Mode Testing Lokal: Supabase dinonaktifkan di localhost agar terisolasi murni.");
+  console.log("⚡ Mode Testing Lokal: Supabase dinonaktifkan di localhost (Terisolasi Murni).");
   window.supabaseClient = null;
 } else {
-  console.warn("Supabase SDK belum dimuat di HTML. Pastikan CDN @supabase/supabase-js dipasang.");
+  console.warn("Supabase SDK belum dimuat di HTML.");
 }
 
