@@ -770,9 +770,12 @@ function initApp() {
           gasGames.forEach(cg => {
             if (!cg || !cg.title || isGameDeleted(cg)) return;
             const cleanCgTitle = cg.title.trim().toLowerCase();
-            const rawSize = cg.sizeGB || cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0);
+            const rawSize = cg.sizeGB !== undefined && cg.sizeGB !== null ? cg.sizeGB : (cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0));
             const sizeNum = parseSizeToGB(rawSize);
             const coverUrl = cg.cover || cg.banner_url || (cg.category === 'ps2' ? 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop');
+
+            const gameInfo = { ...(cg.game_info || { Genre: 'Action', Developer: 'Unknown' }) };
+            if (sizeNum > 0) gameInfo['Game Size'] = `${sizeNum.toFixed(1)} GB`;
 
             const item = {
               id: String(cg.id),
@@ -782,13 +785,14 @@ function initApp() {
               platform: cg.platform || (cg.category === 'ps2' ? 'PlayStation 2' : 'PC (Windows)'),
               cover: coverUrl,
               banner_url: coverUrl,
-              game_info: cg.game_info || { Genre: 'Action', Developer: 'Unknown', 'Game Size': `${sizeNum.toFixed(1)} GB` },
+              game_info: gameInfo,
               requirements: cg.requirements || cg.system_requirements || []
             };
 
             const existingIdx = allGames.findIndex(g => (g.id && String(g.id) === String(cg.id)) || (g.title && g.title.trim().toLowerCase() === cleanCgTitle));
             if (existingIdx !== -1) {
-              allGames[existingIdx] = { ...allGames[existingIdx], ...item };
+              const existing = allGames[existingIdx];
+              allGames[existingIdx] = { ...existing, ...item, sizeGB: sizeNum > 0 ? sizeNum : existing.sizeGB };
               gamesByTitle.set(item.title, allGames[existingIdx]);
             } else {
               allGames.push(item);
@@ -1611,10 +1615,15 @@ function initApp() {
     }
 
     if (window.GASDB) {
-      const gasPromise = editId ? window.GASDB.updateGame(gameObject) : window.GASDB.addGame(gameObject);
-      gasPromise.then(res => {
+      window.GASDB.updateGame(gameObject).then(res => {
         if (res && res.status === 'success') {
-          showToast(`📊 Data game tersimpan di Google Sheets!`, 'success');
+          showToast(`📊 Ukuran & data game "${title}" tersimpan di Google Sheets!`, 'success');
+        } else {
+          window.GASDB.addGame(gameObject).then(res2 => {
+            if (res2 && res2.status === 'success') {
+              showToast(`📊 Ukuran & data game "${title}" tersimpan di Google Sheets!`, 'success');
+            }
+          });
         }
       }).catch(err => console.warn('GAS DB save warning:', err));
     }

@@ -286,15 +286,20 @@ function updateSingleGame(game) {
   var sheet = ss.getSheetByName(SHEET_GAMES);
   var data = sheet.getDataRange().getValues();
   
-  var targetId = String(game.id).trim();
+  var targetId = String(game.id || "").trim().toLowerCase();
+  var targetTitle = game.title ? String(game.title).trim().toLowerCase() : "";
 
   for (var i = 1; i < data.length; i++) {
-    if (String(data[i][0]).trim() === targetId) {
+    var rowId = String(data[i][0] || "").trim().toLowerCase();
+    var rowTitle = String(data[i][1] || "").trim().toLowerCase();
+
+    if ((targetId && rowId === targetId) || (targetTitle && rowTitle === targetTitle)) {
       var rowNum = i + 1; // 1-indexed
+      var idToKeep = data[i][0] || game.id;
       var title = game.title || data[i][1];
       var category = game.category || data[i][2];
       var platform = game.platform || data[i][3];
-      var sizeGB = parseFloat(game.sizeGB) !== undefined ? parseFloat(game.sizeGB) : data[i][4];
+      var sizeGB = game.sizeGB !== undefined && game.sizeGB !== null ? parseFloat(game.sizeGB) : data[i][4];
       var releaseYear = parseInt(game.releaseYear) || data[i][5];
       var rating = parseFloat(game.rating) || data[i][6];
       var cover = game.cover || game.banner_url || data[i][7];
@@ -304,7 +309,7 @@ function updateSingleGame(game) {
       var createdAt = data[i][10] || new Date().toISOString();
 
       sheet.getRange(rowNum, 1, 1, 11).setValues([[
-        targetId, title, category, platform, sizeGB, releaseYear, rating, cover, gameInfoJSON, reqsJSON, createdAt
+        idToKeep, title, category, platform, sizeGB, releaseYear, rating, cover, gameInfoJSON, reqsJSON, createdAt
       ]]);
       return true;
     }
@@ -317,10 +322,13 @@ function deleteSingleGame(id) {
   var sheet = ss.getSheetByName(SHEET_GAMES);
   var data = sheet.getDataRange().getValues();
   
-  var targetId = String(id).trim();
+  var target = String(id || "").trim().toLowerCase();
 
   for (var i = 1; i < data.length; i++) {
-    if (String(data[i][0]).trim() === targetId) {
+    var rowId = String(data[i][0] || "").trim().toLowerCase();
+    var rowTitle = String(data[i][1] || "").trim().toLowerCase();
+
+    if (rowId === target || rowTitle === target) {
       sheet.deleteRow(i + 1);
       return true;
     }
