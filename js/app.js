@@ -558,13 +558,30 @@ function initApp() {
         `;
       }
 
-      // 1. Fetch live data directly from Google Apps Script DB (Google Sheets) BEFORE rendering cards
+      // 1. Check for cached Google Sheets data for instant 0ms startup
       let gasGames = null;
+      try {
+        const cachedStr = localStorage.getItem('cached_gas_games');
+        if (cachedStr) {
+          const cachedParsed = JSON.parse(cachedStr);
+          if (Array.isArray(cachedParsed) && cachedParsed.length > 0) {
+            gasGames = cachedParsed;
+          }
+        }
+      } catch (e) {}
+
+      // 2. Fetch fresh live data directly from Google Apps Script DB (Google Sheets)
       if (window.GASDB) {
         try {
           const fetchPromise = window.GASDB.fetchGames();
-          const timeoutPromise = new Promise(resolve => setTimeout(() => resolve(null), 5000));
-          gasGames = await Promise.race([fetchPromise, timeoutPromise]);
+          const timeoutPromise = new Promise(resolve => setTimeout(() => resolve(null), 20000));
+          const freshGames = await Promise.race([fetchPromise, timeoutPromise]);
+          if (freshGames && Array.isArray(freshGames) && freshGames.length > 0) {
+            gasGames = freshGames;
+            try {
+              localStorage.setItem('cached_gas_games', JSON.stringify(freshGames));
+            } catch (e) {}
+          }
         } catch (e) {
           console.warn('GAS DB fetch error:', e);
         }
