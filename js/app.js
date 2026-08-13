@@ -615,20 +615,26 @@ function initApp() {
               
               if (existingIdx !== -1) {
                 const existing = allGames[existingIdx];
+                const finalSize = itemSize > 0 ? itemSize : existing.sizeGB;
+                const gameInfo = { ...(existing.game_info || {}), ...(cg.game_info || {}) };
+                if (finalSize > 0) gameInfo['Game Size'] = `${finalSize.toFixed(1)} GB`;
+
                 allGames[existingIdx] = {
                   ...existing,
                   ...cg,
-                  sizeGB: itemSize > 0 ? itemSize : existing.sizeGB,
+                  sizeGB: finalSize,
+                  game_info: gameInfo,
                   cover: cg.cover || cg.banner_url || existing.cover
                 };
+                gamesByTitle.set(cg.title, allGames[existingIdx]);
               } else {
                 allGames.unshift({
                   ...cg,
                   sizeGB: itemSize,
                   cover: cg.cover || cg.banner_url || 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop'
                 });
+                gamesByTitle.set(cg.title, allGames[0]);
               }
-              gamesByTitle.set(cg.title, allGames[existingIdx !== -1 ? existingIdx : 0]);
             });
           }
         } catch (e) {}
@@ -802,6 +808,21 @@ function initApp() {
           });
 
           if (hasGasUpdates) {
+            // Cache all updated/edited games to localStorage so next refresh renders instantly at 0ms
+            try {
+              const localCustoms = JSON.parse(localStorage.getItem('admin_custom_games') || '[]');
+              const mergedCustomsMap = new Map();
+              localCustoms.forEach(c => { if (c && c.title) mergedCustomsMap.set(c.title.trim().toLowerCase(), c); });
+              
+              allGames.forEach(g => {
+                if (g.custom || g.updatedAt) {
+                  if (!isGameDeleted(g)) mergedCustomsMap.set(g.title.trim().toLowerCase(), g);
+                }
+              });
+              
+              localStorage.setItem('admin_custom_games', JSON.stringify(Array.from(mergedCustomsMap.values())));
+            } catch (e) {}
+
             applyFilters();
             if (adminTableBody) renderAdminTable();
           }
