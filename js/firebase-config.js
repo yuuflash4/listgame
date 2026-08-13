@@ -9,13 +9,21 @@ const firebaseConfig = {
   measurementId: "G-5MTFXQRDG5"
 };
 
-// Initialize Firebase App & Services globally
+// Initialize Firebase App & Services globally with Incognito protection
 if (typeof firebase !== 'undefined') {
   if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
   }
-  window.db = firebase.firestore();
-  window.auth = firebase.auth();
+  try {
+    window.db = firebase.firestore();
+  } catch (e) {
+    console.warn("Firestore init warning:", e);
+  }
+  try {
+    window.auth = firebase.auth();
+  } catch (e) {
+    console.warn("Firebase Auth init warning (Incognito/Blocked):", e);
+  }
 } else {
   console.warn("Firebase SDK belum dimuat di HTML.");
 }

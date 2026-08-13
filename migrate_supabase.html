@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Migrasi Data ke Supabase - Grandia Game Tavern</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 32px;
+      max-width: 750px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    h1 {
+      color: #38bdf8;
+      font-size: 1.5rem;
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    p {
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #cbd5e1;
+      font-size: 0.9rem;
+    }
+    input {
+      width: 100%;
+      padding: 10px 14px;
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      color: #fff;
+      font-family: inherit;
+      box-sizing: border-box;
+    }
+    input:focus {
+      outline: none;
+      border-color: #38bdf8;
+    }
+    .sql-box {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 14px;
+      font-family: monospace;
+      font-size: 0.85rem;
+      color: #38bdf8;
+      white-space: pre-wrap;
+      max-height: 180px;
+      overflow-y: auto;
+      margin-bottom: 16px;
+    }
+    .status-box {
+      background: #0f172a;
+      border-radius: 8px;
+      padding: 16px;
+      font-family: monospace;
+      font-size: 0.9rem;
+      min-height: 120px;
+      max-height: 250px;
+      overflow-y: auto;
+      margin: 20px 0;
+      border: 1px solid #334155;
+      color: #4ade80;
+    }
+    button {
+      background: linear-gradient(135deg, #0ea5e9, #0284c7);
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+      transition: opacity 0.2s;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    button:disabled {
+      background: #475569;
+      cursor: not-allowed;
+    }
+    .copy-btn {
+      background: #334155;
+      font-size: 0.8rem;
+      padding: 6px 12px;
+      width: auto;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h1>⚡ Tool Migrasi Data ke Supabase</h1>
+  <p>Alat ini akan mengunggah seluruh katalog game PC & PS2 kamu dari file lokal ke database <strong>Supabase (PostgreSQL)</strong> secara otomatis.</p>
+
+  <label>1. Jalankan SQL Query ini di Supabase SQL Editor (jika belum ada tabel):</label>
+  <button class="copy-btn" onclick="copySQL()">📋 Salin Query SQL</button>
+  <div class="sql-box" id="sql-code">CREATE TABLE IF NOT EXISTS public.games (
+  id TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  category TEXT NOT NULL,
+  size_gb NUMERIC,
+  platform TEXT,
+  cover TEXT,
+  banner_url TEXT,
+  game_info JSONB,
+  download_links JSONB,
+  custom BOOLEAN DEFAULT true,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+ALTER TABLE public.games ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Allow public read" ON public.games FOR SELECT USING (true);
+CREATE POLICY "Allow public write for migration" ON public.games FOR ALL USING (true);</div>
+
+  <div class="form-group">
+    <label for="sb-url">2. Supabase URL:</label>
+    <input type="text" id="sb-url" value="https://wtmqitogzavrrvlejeki.supabase.co" placeholder="https://xxxx.supabase.co" />
+  </div>
+
+  <div class="form-group">
+    <label for="sb-key">3. Supabase Anon Key:</label>
+    <input type="text" id="sb-key" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind0bXFpdG9nemF2cnJ2bGVqZWtpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1NzU5MDgsImV4cCI6MjEwMjE1MTkwOH0.K0IpvR05GS9IuwNNQOgwN16cST-Ppt0Cbav89uoM-Lk" placeholder="eyJhbGciOi..." />
+  </div>
+
+  <div id="summary">Memeriksa data lokal...</div>
+  <div class="status-box" id="log">Status: Siap dimulai.\n</div>
+
+  <button id="start-btn" onclick="startMigration()">Mulai Upload Data ke Supabase</button>
+</div>
+
+<!-- Supabase JS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- Data Lokal Bawaan -->
+<script src="data/pc_games.js"></script>
+<script src="data/ps2_games.js"></script>
+
+<script>
+  const logEl = document.getElementById('log');
+  const summaryEl = document.getElementById('summary');
+  const startBtn = document.getElementById('start-btn');
+
+  const pcData = window.PC_GAMES_DATA || [];
+  const ps2Data = window.PS2_GAMES_DATA || [];
+
+  summaryEl.innerHTML = `Ditemukan: <strong>${pcData.length} Game PC</strong> & <strong>${ps2Data.length} Game PS2</strong> dari file lokal.`;
+
+  function log(msg) {
+    logEl.innerText += msg + '\n';
+    logEl.scrollTop = logEl.scrollHeight;
+  }
+
+  function copySQL() {
+    const code = document.getElementById('sql-code').innerText;
+    navigator.clipboard.writeText(code).then(() => {
+      alert("Query SQL berhasil disalin! Buka Supabase SQL Editor dan jalankan query ini.");
+    });
+  }
+
+  async function startMigration() {
+    const url = document.getElementById('sb-url').value.trim();
+    const key = document.getElementById('sb-key').value.trim();
+
+    if (!url || !key) {
+      alert("Harap masukkan Supabase URL dan Anon Key terlebih dahulu!");
+      return;
+    }
+
+    startBtn.disabled = true;
+    startBtn.innerText = 'Sedang Mengunggah...';
+    log("🚀 Memulai proses migrasi ke Supabase...");
+
+    try {
+      const client = supabase.createClient(url, key);
+
+      let allGames = [];
+
+      // Process PC games
+      pcData.forEach((g, idx) => {
+        const id = g.id || ('pc_' + idx + '_' + (g.title || '').toLowerCase().replace(/[^a-z0-9]/g, ''));
+        const sizeGB = g.sizeGB || parseFloat(g.size) || (g.game_info ? parseFloat(g.game_info['Game Size']) : 0) || 0;
+        allGames.push({
+          id: String(id),
+          title: g.title || 'Untitled PC Game',
+          category: 'pc',
+          size_gb: sizeGB,
+          platform: 'PC (Windows)',
+          cover: g.cover || g.banner_url || 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop',
+          banner_url: g.banner_url || g.cover || 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop',
+          game_info: g.game_info || { Genre: g.genre || 'Action', Developer: 'Unknown' },
+          download_links: g.download_links || null,
+          custom: false
+        });
+      });
+
+      // Process PS2 games
+      ps2Data.forEach((g, idx) => {
+        const id = g.id || ('ps2_' + idx + '_' + (g.title || '').toLowerCase().replace(/[^a-z0-9]/g, ''));
+        const sizeGB = g.sizeGB || parseFloat(g.size) || (g.game_info ? parseFloat(g.game_info['Game Size']) : 0) || 0;
+        allGames.push({
+          id: String(id),
+          title: g.title || 'Untitled PS2 Game',
+          category: 'ps2',
+          size_gb: sizeGB,
+          platform: 'PS2 ISO / OPL / PCSX2',
+          cover: g.cover || g.banner_url || 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop',
+          banner_url: g.banner_url || g.cover || 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop',
+          game_info: g.game_info || { Genre: g.genre || 'Action', Developer: 'Unknown' },
+          download_links: g.download_links || null,
+          custom: false
+        });
+      });
+
+      log(`📦 Total item yang akan diunggah: ${allGames.length} game.`);
+
+      // Batch upload in chunks of 50
+      const chunkSize = 50;
+      let uploaded = 0;
+
+      for (let i = 0; i < allGames.length; i += chunkSize) {
+        const chunk = allGames.slice(i, i + chunkSize);
+        const { data, error } = await client.from('games').upsert(chunk, { onConflict: 'id' });
+
+        if (error) {
+          log(`❌ Error saat upload batch ${i + 1}-${i + chunk.length}: ` + error.message);
+        } else {
+          uploaded += chunk.length;
+          log(`✅ Berhasil mengunggah ${uploaded}/${allGames.length} game...`);
+        }
+      }
+
+      log("🎉 SELESAI! Seluruh data game berhasil diunggah ke Supabase Database!");
+      alert("Migrasi Data ke Supabase Selesai!");
+
+    } catch (err) {
+      log("❌ Terjadi kesalahan fatal: " + err.message);
+      alert("Migrasi gagal: " + err.message);
+    } finally {
+      startBtn.disabled = false;
+      startBtn.innerText = 'Mulai Upload Data ke Supabase';
+    }
+  }
+</script>
+</body>
+</html>

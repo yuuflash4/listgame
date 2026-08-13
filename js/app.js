@@ -503,24 +503,40 @@ function initApp() {
     renderSelectedWidgetList();
   }
 
+  function parseSizeToGB(sizeVal) {
+    if (!sizeVal) return 0;
+    if (typeof sizeVal === 'number') return sizeVal;
+    const s = String(sizeVal).replace(',', '.').toUpperCase();
+    const match = s.match(/\d+(?:\.\d+)?/);
+    const num = match ? parseFloat(match[0]) : NaN;
+    if (isNaN(num)) return 0;
+    if (s.includes('MB')) return num / 1024;
+    if (s.includes('KB')) return num / (1024 * 1024);
+    return num;
+  }
+
   async function waitForWindowData() {
-    for (let i = 0; i < 20; i++) {
-      if (window.PC_GAMES_DATA && window.PS2_GAMES_DATA) return true;
-      await new Promise(r => setTimeout(r, 25));
+    for (let i = 0; i < 100; i++) {
+      if ((window.PC_GAMES_DATA && window.PC_GAMES_DATA.length > 0) || (window.PS2_GAMES_DATA && window.PS2_GAMES_DATA.length > 0)) return true;
+      await new Promise(r => setTimeout(r, 50));
     }
     return false;
   }
 
   // Helper to check if a game has been marked as deleted by Admin
   function isGameDeleted(game) {
-    if (!game) return true;
-    const deletedTitles = JSON.parse(localStorage.getItem('admin_deleted_titles') || '[]');
-    const deletedIds = JSON.parse(localStorage.getItem('admin_deleted_ids') || '[]');
-    
-    if (game.id && deletedIds.includes(String(game.id))) return true;
-    if (game.title) {
+    if (!game || !game.title) return false;
+    try {
+      const deletedTitles = (JSON.parse(localStorage.getItem('admin_deleted_titles') || '[]') || [])
+        .filter(t => t && String(t).trim().length > 0);
+      const deletedIds = (JSON.parse(localStorage.getItem('admin_deleted_ids') || '[]') || [])
+        .filter(id => id && String(id).trim().length > 0);
+
       const cleanTitle = String(game.title).trim().toLowerCase();
-      if (deletedTitles.some(t => String(t).trim().toLowerCase() === cleanTitle)) return true;
+      if (cleanTitle && deletedTitles.some(t => String(t).trim().toLowerCase() === cleanTitle)) return true;
+      if (game.id && String(game.id).trim().length > 0 && deletedIds.includes(String(game.id))) return true;
+    } catch (e) {
+      console.warn("isGameDeleted check warning:", e);
     }
     return false;
   }
@@ -530,38 +546,16 @@ function initApp() {
     try {
       if (gameGrid) gameGrid.innerHTML = `<div class="loading-state">Memuat katalog game...</div>`;
 
-      let pcRaw = null;
-      let ps2Raw = null;
+      await waitForWindowData();
 
-      // 1. Try fetching fresh live JSON first (bypassing browser script cache)
-      try {
-        const timestamp = Date.now();
-        const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
-        const timeoutId = controller ? setTimeout(() => controller.abort(), 2000) : null;
-        const options = controller ? { signal: controller.signal } : {};
-
-        const [pcRes, ps2Res] = await Promise.all([
-          fetch(`data/pc_games.json?t=${timestamp}`, options),
-          fetch(`data/ps2_games.json?t=${timestamp}`, options)
-        ]);
-        if (timeoutId) clearTimeout(timeoutId);
-        if (pcRes.ok) pcRaw = await pcRes.json();
-        if (ps2Res.ok) ps2Raw = await ps2Res.json();
-      } catch (fetchErr) {
-        console.warn('Fetch live JSON skipped, falling back to script data:', fetchErr);
-      }
-
-      pcRaw = pcRaw || window.PC_GAMES_DATA || [];
-      ps2Raw = ps2Raw || window.PS2_GAMES_DATA || [];
-
-      if (!Array.isArray(pcRaw) || !Array.isArray(ps2Raw)) {
-        throw new Error('Format data katalog game tidak valid.');
-      }
+      const pcRaw = window.PC_GAMES_DATA || [];
+      const ps2Raw = window.PS2_GAMES_DATA || [];
 
       allGames = [];
       gamesByTitle.clear();
 
       pcRaw.forEach((game, idx) => {
+        if (!game || !game.title) return;
         const item = {
           id: `pc-${idx}`,
           title: game.title,
@@ -578,6 +572,7 @@ function initApp() {
       });
 
       ps2Raw.forEach((game, idx) => {
+        if (!game || !game.title) return;
         const item = {
           id: `ps2-${idx}`,
           title: game.title,
@@ -631,35 +626,35 @@ function initApp() {
       applyFilters();
       if (adminTableBody) renderAdminTable();
 
-      // Sync from Firebase Firestore in background
-      if (window.db) {
-        window.db.collection('games').get().then(snapshot => {
-          if (!snapshot.empty) {
+      // Sync from Supabase Database in background
+      if (window.supabaseClient) {
+        window.supabaseClient.from('games').select('*').then(({ data: sbGames, error }) => {
+          if (!error && sbGames && sbGames.length > 0) {
             let hasNewItems = false;
-            let firestoreCustomGames = [];
+            let customGamesList = [];
 
-            snapshot.forEach(doc => {
-              const cg = doc.data();
+            sbGames.forEach(cg => {
               if (!cg || !cg.title || isGameDeleted(cg)) return;
               const cleanCgTitle = cg.title.trim().toLowerCase();
-              const rawSize = cg.sizeGB || cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0);
+              const rawSize = cg.size_gb || cg.sizeGB || cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0);
               const coverUrl = cg.banner_url || cg.cover || (cg.category === 'ps2' ? 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop');
               const item = {
-                id: doc.id,
+                id: String(cg.id),
                 title: cg.title,
                 category: cg.category || 'pc',
                 sizeGB: parseSizeToGB(rawSize),
-                platform: cg.category === 'ps2' ? 'PS2 ISO / OPL / PCSX2' : 'PC (Windows)',
+                platform: cg.platform || (cg.category === 'ps2' ? 'PS2 ISO / OPL / PCSX2' : 'PC (Windows)'),
                 cover: coverUrl,
                 banner_url: coverUrl,
                 game_info: cg.game_info || { Genre: cg.genre || 'Action', Developer: cg.developer || 'Unknown', 'Game Size': `${parseSizeToGB(rawSize).toFixed(1)} GB` },
-                requirements: cg.system_requirements || cg.requirements || (cg.minReqs ? [cg.minReqs] : []),
-                updatedAt: cg.updatedAt || new Date().toISOString()
+                requirements: cg.requirements || cg.system_requirements || [],
+                download_links: cg.download_links || null,
+                updatedAt: cg.created_at || new Date().toISOString()
               };
 
-              firestoreCustomGames.push(item);
+              customGamesList.push(item);
 
-              const existingIdx = allGames.findIndex(g => (g.id && g.id === doc.id) || g.title.trim().toLowerCase() === cleanCgTitle);
+              const existingIdx = allGames.findIndex(g => (g.id && String(g.id) === String(cg.id)) || g.title.trim().toLowerCase() === cleanCgTitle);
               if (existingIdx !== -1) {
                 const existing = allGames[existingIdx];
                 const existingTime = existing.updatedAt ? new Date(existing.updatedAt).getTime() : 0;
@@ -684,10 +679,10 @@ function initApp() {
               gamesByTitle.set(item.title, allGames[existingIdx !== -1 ? existingIdx : 0]);
             });
 
-            // Cache Firestore custom games to LocalStorage so they load instantly (0ms) on next refresh
-            if (firestoreCustomGames.length > 0) {
+            // Cache Supabase custom games to LocalStorage for instant load
+            if (customGamesList.length > 0) {
               try {
-                localStorage.setItem('admin_custom_games', JSON.stringify(firestoreCustomGames));
+                localStorage.setItem('admin_custom_games', JSON.stringify(customGamesList));
               } catch(e) {}
             }
 
@@ -696,7 +691,7 @@ function initApp() {
               if (adminTableBody) renderAdminTable();
             }
           }
-        }).catch(err => console.warn('Firestore load warning:', err));
+        }).catch(err => console.warn('Supabase load warning:', err));
       }
 
       // Sync latest custom games in background without blocking catalog display
@@ -733,7 +728,9 @@ function initApp() {
     const selectedSort = sortFilter ? sortFilter.value : 'added-desc';
 
     displayedGames = allGames.filter(game => {
-      const matchesSearch = !searchQuery || game.title.toLowerCase().includes(searchQuery) ||
+      if (!game || !game.title) return false;
+      const titleLower = String(game.title).toLowerCase();
+      const matchesSearch = !searchQuery || titleLower.includes(searchQuery) ||
                             (game.game_info && game.game_info.Genre && String(game.game_info.Genre).toLowerCase().includes(searchQuery));
       const matchesCategory = selectedCategory === 'all' || game.category === selectedCategory;
       return matchesSearch && matchesCategory;
@@ -791,53 +788,66 @@ function initApp() {
 
     const fragment = document.createDocumentFragment();
 
+    const isNoPriceMode = false;
     pageItems.forEach(game => {
-      const isSelected = selectedGames.has(game.title);
-      const card = document.createElement('div');
-      card.className = `game-card ${isSelected ? 'selected' : ''}`;
-      card.dataset.title = game.title;
+      try {
+        if (!game || !game.title) return;
+        const isSelected = selectedGames.has(game.title);
+        const card = document.createElement('div');
+        card.className = `game-card ${isSelected ? 'selected' : ''}`;
+        card.dataset.title = game.title;
 
-      const price = calculateGamePrice(game.sizeGB);
-      const priceStr = formatRupiah(price);
+        const sizeGBNum = (typeof game.sizeGB === 'number' && !isNaN(game.sizeGB)) ? game.sizeGB : (parseFloat(game.sizeGB) || 0);
+        const coverUrl = game.cover || game.banner_url || 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop';
 
-      card.innerHTML = `
-        <div class="game-cover-wrap">
-          <img src="${game.cover}" alt="${game.title}" class="game-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
-          <span class="game-badge ${game.category}">${game.category === 'ps2' ? 'PS2 Emu' : 'Game PC'}</span>
-          ${isNoPriceMode ? '' : `<span class="price-tag-card">${priceStr}</span>`}
-        </div>
-        <div class="game-info-wrap">
-          <h3 class="game-title" title="${game.title}">${game.title}</h3>
-          <div class="game-details-row">
-            <div class="game-meta">
-              <span class="game-size">${game.sizeGB.toFixed(1)} GB</span>
-              ${isNoPriceMode ? '' : `<span class="game-price">${priceStr}</span>`}
-            </div>
-            <div class="game-actions">
-              <button class="btn-toggle-select" type="button">
-                ${getAddBtnHTML(isSelected)}
-              </button>
-              <button class="btn-info" type="button" title="Spesifikasi Game">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-              </button>
+        const price = calculateGamePrice(sizeGBNum);
+        const priceStr = formatRupiah(price);
+
+        card.innerHTML = `
+          <div class="game-cover-wrap">
+            <img src="${coverUrl}" alt="${game.title}" class="game-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
+            <span class="game-badge ${game.category}">${game.category === 'ps2' ? 'PS2 Emu' : 'Game PC'}</span>
+            <span class="price-tag-card">${priceStr}</span>
+          </div>
+          <div class="game-info-wrap">
+            <h3 class="game-title" title="${game.title}">${game.title}</h3>
+            <div class="game-details-row">
+              <div class="game-meta">
+                <span class="game-size">${sizeGBNum.toFixed(1)} GB</span>
+                <span class="game-price">${priceStr}</span>
+              </div>
+              <div class="game-actions">
+                <button class="btn-toggle-select" type="button">
+                  ${getAddBtnHTML(isSelected)}
+                </button>
+                <button class="btn-info" type="button" title="Spesifikasi Game">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      `;
+        `;
 
-      const toggleBtn = card.querySelector('.btn-toggle-select');
-      toggleBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        toggleGameSelection(game.title, card);
-      });
+        const toggleBtn = card.querySelector('.btn-toggle-select');
+        if (toggleBtn) {
+          toggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleGameSelection(game.title, card);
+          });
+        }
 
-      const infoBtn = card.querySelector('.btn-info');
-      infoBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        openSpecModal(game);
-      });
+        const infoBtn = card.querySelector('.btn-info');
+        if (infoBtn) {
+          infoBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openSpecModal(game);
+          });
+        }
 
-      fragment.appendChild(card);
+        fragment.appendChild(card);
+      } catch (itemErr) {
+        console.error("Error rendering game card item:", itemErr, game);
+      }
     });
 
     gameGrid.appendChild(fragment);
@@ -1417,12 +1427,24 @@ function initApp() {
     localStorage.setItem('admin_custom_games', JSON.stringify(customGames));
     gamesByTitle.set(gameObject.title, gameObject);
 
-    if (window.db) {
-      window.db.collection('games').doc(gameObject.id).set({
-        ...gameObject,
-        size: gameObject.sizeGB,
-        updatedAt: new Date().toISOString()
-      }, { merge: true }).catch(err => console.error("Firestore save error:", err));
+    if (window.supabaseClient) {
+      const sbRow = {
+        id: String(gameObject.id),
+        title: gameObject.title,
+        category: gameObject.category || 'pc',
+        size_gb: gameObject.sizeGB || 0,
+        platform: gameObject.platform || (gameObject.category === 'ps2' ? 'PS2 ISO / OPL / PCSX2' : 'PC (Windows)'),
+        cover: gameObject.cover || '',
+        banner_url: gameObject.banner_url || gameObject.cover || '',
+        game_info: gameObject.game_info || {},
+        download_links: gameObject.download_links || null,
+        custom: true
+      };
+      window.supabaseClient.from('games').upsert([sbRow], { onConflict: 'id' })
+        .then(({ error }) => {
+          if (error) console.error("Supabase save error:", error);
+        })
+        .catch(err => console.error("Supabase save error:", err));
     }
 
     debouncedSyncToServer();
@@ -1646,8 +1668,12 @@ function initApp() {
               localStorage.setItem('admin_deleted_ids', JSON.stringify(deletedIds));
             }
 
-            if (window.db && game.id) {
-              window.db.collection('games').doc(game.id).delete().catch(err => console.error("Firestore delete error:", err));
+            if (window.supabaseClient && game.id) {
+              window.supabaseClient.from('games').delete().eq('id', String(game.id))
+                .then(({ error }) => {
+                  if (error) console.error("Supabase delete error:", error);
+                })
+                .catch(err => console.error("Supabase delete error:", err));
             }
 
             debouncedSyncToServer();
@@ -1870,18 +1896,30 @@ function initApp() {
   const loginErrorMsg = document.getElementById('login-error-msg');
   const adminLogoutBtn = document.getElementById('admin-logout-btn');
 
-  if (window.auth) {
-    window.auth.onAuthStateChanged((user) => {
-      if (user) {
-        if (adminAuthOverlay) adminAuthOverlay.style.display = 'none';
-        if (adminLogoutBtn) adminLogoutBtn.style.display = 'inline-flex';
-      } else {
-        if (adminAuthOverlay && document.body.classList.contains('admin-page')) {
-          adminAuthOverlay.style.display = 'flex';
+  if (window.supabaseClient && document.body.classList.contains('admin-page')) {
+    try {
+      window.supabaseClient.auth.getSession().then(({ data: { session } }) => {
+        if (session && session.user) {
+          if (adminAuthOverlay) adminAuthOverlay.style.display = 'none';
+          if (adminLogoutBtn) adminLogoutBtn.style.display = 'inline-flex';
+        } else {
+          if (adminAuthOverlay) adminAuthOverlay.style.display = 'flex';
+          if (adminLogoutBtn) adminLogoutBtn.style.display = 'none';
         }
-        if (adminLogoutBtn) adminLogoutBtn.style.display = 'none';
-      }
-    });
+      });
+
+      window.supabaseClient.auth.onAuthStateChange((event, session) => {
+        if (session && session.user) {
+          if (adminAuthOverlay) adminAuthOverlay.style.display = 'none';
+          if (adminLogoutBtn) adminLogoutBtn.style.display = 'inline-flex';
+        } else {
+          if (adminAuthOverlay) adminAuthOverlay.style.display = 'flex';
+          if (adminLogoutBtn) adminLogoutBtn.style.display = 'none';
+        }
+      });
+    } catch (e) {
+      console.warn("Supabase Auth listener warning:", e);
+    }
   }
 
   if (adminLoginForm) {
@@ -1897,15 +1935,22 @@ function initApp() {
           submitBtn.disabled = true;
           submitBtn.innerText = 'Memproses...';
         }
-        await window.auth.signInWithEmailAndPassword(email, password);
+
+        if (!window.supabaseClient) {
+          throw new Error('Supabase SDK belum diinisialisasi.');
+        }
+
+        const { data, error } = await window.supabaseClient.auth.signInWithPassword({ email, password });
+        if (error) throw error;
+
         if (adminAuthOverlay) adminAuthOverlay.style.display = 'none';
         showToast('🔑 Login Admin Berhasil!', 'success');
       } catch (err) {
         if (loginErrorMsg) {
-          loginErrorMsg.innerText = 'Login Gagal: Email atau password salah.';
+          loginErrorMsg.innerText = 'Login Gagal: ' + (err.message || 'Email atau password salah.');
           loginErrorMsg.style.display = 'block';
         }
-        showToast('Login Gagal: Periksa email dan password.', 'error');
+        showToast('Login Gagal: ' + (err.message || 'Periksa email dan password.'), 'error');
       } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
@@ -1918,15 +1963,15 @@ function initApp() {
   const loginGoogleBtn = document.getElementById('login-google-btn');
   if (loginGoogleBtn) {
     loginGoogleBtn.addEventListener('click', async () => {
-      if (!window.auth || typeof firebase === 'undefined' || !firebase.auth.GoogleAuthProvider) {
-        showToast('Firebase SDK belum siap.', 'error');
+      if (!window.supabaseClient) {
+        showToast('Supabase SDK belum siap.', 'error');
         return;
       }
-      const provider = new firebase.auth.GoogleAuthProvider();
       try {
-        await window.auth.signInWithPopup(provider);
-        if (adminAuthOverlay) adminAuthOverlay.style.display = 'none';
-        showToast('🔑 Login Admin dengan Google Berhasil!', 'success');
+        const { data, error } = await window.supabaseClient.auth.signInWithOAuth({
+          provider: 'google'
+        });
+        if (error) throw error;
       } catch (err) {
         if (loginErrorMsg) {
           loginErrorMsg.innerText = 'Login Google Gagal: ' + (err.message || '');
@@ -1939,8 +1984,8 @@ function initApp() {
 
   if (adminLogoutBtn) {
     adminLogoutBtn.addEventListener('click', async () => {
-      if (window.auth) {
-        await window.auth.signOut();
+      if (window.supabaseClient) {
+        await window.supabaseClient.auth.signOut();
         showToast('🔒 Berhasil Logout dari Admin.', 'info');
       }
     });

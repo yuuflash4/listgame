@@ -67,7 +67,7 @@
         <div style="text-align: center; margin-bottom: 24px;">
           <img src="assets/logo.jpg" alt="Logo" style="width: 60px; height: 60px; border-radius: 12px; margin-bottom: 12px;" />
           <h2 style="font-size: 1.4rem; font-weight: 800; color: #fff; margin: 0;">Login Admin</h2>
-          <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 6px;">Masukkan akun Firebase Admin kamu untuk mengelola katalog game.</p>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 6px;">Masukkan akun Admin Supabase kamu untuk mengelola katalog game.</p>
         </div>
         <form id="admin-login-form">
           <div class="form-group" style="margin-bottom: 16px;">
@@ -235,11 +235,9 @@
   <!-- Dummy Hidden Grid Element for JS App compatibility -->
   <div id="game-grid" style="display: none;"></div>
 
-  <!-- Firebase SDK & Config -->
-  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
-  <script src="js/firebase-config.js?v=1.0.0"></script>
+  <!-- Supabase SDK & Config -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase-config.js?v=1.0.0"></script>
 
   <!-- Catalog Data Scripts & Application Logic -->
   <script src="data/pc_games.js?v=1.8.0"></script>
