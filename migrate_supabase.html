@@ -140,8 +140,12 @@
 
 ALTER TABLE public.games ENABLE ROW LEVEL SECURITY;
 
+DROP POLICY IF EXISTS "Allow public read" ON public.games;
+DROP POLICY IF EXISTS "Allow public write" ON public.games;
+DROP POLICY IF EXISTS "Allow public write for migration" ON public.games;
+
 CREATE POLICY "Allow public read" ON public.games FOR SELECT USING (true);
-CREATE POLICY "Allow public write for migration" ON public.games FOR ALL USING (true);</div>
+CREATE POLICY "Allow public write" ON public.games FOR ALL USING (true) WITH CHECK (true);</div>
 
   <div class="form-group">
     <label for="sb-url">2. Supabase URL:</label>
