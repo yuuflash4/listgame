@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Migrasi Data ke Google Apps Script (Google Sheets) - Grandia Game Tavern</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 32px;
+      max-width: 750px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    h1 {
+      color: #38bdf8;
+      font-size: 1.5rem;
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    p {
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #cbd5e1;
+      font-size: 0.9rem;
+    }
+    input {
+      width: 100%;
+      padding: 12px 14px;
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      color: #fff;
+      font-family: inherit;
+      box-sizing: border-box;
+      font-size: 0.95rem;
+    }
+    input:focus {
+      outline: none;
+      border-color: #38bdf8;
+    }
+    .btn {
+      background: linear-gradient(135deg, #0284c7, #38bdf8);
+      color: #000;
+      font-weight: 700;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: opacity 0.2s;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+    .btn-secondary {
+      background: #334155;
+      color: #fff;
+    }
+    .status-box {
+      background: #0f172a;
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 20px;
+      font-family: monospace;
+      font-size: 0.85rem;
+      max-height: 250px;
+      overflow-y: auto;
+      border: 1px solid #334155;
+      color: #cbd5e1;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: #38bdf8;
+      color: #000;
+    }
+    .step-list {
+      margin: 16px 0;
+      padding-left: 20px;
+      color: #cbd5e1;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🚀 Migrasi Katalog Game ke Google Sheets (GAS)</h1>
+    <p>Alat ini akan mengirimkan seluruh data game PC & PS2 lokal dari file <code>data/games.json</code>, <code>pc_games.js</code>, dan <code>ps2_games.js</code> ke Google Sheet Anda melalui Google Apps Script Web App API.</p>
+
+    <div style="background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; padding: 12px 16px; border-radius: 4px; margin-bottom: 20px;">
+      <strong>Langkah Persiapan:</strong>
+      <ol class="step-list" style="margin: 6px 0 0 0;">
+        <li>Buka file <code>gas_backend_template.gs</code> di project ini.</li>
+        <li>Tempel kode tersebut ke Google Apps Script (Extensions &gt; Apps Script di Google Sheets Anda).</li>
+        <li>Deploy sebagai Web App dengan Akses <strong>"Anyone"</strong>.</li>
+        <li>Masukkan URL Web App hasil deploy di bawah ini.</li>
+      </ol>
+    </div>
+
+    <div class="form-group">
+      <label for="gas-url">URL Google Apps Script Web App</label>
+      <input type="text" id="gas-url" placeholder="https://script.google.com/macros/s/.../exec" />
+    </div>
+
+    <div style="display: flex; gap: 12px; margin-top: 20px;">
+      <button id="test-btn" class="btn btn-secondary">🔍 Tes Koneksi</button>
+      <button id="migrate-btn" class="btn">⚡ Migrasi Semua Data Sekarang</button>
+    </div>
+
+    <div id="status-box" class="status-box">
+      [System Ready] Menunggu tindakan dari Anda...
+    </div>
+
+    <div style="margin-top: 20px; text-align: right;">
+      <a href="admin.html" style="color: #38bdf8; text-decoration: none; font-weight: 600; font-size: 0.9rem;">&larr; Kembali ke Admin Panel</a>
+    </div>
+  </div>
+
+  <script src="js/gas-db.js"></script>
+  <script src="data/pc_games.js"></script>
+  <script src="data/ps2_games.js"></script>
+  <script>
+    const gasUrlInput = document.getElementById('gas-url');
+    const testBtn = document.getElementById('test-btn');
+    const migrateBtn = document.getElementById('migrate-btn');
+    const statusBox = document.getElementById('status-box');
+
+    function log(msg, type = 'info') {
+      const time = new Date().toLocaleTimeString();
+      let prefix = 'ℹ️';
+      if (type === 'success') prefix = '✅';
+      if (type === 'error') prefix = '❌';
+      if (type === 'warn') prefix = '⚠️';
+      statusBox.innerHTML += `<br>[${time}] ${prefix} ${msg}`;
+      statusBox.scrollTop = statusBox.scrollHeight;
+    }
+
+    // Load existing saved URL
+    gasUrlInput.value = GASDB.getWebUrl();
+
+    gasUrlInput.addEventListener('input', () => {
+      GASDB.setWebUrl(gasUrlInput.value);
+    });
+
+    testBtn.addEventListener('click', async () => {
+      const url = gasUrlInput.value.trim();
+      if (!url) {
+        alert('Masukkan URL Google Apps Script Web App terlebih dahulu!');
+        return;
+      }
+      GASDB.setWebUrl(url);
+      log('Menguji koneksi ke Google Apps Script...', 'info');
+      try {
+        const res = await GASDB.ping();
+        if (res && res.status === 'success') {
+          log(`Koneksi Sukses! Pesan dari GAS: "${res.message}"`, 'success');
+        } else {
+          log(`Respon terikat: ${JSON.stringify(res)}`, 'warn');
+        }
+      } catch (err) {
+        log(`Gagal terhubung ke Google Apps Script: ${err.message}`, 'error');
+      }
+    });
+
+    migrateBtn.addEventListener('click', async () => {
+      const url = gasUrlInput.value.trim();
+      if (!url) {
+        alert('Masukkan URL Google Apps Script Web App terlebih dahulu!');
+        return;
+      }
+      GASDB.setWebUrl(url);
+
+      if (!confirm('Apakah Anda yakin ingin mengunggah seluruh katalog game ke Google Sheets? Data di sheet Games akan disinkronkan.')) {
+        return;
+      }
+
+      migrateBtn.disabled = true;
+      testBtn.disabled = true;
+      log('Memulai proses pengumpulan data game lokal...', 'info');
+
+      try {
+        let allGames = [];
+
+        // 1. Ambil data dari games.json lokal
+        try {
+          const resp = await fetch('data/games.json');
+          if (resp.ok) {
+            const gamesJson = await resp.json();
+            if (Array.isArray(gamesJson)) {
+              allGames.push(...gamesJson);
+              log(`Berhasil memuat ${gamesJson.length} game dari data/games.json`, 'info');
+            }
+          }
+        } catch (e) {
+          log('Perhatian: data/games.json tidak ditemukan atau gagal dibaca.', 'warn');
+        }
+
+        // 2. Ambil data dari window.PC_GAMES_DATA
+        if (window.PC_GAMES_DATA && Array.isArray(window.PC_GAMES_DATA)) {
+          const pcMapped = window.PC_GAMES_DATA.map((g, idx) => {
+            const sizeStr = (g.game_info && g.game_info['Game Size']) ? g.game_info['Game Size'] : '0';
+            const sizeNum = parseFloat(sizeStr) || 0;
+            return {
+              id: 'pc-' + (idx + 1),
+              title: g.title,
+              category: 'pc',
+              platform: 'PC (Windows)',
+              sizeGB: sizeNum,
+              releaseYear: 2024,
+              rating: 4.8,
+              cover: g.banner_url || '',
+              game_info: g.game_info || {},
+              requirements: g.system_requirements || []
+            };
+          });
+          allGames.push(...pcMapped);
+          log(`Berhasil memuat ${pcMapped.length} game dari window.PC_GAMES_DATA`, 'info');
+        }
+
+        // 3. Ambil data dari window.PS2_GAMES_DATA
+        if (window.PS2_GAMES_DATA && Array.isArray(window.PS2_GAMES_DATA)) {
+          const ps2Mapped = window.PS2_GAMES_DATA.map((g, idx) => {
+            const sizeStr = (g.game_info && g.game_info['Game Size']) ? g.game_info['Game Size'] : '0';
+            const sizeNum = parseFloat(sizeStr) || 0;
+            return {
+              id: 'ps2-' + (idx + 1),
+              title: g.title,
+              category: 'ps2',
+              platform: 'PlayStation 2',
+              sizeGB: sizeNum,
+              releaseYear: 2005,
+              rating: 4.7,
+              cover: g.banner_url || '',
+              game_info: g.game_info || {},
+              requirements: g.system_requirements || []
+            };
+          });
+          allGames.push(...ps2Mapped);
+          log(`Berhasil memuat ${ps2Mapped.length} game dari window.PS2_GAMES_DATA`, 'info');
+        }
+
+        // De-duplicate berdasarkan title jika ada yang sama
+        const uniqueMap = new Map();
+        allGames.forEach(g => {
+          if (g.title && !uniqueMap.has(g.title.toLowerCase().trim())) {
+            uniqueMap.set(g.title.toLowerCase().trim(), g);
+          }
+        });
+        const finalGames = Array.from(uniqueMap.values());
+
+        log(`Total data game unik yang akan dikirim ke Google Sheets: ${finalGames.length}`, 'info');
+        log('Mengirimkan data dalam batch ke Google Apps Script Web App... silakan tunggu...', 'info');
+
+        // Send in batches of 100 to avoid payload limit
+        const BATCH_SIZE = 100;
+        let totalImported = 0;
+
+        for (let i = 0; i < finalGames.length; i += BATCH_SIZE) {
+          const chunk = finalGames.slice(i, i + BATCH_SIZE);
+          const isFirstBatch = i === 0;
+          log(`Mengirim batch ${Math.floor(i / BATCH_SIZE) + 1} (${chunk.length} game)...`, 'info');
+          
+          const result = await GASDB.bulkImport(chunk, isFirstBatch);
+          if (result && result.status === 'success') {
+            totalImported += chunk.length;
+            log(`Batch ${Math.floor(i / BATCH_SIZE) + 1} Berhasil disimpan!`, 'success');
+          } else {
+            log(`Gagal pada batch ${Math.floor(i / BATCH_SIZE) + 1}: ${result ? result.message : 'No response'}`, 'error');
+          }
+        }
+
+        log(`🎉 MIGRASI SELESAI! Total ${totalImported} game telah tersimpan di Google Sheets.`, 'success');
+        alert(`Sukses! ${totalImported} game telah tersimpan ke Google Sheets Anda.`);
+
+      } catch (err) {
+        log(`Terjadi kesalahan saat migrasi: ${err.message}`, 'error');
+      } finally {
+        migrateBtn.disabled = false;
+        testBtn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

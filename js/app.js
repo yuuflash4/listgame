@@ -757,6 +757,48 @@ function initApp() {
         }
       }
 
+      // Sync from Google Apps Script Database (Google Sheets)
+      if (window.GASDB) {
+        window.GASDB.fetchGames().then(gasGames => {
+          if (gasGames && Array.isArray(gasGames) && gasGames.length > 0) {
+            let hasGasUpdates = false;
+            gasGames.forEach(cg => {
+              if (!cg || !cg.title || isGameDeleted(cg)) return;
+              const cleanCgTitle = cg.title.trim().toLowerCase();
+              const rawSize = cg.sizeGB || cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0);
+              const sizeNum = parseSizeToGB(rawSize);
+              const coverUrl = cg.cover || cg.banner_url || (cg.category === 'ps2' ? 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop');
+
+              const item = {
+                id: String(cg.id),
+                title: cg.title,
+                category: cg.category || 'pc',
+                sizeGB: sizeNum,
+                platform: cg.platform || (cg.category === 'ps2' ? 'PlayStation 2' : 'PC (Windows)'),
+                cover: coverUrl,
+                banner_url: coverUrl,
+                game_info: cg.game_info || { Genre: 'Action', Developer: 'Unknown', 'Game Size': `${sizeNum.toFixed(1)} GB` },
+                requirements: cg.requirements || cg.system_requirements || []
+              };
+
+              const existingIdx = allGames.findIndex(g => (g.id && String(g.id) === String(cg.id)) || g.title.trim().toLowerCase() === cleanCgTitle);
+              if (existingIdx !== -1) {
+                allGames[existingIdx] = { ...allGames[existingIdx], ...item };
+              } else {
+                allGames.unshift(item);
+              }
+              gamesByTitle.set(item.title, allGames[existingIdx !== -1 ? existingIdx : 0]);
+              hasGasUpdates = true;
+            });
+
+            if (hasGasUpdates) {
+              applyFilters();
+              if (adminTableBody) renderAdminTable();
+            }
+          }
+        }).catch(err => console.warn('GAS DB fetch warning:', err));
+      }
+
       // Sync latest custom games from local server ONLY if Supabase is not active
       if (!window.supabaseClient) {
         syncFromServer().then(cloudCustomGames => {
@@ -1552,10 +1594,16 @@ function initApp() {
             showToast('☁️ Data game berhasil tersimpan di Database Cloud Supabase!', 'success');
           }
         })
-        .catch(err => {
-          console.error("Supabase save catch error:", err);
-          showToast('⚠️ Gagal simpan ke Supabase: ' + String(err), 'error');
         });
+    }
+
+    if (window.GASDB) {
+      const gasPromise = editId ? window.GASDB.updateGame(gameObject) : window.GASDB.addGame(gameObject);
+      gasPromise.then(res => {
+        if (res && res.status === 'success') {
+          showToast(`📊 Data game tersimpan di Google Sheets!`, 'success');
+        }
+      }).catch(err => console.warn('GAS DB save warning:', err));
     }
 
     debouncedSyncToServer();
@@ -1718,6 +1766,10 @@ function initApp() {
                   if (error) console.error("Supabase delete error:", error);
                 })
                 .catch(err => console.error("Supabase delete error:", err));
+            }
+
+            if (window.GASDB && game.id) {
+              window.GASDB.deleteGame(game.id).catch(err => console.warn("GAS delete warning:", err));
             }
 
             debouncedSyncToServer();
