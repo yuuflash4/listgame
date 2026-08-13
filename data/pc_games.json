@@ -69,7 +69,7 @@
     "game_info": {
       "Genre": "Action, RPG",
       "Developer": "Neople",
-      "Game Size": "24.0 GB"
+      "Game Size": "57.0 GB"
     },
     "system_requirements": [
       "OS: Windows 10 64bit 22H2",
@@ -4087,17 +4087,6 @@
     "system_requirements": []
   },
   {
-    "title": "Sonic Unleashed",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/b80c0932cb6f7be27c8d37b4c847a8bd.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Action, Arcade, Adventure",
-      "Developer": "Sonic Team, Dimps",
-      "Game Size": "8.8 GB"
-    },
-    "system_requirements": []
-  },
-  {
     "title": "Expeditions: A MudRunner Game (Build 20554064)",
     "banner_url": "https://cdn2.steamgriddb.com/grid/6534089f97acbe850fe6c344e83915e0.png",
     "category": "pc",
@@ -5018,17 +5007,6 @@
       "Genre": "Action, Adventure, RPG",
       "Developer": "KOEI TECMO GAMES CO., LTD.",
       "Game Size": "54.0 GB"
-    },
-    "system_requirements": []
-  },
-  {
-    "title": "FIFA 21",
-    "banner_url": "https://cdn2.steamgriddb.com/grid/e17c82d7edefebfb5b4dabf64e2f0228.png",
-    "category": "pc",
-    "game_info": {
-      "Genre": "Simulation, Sports",
-      "Developer": "EA Canada",
-      "Game Size": "50.3 GB"
     },
     "system_requirements": []
   },

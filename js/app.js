@@ -546,7 +546,29 @@ function initApp() {
   }  // Load All Catalogs + LocalStorage Custom Admin Edits
   async function loadAllCatalogs() {
     try {
-      if (gameGrid) gameGrid.innerHTML = `<div class="loading-state">Memuat katalog game...</div>`;
+      if (gameGrid) {
+        gameGrid.innerHTML = `
+          <div class="gas-loading-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 80px 20px; grid-column: 1 / -1; text-align: center; gap: 16px;">
+            <style>
+              @keyframes gasSpin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+            </style>
+            <div style="width: 44px; height: 44px; border: 4px solid rgba(99, 102, 241, 0.15); border-top: 4px solid var(--accent, #6366f1); border-radius: 50%; animation: gasSpin 0.85s linear infinite;"></div>
+            <div style="font-size: 1.1rem; font-weight: 600; color: #ffffff;">Memuat katalog...</div>
+          </div>
+        `;
+      }
+
+      // 1. Fetch live data directly from Google Apps Script DB (Google Sheets) BEFORE rendering cards
+      let gasGames = null;
+      if (window.GASDB) {
+        try {
+          const fetchPromise = window.GASDB.fetchGames();
+          const timeoutPromise = new Promise(resolve => setTimeout(() => resolve(null), 5000));
+          gasGames = await Promise.race([fetchPromise, timeoutPromise]);
+        } catch (e) {
+          console.warn('GAS DB fetch error:', e);
+        }
+      }
 
       await waitForWindowData();
 
@@ -592,7 +614,43 @@ function initApp() {
         gamesByTitle.set(item.title, item);
       });
 
-      // Merge Custom LocalStorage Games & Edits BEFORE initial render (0ms Instant!)
+      // Merge Google Sheets Live Data BEFORE initial card render
+      if (gasGames && Array.isArray(gasGames) && gasGames.length > 0) {
+        gasGames.forEach(cg => {
+          if (!cg || !cg.title || isGameDeleted(cg)) return;
+          const cleanCgTitle = cg.title.trim().toLowerCase();
+          const rawSize = cg.sizeGB !== undefined && cg.sizeGB !== null ? cg.sizeGB : (cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0));
+          const sizeNum = parseSizeToGB(rawSize);
+          const coverUrl = cg.cover || cg.banner_url || (cg.category === 'ps2' ? 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop');
+
+          const gameInfo = { ...(cg.game_info || { Genre: 'Action', Developer: 'Unknown' }) };
+          if (sizeNum > 0) gameInfo['Game Size'] = `${sizeNum.toFixed(1)} GB`;
+
+          const item = {
+            id: String(cg.id),
+            title: cg.title,
+            category: cg.category || 'pc',
+            sizeGB: sizeNum,
+            platform: cg.platform || (cg.category === 'ps2' ? 'PlayStation 2' : 'PC (Windows)'),
+            cover: coverUrl,
+            banner_url: coverUrl,
+            game_info: gameInfo,
+            requirements: cg.requirements || cg.system_requirements || []
+          };
+
+          const existingIdx = allGames.findIndex(g => (g.id && String(g.id) === String(cg.id)) || (g.title && g.title.trim().toLowerCase() === cleanCgTitle));
+          if (existingIdx !== -1) {
+            const existing = allGames[existingIdx];
+            allGames[existingIdx] = { ...existing, ...item, sizeGB: sizeNum > 0 ? sizeNum : existing.sizeGB };
+            gamesByTitle.set(item.title, allGames[existingIdx]);
+          } else {
+            allGames.push(item);
+            gamesByTitle.set(item.title, item);
+          }
+        });
+      }
+
+      // Merge Custom LocalStorage Games & Edits
       const customGamesJSON = localStorage.getItem('admin_custom_games');
       if (customGamesJSON) {
         try {
@@ -632,102 +690,9 @@ function initApp() {
         } catch (e) {}
       }
 
-      // RENDER CATALOG IMMEDIATELY AT 0ms WITH INSTANT ACCURATE CACHED DATA!
+      // NOW RENDER ALL CARDS DIRECTLY FROM LIVE GOOGLE SHEETS DATA!
       applyFilters();
       if (adminTableBody) renderAdminTable();
-
-      // Background Async Fetch from Google Apps Script DB (Google Sheets)
-      if (window.GASDB) {
-        window.GASDB.fetchGames().then(gasGames => {
-          if (gasGames && Array.isArray(gasGames) && gasGames.length > 0) {
-            let hasGasUpdates = false;
-            gasGames.forEach(cg => {
-              if (!cg || !cg.title || isGameDeleted(cg)) return;
-              const cleanCgTitle = cg.title.trim().toLowerCase();
-              const rawSize = cg.sizeGB !== undefined && cg.sizeGB !== null ? cg.sizeGB : (cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0));
-              const sizeNum = parseSizeToGB(rawSize);
-              const coverUrl = cg.cover || cg.banner_url || (cg.category === 'ps2' ? 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop');
-
-              const gameInfo = { ...(cg.game_info || { Genre: 'Action', Developer: 'Unknown' }) };
-              if (sizeNum > 0) gameInfo['Game Size'] = `${sizeNum.toFixed(1)} GB`;
-
-              const item = {
-                id: String(cg.id),
-                title: cg.title,
-                category: cg.category || 'pc',
-                sizeGB: sizeNum,
-                platform: cg.platform || (cg.category === 'ps2' ? 'PlayStation 2' : 'PC (Windows)'),
-                cover: coverUrl,
-                banner_url: coverUrl,
-                game_info: gameInfo,
-                requirements: cg.requirements || cg.system_requirements || []
-              };
-
-              const existingIdx = allGames.findIndex(g => (g.id && String(g.id) === String(cg.id)) || (g.title && g.title.trim().toLowerCase() === cleanCgTitle));
-              if (existingIdx !== -1) {
-                const existing = allGames[existingIdx];
-                allGames[existingIdx] = { ...existing, ...item, sizeGB: sizeNum > 0 ? sizeNum : existing.sizeGB };
-                gamesByTitle.set(item.title, allGames[existingIdx]);
-              } else {
-                allGames.push(item);
-                gamesByTitle.set(item.title, item);
-              }
-              hasGasUpdates = true;
-            });
-
-            if (hasGasUpdates) {
-              // Cache all updated/edited games to localStorage so future reloads render 57GB at 0ms
-              try {
-                const localCustoms = JSON.parse(localStorage.getItem('admin_custom_games') || '[]');
-                const mergedCustomsMap = new Map();
-                localCustoms.forEach(c => { if (c && c.title) mergedCustomsMap.set(c.title.trim().toLowerCase(), c); });
-                
-                allGames.forEach(g => {
-                  if (g.custom || g.updatedAt || (g.sizeGB && g.sizeGB > 0)) {
-                    if (!isGameDeleted(g)) mergedCustomsMap.set(g.title.trim().toLowerCase(), g);
-                  }
-                });
-                
-                localStorage.setItem('admin_custom_games', JSON.stringify(Array.from(mergedCustomsMap.values())));
-              } catch (e) {}
-
-              applyFilters();
-              if (adminTableBody) renderAdminTable();
-            }
-          }
-        }).catch(err => console.warn('GAS DB background fetch warning:', err));
-      }
-
-    } catch (err) {
-      console.error('Error loading game catalog:', err);
-      if (gameGrid) gameGrid.innerHTML = `<div class="empty-state">Gagal memuat katalog game: ${err.message}</div>`;
-      if (adminTableBody) {
-        adminTableBody.innerHTML = `<tr><td colspan="6" style="text-align: center; color: var(--danger); padding: 20px;">Gagal memuat data katalog: ${err.message}</td></tr>`;
-      }
-    }
-  }));
-      }
-
-      // Sync latest custom games from local server ONLY if Supabase is not active
-      if (!window.supabaseClient) {
-        syncFromServer().then(cloudCustomGames => {
-          if (cloudCustomGames && Array.isArray(cloudCustomGames)) {
-            cloudCustomGames.forEach(cg => {
-              if (!cg || !cg.title || isGameDeleted(cg)) return;
-              const cleanCgTitle = cg.title.trim().toLowerCase();
-              const existingIdx = allGames.findIndex(g => (cg.id && g.id === cg.id) || g.title.trim().toLowerCase() === cleanCgTitle);
-              if (existingIdx !== -1) {
-                allGames[existingIdx] = cg;
-              } else {
-                allGames.unshift(cg);
-              }
-              gamesByTitle.set(cg.title, cg);
-            });
-            applyFilters();
-            if (adminTableBody) renderAdminTable();
-          }
-        }).catch(() => {});
-      }
 
     } catch (err) {
       console.error('Error loading game catalog:', err);
@@ -1402,6 +1367,8 @@ function initApp() {
         'Game Size': `${sizeGB.toFixed(1)} GB`
       },
       requirements: requirements,
+      isEdited: true,
+      custom: true,
       updatedAt: nowIso
     };
 
