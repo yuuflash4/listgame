@@ -6,12 +6,26 @@
   'use strict';
 
   var DEFAULT_GAS_URL = 'https://script.google.com/macros/s/AKfycbx0wQvCRHg3Uqmxo00RlBfdzgS339Ti4-2_gXFTKA6137flvjm5is8_pPoPioSMmBv1/exec';
+  var OLD_DEAD_URL = 'AKfycbyWZKd1eMTZSRZoMNaLX1zVlik3rje63ldJ7PmCZHX3UToU5qx_i_6N2zncOmz6Yeh82Q';
+
+  // Auto load from drive_config.json if available
+  try {
+    fetch('drive_config.json').then(r => r.json()).then(cfg => {
+      if (cfg && cfg.web_app_url) {
+        window.GAS_WEB_APP_URL = cfg.web_app_url;
+      }
+    }).catch(function() {});
+  } catch (e) {}
 
   var GASDB = {
     getWebUrl: function () {
       var saved = localStorage.getItem('gas_web_app_url');
+      if (saved && saved.includes(OLD_DEAD_URL)) {
+        localStorage.removeItem('gas_web_app_url');
+        saved = null;
+      }
       if (saved && saved.trim()) return saved.trim();
-      if (window.GAS_WEB_APP_URL && window.GAS_WEB_APP_URL.trim()) return window.GAS_WEB_APP_URL.trim();
+      if (window.GAS_WEB_APP_URL && window.GAS_WEB_APP_URL.trim() && !window.GAS_WEB_APP_URL.includes(OLD_DEAD_URL)) return window.GAS_WEB_APP_URL.trim();
       return DEFAULT_GAS_URL;
     },
 
