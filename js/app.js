@@ -660,18 +660,43 @@ function initApp() {
                 const existingTime = existing.updatedAt ? new Date(existing.updatedAt).getTime() : 0;
                 const itemTime = item.updatedAt ? new Date(item.updatedAt).getTime() : 0;
 
-                const finalSize = item.sizeGB > 0 ? item.sizeGB : existing.sizeGB;
+                let finalSize = existing.sizeGB;
+                if (existingTime > itemTime && existing.sizeGB > 0) {
+                  // Local edit is newer! Preserve local size & re-sync to Supabase
+                  finalSize = existing.sizeGB;
+                  if (window.supabaseClient) {
+                    window.supabaseClient.from('games').upsert([{
+                      id: String(existing.id || cg.id),
+                      title: existing.title,
+                      category: existing.category || 'pc',
+                      size_gb: existing.sizeGB,
+                      platform: existing.platform || 'PC (Windows)',
+                      cover: existing.cover || '',
+                      banner_url: existing.cover || '',
+                      game_info: existing.game_info || {},
+                      download_links: existing.download_links || null,
+                      custom: true,
+                      created_at: existing.updatedAt
+                    }], { onConflict: 'id' }).catch(() => {});
+                  }
+                } else {
+                  finalSize = item.sizeGB > 0 ? item.sizeGB : existing.sizeGB;
+                }
+
                 const finalCover = (item.cover && !item.cover.includes('unsplash')) ? item.cover : existing.cover;
 
-                if (itemTime >= existingTime) {
-                  allGames[existingIdx] = { 
-                    ...existing, 
-                    ...item, 
-                    sizeGB: finalSize, 
-                    cover: finalCover 
-                  };
-                  hasNewItems = true;
-                }
+                allGames[existingIdx] = { 
+                  ...existing, 
+                  ...item, 
+                  sizeGB: finalSize, 
+                  game_info: {
+                    ...(existing.game_info || {}),
+                    ...(item.game_info || {}),
+                    'Game Size': `${finalSize.toFixed(1)} GB`
+                  },
+                  cover: finalCover 
+                };
+                hasNewItems = true;
               } else {
                 allGames.unshift(item);
                 hasNewItems = true;
@@ -679,12 +704,13 @@ function initApp() {
               gamesByTitle.set(item.title, allGames[existingIdx !== -1 ? existingIdx : 0]);
             });
 
-            // Cache Supabase custom games to LocalStorage for instant load
-            if (customGamesList.length > 0) {
-              try {
-                localStorage.setItem('admin_custom_games', JSON.stringify(customGamesList));
-              } catch(e) {}
-            }
+            // Cache updated custom/edited games list to LocalStorage for instant load
+            try {
+              const customOnly = allGames.filter(g => g.updatedAt || g.custom);
+              if (customOnly.length > 0) {
+                localStorage.setItem('admin_custom_games', JSON.stringify(customOnly));
+              }
+            } catch(e) {}
 
             if (hasNewItems) {
               applyFilters();
@@ -1438,7 +1464,8 @@ function initApp() {
         banner_url: gameObject.banner_url || gameObject.cover || '',
         game_info: gameObject.game_info || {},
         download_links: gameObject.download_links || null,
-        custom: true
+        custom: true,
+        created_at: nowIso
       };
       window.supabaseClient.from('games').upsert([sbRow], { onConflict: 'id' })
         .then(({ error }) => {

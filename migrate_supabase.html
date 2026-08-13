@@ -208,7 +208,7 @@ CREATE POLICY "Allow public write for migration" ON public.games FOR ALL USING (
 
       // Process PC games
       pcData.forEach((g, idx) => {
-        const id = g.id || ('pc_' + idx + '_' + (g.title || '').toLowerCase().replace(/[^a-z0-9]/g, ''));
+        const id = g.id || ('pc-' + idx);
         const sizeGB = g.sizeGB || parseFloat(g.size) || (g.game_info ? parseFloat(g.game_info['Game Size']) : 0) || 0;
         allGames.push({
           id: String(id),
@@ -226,7 +226,7 @@ CREATE POLICY "Allow public write for migration" ON public.games FOR ALL USING (
 
       // Process PS2 games
       ps2Data.forEach((g, idx) => {
-        const id = g.id || ('ps2_' + idx + '_' + (g.title || '').toLowerCase().replace(/[^a-z0-9]/g, ''));
+        const id = g.id || ('ps2-' + idx);
         const sizeGB = g.sizeGB || parseFloat(g.size) || (g.game_info ? parseFloat(g.game_info['Game Size']) : 0) || 0;
         allGames.push({
           id: String(id),
