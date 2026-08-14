@@ -868,25 +868,20 @@ function initApp() {
     `;
   }
 
-  // Mobile-Specific Image Compression Helper (wsrv.nl Proxy)
+  // Image URL Normalizer
   function getOptimizedImageUrl(url) {
     if (!url || typeof url !== 'string') {
       return 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop';
     }
     const trimmed = url.trim();
-    if (trimmed.startsWith('data:') || trimmed.endsWith('.svg') || trimmed.includes('wsrv.nl')) {
-      return trimmed;
+    if (!trimmed) {
+      return 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop';
     }
 
-    // Detect if user is on a mobile device / smartphone (screen <= 768px or mobile userAgent)
-    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
-
-    if (isMobile) {
-      const cleanUrl = trimmed.replace(/^https?:\/\//, '');
-      return `https://wsrv.nl/?url=${encodeURIComponent(cleanUrl)}&w=280&output=webp&q=65`;
-    }
-
-    return trimmed;
+    return trimmed
+      .replace('shared.cloudflare.steamstatic.com', 'shared.fastly.steamstatic.com')
+      .replace('shared.steamstatic.com', 'shared.fastly.steamstatic.com')
+      .replace('/header.jpg', '/library_600x900.jpg');
   }
 
   function renderGameGrid(append = false) {
@@ -928,7 +923,7 @@ function initApp() {
 
         card.innerHTML = `
           <div class="game-cover-wrap">
-            <img src="${coverUrl}" alt="${game.title}" class="game-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
+            <img src="${coverUrl}" alt="${game.title}" class="game-cover" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop';" />
             <span class="game-badge ${game.category}">${game.category === 'ps2' ? 'PS2 Emu' : 'Game PC'}</span>
             ${yearDisplay ? `<span class="game-year-badge" style="position: absolute; bottom: 8px; left: 8px; background: rgba(15, 23, 42, 0.85); color: #38bdf8; padding: 2px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; border: 1px solid rgba(56, 189, 248, 0.3); backdrop-filter: blur(4px);">📅 ${yearDisplay}</span>` : ''}
             <span class="price-tag-card">${priceStr}</span>
