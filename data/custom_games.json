@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "id": "pc_fg_battlefield_6_campaign_only_d4c65b",
+    "title": "Battlefield 6",
+    "category": "pc",
+    "sizeGB": 96,
+    "size": 96,
+    "releaseYear": null,
+    "platform": "PC (Windows)",
+    "cover": "https://i8.imageban.ru/out/2025/11/23/21a76bac641bc82b05f1263c48daadb4.jpg",
+    "banner_url": "https://i8.imageban.ru/out/2025/11/23/21a76bac641bc82b05f1263c48daadb4.jpg",
+    "game_info": {
+      "Genre": "Action",
+      "Developer": "Unknown Developer",
+      "Version": "Full Version",
+      "Game Size": "96.0 GB"
+    },
+    "requirements": [],
+    "isEdited": true,
+    "custom": true,
+    "updatedAt": "2026-08-14T08:06:42.493Z"
+  },
+  {
+    "id": "pc_fg_the_dark_pictures_anthology_the_dev_0b7305",
+    "title": "The Dark Pictures Anthology: The Devil in Me + Curator's Cut DLC",
+    "category": "pc",
+    "sizeGB": 63.9,
+    "size": 63.9,
+    "releaseYear": null,
+    "platform": "PC (Windows)",
+    "cover": "https://i1.imageban.ru/out/2022/11/20/f2f4b1c0b59c9c60f16fbb0ebb26b586.jpg",
+    "banner_url": "https://i1.imageban.ru/out/2022/11/20/f2f4b1c0b59c9c60f16fbb0ebb26b586.jpg",
+    "game_info": {
+      "Genre": "Action",
+      "Developer": "Unknown Developer",
+      "Version": "Full Version",
+      "Game Size": "63.9 GB"
+    },
+    "requirements": [],
+    "isEdited": true,
+    "custom": true,
+    "updatedAt": "2026-08-14T08:01:43.940Z"
+  },
+  {
+    "id": "pc_fg_resident_evil_5_gold_edition_17c94b",
+    "title": "Resident Evil 5: Gold Edition",
+    "category": "pc",
+    "sizeGB": 8.5,
+    "size": 8.5,
+    "releaseYear": null,
+    "platform": "PC (Windows)",
+    "cover": "http://i66.fastpic.ru/big/2015/0329/b9/72f70202297a740ed9a31f77a24ffdb9.jpg",
+    "banner_url": "http://i66.fastpic.ru/big/2015/0329/b9/72f70202297a740ed9a31f77a24ffdb9.jpg",
+    "game_info": {
+      "Genre": "Action",
+      "Developer": "Unknown Developer",
+      "Version": "Full Version",
+      "Game Size": "8.5 GB"
+    },
+    "requirements": [],
+    "isEdited": true,
+    "custom": true,
+    "updatedAt": "2026-08-14T07:43:26.498Z"
+  }
+]

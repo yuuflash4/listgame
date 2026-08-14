@@ -5,3 +5,5 @@ uploads/*
 data/custom_games.json
 drive_config.json
 .env
+fitgirl_games.csv
+fitgirl_games.json

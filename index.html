@@ -110,8 +110,8 @@
             </select>
 
             <select id="sort-filter" class="custom-select" aria-label="Urutkan katalog game">
-              <option value="added-desc" selected>🆕 Paling Baru Ditambahkan</option>
-              <option value="added-asc">⏳ Terlama Ditambahkan</option>
+              <option value="year-desc" selected>📅 Tahun Rilis: Terbaru ➔ Terlama</option>
+              <option value="year-asc">⏳ Tahun Rilis: Terlama ➔ Terbaru</option>
               <option value="size-desc">💾 Ukuran Terbesar ➔ Terkecil</option>
               <option value="size-asc">💾 Ukuran Terkecil ➔ Terbesar</option>
             </select>
@@ -189,6 +189,10 @@
               <label class="form-label" for="admin-developer">Developer</label>
               <input type="text" id="admin-developer" class="form-control" placeholder="Rockstar Games" />
             </div>
+            <div class="form-group">
+              <label class="form-label" for="admin-release-year">Tahun Rilis</label>
+              <input type="number" id="admin-release-year" class="form-control" placeholder="2024" />
+            </div>
           </div>
 
           <div class="form-group">
@@ -247,8 +251,16 @@
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
           <span>Kelola Katalog Game (<span id="admin-total-count">0</span> Game)</span>
         </h2>
-        <div style="max-width: 300px; width: 100%;">
-          <input type="text" id="admin-search-input" class="form-control" placeholder="Cari di katalog admin..." />
+        <div style="display: flex; gap: 10px; max-width: 520px; width: 100%; flex-wrap: wrap;">
+          <select id="admin-sort-select" class="form-control" style="width: auto; flex: 1; min-width: 170px;">
+            <option value="year-desc" selected>Tahun Rilis: Terbaru → Terlama</option>
+            <option value="year-asc">Tahun Rilis: Terlama → Terbaru</option>
+            <option value="size-desc">Ukuran: Terbesar → Terkecil</option>
+            <option value="size-asc">Ukuran: Terkecil → Terbesar</option>
+            <option value="title-asc">Nama: A → Z</option>
+            <option value="title-desc">Nama: Z → A</option>
+          </select>
+          <input type="text" id="admin-search-input" class="form-control" placeholder="Cari di katalog admin..." style="flex: 1; min-width: 170px;" />
         </div>
       </div>
 
@@ -400,11 +412,11 @@
   <!-- Google Apps Script & Supabase SDK -->
   <script src="js/gas-db.js?v=1.0.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="js/supabase-config.js?v=1.0.0"></script>
+  <script src="js/supabase-config.js?v=1.0.1"></script>
 
   <!-- Catalog Data Scripts & Application Logic -->
   <script src="data/pc_games.js?v=1.8.0"></script>
   <script src="data/ps2_games.js?v=1.8.0"></script>
-  <script src="js/app.js?v=1.8.2"></script>
+  <script src="js/app.js?v=1.9.7"></script>
 </body>
 </html>

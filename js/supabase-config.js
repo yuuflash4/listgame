@@ -11,18 +11,17 @@ const isLocalEnv = typeof window !== 'undefined' && (
   window.location.protocol === 'file:'
 );
 
-// Pilihan A: Supabase Client HANYA aktif di Online Production (Netlify)
-if (!isLocalEnv && typeof supabase !== 'undefined') {
+// Initialize Supabase Client for both Local and Production Cloud
+if (typeof supabase !== 'undefined') {
   try {
     window.supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-    console.log("☁️ Supabase Client initialized for Production Cloud.");
+    console.log("☁️ Supabase Client active & connected to Cloud Database.");
   } catch (e) {
     console.warn("Supabase initialization error:", e);
+    window.supabaseClient = null;
   }
-} else if (isLocalEnv) {
-  console.log("⚡ Mode Testing Lokal: Supabase dinonaktifkan di localhost (Terisolasi Murni).");
-  window.supabaseClient = null;
 } else {
   console.warn("Supabase SDK belum dimuat di HTML.");
+  window.supabaseClient = null;
 }
 

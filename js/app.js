@@ -138,6 +138,7 @@ function initApp() {
   const adminCover = document.getElementById('admin-cover');
   const adminGenre = document.getElementById('admin-genre');
   const adminDeveloper = document.getElementById('admin-developer');
+  const adminReleaseYear = document.getElementById('admin-release-year');
   const adminReqs = document.getElementById('admin-reqs');
   const adminResetFormBtn = document.getElementById('admin-reset-form-btn');
   
@@ -558,7 +559,94 @@ function initApp() {
         `;
       }
 
-      // 1. Check for cached Google Sheets data for instant 0ms startup
+      allGames = [];
+      gamesByTitle.clear();
+
+      // 1. Try Supabase Cloud Database first with automatic pagination (bypasses 1000 max-rows limit)
+      let sbGames = [];
+      if (window.supabaseClient) {
+        try {
+          console.log("⚡ Fetching catalog from Supabase Cloud Database...");
+          const pageSize = 1000;
+          let from = 0;
+          let hasMore = true;
+
+          while (hasMore) {
+            const { data, error } = await window.supabaseClient
+              .from('games')
+              .select('*')
+              .order('created_at', { ascending: false })
+              .range(from, from + pageSize - 1);
+
+            if (error) {
+              console.warn('Supabase fetch error:', error);
+              break;
+            }
+
+            if (data && Array.isArray(data) && data.length > 0) {
+              sbGames = sbGames.concat(data);
+              if (data.length < pageSize) {
+                hasMore = false;
+              } else {
+                from += pageSize;
+              }
+            } else {
+              hasMore = false;
+            }
+          }
+
+          if (sbGames.length > 0) {
+            console.log(`✅ Loaded ALL ${sbGames.length} games from Supabase Database!`);
+          }
+        } catch (e) {
+          console.warn('Supabase fetch exception:', e);
+        }
+      }
+
+      if (sbGames && sbGames.length > 0) {
+        sbGames.forEach(cg => {
+          if (!cg || !cg.title || isGameDeleted(cg)) return;
+          const rawSize = cg.size_gb !== undefined && cg.size_gb !== null ? cg.size_gb : (cg.sizeGB || (cg.game_info ? cg.game_info['Game Size'] : 0));
+          const sizeNum = parseSizeToGB(rawSize);
+          const isPcCategory = (cg.category || 'pc') === 'pc';
+          const releaseYearNum = isPcCategory ? (cg.release_year || cg.releaseYear || (cg.game_info ? (parseInt(cg.game_info['Release Year']) || parseInt(cg.game_info['ReleaseYear']) || null) : null)) : null;
+          const rawCover = cg.cover || cg.banner_url || (cg.category === 'ps2' ? 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop');
+          const coverUrl = rawCover
+            .replace('shared.cloudflare.steamstatic.com', 'shared.fastly.steamstatic.com')
+            .replace('shared.steamstatic.com', 'shared.fastly.steamstatic.com')
+            .replace('/header.jpg', '/library_600x900.jpg');
+
+          const gameInfo = { ...(cg.game_info || { Genre: 'Action', Developer: 'Unknown' }) };
+          if (sizeNum > 0 && !gameInfo['Game Size']) gameInfo['Game Size'] = `${sizeNum.toFixed(1)} GB`;
+          if (isPcCategory && releaseYearNum) {
+            gameInfo['Release Year'] = releaseYearNum;
+          } else {
+            delete gameInfo['Release Year'];
+            delete gameInfo['ReleaseYear'];
+          }
+
+          const item = {
+            id: String(cg.id),
+            title: cleanGameTitle(cg.title),
+            category: cg.category || 'pc',
+            sizeGB: sizeNum,
+            releaseYear: releaseYearNum,
+            platform: cg.platform || (cg.category === 'ps2' ? 'PlayStation 2' : 'PC (Windows)'),
+            cover: coverUrl,
+            banner_url: coverUrl,
+            game_info: gameInfo,
+            requirements: cg.requirements || cg.system_requirements || []
+          };
+          allGames.push(item);
+          gamesByTitle.set(item.title, item);
+        });
+
+        applyFilters();
+        if (adminTableBody) renderAdminTable();
+        return;
+      }
+
+      // 2. Check for cached Google Sheets data or fetch live from Google Apps Script DB
       let gasGames = null;
       try {
         const cachedStr = localStorage.getItem('cached_gas_games');
@@ -570,7 +658,6 @@ function initApp() {
         }
       } catch (e) {}
 
-      // 2. Fetch fresh live data directly from Google Apps Script DB (Google Sheets)
       if (window.GASDB) {
         try {
           const fetchPromise = window.GASDB.fetchGames();
@@ -587,11 +674,7 @@ function initApp() {
         }
       }
 
-      allGames = [];
-      gamesByTitle.clear();
-
       if (gasGames && Array.isArray(gasGames) && gasGames.length > 0) {
-        // --- GOOGLE SHEETS IS PURE SINGLE SOURCE OF TRUTH ---
         gasGames.forEach(cg => {
           if (!cg || !cg.title || isGameDeleted(cg)) return;
           const rawSize = cg.sizeGB !== undefined && cg.sizeGB !== null ? cg.sizeGB : (cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0));
@@ -615,90 +698,93 @@ function initApp() {
           allGames.push(item);
           gamesByTitle.set(item.title, item);
         });
-      } else {
-        // --- FALLBACK (Only used if Google Sheets fetch fails or offline) ---
-        await waitForWindowData();
 
-        const pcRaw = window.PC_GAMES_DATA || [];
-        const ps2Raw = window.PS2_GAMES_DATA || [];
-
-        pcRaw.forEach((game, idx) => {
-          if (!game || !game.title) return;
-          const generatedId = 'pc_' + idx + '_' + String(game.title).toLowerCase().replace(/[^a-z0-9]/g, '');
-          const item = {
-            id: game.id || generatedId,
-            title: game.title,
-            category: 'pc',
-            sizeGB: parseSizeToGB(game.game_info ? game.game_info['Game Size'] : 0),
-            platform: 'PC (Windows)',
-            cover: game.banner_url || 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop',
-            game_info: game.game_info || {},
-            requirements: game.system_requirements
-          };
-          if (isGameDeleted(item) || isGameDeleted(game)) return;
-          allGames.push(item);
-          gamesByTitle.set(item.title, item);
-        });
-
-        ps2Raw.forEach((game, idx) => {
-          if (!game || !game.title) return;
-          const generatedId = 'ps2_' + idx + '_' + String(game.title).toLowerCase().replace(/[^a-z0-9]/g, '');
-          const item = {
-            id: game.id || generatedId,
-            title: game.title,
-            category: 'ps2',
-            sizeGB: parseSizeToGB(game.game_info ? game.game_info['Game Size'] : game.sizeGB),
-            platform: 'PS2 ISO / OPL / PCSX2',
-            cover: game.banner_url || 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop',
-            game_info: game.game_info || {},
-            requirements: game.system_requirements
-          };
-          if (isGameDeleted(item) || isGameDeleted(game)) return;
-          allGames.push(item);
-          gamesByTitle.set(item.title, item);
-        });
-
-        const customGamesJSON = localStorage.getItem('admin_custom_games');
-        if (customGamesJSON) {
-          try {
-            const customGames = JSON.parse(customGamesJSON);
-            if (Array.isArray(customGames)) {
-              customGames.forEach(cg => {
-                if (!cg || !cg.title || isGameDeleted(cg)) return;
-                const cleanCgTitle = cg.title.trim().toLowerCase();
-                const existingIdx = allGames.findIndex(g => (cg.id && g.id === cg.id) || (g.title && g.title.trim().toLowerCase() === cleanCgTitle));
-                
-                const itemSize = parseSizeToGB(cg.sizeGB || cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0));
-                
-                if (existingIdx !== -1) {
-                  const existing = allGames[existingIdx];
-                  const finalSize = itemSize > 0 ? itemSize : existing.sizeGB;
-                  const gameInfo = { ...(existing.game_info || {}), ...(cg.game_info || {}) };
-                  if (finalSize > 0) gameInfo['Game Size'] = `${finalSize.toFixed(1)} GB`;
-
-                  allGames[existingIdx] = {
-                    ...existing,
-                    ...cg,
-                    sizeGB: finalSize,
-                    game_info: gameInfo,
-                    cover: cg.cover || cg.banner_url || existing.cover
-                  };
-                  gamesByTitle.set(cg.title, allGames[existingIdx]);
-                } else {
-                  allGames.unshift({
-                    ...cg,
-                    sizeGB: itemSize,
-                    cover: cg.cover || cg.banner_url || 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop'
-                  });
-                  gamesByTitle.set(cg.title, allGames[0]);
-                }
-              });
-            }
-          } catch (e) {}
-        }
+        applyFilters();
+        if (adminTableBody) renderAdminTable();
+        return;
       }
 
-      // NOW RENDER ALL CARDS DIRECTLY FROM LIVE GOOGLE SHEETS DATA!
+      // 3. FALLBACK (Only used if both Supabase & Google Sheets are unreachable/offline)
+      await waitForWindowData();
+
+      const pcRaw = window.PC_GAMES_DATA || [];
+      const ps2Raw = window.PS2_GAMES_DATA || [];
+
+      pcRaw.forEach((game, idx) => {
+        if (!game || !game.title) return;
+        const generatedId = 'pc_' + idx + '_' + String(game.title).toLowerCase().replace(/[^a-z0-9]/g, '');
+        const item = {
+          id: game.id || generatedId,
+          title: game.title,
+          category: 'pc',
+          sizeGB: parseSizeToGB(game.game_info ? game.game_info['Game Size'] : 0),
+          platform: 'PC (Windows)',
+          cover: game.banner_url || 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop',
+          game_info: game.game_info || {},
+          requirements: game.system_requirements
+        };
+        if (isGameDeleted(item) || isGameDeleted(game)) return;
+        allGames.push(item);
+        gamesByTitle.set(item.title, item);
+      });
+
+      ps2Raw.forEach((game, idx) => {
+        if (!game || !game.title) return;
+        const generatedId = 'ps2_' + idx + '_' + String(game.title).toLowerCase().replace(/[^a-z0-9]/g, '');
+        const item = {
+          id: game.id || generatedId,
+          title: game.title,
+          category: 'ps2',
+          sizeGB: parseSizeToGB(game.game_info ? game.game_info['Game Size'] : game.sizeGB),
+          platform: 'PS2 ISO / OPL / PCSX2',
+          cover: game.banner_url || 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop',
+          game_info: game.game_info || {},
+          requirements: game.system_requirements
+        };
+        if (isGameDeleted(item) || isGameDeleted(game)) return;
+        allGames.push(item);
+        gamesByTitle.set(item.title, item);
+      });
+
+      const customGamesJSON = localStorage.getItem('admin_custom_games');
+      if (customGamesJSON) {
+        try {
+          const customGames = JSON.parse(customGamesJSON);
+          if (Array.isArray(customGames)) {
+            customGames.forEach(cg => {
+              if (!cg || !cg.title || isGameDeleted(cg)) return;
+              const cleanCgTitle = cg.title.trim().toLowerCase();
+              const existingIdx = allGames.findIndex(g => (cg.id && g.id === cg.id) || (g.title && g.title.trim().toLowerCase() === cleanCgTitle));
+              
+              const itemSize = parseSizeToGB(cg.sizeGB || cg.size || (cg.game_info ? cg.game_info['Game Size'] : 0));
+              
+              if (existingIdx !== -1) {
+                const existing = allGames[existingIdx];
+                const finalSize = itemSize > 0 ? itemSize : existing.sizeGB;
+                const gameInfo = { ...(existing.game_info || {}), ...(cg.game_info || {}) };
+                if (finalSize > 0) gameInfo['Game Size'] = `${finalSize.toFixed(1)} GB`;
+
+                allGames[existingIdx] = {
+                  ...existing,
+                  ...cg,
+                  sizeGB: finalSize,
+                  game_info: gameInfo,
+                  cover: cg.cover || cg.banner_url || existing.cover
+                };
+                gamesByTitle.set(cg.title, allGames[existingIdx]);
+              } else {
+                allGames.unshift({
+                  ...cg,
+                  sizeGB: itemSize,
+                  cover: cg.cover || cg.banner_url || 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop'
+                });
+                gamesByTitle.set(cg.title, allGames[0]);
+              }
+            });
+          }
+        } catch (e) {}
+      }
+
       applyFilters();
       if (adminTableBody) renderAdminTable();
 
@@ -711,10 +797,26 @@ function initApp() {
     }
   }
 
+  function cleanGameTitle(title) {
+    if (!title || typeof title !== 'string') return title || '';
+    let t = title;
+    t = t.replace(/\s*\([^)]*\)/g, '');
+    t = t.replace(/\s*\[[^\]]*\]/g, '');
+    t = t.replace(/\s+v[0-9]+[0-9._a-zA-Z]*/gi, '');
+    t = t.replace(/\s+Build\s+[0-9]+/gi, '');
+    t = t.replace(/\s+Free Download/gi, '');
+    return t.replace(/^[\s\-:]+|[\s\-:]+$/g, '').trim();
+  }
+
+  function getGameReleaseYear(g) {
+    if (!g || g.category !== 'pc') return 0;
+    return g.releaseYear || (g.game_info ? (parseInt(g.game_info['Release Year']) || parseInt(g.game_info['ReleaseYear']) || 0) : 0);
+  }
+
   function applyFilters() {
     const searchQuery = searchInput ? searchInput.value.toLowerCase().trim() : '';
     const selectedCategory = categoryFilter ? categoryFilter.value : 'all';
-    const selectedSort = sortFilter ? sortFilter.value : 'added-desc';
+    const selectedSort = sortFilter ? sortFilter.value : 'year-desc';
 
     displayedGames = allGames.filter(game => {
       if (!game || !game.title) return false;
@@ -728,18 +830,26 @@ function initApp() {
     displayedGames.sort((a, b) => {
       const sizeA = typeof a.sizeGB === 'number' ? a.sizeGB : parseFloat(a.sizeGB) || 0;
       const sizeB = typeof b.sizeGB === 'number' ? b.sizeGB : parseFloat(b.sizeGB) || 0;
+      const yrA = getGameReleaseYear(a);
+      const yrB = getGameReleaseYear(b);
       const idxA = allGames.indexOf(a);
       const idxB = allGames.indexOf(b);
 
       switch (selectedSort) {
+        case 'year-asc':
+          if (yrA > 0 && yrB === 0) return -1;
+          if (yrA === 0 && yrB > 0) return 1;
+          if (yrA > 0 && yrB > 0) return yrA - yrB;
+          return idxA - idxB;
         case 'size-desc':
           return sizeB - sizeA;
         case 'size-asc':
           return sizeA - sizeB;
-        case 'added-asc':
-          return idxB - idxA;
-        case 'added-desc':
+        case 'year-desc':
         default:
+          if (yrA > 0 && yrB === 0) return -1;
+          if (yrA === 0 && yrB > 0) return 1;
+          if (yrA > 0 && yrB > 0) return yrB - yrA;
           return idxA - idxB;
       }
     });
@@ -813,11 +923,14 @@ function initApp() {
 
         const price = calculateGamePrice(sizeGBNum);
         const priceStr = formatRupiah(price);
+        const isPc = (game.category === 'pc');
+        const yearDisplay = isPc ? (game.releaseYear || (game.game_info ? game.game_info['Release Year'] : null)) : null;
 
         card.innerHTML = `
           <div class="game-cover-wrap">
             <img src="${coverUrl}" alt="${game.title}" class="game-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'" />
             <span class="game-badge ${game.category}">${game.category === 'ps2' ? 'PS2 Emu' : 'Game PC'}</span>
+            ${yearDisplay ? `<span class="game-year-badge" style="position: absolute; bottom: 8px; left: 8px; background: rgba(15, 23, 42, 0.85); color: #38bdf8; padding: 2px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; border: 1px solid rgba(56, 189, 248, 0.3); backdrop-filter: blur(4px);">📅 ${yearDisplay}</span>` : ''}
             <span class="price-tag-card">${priceStr}</span>
           </div>
           <div class="game-info-wrap">
@@ -957,10 +1070,14 @@ function initApp() {
     modalTitle.textContent = game.title;
     const price = calculateGamePrice(game.sizeGB);
     
+    const isPc = (game.category === 'pc');
+    const yearDisplay = isPc ? (game.releaseYear || (game.game_info ? game.game_info['Release Year'] : null)) : null;
+
     modalInfo.innerHTML = `
       ${isNoPriceMode ? '' : `<li class="spec-item spec-price-row"><strong>Harga Game:</strong> <span style="color: var(--success); font-weight: 800;">${formatRupiah(price)}</span></li>`}
       <li class="spec-item"><strong>Platform:</strong> ${game.platform}</li>
       <li class="spec-item"><strong>Ukuran File:</strong> ${game.sizeGB.toFixed(1)} GB</li>
+      ${yearDisplay ? `<li class="spec-item"><strong>Tahun Rilis:</strong> <span style="color: #38bdf8; font-weight: 700;">📅 ${yearDisplay}</span></li>` : ''}
       <li class="spec-item"><strong>Genre:</strong> ${game.game_info ? (game.game_info.Genre || '-') : '-'}</li>
       <li class="spec-item"><strong>Developer:</strong> ${game.game_info ? (game.game_info.Developer || '-') : '-'}</li>
       <li class="spec-item"><strong>Versi:</strong> ${game.game_info ? (game.game_info.Version || 'Full Version') : 'Full Version'}</li>
@@ -1371,7 +1488,7 @@ function initApp() {
     e.preventDefault();
     
     const editId = adminGameId.value;
-    const title = adminTitle.value.trim();
+    const title = cleanGameTitle(adminTitle.value.trim());
     const category = adminCategory.value;
     const sizeGB = parseFloat(adminSize.value) || 0;
     const cover = adminCover.value.trim() || (category === 'ps2' ? 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop');
@@ -1380,6 +1497,16 @@ function initApp() {
     const reqsText = adminReqs.value.trim();
     const requirements = reqsText ? reqsText.split(/[\n,]+/).map(r => r.trim()).filter(Boolean) : [];
 
+    const yearInputValue = adminReleaseYear ? parseInt(adminReleaseYear.value) : null;
+    let finalReleaseYear = yearInputValue;
+
+    if (!finalReleaseYear) {
+      const existingGame = allGames.find(g => (editId && g.id === editId) || (g.title && g.title.trim().toLowerCase() === title.trim().toLowerCase()));
+      if (existingGame) {
+        finalReleaseYear = existingGame.releaseYear || (existingGame.game_info ? (parseInt(existingGame.game_info['Release Year']) || parseInt(existingGame.game_info['ReleaseYear']) || null) : null);
+      }
+    }
+
     const nowIso = new Date().toISOString();
     const gameObject = {
       id: editId || `custom-${Date.now()}`,
@@ -1387,6 +1514,7 @@ function initApp() {
       category: category,
       sizeGB: sizeGB,
       size: sizeGB,
+      releaseYear: finalReleaseYear,
       platform: category === 'ps2' ? 'PS2 ISO / OPL' : 'PC (Windows)',
       cover: cover,
       banner_url: cover,
@@ -1394,7 +1522,8 @@ function initApp() {
         Genre: genre,
         Developer: developer,
         Version: 'Full Version',
-        'Game Size': `${sizeGB.toFixed(1)} GB`
+        'Game Size': `${sizeGB.toFixed(1)} GB`,
+        ...(finalReleaseYear ? { 'Release Year': finalReleaseYear } : {})
       },
       requirements: requirements,
       isEdited: true,
@@ -1535,6 +1664,7 @@ function initApp() {
     if (adminCover) adminCover.value = '';
     if (adminGenre) adminGenre.value = '';
     if (adminDeveloper) adminDeveloper.value = '';
+    if (adminReleaseYear) adminReleaseYear.value = '';
     if (adminReqs) adminReqs.value = '';
     if (adminFormTitle) adminFormTitle.textContent = 'Tambah Game Baru';
     if (adminResetFormBtn) adminResetFormBtn.style.display = 'none';
@@ -1580,11 +1710,87 @@ function initApp() {
     window.renderAdminTable = renderAdminTable;
     if (!adminTableBody) return;
     adminTableBody.innerHTML = '';
-    
+
+    const adminSortSelect = document.getElementById('admin-sort-select');
+    const adminSizeSearchInput = document.getElementById('admin-size-search-input');
+    const sortValue = adminSortSelect ? adminSortSelect.value : 'year-desc';
+
     const query = adminSearchInput ? (adminSearchInput.value || '').toLowerCase().trim() : '';
+    const sizeQuery = adminSizeSearchInput ? (adminSizeSearchInput.value || '').trim() : '';
+
     const filtered = allGames.filter(g => {
       if (!g || !g.title) return false;
-      return !query || g.title.toLowerCase().includes(query);
+
+      // 1. Filter Nama Game
+      const matchTitle = !query || g.title.toLowerCase().includes(query);
+      if (!matchTitle) return false;
+
+      // 2. Filter Ukuran GB (Khusus Admin Search by Size)
+      if (sizeQuery) {
+        const sizeNum = typeof g.sizeGB === 'number' && !isNaN(g.sizeGB) ? g.sizeGB : parseFloat(g.sizeGB) || 0;
+
+        // Rentang ukuran (contoh: "10-50" atau "10 - 50")
+        if (sizeQuery.includes('-')) {
+          const parts = sizeQuery.split('-').map(p => parseFloat(p.trim()));
+          if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+            const minSize = Math.min(parts[0], parts[1]);
+            const maxSize = Math.max(parts[0], parts[1]);
+            return sizeNum >= minSize && sizeNum <= maxSize;
+          }
+        }
+
+        // Operator perbandingan (contoh: ">=50", ">50", "<=10", "<10")
+        if (sizeQuery.startsWith('>=')) {
+          const val = parseFloat(sizeQuery.replace('>=', '').trim());
+          if (!isNaN(val)) return sizeNum >= val;
+        } else if (sizeQuery.startsWith('>')) {
+          const val = parseFloat(sizeQuery.replace('>', '').trim());
+          if (!isNaN(val)) return sizeNum > val;
+        } else if (sizeQuery.startsWith('<=')) {
+          const val = parseFloat(sizeQuery.replace('<=', '').trim());
+          if (!isNaN(val)) return sizeNum <= val;
+        } else if (sizeQuery.startsWith('<')) {
+          const val = parseFloat(sizeQuery.replace('<', '').trim());
+          if (!isNaN(val)) return sizeNum < val;
+        }
+
+        // Angka persis atau pencarian parsial (contoh: "50" cocok dengan 50 GB, 50.4 GB, 50.0 GB, dll.)
+        const targetVal = parseFloat(sizeQuery);
+        if (!isNaN(targetVal)) {
+          const sizeStr = sizeNum.toFixed(1);
+          return Math.abs(sizeNum - targetVal) < 0.5 || sizeStr.includes(sizeQuery) || String(Math.floor(sizeNum)) === sizeQuery;
+        }
+      }
+
+      return true;
+    });
+
+    filtered.sort((a, b) => {
+      const sizeA = typeof a.sizeGB === 'number' && !isNaN(a.sizeGB) ? a.sizeGB : parseFloat(a.sizeGB) || 0;
+      const sizeB = typeof b.sizeGB === 'number' && !isNaN(b.sizeGB) ? b.sizeGB : parseFloat(b.sizeGB) || 0;
+      const yrA = getGameReleaseYear(a);
+      const yrB = getGameReleaseYear(b);
+
+      if (sortValue === 'year-desc') {
+        if (yrA > 0 && yrB === 0) return -1;
+        if (yrA === 0 && yrB > 0) return 1;
+        if (yrA > 0 && yrB > 0) return yrB - yrA;
+        return 0;
+      } else if (sortValue === 'year-asc') {
+        if (yrA > 0 && yrB === 0) return -1;
+        if (yrA === 0 && yrB > 0) return 1;
+        if (yrA > 0 && yrB > 0) return yrA - yrB;
+        return 0;
+      } else if (sortValue === 'size-desc') {
+        return sizeB - sizeA;
+      } else if (sortValue === 'size-asc') {
+        return sizeA - sizeB;
+      } else if (sortValue === 'title-asc') {
+        return String(a.title || '').localeCompare(String(b.title || ''));
+      } else if (sortValue === 'title-desc') {
+        return String(b.title || '').localeCompare(String(a.title || ''));
+      }
+      return 0;
     });
 
     if (adminTotalCountEl) adminTotalCountEl.textContent = filtered.length;
@@ -1627,6 +1833,7 @@ function initApp() {
           if (adminCover) adminCover.value = game.cover || '';
           if (adminGenre) adminGenre.value = game.game_info ? (game.game_info.Genre || '') : '';
           if (adminDeveloper) adminDeveloper.value = game.game_info ? (game.game_info.Developer || '') : '';
+          if (adminReleaseYear) adminReleaseYear.value = game.releaseYear || (game.game_info ? (game.game_info['Release Year'] || '') : '');
           if (adminReqs) adminReqs.value = Array.isArray(game.requirements) ? game.requirements.join('\n') : '';
 
           if (adminFormTitle) adminFormTitle.textContent = `Edit Game: ${titleStr}`;
@@ -1704,6 +1911,21 @@ function initApp() {
     adminSearchInput.addEventListener('input', () => {
       clearTimeout(adminSearchTimeout);
       adminSearchTimeout = setTimeout(renderAdminTable, 250);
+    });
+  }
+
+  const adminSizeSearchInputEl = document.getElementById('admin-size-search-input');
+  if (adminSizeSearchInputEl) {
+    adminSizeSearchInputEl.addEventListener('input', () => {
+      clearTimeout(adminSearchTimeout);
+      adminSearchTimeout = setTimeout(renderAdminTable, 250);
+    });
+  }
+
+  const adminSortSelectEl = document.getElementById('admin-sort-select');
+  if (adminSortSelectEl) {
+    adminSortSelectEl.addEventListener('change', () => {
+      renderAdminTable();
     });
   }
 
