@@ -692,6 +692,7 @@ select option,
 }
 
 .game-grid.view-list .game-badge,
+.game-grid.view-list .game-year-badge,
 .game-grid.view-list .price-tag-card {
   display: none;
 }
