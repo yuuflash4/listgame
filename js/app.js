@@ -559,59 +559,19 @@ function initApp() {
         `;
       }
 
-      allGames = [];
-      gamesByTitle.clear();
-
-      // 1. Try Supabase Cloud Database first with automatic pagination (bypasses 1000 max-rows limit)
-      let sbGames = [];
-      if (window.supabaseClient) {
-        try {
-          console.log("⚡ Fetching catalog from Supabase Cloud Database...");
-          const pageSize = 1000;
-          let from = 0;
-          let hasMore = true;
-
-          while (hasMore) {
-            const { data, error } = await window.supabaseClient
-              .from('games')
-              .select('*')
-              .order('created_at', { ascending: false })
-              .range(from, from + pageSize - 1);
-
-            if (error) {
-              console.warn('Supabase fetch error:', error);
-              break;
-            }
-
-            if (data && Array.isArray(data) && data.length > 0) {
-              sbGames = sbGames.concat(data);
-              if (data.length < pageSize) {
-                hasMore = false;
-              } else {
-                from += pageSize;
-              }
-            } else {
-              hasMore = false;
-            }
-          }
-
-          if (sbGames.length > 0) {
-            console.log(`✅ Loaded ALL ${sbGames.length} games from Supabase Database!`);
-          }
-        } catch (e) {
-          console.warn('Supabase fetch exception:', e);
-        }
-      }
-
-      if (sbGames && sbGames.length > 0) {
-        sbGames.forEach(cg => {
+      // Helper: Populate allGames from Supabase array
+      function populateFromSupabase(sbData) {
+        allGames = [];
+        gamesByTitle.clear();
+        sbData.forEach(cg => {
           if (!cg || !cg.title || isGameDeleted(cg)) return;
           const rawSize = cg.size_gb !== undefined && cg.size_gb !== null ? cg.size_gb : (cg.sizeGB || (cg.game_info ? cg.game_info['Game Size'] : 0));
           const sizeNum = parseSizeToGB(rawSize);
           const isPcCategory = (cg.category || 'pc') === 'pc';
           const releaseYearNum = isPcCategory ? (cg.release_year || cg.releaseYear || (cg.game_info ? (parseInt(cg.game_info['Release Year']) || parseInt(cg.game_info['ReleaseYear']) || null) : null)) : null;
           const rawCover = cg.cover || cg.banner_url || (cg.category === 'ps2' ? 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop');
-          const coverUrl = rawCover
+          const coverUrl = String(rawCover)
+            .replace(/^http:\/\//i, 'https://')
             .replace('shared.cloudflare.steamstatic.com', 'shared.fastly.steamstatic.com')
             .replace('shared.steamstatic.com', 'shared.fastly.steamstatic.com')
             .replace('/header.jpg', '/library_600x900.jpg');
@@ -640,11 +600,151 @@ function initApp() {
           allGames.push(item);
           gamesByTitle.set(item.title, item);
         });
+      }
 
+      // Helper: Instant Fallback Render from local static JS arrays
+      function populateFromLocalFallback() {
+        allGames = [];
+        gamesByTitle.clear();
+        const pcRaw = window.PC_GAMES_DATA || [];
+        const ps2Raw = window.PS2_GAMES_DATA || [];
+
+        pcRaw.forEach((game, idx) => {
+          if (!game || !game.title || isGameDeleted(game)) return;
+          const generatedId = 'pc_' + idx + '_' + String(game.title).toLowerCase().replace(/[^a-z0-9]/g, '');
+          const coverUrl = String(game.banner_url || 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop').replace(/^http:\/\//i, 'https://');
+          const item = {
+            id: game.id || generatedId,
+            title: cleanGameTitle(game.title),
+            category: 'pc',
+            sizeGB: parseSizeToGB(game.game_info ? game.game_info['Game Size'] : 0),
+            platform: 'PC (Windows)',
+            cover: coverUrl,
+            banner_url: coverUrl,
+            game_info: game.game_info || {},
+            requirements: game.system_requirements || []
+          };
+          allGames.push(item);
+          gamesByTitle.set(item.title, item);
+        });
+
+        ps2Raw.forEach((game, idx) => {
+          if (!game || !game.title || isGameDeleted(game)) return;
+          const generatedId = 'ps2_' + idx + '_' + String(game.title).toLowerCase().replace(/[^a-z0-9]/g, '');
+          const coverUrl = String(game.banner_url || 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=600&auto=format&fit=crop').replace(/^http:\/\//i, 'https://');
+          const item = {
+            id: game.id || generatedId,
+            title: cleanGameTitle(game.title),
+            category: 'ps2',
+            sizeGB: parseSizeToGB(game.game_info ? game.game_info['Game Size'] : game.sizeGB),
+            platform: 'PS2 ISO / OPL / PCSX2',
+            cover: coverUrl,
+            banner_url: coverUrl,
+            game_info: game.game_info || {},
+            requirements: game.system_requirements || []
+          };
+          allGames.push(item);
+          gamesByTitle.set(item.title, item);
+        });
+      }
+
+      // IndexedDB Helper for 0ms persistent catalog cache
+      function getCachedSupabaseGames() {
+        return new Promise(resolve => {
+          try {
+            const req = indexedDB.open('GrandiaDB', 1);
+            req.onupgradeneeded = e => {
+              if (!e.target.result.objectStoreNames.contains('catalog')) {
+                e.target.result.createObjectStore('catalog');
+              }
+            };
+            req.onsuccess = e => {
+              const db = e.target.result;
+              const tx = db.transaction('catalog', 'readonly');
+              const store = tx.objectStore('catalog');
+              const getReq = store.get('supabase_games');
+              getReq.onsuccess = () => resolve(getReq.result || null);
+              getReq.onerror = () => resolve(null);
+            };
+            req.onerror = () => resolve(null);
+          } catch (e) {
+            resolve(null);
+          }
+        });
+      }
+
+      function setCachedSupabaseGames(data) {
+        try {
+          const req = indexedDB.open('GrandiaDB', 1);
+          req.onupgradeneeded = e => {
+            if (!e.target.result.objectStoreNames.contains('catalog')) {
+              e.target.result.createObjectStore('catalog');
+            }
+          };
+          req.onsuccess = e => {
+            const db = e.target.result;
+            const tx = db.transaction('catalog', 'readwrite');
+            tx.objectStore('catalog').put(data, 'supabase_games');
+          };
+        } catch (e) {}
+      }
+
+      // STEP 1: INSTANT 0ms RENDER (From IndexedDB Cache OR Static JS data)
+      let initialRenderDone = false;
+      const cachedSb = await getCachedSupabaseGames();
+      if (cachedSb && Array.isArray(cachedSb) && cachedSb.length > 0) {
+        populateFromSupabase(cachedSb);
         applyFilters();
         if (adminTableBody) renderAdminTable();
-        return;
+        initialRenderDone = true;
+        console.log(`⚡ [Instant Cache] Rendered ${cachedSb.length} games from local cache!`);
+      } else if ((window.PC_GAMES_DATA && window.PC_GAMES_DATA.length > 0) || (window.PS2_GAMES_DATA && window.PS2_GAMES_DATA.length > 0)) {
+        populateFromLocalFallback();
+        applyFilters();
+        if (adminTableBody) renderAdminTable();
+        initialRenderDone = true;
+        console.log("⚡ [Instant Render] Rendered catalog from static data while cloud syncs in background...");
       }
+
+      // STEP 2: FAST PARALLEL FETCH FROM SUPABASE (~0.8s)
+      if (window.supabaseClient) {
+        try {
+          console.log("⚡ Fetching fresh catalog from Supabase Cloud (Parallel Engine)...");
+          const ranges = [];
+          for (let from = 0; from < 12000; from += 1000) {
+            ranges.push([from, from + 999]);
+          }
+
+          const batchPromises = ranges.map(([f, t]) =>
+            window.supabaseClient
+              .from('games')
+              .select('*')
+              .order('created_at', { ascending: false })
+              .range(f, t)
+          );
+
+          const results = await Promise.all(batchPromises);
+          let sbGames = [];
+          for (const res of results) {
+            if (res && res.data && Array.isArray(res.data) && res.data.length > 0) {
+              sbGames = sbGames.concat(res.data);
+            }
+          }
+
+          if (sbGames.length > 0) {
+            console.log(`✅ Loaded ALL ${sbGames.length} games from Supabase Database in parallel!`);
+            setCachedSupabaseGames(sbGames);
+            populateFromSupabase(sbGames);
+            applyFilters();
+            if (adminTableBody) renderAdminTable();
+            return;
+          }
+        } catch (e) {
+          console.warn('Supabase fetch exception:', e);
+        }
+      }
+
+      if (initialRenderDone) return;
 
       // 2. Check for cached Google Sheets data or fetch live from Google Apps Script DB
       let gasGames = null;
