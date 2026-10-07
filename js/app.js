@@ -595,7 +595,8 @@ function initApp() {
             cover: coverUrl,
             banner_url: coverUrl,
             game_info: gameInfo,
-            requirements: cg.requirements || cg.system_requirements || []
+            requirements: cg.requirements || cg.system_requirements || [],
+            _origIdx: allGames.length
           };
           allGames.push(item);
           gamesByTitle.set(item.title, item);
@@ -622,7 +623,8 @@ function initApp() {
             cover: coverUrl,
             banner_url: coverUrl,
             game_info: game.game_info || {},
-            requirements: game.system_requirements || []
+            requirements: game.system_requirements || [],
+            _origIdx: allGames.length
           };
           allGames.push(item);
           gamesByTitle.set(item.title, item);
@@ -641,7 +643,8 @@ function initApp() {
             cover: coverUrl,
             banner_url: coverUrl,
             game_info: game.game_info || {},
-            requirements: game.system_requirements || []
+            requirements: game.system_requirements || [],
+            _origIdx: allGames.length
           };
           allGames.push(item);
           gamesByTitle.set(item.title, item);
@@ -932,24 +935,26 @@ function initApp() {
       const sizeB = typeof b.sizeGB === 'number' ? b.sizeGB : parseFloat(b.sizeGB) || 0;
       const yrA = getGameReleaseYear(a);
       const yrB = getGameReleaseYear(b);
-      const idxA = allGames.indexOf(a);
-      const idxB = allGames.indexOf(b);
+      const idxA = a._origIdx !== undefined ? a._origIdx : 0;
+      const idxB = b._origIdx !== undefined ? b._origIdx : 0;
 
       switch (selectedSort) {
         case 'year-asc':
           if (yrA > 0 && yrB === 0) return -1;
           if (yrA === 0 && yrB > 0) return 1;
-          if (yrA > 0 && yrB > 0) return yrA - yrB;
+          if (yrA > 0 && yrB > 0 && yrA !== yrB) return yrA - yrB;
           return idxA - idxB;
         case 'size-desc':
-          return sizeB - sizeA;
+          if (sizeA !== sizeB) return sizeB - sizeA;
+          return idxA - idxB;
         case 'size-asc':
-          return sizeA - sizeB;
+          if (sizeA !== sizeB) return sizeA - sizeB;
+          return idxA - idxB;
         case 'year-desc':
         default:
           if (yrA > 0 && yrB === 0) return -1;
           if (yrA === 0 && yrB > 0) return 1;
-          if (yrA > 0 && yrB > 0) return yrB - yrA;
+          if (yrA > 0 && yrB > 0 && yrA !== yrB) return yrB - yrA;
           return idxA - idxB;
       }
     });
@@ -1023,7 +1028,7 @@ function initApp() {
 
         card.innerHTML = `
           <div class="game-cover-wrap">
-            <img src="${coverUrl}" alt="${game.title}" class="game-cover" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop';" />
+            <img src="${coverUrl}" alt="${game.title}" class="game-cover" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop';" />
             <span class="game-badge ${game.category}">${game.category === 'ps2' ? 'PS2 Emu' : 'Game PC'}</span>
             ${yearDisplay ? `<span class="game-year-badge" style="position: absolute; bottom: 8px; left: 8px; background: rgba(15, 23, 42, 0.85); color: #38bdf8; padding: 2px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; border: 1px solid rgba(56, 189, 248, 0.3); backdrop-filter: blur(4px);">📅 ${yearDisplay}</span>` : ''}
             <span class="price-tag-card">${priceStr}</span>

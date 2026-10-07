@@ -874,7 +874,7 @@ select option,
   width: 100%;
   padding-top: 133%; /* 3:4 aspect ratio */
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #162033 0%, #0d121d 100%);
 }
 
 .game-cover {
