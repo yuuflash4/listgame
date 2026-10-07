@@ -5,18 +5,27 @@ import time
 import uuid
 import socket
 import mimetypes
+import hashlib
+import io
+import urllib.request
+import urllib.parse
+from PIL import Image
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 
 mimetypes.init()
 mimetypes.add_type('text/javascript', '.js')
 mimetypes.add_type('text/javascript', '.mjs')
+mimetypes.add_type('image/webp', '.webp')
 
 PORT = 8999
 UPLOAD_DIR = os.path.join(os.path.dirname(__file__), 'uploads')
+IMAGE_CACHE_DIR = os.path.join(UPLOAD_DIR, 'image_cache')
 DATA_DIR = os.path.join(os.path.dirname(__file__), 'data')
 DATA_FILE = os.path.join(DATA_DIR, 'custom_games.json')
+FALLBACK_COVER = 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop'
 
 os.makedirs(UPLOAD_DIR, exist_ok=True)
+os.makedirs(IMAGE_CACHE_DIR, exist_ok=True)
 os.makedirs(DATA_DIR, exist_ok=True)
 
 MAX_UPLOAD_SIZE = 10 * 1024 * 1024  # 10 MB
@@ -85,7 +94,95 @@ class PemilihanGameRequestHandler(SimpleHTTPRequestHandler):
         if not is_head:
             self.wfile.write(res_data)
 
+    def handle_image_compress(self):
+        try:
+            parsed = urllib.parse.urlparse(self.path)
+            qs = urllib.parse.parse_qs(parsed.query)
+            target_url = qs.get('url', [''])[0]
+            if not target_url:
+                self.send_error(400, "Missing url parameter")
+                return
+
+            try:
+                target_w = int(qs.get('w', [280])[0])
+            except Exception:
+                target_w = 280
+
+            cache_key = hashlib.md5(f"{target_url}_{target_w}".encode('utf-8')).hexdigest() + '.webp'
+            cache_file = os.path.join(IMAGE_CACHE_DIR, cache_key)
+
+            if os.path.exists(cache_file):
+                try:
+                    with open(cache_file, 'rb') as f:
+                        webp_data = f.read()
+                    self.send_response(200)
+                    self.send_header('Content-Type', 'image/webp')
+                    self.send_header('Content-Length', str(len(webp_data)))
+                    self.send_header('Cache-Control', 'public, max-age=604800')
+                    self.end_headers()
+                    self.wfile.write(webp_data)
+                    return
+                except Exception:
+                    pass
+
+            raw_bytes = None
+            try:
+                req = urllib.request.Request(
+                    target_url,
+                    headers={
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                        'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+                    }
+                )
+                with urllib.request.urlopen(req, timeout=4) as resp:
+                    raw_bytes = resp.read()
+            except Exception:
+                pass
+
+            if not raw_bytes:
+                self.send_response(302)
+                self.send_header('Location', FALLBACK_COVER)
+                self.end_headers()
+                return
+
+            img = Image.open(io.BytesIO(raw_bytes))
+            if img.mode in ('RGBA', 'LA') or (img.mode == 'P' and 'transparency' in img.info):
+                img = img.convert('RGBA')
+            else:
+                img = img.convert('RGB')
+
+            orig_w, orig_h = img.size
+            if orig_w > target_w:
+                target_h = int(orig_h * (target_w / orig_w))
+                img = img.resize((target_w, target_h), Image.Resampling.LANCZOS)
+
+            out_buf = io.BytesIO()
+            img.save(out_buf, format='WEBP', quality=75, method=4)
+            webp_data = out_buf.getvalue()
+
+            try:
+                with open(cache_file, 'wb') as f:
+                    f.write(webp_data)
+            except Exception:
+                pass
+
+            self.send_response(200)
+            self.send_header('Content-Type', 'image/webp')
+            self.send_header('Content-Length', str(len(webp_data)))
+            self.send_header('Cache-Control', 'public, max-age=604800')
+            self.end_headers()
+            self.wfile.write(webp_data)
+        except Exception:
+            self.send_response(302)
+            self.send_header('Location', FALLBACK_COVER)
+            self.end_headers()
+
     def do_GET(self):
+        clean_path = self.path.split('?')[0]
+        if clean_path.startswith('/.netlify/images') or clean_path.startswith('/api/compress_image'):
+            self.handle_image_compress()
+            return
+
         if self.path.startswith('/api/drive_config'):
             self.send_json({})
             return

@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+
+[images]
+  remote_images = [
+    "https://.*",
+    "http://.*"
+  ]

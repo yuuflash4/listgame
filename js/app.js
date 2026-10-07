@@ -973,7 +973,7 @@ function initApp() {
     `;
   }
 
-  // Image URL Normalizer
+  // Image URL Normalizer & Auto-Compressor
   function getOptimizedImageUrl(url) {
     if (!url || typeof url !== 'string') {
       return 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop';
@@ -983,10 +983,15 @@ function initApp() {
       return 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop';
     }
 
-    return trimmed
-      .replace('shared.cloudflare.steamstatic.com', 'shared.fastly.steamstatic.com')
-      .replace('shared.steamstatic.com', 'shared.fastly.steamstatic.com')
-      .replace('/header.jpg', '/library_600x900.jpg');
+    if (trimmed.includes('steamstatic.com') || trimmed.includes('steamgriddb.com')) {
+      return trimmed
+        .replace('shared.cloudflare.steamstatic.com', 'shared.fastly.steamstatic.com')
+        .replace('shared.steamstatic.com', 'shared.fastly.steamstatic.com')
+        .replace('/header.jpg', '/library_600x900.jpg');
+    }
+
+    const cleanUrl = trimmed.replace(/^http:\/\//i, 'https://');
+    return `/.netlify/images?url=${encodeURIComponent(cleanUrl)}&w=280&q=75&output=webp`;
   }
 
   function renderGameGrid(append = false) {
